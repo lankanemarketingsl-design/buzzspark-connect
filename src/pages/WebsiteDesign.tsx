@@ -1,38 +1,40 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { Eye, TrendingUp, Award, Globe } from "lucide-react";
-
-const benefits = [
-  { icon: Globe, title: "Online Presence", desc: "In today's digital world, nearly everyone is connected to the web. Your business needs a professional website to perform at full capacity." },
-  { icon: Eye, title: "Increase Visibility", desc: "Most people research products and businesses online before purchasing. A good website ensures potential customers can find and learn about you." },
-  { icon: TrendingUp, title: "Increase Revenue", desc: "A professional website drives traffic, builds credibility, and converts visitors into customers — increasing your business revenue." },
-  { icon: Award, title: "Company Reputation", desc: "A well-designed website builds trust, enhances your brand image, and establishes your company as a professional industry player." },
-];
 
 const WebsiteDesign = () => {
   return (
     <ServicePageLayout
       badge="Website Design"
-      title="Professional Website Design"
-      subtitle="Custom website design solutions to increase your online visibility, business revenue, and company reputation in Sri Lanka."
+      title="Website Designing"
+      subtitle=""
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {benefits.map((b, i) => (
-          <motion.div
-            key={b.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
-            className="p-8 rounded-2xl bg-card shadow-card border border-border"
-          >
-            <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center mb-4">
-              <b.icon className="w-6 h-6 text-primary" />
-            </div>
-            <h3 className="font-heading text-lg font-bold text-foreground mb-3">{b.title}</h3>
-            <p className="text-muted-foreground leading-relaxed">{b.desc}</p>
-          </motion.div>
-        ))}
+      <div className="max-w-4xl space-y-6">
+        <motion.p
+          className="text-muted-foreground leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          In today's digital world, nearly everyone is connected in some way to the World Wide Web in order to satisfy their entertainment, education, research and consumer needs. The popularity of the Internet has prompted businesses of all sizes to have an online presence in the form of a Website.
+        </motion.p>
+        <motion.p
+          className="text-muted-foreground leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+        >
+          If your business does not have a Website as of yet, your business probably isn't performing to its fullest of capabilities. Having a Website can provide a number of benefits to your business that you may not have been aware of before.
+        </motion.p>
+        <motion.p
+          className="text-muted-foreground leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+        >
+          Your website is important since it is most likely how people will find your business – along with your offerings and prices! These days, most people go online to research products and places before they make a purchase. If you don't have a website, or even if you have a bad website design, you are missing out on potential business. Those people don't purchase tickets online they are still likely to research your venue online so you want a good, responsive website so potential customers can learn about your business.
+        </motion.p>
       </div>
     </ServicePageLayout>
   );

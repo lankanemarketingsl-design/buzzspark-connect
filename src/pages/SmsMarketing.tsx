@@ -5,35 +5,31 @@ import { CheckCircle, Users, Crown, Target, Briefcase } from "lucide-react";
 const databases = [
   {
     icon: Users,
-    title: "Corporate Database",
-    contacts: "300,000+",
-    age: "18–65",
-    pricing: "LKR 2/message",
-    items: ["Executives & Officers", "Small Business Owners", "Managers & General Managers", "Association Members", "Gender: Male 80% & Female 20%"],
+    title: "Corporate database for executive decisions",
+    desc: "This is our general and most popular database, you can target majority of the Colombo based private sector organizations employees through this database. Subscribers: 300,000+ age between 18 and 65.",
+    items: ["Executives & Officers", "Small business owners", "Managers", "General Managers", "Association members", "Gender - Male 80% & Female 20%"],
+    pricing: "Pricing - 2 LKR for one message",
   },
   {
     icon: Crown,
-    title: "VIP Database",
-    contacts: "50,000+",
-    age: "30–65",
-    pricing: "LKR 2.50/message",
-    items: ["Premium Business Leaders", "CEOs & Directors", "Celebrities & Doctors", "Entrepreneurs", "High-salary Employees (500K+/mo)"],
+    title: "VIP Database For Achievers",
+    desc: "Our database has more than 50,000+ contacts in Colombo and greater colombo area, Age between 30 and 65 with majority being 80% Male and 20% Female.",
+    items: ["Premium business leaders", "Multinational companies Directors", "CEOs", "Celebrities", "Sports personals", "Doctors", "Entrepreneurs", "Private sector high salary earning employees (Over 500,000 per month)", "Head of Government institutes"],
+    pricing: "Pricing - 2.50 LKR for one message",
   },
   {
     icon: Target,
-    title: "Marketing Database",
-    contacts: "200,000+",
-    age: "All Island",
-    pricing: "LKR 2/message",
-    items: ["Director Marketing", "Brand Managers", "Marketing & Sales Managers", "DGM Marketing", "Marketing & Sales Executives"],
+    title: "Marketing Database to Promote your business",
+    desc: "This database consists of marketing fraternity professionals which attach to marketing related works. Our database has more than 200,000+ contacts in All Island.",
+    items: ["Director marketing", "Marketing Managers", "Brand managers", "Advertising Managers", "Sales Managers", "DGM Marketing", "Marketing Executives", "Sales Executives"],
+    pricing: "Pricing - 2 LKR for one message",
   },
   {
     icon: Briefcase,
-    title: "HR Database",
-    contacts: "25,000+",
-    age: "All Island",
-    pricing: "LKR 2/message",
-    items: ["HR Directors & Managers", "Senior HR Managers", "HR Executives", "Administrative Managers", "Training Managers"],
+    title: "HR Database to Promote your business",
+    desc: "Human resources specialists are responsible for recruiting, screening, interviewing and placing workers. Our database has more than 25,000+ contacts in All Island.",
+    items: ["HR Directors", "HR Managers", "Senior HR Managers", "Assistant HR Managers", "HR Executives", "Administrative managers", "Training Managers"],
+    pricing: "Pricing - 2 LKR for one message",
   },
 ];
 
@@ -42,14 +38,19 @@ const districts = [
   { name: "Kurunegala", count: "150,000" }, { name: "Matara", count: "120,000" }, { name: "Gampaha", count: "115,000" },
   { name: "Hambantota", count: "85,000" }, { name: "Kalutara", count: "80,000" }, { name: "Nuwara Eliya", count: "60,000" },
   { name: "Polonnaruwa", count: "52,000" }, { name: "Matale", count: "50,000" }, { name: "Anuradhapura", count: "45,000" },
+  { name: "Monaragala", count: "45,000" }, { name: "Ratnapura", count: "42,000" }, { name: "Kegalle", count: "42,000" },
+  { name: "Badulla", count: "40,000" }, { name: "Batticaloa", count: "40,000" }, { name: "Mannar", count: "40,000" },
+  { name: "Puttalam", count: "40,000" }, { name: "Kilinochchi", count: "35,000" }, { name: "Trincomalee", count: "31,000" },
+  { name: "Jaffna", count: "31,000" }, { name: "Mullaitivu", count: "30,000" }, { name: "Vavuniya", count: "28,000" },
+  { name: "Ampara", count: "15,000" }, { name: "Wattala", count: "10,000" },
 ];
 
 const SmsMarketing = () => {
   return (
     <ServicePageLayout
       badge="SMS Marketing"
-      title="SMS Marketing Solutions"
-      subtitle="Reach 600,000+ contacts island-wide with targeted SMS campaigns across corporate, VIP, marketing & HR databases."
+      title="SMS Marketing"
+      subtitle=""
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         {databases.map((db, i) => (
@@ -65,11 +66,9 @@ const SmsMarketing = () => {
               <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center">
                 <db.icon className="w-6 h-6 text-primary" />
               </div>
-              <div>
-                <h3 className="font-heading text-lg font-bold text-foreground">{db.title}</h3>
-                <p className="text-sm text-muted-foreground">{db.contacts} contacts • Age: {db.age}</p>
-              </div>
+              <h3 className="font-heading text-lg font-bold text-foreground">{db.title}</h3>
             </div>
+            <p className="text-sm text-muted-foreground mb-4">{db.desc}</p>
             <ul className="space-y-2 mb-4">
               {db.items.map((item) => (
                 <li key={item} className="flex items-center gap-2 text-sm text-foreground">
@@ -84,13 +83,26 @@ const SmsMarketing = () => {
         ))}
       </div>
 
+      {/* Gender-wise Database */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">Gender-wise Database</h2>
+        <div className="flex justify-center gap-8">
+          <div className="text-center p-6 rounded-xl bg-secondary/10 border border-secondary/20">
+            <div className="text-2xl font-heading font-bold text-secondary">350,000+</div>
+            <div className="text-sm text-muted-foreground">Male Subscribers</div>
+            <div className="text-xs text-muted-foreground">Age - 18 - 65</div>
+          </div>
+          <div className="text-center p-6 rounded-xl bg-accent/10 border border-accent/20">
+            <div className="text-2xl font-heading font-bold text-accent">250,000+</div>
+            <div className="text-sm text-muted-foreground">Female Subscribers</div>
+            <div className="text-xs text-muted-foreground">Age - 18 - 65</div>
+          </div>
+        </div>
+      </motion.div>
+
       {/* District Coverage */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">District-wise Coverage</h2>
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">District-wise Database</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
           {districts.map((d) => (
             <div key={d.name} className="p-4 rounded-xl bg-card shadow-card border border-border text-center">
@@ -98,16 +110,6 @@ const SmsMarketing = () => {
               <div className="text-xs text-muted-foreground mt-1">{d.name}</div>
             </div>
           ))}
-        </div>
-        <div className="flex justify-center gap-8 mt-8">
-          <div className="text-center p-6 rounded-xl bg-secondary/10 border border-secondary/20">
-            <div className="text-2xl font-heading font-bold text-secondary">350,000+</div>
-            <div className="text-sm text-muted-foreground">Male Subscribers (18-65)</div>
-          </div>
-          <div className="text-center p-6 rounded-xl bg-accent/10 border border-accent/20">
-            <div className="text-2xl font-heading font-bold text-accent">250,000+</div>
-            <div className="text-sm text-muted-foreground">Female Subscribers (18-65)</div>
-          </div>
         </div>
       </motion.div>
     </ServicePageLayout>

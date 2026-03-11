@@ -5,28 +5,28 @@ import { CheckCircle, Eye, TrendingUp, DollarSign } from "lucide-react";
 const packages = [
   {
     name: "Package 1",
-    price: "LKR 30,000",
-    period: "one-time",
-    features: ["Keyword Research", "Website Audit"],
+    price: "LKR 30,000/-",
+    period: "",
+    features: ["Keyword Research", "Website audit"],
   },
   {
     name: "Package 2",
-    price: "LKR 60,000",
+    price: "LKR 60,000/-",
     period: "monthly",
-    features: ["Keyword Research", "Website Audit", "3 Keywords", "1 URL Optimization", "Title & Meta Optimization", "CTA-based Development", "Monthly Monitoring", "Reputed Backlinks", "Recommendations"],
+    features: ["Keyword Research", "Website audit", "3 Keywords", "1 URL Optimization", "Title & Meta Information optimization", "CTA based Development", "Monthly Monitoring", "Reputed & Relevant Backlinks", "Recommendations"],
   },
   {
     name: "Package 3",
-    price: "LKR 100,000",
+    price: "LKR 100,000/-",
     period: "monthly",
-    features: ["Keyword Research", "Website Audit", "5 Keywords", "3 URL Optimizations", "Title & Meta Optimization", "CTA-based Development", "Monthly Monitoring", "Reputed Backlinks", "Recommendations"],
+    features: ["Keyword Research", "Website audit", "5 Keywords", "3 URL Optimizations", "Title & Meta Information optimization", "CTA based Development", "Monthly Monitoring", "Reputed & Relevant Backlinks", "Recommendations"],
   },
 ];
 
 const benefits = [
-  { icon: Eye, title: "Increase Online Visibility", desc: "Drive potential customers by dominating search engines over competitors." },
-  { icon: TrendingUp, title: "Drive More Customers", desc: "Our unique SEO strategy increases exposure and organic website visitors." },
-  { icon: DollarSign, title: "Increase Business Revenue", desc: "More visibility and visitors means more revenue and business growth." },
+  { icon: Eye, title: "Increase Online visibility", desc: "Increase the visibility of your business online, and it will drive potential customers. We will help you dominate your competitors on the search engines." },
+  { icon: TrendingUp, title: "SEO Will Drive More Customers", desc: "Increased exposure online from our unique Search Engine Optimisation strategy will drive more customers to your website and increase organic visitors." },
+  { icon: DollarSign, title: "Increase Business Revenue", desc: "The increase in online exposure and number of visitors to your website will enable your company to generate more revenue and grow your business." },
 ];
 
 const SeoServices = () => {
@@ -34,8 +34,17 @@ const SeoServices = () => {
     <ServicePageLayout
       badge="SEO Services"
       title="Search Engine Optimization (SEO)"
-      subtitle="Professional SEO services to fix bad rankings, increase organic traffic, and dominate local search results in Sri Lanka."
+      subtitle=""
     >
+      <div className="mb-12 max-w-4xl">
+        <p className="text-muted-foreground mb-4 leading-relaxed">
+          Fix bad website ranking issues. We Offer professional Search Engines and Local Listings Optimizing services that help your websites increase their organic search locally.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Get search engine based traffic that comes from being listed on search ranking. Gain higher local search rankings. Increase local visibility of your business by driving your website to the top of local listings. We provide best Search Engines and Local Listings Optimizing services that help you to rank high in google algorithm locally for affordable price rates. You'll get affordable, reliable, and organic SEO services that outperform the rest.
+        </p>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         {benefits.map((b, i) => (
           <motion.div
@@ -55,7 +64,7 @@ const SeoServices = () => {
         ))}
       </div>
 
-      <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">SEO Packages</h2>
+      <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Packages</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {packages.map((pkg, i) => (
           <motion.div
@@ -73,7 +82,8 @@ const SeoServices = () => {
             )}
             <div className="text-sm font-semibold text-accent uppercase">{pkg.name}</div>
             <div className="font-heading text-3xl font-bold text-foreground mt-2">{pkg.price}</div>
-            <div className="text-sm text-muted-foreground mb-6">/{pkg.period}</div>
+            {pkg.period && <div className="text-sm text-muted-foreground mb-6">{pkg.period}</div>}
+            {!pkg.period && <div className="mb-6"></div>}
             <ul className="space-y-2">
               {pkg.features.map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm text-foreground">

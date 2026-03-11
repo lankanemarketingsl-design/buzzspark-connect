@@ -44,9 +44,18 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
           >
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-accent/15 text-accent border border-accent/30 mb-6">
-              No.1 Digital Marketing in Sri Lanka
+              No.1 Email, WhatsApp and SMS Marketing in Sri Lanka
             </span>
           </motion.div>
+
+          <motion.p
+            className="text-lg text-primary-foreground/70 mb-4 max-w-xl"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+          >
+            Buzz connect is the No 1 Email, WhatsApp and SMS marketing company in Sri Lanka provide best digital and direct marketing solutions
+          </motion.p>
 
           <motion.h1
             className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6"
@@ -54,9 +63,9 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            We Can Turn Your{" "}
-            <span className="text-gradient-hero">Imagination</span>{" "}
-            Into Reality
+            We can turn your{" "}
+            <span className="text-gradient-hero">imagination</span>{" "}
+            into reality!
           </motion.h1>
 
           <motion.p
@@ -65,7 +74,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            The most cost-effective online advertising network in Sri Lanka. Reach over 350,000+ targeted contacts through Email, WhatsApp & SMS campaigns.
+            Most cost effective online advertising network in Sri Lanka
           </motion.p>
 
           <motion.div
