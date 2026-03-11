@@ -5,50 +5,50 @@ import { Mail, MessageSquare, Smartphone, Globe, Search, PenTool, Monitor, Packa
 const services = [
   {
     icon: Mail,
-    title: "Email Marketing",
-    desc: "Over 350,000+ corporate database with VIP reach of 50,000+ contacts",
+    title: "E-Mail Marketing",
+    bullets: ["Over 350,000+ database", "50,000 + VIP Reach", "10,000+ highly targeted Customized Database"],
     path: "/email-marketing",
   },
   {
     icon: Package,
-    title: "Special Packages",
-    desc: "Combined SMS, Email & Web advertising packages from 450K to 1.2M+ reach",
+    title: "Special Advertising Packages",
+    bullets: ["Reach 450,000", "Reach 550,000", "Reach 575,000", "Reach 625,000"],
     path: "/special-advertising-packages",
   },
   {
     icon: Smartphone,
     title: "SMS Marketing",
-    desc: "Corporate, VIP & marketing databases covering 600,000+ contacts island-wide",
+    bullets: ["Corporate – 300,000", "Top marketers – 200,000", "All Island - 600,000", "HR database – 25,000", "VIP database – 25,000"],
     path: "/sms-marketing",
   },
   {
     icon: MessageSquare,
     title: "WhatsApp Marketing",
-    desc: "Text & video campaigns to 600,000+ contacts with district-wise targeting",
+    bullets: ["Corporate – 300,000", "Top marketers – 200,000", "All Island - 600,000", "HR database – 25,000", "VIP database – 25,000"],
     path: "/whatsapp-marketing",
   },
   {
     icon: Globe,
-    title: "Online Advertising",
-    desc: "Web ads, banners & discount coupons via Findit.lk, Buyit.lk & PlaceBook.lk",
+    title: "Web Ads, Discount coupons and Banner Packages",
+    bullets: ["Your Brand is, your true story", "Build your brand online with US!"],
     path: "/online-advertising-sri-lanka",
   },
   {
     icon: PenTool,
-    title: "Graphic Design",
-    desc: "E-flyers, logos, animated videos, social media posts & complete branding",
+    title: "Graphic Designing",
+    bullets: ["Artwork/E-flyer designing", "Social media post designing", "Short Animated video creation"],
     path: "/graphic-designing-in-sri-lanka",
   },
   {
     icon: Search,
-    title: "SEO Services",
-    desc: "Increase online visibility and drive organic traffic with expert optimization",
+    title: "Search Engine Optimization (SEO)",
+    bullets: ["Increase Online visibility", "Increase Business Revenue", "SEO Will Drive More Customers"],
     path: "/seo-sri-lanka",
   },
   {
     icon: Monitor,
-    title: "Website Design",
-    desc: "Professional website design to increase visibility, revenue & brand reputation",
+    title: "Website Designing",
+    bullets: ["Increase Online visibility", "Increase Business Revenue", "Increase Company Reputation"],
     path: "/website-design-sri-lanka",
   },
 ];
@@ -88,8 +88,13 @@ const ServicesSection = () => {
                 <div className="w-12 h-12 rounded-lg gradient-accent flex items-center justify-center mb-4 group-hover:shadow-glow transition-shadow">
                   <s.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-heading font-semibold text-foreground mb-2">{s.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                <h3 className="font-heading font-semibold text-foreground mb-3">{s.title}</h3>
+                <ul className="space-y-1">
+                  {s.bullets.map((b) => (
+                    <li key={b} className="text-sm text-muted-foreground leading-relaxed">{b}</li>
+                  ))}
+                </ul>
+                <span className="inline-block mt-4 text-sm font-semibold text-accent">More Info →</span>
               </Link>
             </motion.div>
           ))}

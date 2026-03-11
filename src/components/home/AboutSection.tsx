@@ -1,15 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
-const points = [
-  "Leading online advertising provider since 2014",
-  "Over 1,500+ satisfied customers across Sri Lanka",
-  "20,000+ successful marketing campaigns delivered",
-  "Complete solutions: Email, WhatsApp, SMS & Web Ads",
-  "Partnered with Findit.lk, Buyit.lk & PlaceBook.lk",
-  "Affordable packages from SMEs to large enterprises",
-];
-
 const AboutSection = () => {
   return (
     <section id="aboutus" className="py-20 bg-muted/50">
@@ -21,19 +12,28 @@ const AboutSection = () => {
             viewport={{ once: true }}
           >
             <span className="text-sm font-semibold text-accent uppercase tracking-wider">About Us</span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mt-2 mb-5">
-              Your Digital Morale in Business
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mt-2 mb-2">
+              Your digital morale in business
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Buzz Connect is the No.1 lead generation company in Sri Lanka. We help marketers connect with their audience through highly personalized Email, WhatsApp, and SMS campaigns — all while staying within budget. Our integrated platform combines direct marketing with powerful web advertising through our partner network.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {points.map((p) => (
-                <div key={p} className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-foreground">{p}</span>
-                </div>
-              ))}
+            <h3 className="font-heading text-xl text-accent font-semibold mb-5">
+              The No.1 Lead generation company in Sri Lanka
+            </h3>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Today's marketers of the world need to do more or less connectivity to their audience through a highly personalized way is the way more important to them.while staying on a budgetary plan .Marketers will achieve this goal by way of connecting to their prospects and with their customers in a highly targeted way. They will be success in delivering ROI and revenue back to the organization.
+              </p>
+              <p>
+                Tell a mass audience all about it within minutes. Your updates and offers, delivered directly to your target market's inbox through E-mail marketing, WhatsApp marketing and SMS marketing as well.
+              </p>
+              <p>
+                Buzz connect is one of the leading online advertising provider which operates from 2014 in Sri Lanka.We have total solution packages for generate leads for the needs of the customers Therefore, we use E-mail campaign and WhatsApp campaign platforms as direct marketing. For the mass audience we use Findit.lk. At the same time we work with Buyit.lk which is a classified online market place in Sri Lanka that gives more visibility to our customers.
+              </p>
+              <p>
+                Not only through E-mail marketing campaigns, Whatsapp marketing campaigns and Bulk SMS marketing campaigns, we are getting publicity through Findit.lk for a period of one month. To tell a mass audience all about it within minutes, your updates and offers delivered directly to your target markets. And also can get the highest reach from the lowest budget.
+              </p>
+              <p>
+                We Generate leads for provides online advertising solutions like E-mail marketing, WhatsApp marketing and SMS marketing in Sri Lanka from largest organization to SME's also We have provide our service over 1500 customers to generate direct marketing and brand awareness to improve their ventures with the trust and confidence
+              </p>
             </div>
           </motion.div>
 

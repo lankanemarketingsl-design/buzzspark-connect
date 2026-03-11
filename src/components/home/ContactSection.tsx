@@ -11,7 +11,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+    if (!form.name.trim() || !form.email.trim() || !form.phone.trim() || !form.company.trim() || !form.message.trim()) {
       toast.error("Please fill in all required fields");
       return;
     }
@@ -30,10 +30,16 @@ const ContactSection = () => {
           >
             <span className="text-sm font-semibold text-accent uppercase tracking-wider">Contact Us</span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-5">
-              Want to Get More Information?
+              Want to get more information?
             </h2>
+            <p className="text-primary-foreground/70 mb-4 leading-relaxed">
+              Great, we've got you covered! Need to increase your online revenue? That's our bread and butter! Or maybe you simply want to ensure your brand is getting the most visibility as possible online. You guessed it… we can help out there too!
+            </p>
+            <p className="text-primary-foreground/70 mb-4 leading-relaxed">
+              No matter the campaign, our team takes a data-driven and ROI-focused approach to helping you grow your business.
+            </p>
             <p className="text-primary-foreground/70 mb-8 leading-relaxed">
-              Need to increase your online revenue? Want maximum brand visibility? Our team takes a data-driven, ROI-focused approach to growing your business.
+              Complete this short form to request your complimentary analysis, and our consultants will reach out to you shortly.
             </p>
 
             <div className="space-y-4">
@@ -59,7 +65,7 @@ const ContactSection = () => {
             viewport={{ once: true }}
             className="bg-card/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10"
           >
-            <h3 className="font-heading text-xl font-semibold mb-6">Request More Information</h3>
+            <h3 className="font-heading text-xl font-semibold mb-6">Request more information</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
               <Input
                 placeholder="Name *"
@@ -77,14 +83,14 @@ const ContactSection = () => {
                 maxLength={255}
               />
               <Input
-                placeholder="Phone"
+                placeholder="Phone *"
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40"
                 maxLength={20}
               />
               <Input
-                placeholder="Company Name"
+                placeholder="Company Name *"
                 value={form.company}
                 onChange={(e) => setForm({ ...form, company: e.target.value })}
                 className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40"
@@ -92,7 +98,7 @@ const ContactSection = () => {
               />
             </div>
             <Textarea
-              placeholder="Describe your requirement *"
+              placeholder="Describe your requirement here *"
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 mb-4 min-h-[100px]"

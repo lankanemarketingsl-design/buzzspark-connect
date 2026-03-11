@@ -3,20 +3,20 @@ import { motion } from "framer-motion";
 import { Users, Crown, CheckCircle } from "lucide-react";
 
 const packages = [
-  { name: "One Email Campaign + Findit.lk Web Ad", corp: "LKR 6,000", full: "LKR 8,000" },
-  { name: "Two Email Campaigns + Findit.lk Web Ads", corp: "LKR 10,800", full: "LKR 15,000" },
-  { name: "Five Email Campaigns (One month)", corp: "LKR 28,000", full: "LKR 38,000" },
-  { name: "Ten Email Campaigns (Two months)", corp: "LKR 54,000", full: "LKR 72,000" },
-  { name: "Twenty Email Campaigns", corp: "LKR 108,000", full: "LKR 140,000" },
-  { name: "VIP Email Campaign (50K VIP)", corp: "LKR 7,500", full: "—" },
+  { name: "One Email Campaign + Findit.lk Web Ad", corp: "LKR 6,000", full: "LKR 8,000", fb: "✔", ig: "✔", li: "✔", webAd: "01", appAd: "01", feed: "✔" },
+  { name: "Two Email Campaigns + Findit.lk Web Ads", corp: "LKR 10,800", full: "LKR 15,000", fb: "✔", ig: "✔", li: "✔", webAd: "02", appAd: "02", feed: "✔" },
+  { name: "Five Email Campaigns (One month period) + Findit.lk Web Ads", corp: "LKR 28,000", full: "LKR 38,000", fb: "✔", ig: "✔", li: "✔", webAd: "05", appAd: "05", feed: "✔" },
+  { name: "Ten Email Campaigns (Two months) + Findit.lk Web Ads", corp: "LKR 54,000", full: "LKR 72,000", fb: "✔", ig: "✔", li: "✔", webAd: "10", appAd: "10", feed: "✔" },
+  { name: "Twenty Email Campaigns + Findit.lk Web Ads", corp: "LKR 108,000", full: "LKR 140,000", fb: "✔", ig: "✔", li: "✔", webAd: "40", appAd: "40", feed: "✔" },
+  { name: "VIP Email Campaign (For 50,000 VIP database)", corp: "LKR 7,500", full: "", fb: "✔", ig: "✔", li: "✔", webAd: "01", appAd: "01", feed: "✔" },
 ];
 
 const EmailMarketing = () => {
   return (
     <ServicePageLayout
       badge="Email Marketing"
-      title="Email Marketing Solutions"
-      subtitle="Reach over 350,000+ active subscribers with targeted email campaigns across Sri Lanka's corporate sector."
+      title="Email Marketing"
+      subtitle=""
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
         <motion.div
@@ -31,9 +31,11 @@ const EmailMarketing = () => {
             </div>
             <h3 className="font-heading text-xl font-bold text-foreground">Corporate Reach</h3>
           </div>
-          <p className="text-muted-foreground mb-4">350,000+ active contacts, age 18–55, mostly Western Province.</p>
+          <p className="text-muted-foreground mb-4">
+            Buzz Connect is a proven leader in email marketing in Sri Lanka. which has 350,000 active numbers and 500,000 active numbers, age between 18 – 55 covering mostly western province.
+          </p>
           <ul className="space-y-2">
-            {["Managers & General Managers", "Executives & Officers", "Small Business Owners", "Undergraduate Students", "Association Members", "Gender: Male 60% & Female 40%"].map((item) => (
+            {["Managers", "General Managers", "Executive & officers", "Small business owners", "Undergraduate students", "House wives", "Association Members", "Gender - Male 60% & Female 40%"].map((item) => (
               <li key={item} className="flex items-center gap-2 text-sm text-foreground">
                 <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
               </li>
@@ -54,9 +56,11 @@ const EmailMarketing = () => {
             </div>
             <h3 className="font-heading text-xl font-bold text-foreground">VIP Reach</h3>
           </div>
-          <p className="text-muted-foreground mb-4">50,000+ premium contacts in Colombo, age 35–60, 80% male.</p>
+          <p className="text-muted-foreground mb-4">
+            Our database has more then 50,000 + contacts in Colombo and greater Colombo area. age between 35 and 60 with majority being 80% men and 20% female.
+          </p>
           <ul className="space-y-2">
-            {["Premium Business Leaders", "CEOs & Directors", "Celebrities & Sports Personalities", "Doctors & Entrepreneurs", "High-salary Employees (350K+/mo)", "Government Institute Heads"].map((item) => (
+            {["Premium business leaders", "Multinational companies Directors", "CEO'S", "Celebrities", "Sports personals", "Doctors", "Entrepreneurs", "Private sector high salary earning employees (Over 350,000 per month)", "Heads of Government institutes"].map((item) => (
               <li key={item} className="flex items-center gap-2 text-sm text-foreground">
                 <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
               </li>
@@ -72,31 +76,43 @@ const EmailMarketing = () => {
         viewport={{ once: true }}
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">Special Advertising Packages</h2>
-        <p className="text-muted-foreground text-center mb-8">No hidden charges — choose your plan</p>
+        <p className="text-muted-foreground text-center mb-2">Not any hidden charges, choose your plan</p>
+        <p className="text-muted-foreground text-center mb-8 text-sm">We enjoy adapting our strategies to offer every client the best solutions that are at the forefront of the industry.</p>
 
         <div className="overflow-x-auto">
-          <table className="w-full bg-card rounded-xl shadow-card border border-border overflow-hidden">
+          <table className="w-full bg-card rounded-xl shadow-card border border-border overflow-hidden text-sm">
             <thead>
               <tr className="gradient-hero text-primary-foreground">
-                <th className="text-left p-4 font-heading">Package</th>
-                <th className="text-center p-4 font-heading">350K Corporate</th>
-                <th className="text-center p-4 font-heading">500K Corporate</th>
+                <th className="text-left p-3 font-heading"></th>
+                <th className="text-center p-3 font-heading">Facebook sharing & Story updates</th>
+                <th className="text-center p-3 font-heading">Instagram story updates</th>
+                <th className="text-center p-3 font-heading">Linkedin post sharing</th>
+                <th className="text-center p-3 font-heading">Findit.lk Web ad for Two weeks</th>
+                <th className="text-center p-3 font-heading">Findit.lk App ad for Two weeks</th>
+                <th className="text-center p-3 font-heading">Promote in Findit.lk Business Feed</th>
+                <th className="text-center p-3 font-heading">350,000 Corporate Database</th>
+                <th className="text-center p-3 font-heading">Findit.lk Featured ad one month</th>
+                <th className="text-center p-3 font-heading">500,000 Corporate Database</th>
               </tr>
             </thead>
             <tbody>
               {packages.map((pkg, i) => (
                 <tr key={pkg.name} className={i % 2 === 0 ? "bg-muted/30" : ""}>
-                  <td className="p-4 text-sm text-foreground font-medium">{pkg.name}</td>
-                  <td className="p-4 text-center text-sm font-semibold text-accent">{pkg.corp}</td>
-                  <td className="p-4 text-center text-sm font-semibold text-secondary">{pkg.full}</td>
+                  <td className="p-3 text-foreground font-medium">{pkg.name}</td>
+                  <td className="p-3 text-center">{pkg.fb}</td>
+                  <td className="p-3 text-center">{pkg.ig}</td>
+                  <td className="p-3 text-center">{pkg.li}</td>
+                  <td className="p-3 text-center">{pkg.webAd}</td>
+                  <td className="p-3 text-center">{pkg.appAd}</td>
+                  <td className="p-3 text-center">{pkg.feed}</td>
+                  <td className="p-3 text-center font-semibold text-accent">{pkg.corp}</td>
+                  <td className="p-3 text-center">✔</td>
+                  <td className="p-3 text-center font-semibold text-secondary">{pkg.full}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-muted-foreground mt-3 text-center">
-          All packages include Facebook, Instagram & LinkedIn sharing + Findit.lk web & app ads
-        </p>
       </motion.div>
     </ServicePageLayout>
   );
