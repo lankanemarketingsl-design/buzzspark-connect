@@ -52,7 +52,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-8">
               {[
                 { num: "10+", label: "Years Experience", color: "bg-primary text-primary-foreground" },
                 { num: "20K+", label: "Successful Campaigns", color: "bg-secondary text-secondary-foreground" },
