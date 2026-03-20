@@ -62,6 +62,15 @@ const Resources = () => {
       title="Resources"
       subtitle="Expert articles on email marketing, SMS campaigns, SEO, and digital advertising strategies for Sri Lankan businesses."
     >
+      <SEOHead
+        title="Digital Marketing Resources Sri Lanka | Articles & Insights | Buzz Connect"
+        description="Expert articles on email marketing, SMS campaigns, SEO, and digital advertising strategies for Sri Lankan businesses. Free marketing resources by Buzz Connect."
+        canonical="/resources"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+        ]}
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map((a, i) => (
           <motion.div
