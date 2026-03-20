@@ -9,8 +9,16 @@ import article3 from "@/assets/blog/article-3.jpg";
 import article4 from "@/assets/blog/article-4.jpg";
 import article5 from "@/assets/blog/article-5.jpg";
 import article6 from "@/assets/blog/article-6.jpg";
+import article7 from "@/assets/blog/article-7.jpg";
 
 const articles = [
+  {
+    title: "The Power of Multi-Channel Marketing in Sri Lanka with Buzz Connect",
+    date: "Mar 20, 2025",
+    excerpt: "Discover how Buzz Connect's unique multi-channel marketing strategy combining Email, SMS, WhatsApp, and Findit.lk delivers unmatched visibility and faster results for Sri Lankan businesses.",
+    path: "/multi-channel-marketing-in-sri-lanka",
+    image: article7,
+  },
   {
     title: "4 Reasons Why Email Marketing Is Important For Your Internet Marketing",
     date: "Aug 04, 2020",
