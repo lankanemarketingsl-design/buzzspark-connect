@@ -70,7 +70,7 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
       logo: `${SITE_URL}/og-image.png`,
       description: "No.1 email marketing, SMS marketing, WhatsApp marketing and digital advertising company in Sri Lanka.",
       telephone: ["+94771437707", "+94771976351"],
-      email: "info@buzzconnect.lk",
+      email: "infobuzzconnect@gmail.com",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Colombo",
@@ -81,9 +81,8 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
         name: "Sri Lanka",
       },
       sameAs: [
-        "https://www.facebook.com/buzzconnect.lk",
-        "https://www.instagram.com/buzzconnect.lk",
-        "https://www.linkedin.com/company/buzzconnect",
+        "https://www.facebook.com/buzzconnect/",
+        "https://www.instagram.com/buzzconnect/",
       ],
       priceRange: "LKR",
     };
