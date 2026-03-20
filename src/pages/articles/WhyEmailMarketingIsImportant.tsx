@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const WhyEmailMarketingIsImportant = () => {
-  useEffect(() => {
-    document.title = "4 Reasons Why Email Marketing Is Important | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Discover 4 key reasons why email marketing is important for your internet marketing strategy. Learn how email converts better than social media.");
-  }, []);
 
   return (
     <ServicePageLayout
