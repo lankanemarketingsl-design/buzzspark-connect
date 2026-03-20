@@ -46,7 +46,7 @@ const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayo
       </section>
 
       {/* Content */}
-      <div className="py-16">
+      <div className="py-10 sm:py-16">
         <div className="container mx-auto px-4">
           {children}
         </div>
