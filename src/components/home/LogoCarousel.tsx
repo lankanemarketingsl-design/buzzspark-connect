@@ -37,6 +37,14 @@ const logos = [
   { name: "Glomark", src: glomarkLogo },
   { name: "Commercial Bank", src: combankLogo },
   { name: "Alliance Finance", src: allianceLogo },
+  { name: "Nolimit", src: nolimitLogo },
+  { name: "Bhoomi Realty", src: bhoomiLogo },
+  { name: "Vision Care", src: visioncareLogo },
+  { name: "Lassana.com", src: lassanaLogo },
+  { name: "CIPM Sri Lanka", src: cipmLogo },
+  { name: "Cinnamon Hotels", src: cinnamonLogo },
+  { name: "SLIM", src: slimLogo },
+  { name: "Ninewells Hospital", src: ninewellsLogo },
 ];
 
 const LogoCarousel = () => {
