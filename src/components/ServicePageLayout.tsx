@@ -52,6 +52,7 @@ const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayo
         </div>
       </div>
 
+      <LogoCarousel />
       <ContactSection />
     </div>
   );
