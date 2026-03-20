@@ -13,9 +13,7 @@ const navItems = [
   { label: "Social Media", path: "/social-media-marketing-sri-lanka" },
   { label: "Online Advertising", path: "/online-advertising-sri-lanka" },
   { label: "SEO", path: "/seo-sri-lanka" },
-  { label: "Web Design", path: "/website-design-sri-lanka" },
   { label: "Graphic Design", path: "/graphic-designing-in-sri-lanka" },
-  { label: "Resources", path: "/resources" },
 ];
 
 const Navbar = () => {
