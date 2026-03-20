@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, PhoneCall } from "lucide-react";
 import ContactSection from "@/components/home/ContactSection";
+import LogoCarousel from "@/components/home/LogoCarousel";
 
 interface ServicePageLayoutProps {
   badge: string;
