@@ -55,6 +55,19 @@ const services = [
     path: "/multi-channel-marketing-sri-lanka",
   },
   {
+    icon: Target,
+    title: "Lead Generation Sri Lanka",
+    bullets: [
+      "Multi-channel lead campaigns",
+      "Database targeting & segmentation",
+      "Landing page creation",
+      "High-quality business leads",
+    ],
+    description: "Generate high-quality leads and grow your customer base across Sri Lanka.",
+    path: "/lead-generation-sri-lanka",
+    highlight: true,
+  },
+  {
     icon: Globe,
     title: "Web Advertising & Banner Campaigns",
     bullets: [
