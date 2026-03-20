@@ -11,12 +11,6 @@ const finditPackages = [
   { item: "Push Notification", impressions: "250,000+", price: "—", duration: "4 Weeks" },
 ];
 
-const buyitPackages = [
-  { item: "Popup banner", price: "LKR 25,000", duration: "1 Week" },
-  { item: "Top banner", price: "LKR 15,000", duration: "2 Weeks" },
-  { item: "Side banner in the listing page", price: "LKR 15,000", duration: "2 Weeks" },
-  { item: "Side banner in the app view", price: "LKR 5,000", duration: "1 Week" },
-];
 
 const comboPackages = [
   {
