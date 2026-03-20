@@ -80,14 +80,8 @@ const faqs = [
 ];
 
 const SmsMarketing = () => {
-  useEffect(() => {
-    document.title = "SMS Marketing Sri Lanka | Bulk SMS Advertising | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best SMS marketing Sri Lanka with 600,000+ reach. Run targeted bulk SMS campaigns from LKR 2 per message.");
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -95,10 +89,16 @@ const SmsMarketing = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "SMS Marketing Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Best bulk SMS marketing services in Sri Lanka with 600,000+ reach.",
+    },
+  ], []);
 
   return (
     <ServicePageLayout
