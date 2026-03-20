@@ -92,7 +92,7 @@ const TestimonialsSection = () => {
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
-                className="relative w-full bg-card rounded-2xl p-8 md:p-10 shadow-lg border border-border"
+                className="relative w-full bg-card rounded-2xl p-5 sm:p-8 md:p-10 shadow-lg border border-border"
                 initial={{ opacity: 0, x: 60 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -60 }}
