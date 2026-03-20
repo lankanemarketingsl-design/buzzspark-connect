@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, PhoneCall } from "lucide-react";
 import ContactSection from "@/components/home/ContactSection";
 import LogoCarousel from "@/components/home/LogoCarousel";
+import RelatedServices from "@/components/RelatedServices";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 interface ServicePageLayoutProps {
   badge: string;
