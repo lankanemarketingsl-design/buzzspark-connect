@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Smartphone, MessageSquare, Package, Globe, PenTool, Search, Monitor } from "lucide-react";
+import { ArrowRight, Mail, Smartphone, MessageSquare, Package, Globe, PenTool, Search, Monitor, Target } from "lucide-react";
 
 const allServices = [
   { title: "Email Marketing", path: "/email-marketing", icon: Mail, keyword: "Email Marketing Sri Lanka" },
