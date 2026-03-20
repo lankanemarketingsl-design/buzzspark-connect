@@ -65,6 +65,7 @@ const Index = () => {
         variant="navy"
       />
       <LogoCarousel />
+      <TestimonialsSection />
       <WhyUsSection />
       <ContactSection />
     </div>
