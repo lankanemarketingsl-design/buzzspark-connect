@@ -178,29 +178,6 @@ const OnlineAdvertising = () => {
           </li>
         </ul>
 
-        <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Findit.lk Packages</h3>
-        <div className="overflow-x-auto">
-          <table className="w-full bg-card rounded-xl shadow-card border border-border overflow-hidden">
-            <thead>
-              <tr className="gradient-hero text-primary-foreground">
-                <th className="text-left p-4 font-heading">Item</th>
-                <th className="text-center p-4 font-heading">Impressions</th>
-                <th className="text-center p-4 font-heading">Price</th>
-                <th className="text-center p-4 font-heading">Duration</th>
-              </tr>
-            </thead>
-            <tbody>
-              {finditPackages.map((p, i) => (
-                <tr key={p.item} className={i % 2 === 0 ? "bg-muted/30" : ""}>
-                  <td className="p-4 text-sm text-foreground font-medium">{p.item}</td>
-                  <td className="p-4 text-center text-sm text-muted-foreground">{p.impressions}</td>
-                  <td className="p-4 text-center text-sm font-semibold text-accent">{p.price}</td>
-                  <td className="p-4 text-center text-sm text-muted-foreground">{p.duration}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
       </motion.div>
 
       {/* Banner Advertising */}
