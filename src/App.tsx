@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import EmailMarketing from "./pages/EmailMarketing.tsx";
@@ -53,6 +54,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        <WhatsAppCTA />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
