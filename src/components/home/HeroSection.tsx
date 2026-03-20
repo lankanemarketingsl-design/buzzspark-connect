@@ -88,7 +88,7 @@ const HeroSection = () => {
 
           {/* Stats */}
           <motion.div
-            className="flex flex-wrap gap-8 mt-8"
+            className="flex flex-wrap gap-4 sm:gap-8 mt-6 sm:mt-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.55 }}
