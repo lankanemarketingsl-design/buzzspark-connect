@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const SmsMarketingInSriLanka = () => {
-  useEffect(() => {
-    document.title = "SMS Marketing in Sri Lanka | Bulk SMS Campaigns | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Learn about SMS marketing in Sri Lanka. Target campaigns gender-wise or area-wise with Buzz Connect's data-driven approach.");
-  }, []);
 
   return (
     <ServicePageLayout
