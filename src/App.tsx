@@ -22,6 +22,7 @@ import WhyYouNeedEmailMarketing from "./pages/articles/WhyYouNeedEmailMarketing.
 import BestSeoServicesSriLanka from "./pages/articles/BestSeoServicesSriLanka.tsx";
 import SmsMarketingInSriLanka from "./pages/articles/SmsMarketingInSriLanka.tsx";
 import EnableMissingImages from "./pages/articles/EnableMissingImages.tsx";
+import MultiChannelMarketingSriLanka from "./pages/articles/MultiChannelMarketingSriLanka.tsx";
 
 const queryClient = new QueryClient();
 
