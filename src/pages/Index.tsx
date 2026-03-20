@@ -4,6 +4,8 @@ import ServicesSection from "@/components/home/ServicesSection";
 import AboutSection from "@/components/home/AboutSection";
 import WhyUsSection from "@/components/home/WhyUsSection";
 import ContactSection from "@/components/home/ContactSection";
+import CTABanner from "@/components/home/CTABanner";
+import TrustStrip from "@/components/home/TrustStrip";
 import SEOHead from "@/components/SEOHead";
 import { useMemo } from "react";
 
@@ -50,9 +52,22 @@ const Index = () => {
         jsonLd={jsonLd}
       />
       <HeroSection />
+      <TrustStrip />
       <ServicesSection />
+      <CTABanner
+        headline="Launch Your First Campaign Today"
+        subtext="Reach 350,000+ potential customers with email, SMS & WhatsApp marketing — starting from just LKR 6,000."
+        buttonText="Get Started Now"
+        variant="accent"
+      />
       <IntroductionSection />
       <AboutSection />
+      <CTABanner
+        headline="Don't Let Your Competitors Get Ahead"
+        subtext="Every day without marketing is a missed opportunity. Let us help you reach thousands of customers instantly."
+        buttonText="Request Free Consultation"
+        variant="navy"
+      />
       <WhyUsSection />
       <ContactSection />
     </div>
