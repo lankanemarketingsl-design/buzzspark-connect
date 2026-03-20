@@ -16,6 +16,10 @@ import GraphicDesign from "./pages/GraphicDesign.tsx";
 import SeoServices from "./pages/SeoServices.tsx";
 import WebsiteDesign from "./pages/WebsiteDesign.tsx";
 import Resources from "./pages/Resources.tsx";
+import WhyEmailMarketingIsImportant from "./pages/articles/WhyEmailMarketingIsImportant.tsx";
+import WhyYouNeedEmailMarketing from "./pages/articles/WhyYouNeedEmailMarketing.tsx";
+import BestSeoServicesSriLanka from "./pages/articles/BestSeoServicesSriLanka.tsx";
+import SmsMarketingInSriLanka from "./pages/articles/SmsMarketingInSriLanka.tsx";
 
 const queryClient = new QueryClient();
 
@@ -39,11 +43,11 @@ const App = () => (
           <Route path="/website-design-sri-lanka" element={<WebsiteDesign />} />
           <Route path="/resources" element={<Resources />} />
           {/* Resource article pages */}
-          <Route path="/why-email-marketing-is-important" element={<Resources />} />
-          <Route path="/why-you-need-email-marketing" element={<Resources />} />
-          <Route path="/best-seo-services-sri-lanka" element={<Resources />} />
+          <Route path="/why-email-marketing-is-important" element={<WhyEmailMarketingIsImportant />} />
+          <Route path="/why-you-need-email-marketing" element={<WhyYouNeedEmailMarketing />} />
+          <Route path="/best-seo-services-sri-lanka" element={<BestSeoServicesSriLanka />} />
+          <Route path="/sms-marketing-in-sri-lanka" element={<SmsMarketingInSriLanka />} />
           <Route path="/classified-advertising-in-sri-lanka" element={<Resources />} />
-          <Route path="/sms-marketing-in-sri-lanka" element={<Resources />} />
           <Route path="/enable-missing-images-to-display" element={<Resources />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
