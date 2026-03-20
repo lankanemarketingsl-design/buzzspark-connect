@@ -20,7 +20,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contactus" className="py-20 gradient-hero text-primary-foreground">
+    <section id="contactus" className="py-12 sm:py-20 gradient-hero text-primary-foreground">
       <div className="container mx-auto px-4">
         {/* Final CTA */}
         <motion.div
