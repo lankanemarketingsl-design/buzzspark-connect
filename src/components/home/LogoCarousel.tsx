@@ -12,6 +12,14 @@ import odelLogo from "@/assets/logos/odel.jpg";
 import glomarkLogo from "@/assets/logos/glomark.jpg";
 import combankLogo from "@/assets/logos/combank.png";
 import allianceLogo from "@/assets/logos/alliance.png";
+import nolimitLogo from "@/assets/logos/nolimit.jpg";
+import bhoomiLogo from "@/assets/logos/bhoomi.jpg";
+import visioncareLogo from "@/assets/logos/visioncare.jpg";
+import lassanaLogo from "@/assets/logos/lassana.png";
+import cipmLogo from "@/assets/logos/cipm.jpg";
+import cinnamonLogo from "@/assets/logos/cinnamon.jpg";
+import slimLogo from "@/assets/logos/slim.jpg";
+import ninewellsLogo from "@/assets/logos/ninewells.png";
 import { motion } from "framer-motion";
 
 const logos = [
