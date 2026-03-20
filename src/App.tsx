@@ -20,6 +20,7 @@ import WhyEmailMarketingIsImportant from "./pages/articles/WhyEmailMarketingIsIm
 import WhyYouNeedEmailMarketing from "./pages/articles/WhyYouNeedEmailMarketing.tsx";
 import BestSeoServicesSriLanka from "./pages/articles/BestSeoServicesSriLanka.tsx";
 import SmsMarketingInSriLanka from "./pages/articles/SmsMarketingInSriLanka.tsx";
+import EnableMissingImages from "./pages/articles/EnableMissingImages.tsx";
 
 const queryClient = new QueryClient();
 
