@@ -52,7 +52,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-8">
               {[
                 { num: "10+", label: "Years Experience", color: "bg-primary text-primary-foreground" },
                 { num: "20K+", label: "Successful Campaigns", color: "bg-secondary text-secondary-foreground" },
@@ -61,9 +61,9 @@ const AboutSection = () => {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className={`${item.color} rounded-xl p-6 text-center shadow-card hover:shadow-card-hover transition-shadow duration-300`}
+                  className={`${item.color} rounded-xl p-4 sm:p-6 text-center shadow-card hover:shadow-card-hover transition-shadow duration-300`}
                 >
-                  <div className="text-3xl font-heading font-bold">{item.num}</div>
+                  <div className="text-2xl sm:text-3xl font-heading font-bold">{item.num}</div>
                   <div className="text-sm mt-1 opacity-80">{item.label}</div>
                 </div>
               ))}

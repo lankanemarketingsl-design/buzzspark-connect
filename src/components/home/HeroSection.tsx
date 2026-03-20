@@ -6,7 +6,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[75vh] flex items-center overflow-hidden pb-16">
+    <section className="relative min-h-[60vh] sm:min-h-[75vh] flex items-center overflow-hidden pb-10 sm:pb-16">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
@@ -36,7 +36,7 @@ const HeroSection = () => {
         <Smartphone size={36} />
       </motion.div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-20">
+      <div className="container mx-auto px-4 relative z-10 pt-10 sm:pt-20">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -49,7 +49,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.h1
-            className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6"
+            className="font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-4 sm:mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
@@ -60,7 +60,7 @@ const HeroSection = () => {
           </motion.h1>
 
           <motion.p
-            className="text-lg text-primary-foreground/70 mb-8 max-w-xl leading-relaxed"
+            className="text-sm sm:text-lg text-primary-foreground/70 mb-6 sm:mb-8 max-w-xl leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
@@ -88,7 +88,7 @@ const HeroSection = () => {
 
           {/* Stats */}
           <motion.div
-            className="flex flex-wrap gap-8 mt-8"
+            className="flex flex-wrap gap-4 sm:gap-8 mt-6 sm:mt-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.55 }}
@@ -100,7 +100,7 @@ const HeroSection = () => {
               { num: "10+", label: "Years Experience" },
             ].map((stat) => (
               <div key={stat.label} className="text-center sm:text-left">
-                <div className="text-2xl font-heading font-bold text-accent">{stat.num}</div>
+                <div className="text-xl sm:text-2xl font-heading font-bold text-accent">{stat.num}</div>
                 <div className="text-xs text-primary-foreground/50 mt-1">{stat.label}</div>
               </div>
             ))}

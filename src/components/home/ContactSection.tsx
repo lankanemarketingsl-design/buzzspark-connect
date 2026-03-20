@@ -20,7 +20,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contactus" className="py-20 gradient-hero text-primary-foreground">
+    <section id="contactus" className="py-12 sm:py-20 gradient-hero text-primary-foreground">
       <div className="container mx-auto px-4">
         {/* Final CTA */}
         <motion.div
@@ -33,7 +33,7 @@ const ContactSection = () => {
             <Rocket className="w-6 h-6 text-accent" />
             <span className="text-sm font-semibold text-accent uppercase tracking-wider">Get Started</span>
           </div>
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-4">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-4">
             Start Your Email, SMS &amp; WhatsApp Marketing Campaign Today
           </h2>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto">
@@ -41,7 +41,7 @@ const ContactSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-14">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -86,7 +86,7 @@ const ContactSection = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-card/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10"
+            className="bg-card/10 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-primary-foreground/10"
           >
             <h3 className="font-heading text-xl font-semibold mb-6">Request more information</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
