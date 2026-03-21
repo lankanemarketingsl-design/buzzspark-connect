@@ -47,27 +47,29 @@ const logos = [
   { name: "Ninewells Hospital", src: ninewellsLogo },
 ];
 
-const row1 = logos.slice(0, Math.ceil(logos.length / 2));
-const row2 = logos.slice(Math.ceil(logos.length / 2));
+const row1 = logos.slice(0, 7);
+const row2 = logos.slice(7, 14);
+const row3 = logos.slice(14);
 
 const LogoCarousel = () => {
   const doubledRow1 = [...row1, ...row1];
   const doubledRow2 = [...row2, ...row2];
+  const doubledRow3 = [...row3, ...row3];
 
   const renderRow = (items: typeof logos, animationClass: string) => (
     <div className="relative mb-4 last:mb-0 overflow-hidden">
       <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-r from-background to-transparent z-10" />
       <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-l from-background to-transparent z-10" />
-      <div className={`flex ${animationClass} w-max hover:[animation-play-state:paused]`}>
+      <div className={`flex items-center ${animationClass} w-max hover:[animation-play-state:paused]`}>
         {items.map((logo, i) => (
           <div
             key={`${logo.name}-${i}`}
-            className="flex-shrink-0 mx-3 sm:mx-6 flex items-center justify-center h-14 w-28 sm:h-20 sm:w-40 rounded-lg bg-white p-2 sm:p-3 shadow-sm"
+            className="flex-shrink-0 mx-3 sm:mx-6 flex items-center justify-center h-16 w-32 sm:h-20 sm:w-40 rounded-lg bg-white p-3 sm:p-4 shadow-sm"
           >
             <img
               src={logo.src}
               alt={logo.name}
-              className="max-h-full max-w-full object-contain"
+              className="h-full w-full object-contain"
               loading="lazy"
             />
           </div>
@@ -90,6 +92,7 @@ const LogoCarousel = () => {
       </div>
       {renderRow(doubledRow1, "animate-scroll")}
       {renderRow(doubledRow2, "animate-scroll-reverse")}
+      {renderRow(doubledRow3, "animate-scroll")}
     </section>
   );
 };
