@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 
 const services = [
   { icon: Smartphone, title: "SMS Daily Offers", desc: "Send daily deals, discounts, and promotions to 600,000+ mobile users instantly." },
