@@ -29,6 +29,7 @@ import MultiChannelMarketingSriLanka from "./pages/articles/MultiChannelMarketin
 import FutureEmailMarketingSriLanka from "./pages/articles/FutureEmailMarketingSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
+import ContactUs from "./pages/ContactUs.tsx";
 
 const queryClient = new QueryClient();
 
