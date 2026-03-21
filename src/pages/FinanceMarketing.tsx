@@ -19,8 +19,24 @@ import commercialCreditLogo from "@/assets/clients/commercial-credit.jpg";
 import pmfFinanceLogo from "@/assets/clients/pmf-finance.jpg";
 import arpicoFinanceLogo from "@/assets/clients/arpico-finance.jpg";
 import asiaAssetLogo from "@/assets/clients/asia-asset.jpg";
+import ndbBankLogo from "@/assets/clients/ndb-bank.jpg";
+import amanaBankLogo from "@/assets/clients/amana-bank.jpg";
+import nsbBankLogo from "@/assets/clients/nsb-bank.png";
+import peoplesBankLogo from "@/assets/clients/peoples-bank.png";
+import cargillsBankLogo from "@/assets/clients/cargills-bank.png";
+import bocLogo from "@/assets/clients/boc.jpg";
+import commercialBankLogo from "@/assets/clients/commercial-bank.png";
+import dfccBankLogo from "@/assets/clients/dfcc-bank.jpg";
 
 const financeClients = [
+  { name: "Bank of Ceylon", logo: bocLogo },
+  { name: "Commercial Bank", logo: commercialBankLogo },
+  { name: "People's Bank", logo: peoplesBankLogo },
+  { name: "NSB", logo: nsbBankLogo },
+  { name: "DFCC Bank", logo: dfccBankLogo },
+  { name: "NDB Bank", logo: ndbBankLogo },
+  { name: "Amana Bank", logo: amanaBankLogo },
+  { name: "Cargills Bank", logo: cargillsBankLogo },
   { name: "Alliance Finance", logo: allianceFinanceLogo },
   { name: "AMW Capital Leasing", logo: amwCapitalLogo },
   { name: "CBC Finance", logo: cbcFinanceLogo },
@@ -137,7 +153,7 @@ const FinanceMarketing = () => {
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 text-center">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Trusted by Leading Financial Institutions</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">We help Sri Lanka's top banks, leasing companies, and financial institutions generate high-value leads.</p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-6 items-center justify-items-center max-w-5xl mx-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5 items-center justify-items-center max-w-5xl mx-auto">
           {financeClients.map((client, i) => (
             <motion.div key={client.name} initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="bg-card rounded-xl shadow-card border border-border p-4 flex items-center justify-center w-full aspect-square">
               <img src={client.logo} alt={client.name} loading="lazy" className="max-h-16 sm:max-h-20 w-auto object-contain" />
