@@ -164,7 +164,7 @@ const EducationMarketing = () => {
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Education Category Advantage</h2>
-        <p className="text-primary-foreground/80 mb-6">Get your institution promoted in Findit.lk's <strong>Education</strong> category for continuous visibility to students actively searching for courses.</p>
+        <p className="text-primary-foreground/80 mb-6">Get your institution promoted in Findit.lk's <a href="https://www.findit.lk/promotions/education" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Education</a> category for continuous visibility to students actively searching for courses.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {["Access to active student seekers", "High visibility in Education category", "Continuous promotion during intakes", "Better conversion than social ads"].map((item) => (
             <div key={item} className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-primary-foreground/90">{item}</span></div>
