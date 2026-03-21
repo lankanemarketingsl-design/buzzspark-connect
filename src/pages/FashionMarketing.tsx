@@ -10,6 +10,7 @@ import {
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
+import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
 const services = [
   { icon: Smartphone, title: "SMS Flash Sale Alerts", desc: "Send flash sale alerts, new arrivals, and exclusive discounts to 600,000+ mobile users instantly." },
