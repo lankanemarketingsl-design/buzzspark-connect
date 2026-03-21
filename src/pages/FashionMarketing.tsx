@@ -12,6 +12,30 @@ import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
+import nolimitLogo from "@/assets/clients/nolimit.jpg";
+import crocodileLogo from "@/assets/clients/crocodile.png";
+import shirtworksLogo from "@/assets/clients/shirtworks.png";
+import emeraldLogo from "@/assets/clients/emerald.jpg";
+import signatureLogo from "@/assets/clients/signature.jpg";
+import odelLogo from "@/assets/clients/odel.jpg";
+import mimosaLogo from "@/assets/clients/mimosa.png";
+import swarnamahalLogo from "@/assets/clients/swarnamahal.jpg";
+import vogueJewellersLogo from "@/assets/clients/vogue-jewellers.jpg";
+import hameedialLogo from "@/assets/clients/hameedia.png";
+
+const fashionClients = [
+  { name: "NOLIMIT", logo: nolimitLogo },
+  { name: "Crocodile", logo: crocodileLogo },
+  { name: "SNX Shirtworks", logo: shirtworksLogo },
+  { name: "Emerald", logo: emeraldLogo },
+  { name: "Signature", logo: signatureLogo },
+  { name: "ODEL", logo: odelLogo },
+  { name: "Mimosa", logo: mimosaLogo },
+  { name: "Swarnamahal Jewellers", logo: swarnamahalLogo },
+  { name: "Vogue Jewellers", logo: vogueJewellersLogo },
+  { name: "Hameedia", logo: hameedialLogo },
+];
+
 const services = [
   { icon: Smartphone, title: "SMS Flash Sale Alerts", desc: "Send flash sale alerts, new arrivals, and exclusive discounts to 600,000+ mobile users instantly." },
   { icon: MessageSquare, title: "WhatsApp Lookbook Sharing", desc: "Share new collections, styling tips, and exclusive previews directly via WhatsApp." },
@@ -114,6 +138,21 @@ const FashionMarketing = () => {
           { value: "98%", label: "SMS Open Rate" },
         ]}
       />
+
+      {/* Trusted Fashion Clients */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Social Proof</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Trusted by Leading Fashion & Lifestyle Brands</h2>
+        </div>
+        <div className="grid grid-cols-3 lg:grid-cols-5 gap-4">
+          {fashionClients.map((client, i) => (
+            <motion.div key={client.name} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="flex items-center justify-center p-4 rounded-xl bg-card border border-border hover:border-accent/40 transition-all shadow-card">
+              <img src={client.logo} alt={client.name} loading="lazy" className="max-h-14 sm:max-h-20 object-contain" />
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-impact fashion and clothing marketing campaigns in Sri Lanka</strong>, helping fashion brands, clothing stores, and online retailers reach style-conscious shoppers through targeted multi-channel promotions.</p>
