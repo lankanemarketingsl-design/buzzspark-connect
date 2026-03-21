@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const steps = [
   { icon: Mail, label: "Inbox Exposure" },
-  { icon: FolderOpen, label: "Category Presence" },
+  { icon: FolderOpen, label: "Findit.lk Category Presence" },
   { icon: RefreshCw, label: "Repeat Visibility" },
 ];
 
