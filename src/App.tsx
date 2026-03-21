@@ -26,6 +26,7 @@ import SmsMarketingInSriLanka from "./pages/articles/SmsMarketingInSriLanka.tsx"
 import EnableMissingImages from "./pages/articles/EnableMissingImages.tsx";
 import MultiChannelMarketingSriLanka from "./pages/articles/MultiChannelMarketingSriLanka.tsx";
 import FutureEmailMarketingSriLanka from "./pages/articles/FutureEmailMarketingSriLanka.tsx";
+import AboutUs from "./pages/AboutUs.tsx";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/lead-generation-sri-lanka" element={<LeadGeneration />} />
           <Route path="/social-media-marketing-sri-lanka" element={<SocialMediaMarketing />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/about-us" element={<AboutUs />} />
           {/* Resource article pages */}
           <Route path="/why-email-marketing-is-important" element={<WhyEmailMarketingIsImportant />} />
           <Route path="/why-you-need-email-marketing" element={<WhyYouNeedEmailMarketing />} />

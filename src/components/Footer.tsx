@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src={footerLogo} alt="Buzz Connect" className="h-16 w-auto brightness-0 invert" />
+              <img src={footerLogo} alt="Buzz Connect" className="h-24 w-auto brightness-0 invert" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Sri Lanka's No.1 Email Marketing, WhatsApp Marketing &amp; SMS Marketing company providing cost-effective digital marketing solutions since 2014.
@@ -45,7 +45,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-accent mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><Link to="/#aboutus" className="hover:text-accent transition-colors">About Us</Link></li>
+              <li><Link to="/about-us" className="hover:text-accent transition-colors">About Us</Link></li>
               <li><Link to="/#whyus" className="hover:text-accent transition-colors">Why Us</Link></li>
               <li><Link to="/multi-channel-marketing-sri-lanka" className="hover:text-accent transition-colors">Multi Channel Marketing</Link></li>
               <li><Link to="/resources" className="hover:text-accent transition-colors">Resources</Link></li>
