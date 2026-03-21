@@ -12,6 +12,24 @@ import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
+import allianceFinanceLogo from "@/assets/clients/alliance-finance.png";
+import amwCapitalLogo from "@/assets/clients/amw-capital.png";
+import cbcFinanceLogo from "@/assets/clients/cbc-finance.jpg";
+import commercialCreditLogo from "@/assets/clients/commercial-credit.jpg";
+import pmfFinanceLogo from "@/assets/clients/pmf-finance.jpg";
+import arpicoFinanceLogo from "@/assets/clients/arpico-finance.jpg";
+import asiaAssetLogo from "@/assets/clients/asia-asset.jpg";
+
+const financeClients = [
+  { name: "Alliance Finance", logo: allianceFinanceLogo },
+  { name: "AMW Capital Leasing", logo: amwCapitalLogo },
+  { name: "CBC Finance", logo: cbcFinanceLogo },
+  { name: "Commercial Credit", logo: commercialCreditLogo },
+  { name: "PMF Finance", logo: pmfFinanceLogo },
+  { name: "Arpico Finance", logo: arpicoFinanceLogo },
+  { name: "Asia Asset Finance", logo: asiaAssetLogo },
+];
+
 const services = [
   { icon: Smartphone, title: "SMS Loan & Credit Offers", desc: "Send targeted loan, credit card, and insurance offers to 600,000+ mobile users." },
   { icon: Mail, title: "Email Financial Promotions", desc: "Deliver detailed financial product information to 350,000+ targeted contacts." },
