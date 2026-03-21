@@ -31,6 +31,7 @@ const ContactUs = () => {
     { icon: Mail, label: "Email Us", text: "infobuzzconnect@gmail.com", href: "mailto:infobuzzconnect@gmail.com" },
     { icon: Phone, label: "Call Us", text: "+94 77 143 7707", href: "tel:+94771437707" },
     { icon: Phone, label: "Alternative", text: "+94 77 197 6351", href: "tel:+94771976351" },
+    { icon: Phone, label: "Land Line", text: "+94 11 287 7662", href: "tel:+94112877662" },
     { icon: MapPin, label: "Location", text: "Colombo, Sri Lanka", href: undefined },
     { icon: Clock, label: "Business Hours", text: "Mon – Fri: 9:00 AM – 6:00 PM", href: undefined },
   ];

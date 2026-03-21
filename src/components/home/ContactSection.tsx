@@ -67,6 +67,7 @@ const ContactSection = () => {
                 { icon: Mail, text: "infobuzzconnect@gmail.com", href: "mailto:infobuzzconnect@gmail.com" },
                 { icon: Phone, text: "+94 77 143 7707", href: "tel:+94771437707" },
                 { icon: Phone, text: "+94 77 197 6351", href: "tel:+94771976351" },
+                { icon: Phone, text: "+94 11 287 7662 (Land)", href: "tel:+94112877662" },
                 { icon: MapPin, text: "Colombo, Sri Lanka", href: undefined },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-3">
