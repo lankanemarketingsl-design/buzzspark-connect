@@ -10,6 +10,7 @@ import {
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
+import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
 const services = [
   { icon: Mail, title: "Email Course Promotions", desc: "Promote courses, intakes & programs to 350,000+ targeted student & parent contacts." },
