@@ -1,7 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Zap, Globe, Timer, Coins, Target, BarChart3, Handshake, Lightbulb, TrendingUp, Mail, Phone, MessageSquare, Share2, Megaphone } from "lucide-react";
+import { Zap, Globe, Timer, Coins, Target, BarChart3, Handshake, Lightbulb, TrendingUp, Mail, Phone, MessageSquare, Share2, Megaphone, Check, X, GitCompareArrows } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 
 const channels = [
