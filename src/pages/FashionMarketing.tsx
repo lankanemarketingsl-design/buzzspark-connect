@@ -154,6 +154,7 @@ const FashionMarketing = () => {
         </div>
       </motion.div>
 
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-impact fashion and clothing marketing campaigns in Sri Lanka</strong>, helping fashion brands, clothing stores, and online retailers reach style-conscious shoppers through targeted multi-channel promotions.</p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our fashion marketing strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, and <strong>Findit.lk Fashion & Clothing category visibility</strong> to drive sales and build brand loyalty.</p>
         <p className="text-lg text-muted-foreground leading-relaxed">Whether you're launching a new collection, running a flash sale, or building your brand presence, our campaigns are designed to turn fashion interest into purchases.</p>
