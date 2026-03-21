@@ -32,6 +32,12 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", k
     setMeta("description", description);
     setMeta("robots", "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1");
     if (keywords) setMeta("keywords", keywords);
+    setMeta("author", "Buzz Connect");
+    setMeta("publisher", "Buzz Connect");
+    setMeta("distribution", "global");
+    setMeta("language", "English");
+    setMeta("geo.region", "LK");
+    setMeta("geo.placename", "Colombo");
 
     // Open Graph
     const fullCanonical = canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical}`;
