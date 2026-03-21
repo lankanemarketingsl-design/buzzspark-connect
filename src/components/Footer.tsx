@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-sm text-primary-foreground/50">
-          <p>&copy; {new Date().getFullYear()} Buzz Connect. All rights reserved.</p>
+          <p>&copy; 2022 Buzz Connect. All rights reserved.</p>
         </div>
       </div>
     </footer>
