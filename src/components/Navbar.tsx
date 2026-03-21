@@ -22,6 +22,7 @@ const industryItems = [
   { label: "Finance & Credit", path: "/finance-marketing-sri-lanka" },
   { label: "Restaurant & Retail", path: "/restaurant-marketing-sri-lanka" },
   { label: "Real Estate", path: "/real-estate-marketing-sri-lanka" },
+  { label: "Fashion & Clothing", path: "/fashion-marketing-sri-lanka" },
 ];
 
 const Navbar = () => {
