@@ -46,7 +46,7 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-accent mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li><Link to="/about-us" className="hover:text-accent transition-colors">About Us</Link></li>
-              <li><Link to="/#whyus" className="hover:text-accent transition-colors">Why Us</Link></li>
+              <li><Link to="/why-choose-us" className="hover:text-accent transition-colors">Why Choose Us</Link></li>
               <li><Link to="/multi-channel-marketing-sri-lanka" className="hover:text-accent transition-colors">Multi Channel Marketing</Link></li>
               <li><Link to="/resources" className="hover:text-accent transition-colors">Resources</Link></li>
               <li><Link to="/#contactus" className="hover:text-accent transition-colors">Contact Us</Link></li>
