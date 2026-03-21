@@ -179,6 +179,7 @@ const EducationMarketing = () => {
         </div>
       </motion.div>
 
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Challenges in Education Marketing in Sri Lanka</h2>
         <p className="text-muted-foreground leading-relaxed mb-4">
           Sri Lanka's education sector is highly competitive with hundreds of institutions competing for students during each intake. Rising advertising costs, fragmented student attention, and short enrollment windows make traditional marketing ineffective.
