@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 
 const services = [
   { icon: Mail, title: "Email Marketing for Hotels", desc: "Promote hotel deals, seasonal packages & travel offers to 350,000+ targeted contacts." },
