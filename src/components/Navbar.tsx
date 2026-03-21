@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden xl:block">
-          <Link to="/#contactus">
+          <Link to="/contact-us">
             <Button variant="hero" size="sm">Get a Quote</Button>
           </Link>
         </div>
