@@ -139,7 +139,21 @@ const FashionMarketing = () => {
         ]}
       />
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+      {/* Trusted Fashion Clients */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Social Proof</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Trusted by Leading Fashion & Lifestyle Brands</h2>
+        </div>
+        <div className="grid grid-cols-3 lg:grid-cols-5 gap-4">
+          {fashionClients.map((client, i) => (
+            <motion.div key={client.name} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="flex items-center justify-center p-4 rounded-xl bg-card border border-border hover:border-accent/40 transition-all shadow-card">
+              <img src={client.logo} alt={client.name} loading="lazy" className="max-h-14 sm:max-h-20 object-contain" />
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-impact fashion and clothing marketing campaigns in Sri Lanka</strong>, helping fashion brands, clothing stores, and online retailers reach style-conscious shoppers through targeted multi-channel promotions.</p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our fashion marketing strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, and <strong>Findit.lk Fashion & Clothing category visibility</strong> to drive sales and build brand loyalty.</p>
         <p className="text-lg text-muted-foreground leading-relaxed">Whether you're launching a new collection, running a flash sale, or building your brand presence, our campaigns are designed to turn fashion interest into purchases.</p>
