@@ -153,7 +153,7 @@ const FinanceMarketing = () => {
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 text-center">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Trusted by Leading Financial Institutions</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">We help Sri Lanka's top banks, leasing companies, and financial institutions generate high-value leads.</p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-6 items-center justify-items-center max-w-5xl mx-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5 items-center justify-items-center max-w-5xl mx-auto">
           {financeClients.map((client, i) => (
             <motion.div key={client.name} initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="bg-card rounded-xl shadow-card border border-border p-4 flex items-center justify-center w-full aspect-square">
               <img src={client.logo} alt={client.name} loading="lazy" className="max-h-16 sm:max-h-20 w-auto object-contain" />
