@@ -70,6 +70,10 @@ const Footer = () => {
                 <a href="tel:+94771976351" className="hover:text-accent transition-colors">+94 77 197 6351</a>
               </li>
               <li className="flex items-start gap-2">
+                <Phone className="w-4 h-4 mt-0.5 text-accent" />
+                <a href="tel:+94112877662" className="hover:text-accent transition-colors">+94 11 287 7662 (Land)</a>
+              </li>
+              <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-accent" />
                 <span>Colombo, Sri Lanka</span>
               </li>
