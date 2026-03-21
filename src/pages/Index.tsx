@@ -58,6 +58,7 @@ const Index = () => {
       <HeroSection />
       <TrustStrip />
       <ServicesSection />
+      <BrandAwarenessWidget />
       <IntroductionSection />
       <AboutSection />
       <CTABanner
