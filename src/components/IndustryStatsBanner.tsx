@@ -19,7 +19,7 @@ const IndustryStatsBanner = ({ icon: Icon, gradient, stats, tagline }: IndustryS
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className={`mb-16 p-8 sm:p-10 rounded-2xl ${gradient} text-white relative overflow-hidden`}
+      className={`mb-16 p-5 sm:p-6 rounded-2xl ${gradient} text-white relative overflow-hidden`}
     >
       {/* Decorative background shapes */}
       <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/3" />
