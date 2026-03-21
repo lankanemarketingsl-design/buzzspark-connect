@@ -12,7 +12,7 @@ const Footer = () => {
               <img src={footerLogo} alt="Buzz Connect" className="h-16 w-auto brightness-0 invert" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Sri Lanka's No.1 Email, WhatsApp & SMS marketing company providing cost-effective digital marketing solutions since 2014.
+              Sri Lanka's No.1 Email Marketing, WhatsApp Marketing &amp; SMS Marketing company providing cost-effective digital marketing solutions since 2014.
             </p>
             <div className="flex items-center gap-3 mt-4">
               <a href="https://www.facebook.com/buzzconnect/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-accent transition-colors">
