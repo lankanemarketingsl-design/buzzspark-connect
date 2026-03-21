@@ -116,14 +116,14 @@ const ContactUs = () => {
                 href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl bg-green-500/10 border border-green-500/30 hover:bg-green-500/20 transition-colors"
+                className="flex items-center gap-3 p-4 rounded-xl bg-accent/10 border border-accent/30 hover:bg-accent/20 transition-colors"
               >
-                <MessageSquare className="w-6 h-6 text-green-600" />
+                <MessageSquare className="w-6 h-6 text-accent" />
                 <div>
                   <span className="text-foreground font-semibold block">Chat on WhatsApp</span>
                   <span className="text-sm text-muted-foreground">Get an instant response</span>
                 </div>
-                <ArrowRight className="w-4 h-4 text-green-600 ml-auto" />
+                <ArrowRight className="w-4 h-4 text-accent ml-auto" />
               </a>
 
               {/* Social */}
