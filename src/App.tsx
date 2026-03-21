@@ -27,6 +27,7 @@ import EnableMissingImages from "./pages/articles/EnableMissingImages.tsx";
 import MultiChannelMarketingSriLanka from "./pages/articles/MultiChannelMarketingSriLanka.tsx";
 import FutureEmailMarketingSriLanka from "./pages/articles/FutureEmailMarketingSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
+import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 
 const queryClient = new QueryClient();
 
