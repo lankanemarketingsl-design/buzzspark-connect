@@ -25,6 +25,7 @@ import BestSeoServicesSriLanka from "./pages/articles/BestSeoServicesSriLanka.ts
 import SmsMarketingInSriLanka from "./pages/articles/SmsMarketingInSriLanka.tsx";
 import EnableMissingImages from "./pages/articles/EnableMissingImages.tsx";
 import MultiChannelMarketingSriLanka from "./pages/articles/MultiChannelMarketingSriLanka.tsx";
+import FutureEmailMarketingSriLanka from "./pages/articles/FutureEmailMarketingSriLanka.tsx";
 
 const queryClient = new QueryClient();
 
