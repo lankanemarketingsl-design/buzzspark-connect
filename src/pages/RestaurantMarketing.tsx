@@ -11,6 +11,7 @@ import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
+import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
 import flagWhistleLogo from "@/assets/clients/flag-whistle.jpg";
 import cloudCafeLogo from "@/assets/clients/cloud-cafe.jpg";

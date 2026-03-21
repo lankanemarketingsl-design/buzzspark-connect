@@ -11,6 +11,7 @@ import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
+import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
 import assetlineLogo from "@/assets/clients/assetline-lands.jpg";
 import homeLandsLogo from "@/assets/clients/home-lands.jpg";
