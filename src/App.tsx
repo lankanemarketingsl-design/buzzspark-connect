@@ -57,6 +57,7 @@ const App = () => (
           <Route path="/resources" element={<Resources />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           {/* Resource article pages */}
           <Route path="/why-email-marketing-is-important" element={<WhyEmailMarketingIsImportant />} />
           <Route path="/why-you-need-email-marketing" element={<WhyYouNeedEmailMarketing />} />
