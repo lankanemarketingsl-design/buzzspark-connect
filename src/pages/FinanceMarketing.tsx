@@ -102,6 +102,18 @@ const FinanceMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      <IndustryStatsBanner
+        icon={Landmark}
+        gradient="gradient-finance"
+        tagline="High-Value Financial Lead Campaigns"
+        stats={[
+          { value: "50+", label: "Financial Clients" },
+          { value: "500K+", label: "SMS Database" },
+          { value: "VIP", label: "Corporate Access" },
+          { value: "24hrs", label: "Campaign Launch" },
+        ]}
+      />
+
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-value financial lead generation campaigns in Sri Lanka</strong>, helping banks, credit card companies, and insurance providers reach the right audience with targeted multi-channel promotions.</p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <strong>Findit.lk Finance & Credit Card category visibility</strong> to generate qualified leads.</p>

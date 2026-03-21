@@ -102,6 +102,18 @@ const RestaurantMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      <IndustryStatsBanner
+        icon={UtensilsCrossed}
+        gradient="gradient-restaurant"
+        tagline="Daily Promotion & Foot Traffic Campaigns"
+        stats={[
+          { value: "600K+", label: "Mobile Reach" },
+          { value: "98%", label: "SMS Open Rate" },
+          { value: "Same Day", label: "Campaign Launch" },
+          { value: "5,000+", label: "Monthly Campaigns" },
+        ]}
+      />
+
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-frequency restaurant and retail marketing campaigns in Sri Lanka</strong>, helping food businesses and retail stores drive daily foot traffic and boost sales.</p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our daily promotion strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <strong>Findit.lk Food & Supermarket category visibility</strong> for instant customer response.</p>

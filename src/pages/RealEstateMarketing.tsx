@@ -102,6 +102,18 @@ const RealEstateMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      <IndustryStatsBanner
+        icon={Building2}
+        gradient="gradient-realestate"
+        tagline="Property Lead Generation Campaigns"
+        stats={[
+          { value: "300K+", label: "Targeted Contacts" },
+          { value: "High-Ticket", label: "Lead Quality" },
+          { value: "Weeks", label: "Sustained Visibility" },
+          { value: "48hrs", label: "First Inquiries" },
+        ]}
+      />
+
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-impact real estate marketing campaigns in Sri Lanka</strong>, helping property developers, agencies, and landlords reach buyers and investors through targeted multi-channel promotions.</p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our property lead generation strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, and <strong>Findit.lk Real Estate category visibility</strong> to generate qualified buyer inquiries.</p>
