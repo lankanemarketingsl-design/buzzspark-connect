@@ -147,7 +147,7 @@ const RestaurantMarketing = () => {
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Food & Supermarket Advantage</h2>
-        <p className="text-primary-foreground/80 mb-6">Get your business promoted in Findit.lk's <strong>Food</strong> and <strong>Supermarket</strong> categories for continuous local discovery by hungry customers.</p>
+        <p className="text-primary-foreground/80 mb-6">Get your business promoted in Findit.lk's <a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Food & Drink</a> category for continuous local discovery by hungry customers.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {["Local customer discovery", "High visibility in Food category", "Continuous daily promotion", "Drive repeat visits"].map((item) => (
             <div key={item} className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-primary-foreground/90">{item}</span></div>
