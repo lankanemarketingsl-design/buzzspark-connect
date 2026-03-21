@@ -31,6 +31,11 @@ import FutureEmailMarketingSriLanka from "./pages/articles/FutureEmailMarketingS
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
+import HotelMarketing from "./pages/HotelMarketing.tsx";
+import EducationMarketing from "./pages/EducationMarketing.tsx";
+import FinanceMarketing from "./pages/FinanceMarketing.tsx";
+import RestaurantMarketing from "./pages/RestaurantMarketing.tsx";
+import RealEstateMarketing from "./pages/RealEstateMarketing.tsx";
 
 const queryClient = new QueryClient();
 
