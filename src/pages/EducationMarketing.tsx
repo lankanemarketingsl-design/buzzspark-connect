@@ -306,9 +306,11 @@ const EducationMarketing = () => {
             <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
             <p className="text-xs text-muted-foreground mb-4">Increase student enrollments consistently</p>
             <ul className="space-y-2 mb-4 flex-grow">
-              {["2–3 Targeted Email Campaigns (segmented)", "Premium Findit education placement", "Campaigns for upcoming intakes", "🔁 Advanced Remarketing (multi-touch)", "Performance report"].map(item => (
-                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{item}</li>
-              ))}
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />2–3 Targeted Email Campaigns (segmented)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/education" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Premium Findit education placement</a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Campaigns for upcoming intakes</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Advanced Remarketing (multi-touch)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Performance report</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Increase student enrollments consistently"</p>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Education%20Enrollment%20Boost%20Package%20(LKR%2039%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
