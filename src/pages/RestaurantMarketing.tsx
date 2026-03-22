@@ -154,6 +154,9 @@ const RestaurantMarketing = () => {
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Restaurant Marketing Packages with Remarketing</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">We don't just promote your restaurant — we bring you more customers every day.</p>
           <p className="text-accent font-semibold mt-3 max-w-2xl mx-auto">Just 5–10 extra orders per day = full package ROI. Everything after that = pure profit.</p>
+          <div className="mt-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/10 border border-accent/30">
+            <span className="text-accent font-bold text-sm">🎉 6-Month Subscription = 10% Discount on All Packages</span>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {/* Starter Traffic */}

@@ -164,6 +164,9 @@ const FinanceMarketing = () => {
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Finance Marketing Packages with Remarketing</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">We don't just generate traffic — we deliver high-intent finance leads ready to take action.</p>
           <p className="text-accent font-semibold mt-3 max-w-2xl mx-auto">1 approved loan = LKR 10,000–50,000+ value. You only need 1–3 conversions to recover full cost.</p>
+          <div className="mt-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/10 border border-accent/30">
+            <span className="text-accent font-bold text-sm">🎉 6-Month Subscription = 10% Discount on All Packages</span>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {/* Lead Starter */}
