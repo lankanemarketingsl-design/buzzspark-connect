@@ -5,8 +5,9 @@ import { useMemo } from "react";
 import {
   CheckCircle, Target, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, ShoppingBag, Shirt, Scissors, Sparkles, Users, TrendingUp,
-  ArrowRight, Send, Eye, Tag, Star, Store
+  ArrowRight, Send, Eye, Tag, Star, Store, Rocket, Crown, RefreshCw
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
