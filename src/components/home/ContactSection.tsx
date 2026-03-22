@@ -1,12 +1,22 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Send, Mail, Phone, MapPin, Rocket } from "lucide-react";
 import { toast } from "sonner";
 
+const INDUSTRY_ROUTES = [
+  "/hotel-marketing-sri-lanka",
+  "/education-marketing-sri-lanka",
+  "/restaurant-marketing-sri-lanka",
+  "/fashion-marketing-sri-lanka",
+];
+
 const ContactSection = () => {
+  const { pathname } = useLocation();
+  const waNumber = INDUSTRY_ROUTES.includes(pathname) ? "94771976351" : "94771437707";
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", message: "" });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -16,7 +26,7 @@ const ContactSection = () => {
       return;
     }
     const text = `Hi Buzz Connect, I'd like more information.%0A%0AName: ${encodeURIComponent(form.name)}%0AEmail: ${encodeURIComponent(form.email)}%0APhone: ${encodeURIComponent(form.phone)}%0ACompany: ${encodeURIComponent(form.company)}%0AMessage: ${encodeURIComponent(form.message)}`;
-    window.open(`https://wa.me/94771437707?text=${text}`, "_blank");
+    window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
     toast.success("Redirecting to WhatsApp...");
     setForm({ name: "", email: "", phone: "", company: "", message: "" });
   };
