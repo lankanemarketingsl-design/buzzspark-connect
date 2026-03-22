@@ -15,8 +15,16 @@ interface ServicePageLayoutProps {
   children: ReactNode;
 }
 
+const INDUSTRY_ROUTES = [
+  "/hotel-marketing-sri-lanka",
+  "/education-marketing-sri-lanka",
+  "/restaurant-marketing-sri-lanka",
+  "/fashion-marketing-sri-lanka",
+];
+
 const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayoutProps) => {
   const location = useLocation();
+  const waNumber = INDUSTRY_ROUTES.includes(location.pathname) ? "94771976351" : "94771437707";
 
   return (
     <div className="pt-14 sm:pt-16">
