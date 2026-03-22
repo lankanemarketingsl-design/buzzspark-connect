@@ -15,8 +15,16 @@ interface ServicePageLayoutProps {
   children: ReactNode;
 }
 
+const INDUSTRY_ROUTES = [
+  "/hotel-marketing-sri-lanka",
+  "/education-marketing-sri-lanka",
+  "/restaurant-marketing-sri-lanka",
+  "/fashion-marketing-sri-lanka",
+];
+
 const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayoutProps) => {
   const location = useLocation();
+  const waNumber = INDUSTRY_ROUTES.includes(location.pathname) ? "94771976351" : "94771437707";
 
   return (
     <div className="pt-14 sm:pt-16">
@@ -40,7 +48,7 @@ const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayo
                   Get a Free Quote <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
-              <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20marketing%20services." target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/${waNumber}?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20marketing%20services.`} target="_blank" rel="noopener noreferrer">
                 <Button variant="hero-outline" size="lg" className="text-base">
                   <PhoneCall className="mr-1 w-4 h-4" /> Chat on WhatsApp
                 </Button>
