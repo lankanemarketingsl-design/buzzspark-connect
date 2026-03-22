@@ -267,9 +267,11 @@ const RestaurantMarketing = () => {
             <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
             <p className="text-xs text-muted-foreground mb-4">Best for small restaurants & cafes</p>
             <ul className="space-y-2 mb-4 flex-grow">
-              {["1 Targeted Email Campaign", "Featured listing in Findit 'Restaurants'", "7-day visibility boost", "🔁 Basic Remarketing (repeat exposure)", "Ad creative (offer-based)"].map(item => (
-                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{item}</li>
-              ))}
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />1 Targeted Email Campaign</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Featured listing in Findit 'Restaurants'</a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />7-day visibility boost</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Basic Remarketing (repeat exposure)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Ad creative (offer-based)</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Bring customers during slow days"</p>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Restaurant%20Starter%20Traffic%20Package%20(LKR%2014%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
@@ -287,9 +289,11 @@ const RestaurantMarketing = () => {
             <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
             <p className="text-xs text-muted-foreground mb-4">Consistent daily customer flow</p>
             <ul className="space-y-2 mb-4 flex-grow">
-              {["2–3 Targeted Email Campaigns", "Premium Findit restaurant placement", "Weekend / promo campaign push", "🔁 Advanced Remarketing (multi-touch)", "Performance report"].map(item => (
-                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{item}</li>
-              ))}
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />2–3 Targeted Email Campaigns</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Premium Findit restaurant placement</a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Weekend / promo campaign push</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Advanced Remarketing (multi-touch)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Performance report</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Consistent daily customer flow"</p>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Restaurant%20Customer%20Flow%20Package%20(LKR%2039%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
@@ -306,9 +310,11 @@ const RestaurantMarketing = () => {
             <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
             <p className="text-xs text-muted-foreground mb-4">Maximize orders & dominate your area</p>
             <ul className="space-y-2 mb-4 flex-grow">
-              {["4–6 Email Campaigns (full funnel)", "Top ranking in Findit category", "🔁 Full Funnel Remarketing", "Custom offer / promo landing page", "Priority promotion during peak times"].map(item => (
-                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{item}</li>
-              ))}
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />4–6 Email Campaigns (full funnel)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Top ranking in Findit category</a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Full Funnel Remarketing</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Custom offer / promo landing page</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Priority promotion during peak times</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Maximize orders & dominate your area"</p>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Restaurant%20Full%20House%20Package%20(LKR%2089%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
