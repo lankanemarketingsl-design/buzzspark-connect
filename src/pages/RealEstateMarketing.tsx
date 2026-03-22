@@ -179,7 +179,7 @@ const RealEstateMarketing = () => {
               <Crown className="w-6 h-6 text-accent" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">Buyer Flow</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 118,000</p>
             <p className="text-xs text-muted-foreground mb-4">Consistent property inquiries</p>
             <ul className="space-y-2 mb-4 flex-grow">
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />2–3 Targeted Email Campaigns (segmented)</li>
