@@ -201,7 +201,7 @@ const RealEstateMarketing = () => {
               <RefreshCw className="w-6 h-6 text-red-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">High Value Deals</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 298,000</p>
             <p className="text-xs text-muted-foreground mb-4">Close high-value property deals faster</p>
             <ul className="space-y-2 mb-4 flex-grow">
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />4–6 Email Campaigns (full funnel strategy)</li>
