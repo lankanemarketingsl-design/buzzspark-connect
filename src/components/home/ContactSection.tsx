@@ -26,7 +26,7 @@ const ContactSection = () => {
       return;
     }
     const text = `Hi Buzz Connect, I'd like more information.%0A%0AName: ${encodeURIComponent(form.name)}%0AEmail: ${encodeURIComponent(form.email)}%0APhone: ${encodeURIComponent(form.phone)}%0ACompany: ${encodeURIComponent(form.company)}%0AMessage: ${encodeURIComponent(form.message)}`;
-    window.open(`https://wa.me/94771437707?text=${text}`, "_blank");
+    window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
     toast.success("Redirecting to WhatsApp...");
     setForm({ name: "", email: "", phone: "", company: "", message: "" });
   };
