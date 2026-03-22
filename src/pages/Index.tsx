@@ -59,6 +59,7 @@ const Index = () => {
       <HeroSection />
       <TrustStrip />
       <ServicesSection />
+      <IndustriesSection />
       <IntroductionSection />
       <AboutSection />
       <BrandAwarenessWidget />
