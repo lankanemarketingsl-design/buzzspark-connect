@@ -281,7 +281,7 @@ const EducationMarketing = () => {
               <Rocket className="w-6 h-6 text-green-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">Student Leads Starter</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 15,000</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
             <p className="text-xs text-muted-foreground mb-4">Best for small institutes / short courses</p>
             <ul className="space-y-2 mb-4 flex-grow">
               {["1 Targeted Email Campaign (students / parents)", "Featured listing in Findit 'Education'", "7-day visibility boost", "🔁 Basic Remarketing (repeat exposure)", "Course ad creative (intake-focused)"].map(item => (
@@ -289,7 +289,7 @@ const EducationMarketing = () => {
               ))}
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Generate initial student inquiries"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Education%20Student%20Leads%20Starter%20Package%20(LKR%2015%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Education%20Student%20Leads%20Starter%20Package%20(LKR%2014%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
