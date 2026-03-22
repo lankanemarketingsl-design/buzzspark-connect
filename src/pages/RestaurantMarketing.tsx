@@ -147,6 +147,95 @@ const RestaurantMarketing = () => {
         clients={restaurantClients}
       />
 
+      {/* Restaurant Advertising Packages */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-10">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing Packages</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Restaurant Marketing Packages with Remarketing</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">We don't just promote your restaurant — we bring you more customers every day.</p>
+          <p className="text-accent font-semibold mt-3 max-w-2xl mx-auto">Just 5–10 extra orders per day = full package ROI. Everything after that = pure profit.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {/* Starter Traffic */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
+            <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
+              <Rocket className="w-6 h-6 text-green-600" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Starter Traffic</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
+            <p className="text-xs text-muted-foreground mb-4">Best for small restaurants & cafes</p>
+            <ul className="space-y-2 mb-4 flex-grow">
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />1 Targeted Email Campaign</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Featured listing in Findit 'Restaurants'</li>
+              <li className="flex items-start gap-2 text-sm"><Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />7-day visibility boost</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Basic Remarketing (repeat exposure)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Ad creative (offer-based)</li>
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Bring customers during slow days"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Restaurant%20Starter%20Traffic%20Package%20(LKR%2014%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+
+          {/* Customer Flow - Most Popular */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border-2 border-accent flex flex-col ring-2 ring-accent/20">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-accent text-white text-xs font-bold">MOST POPULAR</div>
+            <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+              <Crown className="w-6 h-6 text-accent" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Customer Flow</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
+            <p className="text-xs text-muted-foreground mb-4">Consistent daily customer flow</p>
+            <ul className="space-y-2 mb-4 flex-grow">
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />2–3 Targeted Email Campaigns</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Premium Findit restaurant placement</li>
+              <li className="flex items-start gap-2 text-sm"><Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Weekend / promo campaign push</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Advanced Remarketing (multi-touch)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Performance report</li>
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Consistent daily customer flow"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Restaurant%20Customer%20Flow%20Package%20(LKR%2039%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button className="w-full bg-accent hover:bg-accent/90 text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+
+          {/* Full House */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
+            <div className="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+              <RefreshCw className="w-6 h-6 text-red-600" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Full House</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
+            <p className="text-xs text-muted-foreground mb-4">Maximize orders & dominate your area</p>
+            <ul className="space-y-2 mb-4 flex-grow">
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />4–6 Email Campaigns (full funnel)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Top ranking in Findit category</li>
+              <li className="flex items-start gap-2 text-sm"><Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Full Funnel Remarketing</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Custom offer / promo landing page</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Priority promotion during peak times</li>
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Maximize orders & dominate your area"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Restaurant%20Full%20House%20Package%20(LKR%2089%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Restaurant Marketing Sri Lanka</h2>
+        <div className="space-y-4">
+          {faqs.map((faq) => (
+            <div key={faq.q} className="p-5 rounded-xl bg-card shadow-card border border-border">
+              <h3 className="flex items-start gap-2 font-heading font-semibold text-foreground mb-2"><HelpCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />{faq.q}</h3>
+              <p className="text-muted-foreground text-sm pl-7">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-frequency restaurant and retail marketing campaigns in Sri Lanka</strong>, helping food businesses and retail stores drive daily foot traffic and boost sales.</p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our daily promotion strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <strong>Findit.lk Food & Supermarket category visibility</strong> for instant customer response.</p>
@@ -248,95 +337,6 @@ const RestaurantMarketing = () => {
           </ul>
         </motion.div>
       </div>
-
-      {/* Restaurant Advertising Packages */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing Packages</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Restaurant Marketing Packages with Remarketing</h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">We don't just promote your restaurant — we bring you more customers every day.</p>
-          <p className="text-accent font-semibold mt-3 max-w-2xl mx-auto">Just 5–10 extra orders per day = full package ROI. Everything after that = pure profit.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {/* Starter Traffic */}
-          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
-            <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
-              <Rocket className="w-6 h-6 text-green-600" />
-            </div>
-            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Starter Traffic</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
-            <p className="text-xs text-muted-foreground mb-4">Best for small restaurants & cafes</p>
-            <ul className="space-y-2 mb-4 flex-grow">
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />1 Targeted Email Campaign</li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Featured listing in Findit 'Restaurants'</li>
-              <li className="flex items-start gap-2 text-sm"><Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a></li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />7-day visibility boost</li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Basic Remarketing (repeat exposure)</li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Ad creative (offer-based)</li>
-            </ul>
-            <p className="text-xs text-muted-foreground italic mb-4">"Bring customers during slow days"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Restaurant%20Starter%20Traffic%20Package%20(LKR%2014%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
-              <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
-            </a>
-          </div>
-
-          {/* Customer Flow - Most Popular */}
-          <div className="relative p-6 rounded-2xl bg-card shadow-card border-2 border-accent flex flex-col ring-2 ring-accent/20">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-accent text-white text-xs font-bold">MOST POPULAR</div>
-            <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
-              <Crown className="w-6 h-6 text-accent" />
-            </div>
-            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Customer Flow</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
-            <p className="text-xs text-muted-foreground mb-4">Consistent daily customer flow</p>
-            <ul className="space-y-2 mb-4 flex-grow">
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />2–3 Targeted Email Campaigns</li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Premium Findit restaurant placement</li>
-              <li className="flex items-start gap-2 text-sm"><Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a></li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Weekend / promo campaign push</li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Advanced Remarketing (multi-touch)</li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Performance report</li>
-            </ul>
-            <p className="text-xs text-muted-foreground italic mb-4">"Consistent daily customer flow"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Restaurant%20Customer%20Flow%20Package%20(LKR%2039%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
-              <Button className="w-full bg-accent hover:bg-accent/90 text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
-            </a>
-          </div>
-
-          {/* Full House */}
-          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
-            <div className="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-              <RefreshCw className="w-6 h-6 text-red-600" />
-            </div>
-            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Full House</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
-            <p className="text-xs text-muted-foreground mb-4">Maximize orders & dominate your area</p>
-            <ul className="space-y-2 mb-4 flex-grow">
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />4–6 Email Campaigns (full funnel)</li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Top ranking in Findit category</li>
-              <li className="flex items-start gap-2 text-sm"><Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a></li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Full Funnel Remarketing</li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Custom offer / promo landing page</li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Priority promotion during peak times</li>
-            </ul>
-            <p className="text-xs text-muted-foreground italic mb-4">"Maximize orders & dominate your area"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Restaurant%20Full%20House%20Package%20(LKR%2089%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
-              <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
-            </a>
-          </div>
-        </div>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Restaurant Marketing Sri Lanka</h2>
-        <div className="space-y-4">
-          {faqs.map((faq) => (
-            <div key={faq.q} className="p-5 rounded-xl bg-card shadow-card border border-border">
-              <h3 className="flex items-start gap-2 font-heading font-semibold text-foreground mb-2"><HelpCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />{faq.q}</h3>
-              <p className="text-muted-foreground text-sm pl-7">{faq.a}</p>
-            </div>
-          ))}
-        </div>
       </motion.div>
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-restaurant text-white relative overflow-hidden">
