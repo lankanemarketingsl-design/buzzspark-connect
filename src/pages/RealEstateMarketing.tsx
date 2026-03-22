@@ -318,6 +318,7 @@ const RealEstateMarketing = () => {
         </div>
       </motion.div>
 
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Real Estate Marketing Sri Lanka</h2>
         <div className="space-y-4">
           {faqs.map((faq) => (
