@@ -264,7 +264,7 @@ const RestaurantMarketing = () => {
               <Rocket className="w-6 h-6 text-green-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">Starter Traffic</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 15,000</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
             <p className="text-xs text-muted-foreground mb-4">Best for small restaurants & cafes</p>
             <ul className="space-y-2 mb-4 flex-grow">
               {["1 Targeted Email Campaign", "Featured listing in Findit 'Restaurants'", "7-day visibility boost", "🔁 Basic Remarketing (repeat exposure)", "Ad creative (offer-based)"].map(item => (
