@@ -14,5 +14,5 @@
 /home / 301
 /classified-advertising-in-sri-lanka /resources 301
 
-# SPA fallback — serve index.html with 200 for client-side routing
-/* /index.html 200
+# SPA fallback — serve index.html with 404 for unknown routes
+/* /index.html 404
