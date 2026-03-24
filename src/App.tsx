@@ -41,6 +41,10 @@ import FinanceMarketingGenerateLeads from "./pages/articles/FinanceMarketingGene
 import RestaurantMarketingAttractCustomers from "./pages/articles/RestaurantMarketingAttractCustomers.tsx";
 import RealEstateMarketingPropertyLeads from "./pages/articles/RealEstateMarketingPropertyLeads.tsx";
 import FashionMarketingGrowBrand from "./pages/articles/FashionMarketingGrowBrand.tsx";
+import BestAdvertisingCompanySriLanka from "./pages/articles/BestAdvertisingCompanySriLanka.tsx";
+import DigitalAdvertisingGuide from "./pages/articles/DigitalAdvertisingGuide.tsx";
+import OnlineVsTraditionalAdvertising from "./pages/articles/OnlineVsTraditionalAdvertising.tsx";
+import GoogleAdsCostGuide from "./pages/articles/GoogleAdsCostGuide.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
