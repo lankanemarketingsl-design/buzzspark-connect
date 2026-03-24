@@ -35,6 +35,12 @@ import MultiChannelMarketingMaxReach from "./pages/articles/MultiChannelMarketin
 import SeoWhyItMatters from "./pages/articles/SeoWhyItMatters.tsx";
 import LeadGenerationGetMoreCustomers from "./pages/articles/LeadGenerationGetMoreCustomers.tsx";
 import SocialMediaMarketingWhyYouNeedIt from "./pages/articles/SocialMediaMarketingWhyYouNeedIt.tsx";
+import HotelMarketingIncreaseBookings from "./pages/articles/HotelMarketingIncreaseBookings.tsx";
+import EducationMarketingAttractStudents from "./pages/articles/EducationMarketingAttractStudents.tsx";
+import FinanceMarketingGenerateLeads from "./pages/articles/FinanceMarketingGenerateLeads.tsx";
+import RestaurantMarketingAttractCustomers from "./pages/articles/RestaurantMarketingAttractCustomers.tsx";
+import RealEstateMarketingPropertyLeads from "./pages/articles/RealEstateMarketingPropertyLeads.tsx";
+import FashionMarketingGrowBrand from "./pages/articles/FashionMarketingGrowBrand.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
