@@ -28,6 +28,10 @@ import SmsMarketingInSriLanka from "./pages/articles/SmsMarketingInSriLanka.tsx"
 import EnableMissingImages from "./pages/articles/EnableMissingImages.tsx";
 import MultiChannelMarketingSriLanka from "./pages/articles/MultiChannelMarketingSriLanka.tsx";
 import FutureEmailMarketingSriLanka from "./pages/articles/FutureEmailMarketingSriLanka.tsx";
+import EmailMarketingPowerfulTool from "./pages/articles/EmailMarketingPowerfulTool.tsx";
+import SmsMarketingDrivingEngagement from "./pages/articles/SmsMarketingDrivingEngagement.tsx";
+import WhatsAppMarketingFuture from "./pages/articles/WhatsAppMarketingFuture.tsx";
+import MultiChannelMarketingMaxReach from "./pages/articles/MultiChannelMarketingMaxReach.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
