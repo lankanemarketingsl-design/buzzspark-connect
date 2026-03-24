@@ -22,6 +22,10 @@ const allArticles = [
   { title: "SMS Marketing in Sri Lanka", path: "/sms-marketing-in-sri-lanka" },
   { title: "Multi-Channel Marketing in Sri Lanka", path: "/multi-channel-marketing-in-sri-lanka" },
   { title: "Enable Missing Images to Display", path: "/enable-missing-images-to-display" },
+  { title: "Best Advertising Company in Sri Lanka", path: "/best-advertising-company-sri-lanka" },
+  { title: "Digital Advertising Sri Lanka: Complete Guide", path: "/digital-advertising-sri-lanka-complete-guide" },
+  { title: "Online vs Traditional Advertising Sri Lanka", path: "/online-vs-traditional-advertising-sri-lanka" },
+  { title: "Google Ads Sri Lanka Cost Guide", path: "/google-ads-sri-lanka-cost-guide" },
 ];
 
 interface RelatedArticlesProps {
