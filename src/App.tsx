@@ -102,6 +102,12 @@ const App = () => (
           <Route path="/seo-why-it-matters-sri-lanka" element={<SeoWhyItMatters />} />
           <Route path="/lead-generation-get-more-customers-sri-lanka" element={<LeadGenerationGetMoreCustomers />} />
           <Route path="/social-media-marketing-why-your-business-needs-it-sri-lanka" element={<SocialMediaMarketingWhyYouNeedIt />} />
+          <Route path="/hotel-marketing-increase-bookings-sri-lanka" element={<HotelMarketingIncreaseBookings />} />
+          <Route path="/education-marketing-attract-students-sri-lanka" element={<EducationMarketingAttractStudents />} />
+          <Route path="/finance-marketing-generate-leads-sri-lanka" element={<FinanceMarketingGenerateLeads />} />
+          <Route path="/restaurant-marketing-attract-customers-sri-lanka" element={<RestaurantMarketingAttractCustomers />} />
+          <Route path="/real-estate-marketing-generate-property-leads-sri-lanka" element={<RealEstateMarketingPropertyLeads />} />
+          <Route path="/fashion-marketing-grow-brand-sri-lanka" element={<FashionMarketingGrowBrand />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
