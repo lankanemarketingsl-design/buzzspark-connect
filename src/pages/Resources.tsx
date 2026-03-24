@@ -18,8 +18,56 @@ import articleMultichannelReach from "@/assets/blog/article-multichannel-reach.j
 import articleSeoMatters from "@/assets/blog/article-seo-matters.jpg";
 import articleLeadGen from "@/assets/blog/article-lead-gen.jpg";
 import articleSocialMedia from "@/assets/blog/article-social-media.jpg";
+import articleHotelMarketing from "@/assets/blog/article-hotel-marketing.jpg";
+import articleEducationMarketing from "@/assets/blog/article-education-marketing.jpg";
+import articleFinanceMarketing from "@/assets/blog/article-finance-marketing.jpg";
+import articleRestaurantMarketing from "@/assets/blog/article-restaurant-marketing.jpg";
+import articleRealestateMarketing from "@/assets/blog/article-realestate-marketing.jpg";
+import articleFashionMarketing from "@/assets/blog/article-fashion-marketing.jpg";
 
 const articles = [
+  {
+    title: "Hotel Marketing in Sri Lanka: How to Increase Bookings and Revenue",
+    date: "Mar 24, 2025",
+    excerpt: "Learn how hotels in Sri Lanka can increase bookings and revenue with digital marketing strategies including email, SMS, WhatsApp, and social media campaigns.",
+    path: "/hotel-marketing-increase-bookings-sri-lanka",
+    image: articleHotelMarketing,
+  },
+  {
+    title: "Education Marketing in Sri Lanka: How to Attract More Students",
+    date: "Mar 24, 2025",
+    excerpt: "Educational institutions in Sri Lanka can attract more students with digital marketing. Email, SMS, WhatsApp and social media strategies for enrollment growth.",
+    path: "/education-marketing-attract-students-sri-lanka",
+    image: articleEducationMarketing,
+  },
+  {
+    title: "Finance Marketing in Sri Lanka: How to Generate High-Quality Leads",
+    date: "Mar 24, 2025",
+    excerpt: "Finance marketing requires trust and precision. Learn how email, SMS, WhatsApp, and targeted advertising generate quality leads for financial businesses in Sri Lanka.",
+    path: "/finance-marketing-generate-leads-sri-lanka",
+    image: articleFinanceMarketing,
+  },
+  {
+    title: "Restaurant Marketing in Sri Lanka: How to Attract More Customers",
+    date: "Mar 24, 2025",
+    excerpt: "Restaurants in Sri Lanka need effective marketing to stand out. Learn how SMS, WhatsApp, social media, and email drive foot traffic and online orders.",
+    path: "/restaurant-marketing-attract-customers-sri-lanka",
+    image: articleRestaurantMarketing,
+  },
+  {
+    title: "Real Estate Marketing in Sri Lanka: How to Generate Property Leads",
+    date: "Mar 24, 2025",
+    excerpt: "Real estate marketing helps attract serious buyers and investors. Learn how email, SMS, WhatsApp, and landing pages drive quality property leads in Sri Lanka.",
+    path: "/real-estate-marketing-generate-property-leads-sri-lanka",
+    image: articleRealestateMarketing,
+  },
+  {
+    title: "Fashion Marketing in Sri Lanka: How to Grow Your Brand Online",
+    date: "Mar 24, 2025",
+    excerpt: "Fashion brands in Sri Lanka can grow online with social media, influencer collaborations, email marketing, and WhatsApp campaigns for higher sales.",
+    path: "/fashion-marketing-grow-brand-sri-lanka",
+    image: articleFashionMarketing,
+  },
   {
     title: "Social Media Marketing in Sri Lanka: Why Your Business Needs It",
     date: "Mar 24, 2025",
