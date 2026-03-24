@@ -217,7 +217,7 @@ const OnlineAdvertising = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           <Link to="/email-marketing" className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border hover:border-accent/30 transition-colors">
             <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-            <span className="text-foreground text-sm font-medium">Email Marketing — 250,000+ subscriber reach</span>
+            <span className="text-foreground text-sm font-medium"><span className="text-foreground text-sm font-medium">Email Marketing — 350,000+ subscriber reach</span></span>
           </Link>
           <Link to="/sms-marketing" className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border hover:border-accent/30 transition-colors">
             <Smartphone className="w-5 h-5 text-primary flex-shrink-0" />
