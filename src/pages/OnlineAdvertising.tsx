@@ -7,11 +7,11 @@ import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const finditPackages = [
-  { item: "Image of Promotion Ad", impressions: "25,000+", price: "LKR 1,000", duration: "4 Weeks" },
+  { item: "Image of Promotion Ad", impressions: "25,000+", price: "LKR 5,000", duration: "4 Weeks" },
   { item: "Popup Banner", impressions: "35,000+", price: "LKR 2,500", duration: "1 Week" },
   { item: "Featured Promotion", impressions: "200,000+", price: "LKR 5,000", duration: "4 Weeks" },
-  { item: "Email Campaign", impressions: "250,000+", price: "LKR 4,000", duration: "4 Weeks" },
-  { item: "Push Notification", impressions: "250,000+", price: "—", duration: "4 Weeks" },
+  { item: "Email Campaign", impressions: "350,000+", price: "LKR 4,000", duration: "4 Weeks" },
+  { item: "Push Notification", impressions: "350,000+", price: "—", duration: "4 Weeks" },
 ];
 
 const comboPackages = [
@@ -26,7 +26,7 @@ const comboPackages = [
     name: "Package 2",
     impressions: "750,000",
     period: "4 Days",
-    desc: "For those who are large enterprise, increase brand awareness and brand recognition, with featured Ads and website banners for the most demanded website for offers, discounts, and promotions. Provide effective email campaigns for 250,000 subscribers.",
+    desc: "For those who are large enterprise, increase brand awareness and brand recognition, with featured Ads and website banners for the most demanded website for offers, discounts, and promotions. Provide effective email campaigns for 350,000 subscribers.",
     features: ["Findit Popup", "Findit Featured", "Email Campaign", "Facebook Story / Post", "Instagram Story", "Sharing Social Media Promotions"],
   },
   {
@@ -87,7 +87,7 @@ const useCases = [
 
 const faqs = [
   { q: "What is online advertising in Sri Lanka?", a: "Online advertising in Sri Lanka involves promoting your business through digital platforms like websites, banners, email campaigns, SMS, and social media to reach targeted audiences effectively." },
-  { q: "How much does advertising in Sri Lanka cost?", a: "Advertising in Sri Lanka varies by channel. Banner ads start from LKR 1,000, email campaigns from LKR 4,000, and multi-channel combo packages from LKR 10,000. BuzzConnect offers flexible pricing for every budget." },
+  { q: "How much does advertising in Sri Lanka cost?", a: "Advertising in Sri Lanka varies by channel. Banner ads start from LKR 5,000, email campaigns from LKR 4,000, and multi-channel combo packages from LKR 10,000. BuzzConnect offers flexible pricing for every budget." },
   { q: "Which is the best advertising company in Sri Lanka?", a: "BuzzConnect is the #1 direct marketing and advertising company in Sri Lanka, offering email, SMS, WhatsApp, and online advertising solutions with proven results for over 2,000 businesses." },
   { q: "What is Findit.lk?", a: "Findit.lk is a leading online promotion platform in Sri Lanka where businesses can advertise their products and services to thousands of active users searching for deals and offers." },
   { q: "How effective are banner ads for advertising in Sri Lanka?", a: "Banner ads are highly effective for advertising in Sri Lanka, especially on high-traffic platforms like Findit.lk. They provide continuous brand visibility and drive targeted traffic to your business." },
@@ -189,7 +189,7 @@ const OnlineAdvertising = () => {
             <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 100% web traffic from people interested in promotions, discounts, and offers
           </li>
           <li className="flex items-start gap-2 text-sm text-foreground">
-            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 2000+ registered companies and 250,000+ subscribers database
+            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 2000+ registered companies and 350,000+ subscribers database
           </li>
           <li className="flex items-start gap-2 text-sm text-foreground">
             <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 200,000+ monthly hits from people looking for offers and promotions
@@ -217,7 +217,7 @@ const OnlineAdvertising = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           <Link to="/email-marketing" className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border hover:border-accent/30 transition-colors">
             <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-            <span className="text-foreground text-sm font-medium">Email Marketing — 250,000+ subscriber reach</span>
+            <span className="text-foreground text-sm font-medium"><span className="text-foreground text-sm font-medium">Email Marketing — 350,000+ subscriber reach</span></span>
           </Link>
           <Link to="/sms-marketing" className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border hover:border-accent/30 transition-colors">
             <Smartphone className="w-5 h-5 text-primary flex-shrink-0" />
@@ -256,7 +256,7 @@ const OnlineAdvertising = () => {
             <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Multi-channel campaigns (Email + SMS + WhatsApp + Banners)
           </li>
           <li className="flex items-center gap-3 text-foreground">
-            <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Affordable packages starting from LKR 1,000
+            <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Affordable packages starting from LKR 5,000
           </li>
           <li className="flex items-center gap-3 text-foreground">
             <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Proven track record of high ROI for Sri Lankan businesses
@@ -343,7 +343,7 @@ const OnlineAdvertising = () => {
           The most effective <strong>advertising in Sri Lanka</strong> combines multiple channels for maximum reach. BuzzConnect's multi-channel strategy integrates:
         </p>
         <ul className="space-y-2 mb-4">
-          {["Email campaigns reaching 250,000+ subscribers", "SMS blasts with 90%+ open rates", "WhatsApp marketing for direct engagement", "Findit.lk banner ads for premium visibility", "Social media advertising for brand awareness"].map((item) => (
+          {["Email campaigns reaching 350,000+ subscribers", "SMS blasts with 90%+ open rates", "WhatsApp marketing for direct engagement", "Findit.lk banner ads for premium visibility", "Social media advertising for brand awareness"].map((item) => (
             <li key={item} className="flex items-center gap-2 text-foreground text-sm">
               <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
             </li>
