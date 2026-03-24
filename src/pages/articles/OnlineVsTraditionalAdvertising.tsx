@@ -84,12 +84,7 @@ const OnlineVsTraditionalAdvertising = () => {
           </div>
         </motion.div>
 
-        <RelatedArticles
-          articles={[
-            { title: "Digital Advertising Complete Guide", path: "/digital-advertising-sri-lanka-complete-guide" },
-            { title: "Google Ads Sri Lanka Cost Guide", path: "/google-ads-sri-lanka-cost-guide" },
-          ]}
-        />
+        <RelatedArticles currentPath="/online-vs-traditional-advertising-sri-lanka" />
       </article>
     </ServicePageLayout>
   );

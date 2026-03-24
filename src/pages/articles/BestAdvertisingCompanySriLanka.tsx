@@ -79,12 +79,7 @@ const BestAdvertisingCompanySriLanka = () => {
           </div>
         </motion.div>
 
-        <RelatedArticles
-          articles={[
-            { title: "Digital Advertising Sri Lanka: Complete Guide", path: "/digital-advertising-sri-lanka-complete-guide" },
-            { title: "Online vs Traditional Advertising Sri Lanka", path: "/online-vs-traditional-advertising-sri-lanka" },
-          ]}
-        />
+        <RelatedArticles currentPath="/best-advertising-company-sri-lanka" />
       </article>
     </ServicePageLayout>
   );

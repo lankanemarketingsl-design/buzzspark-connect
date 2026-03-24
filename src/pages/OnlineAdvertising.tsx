@@ -457,14 +457,7 @@ const OnlineAdvertising = () => {
       </motion.div>
 
       {/* Related Articles */}
-      <RelatedArticles
-        articles={[
-          { title: "Best Advertising Company in Sri Lanka", path: "/best-advertising-company-sri-lanka" },
-          { title: "Digital Advertising Sri Lanka: Complete Guide", path: "/digital-advertising-sri-lanka-complete-guide" },
-          { title: "Online Advertising vs Traditional Advertising Sri Lanka", path: "/online-vs-traditional-advertising-sri-lanka" },
-          { title: "Google Ads Sri Lanka Cost Guide", path: "/google-ads-sri-lanka-cost-guide" },
-        ]}
-      />
+      <RelatedArticles currentPath="/online-advertising-sri-lanka" max={4} />
 
       {/* Final CTA */}
       <motion.div

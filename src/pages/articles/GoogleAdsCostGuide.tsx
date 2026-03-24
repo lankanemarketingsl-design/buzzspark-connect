@@ -84,12 +84,7 @@ const GoogleAdsCostGuide = () => {
           </div>
         </motion.div>
 
-        <RelatedArticles
-          articles={[
-            { title: "Best Advertising Company in Sri Lanka", path: "/best-advertising-company-sri-lanka" },
-            { title: "Online vs Traditional Advertising", path: "/online-vs-traditional-advertising-sri-lanka" },
-          ]}
-        />
+        <RelatedArticles currentPath="/google-ads-sri-lanka-cost-guide" />
       </article>
     </ServicePageLayout>
   );
