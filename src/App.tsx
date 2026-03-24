@@ -41,6 +41,10 @@ import FinanceMarketingGenerateLeads from "./pages/articles/FinanceMarketingGene
 import RestaurantMarketingAttractCustomers from "./pages/articles/RestaurantMarketingAttractCustomers.tsx";
 import RealEstateMarketingPropertyLeads from "./pages/articles/RealEstateMarketingPropertyLeads.tsx";
 import FashionMarketingGrowBrand from "./pages/articles/FashionMarketingGrowBrand.tsx";
+import BestAdvertisingCompanySriLanka from "./pages/articles/BestAdvertisingCompanySriLanka.tsx";
+import DigitalAdvertisingGuide from "./pages/articles/DigitalAdvertisingGuide.tsx";
+import OnlineVsTraditionalAdvertising from "./pages/articles/OnlineVsTraditionalAdvertising.tsx";
+import GoogleAdsCostGuide from "./pages/articles/GoogleAdsCostGuide.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
@@ -108,6 +112,10 @@ const App = () => (
           <Route path="/restaurant-marketing-attract-customers-sri-lanka" element={<RestaurantMarketingAttractCustomers />} />
           <Route path="/real-estate-marketing-generate-property-leads-sri-lanka" element={<RealEstateMarketingPropertyLeads />} />
           <Route path="/fashion-marketing-grow-brand-sri-lanka" element={<FashionMarketingGrowBrand />} />
+          <Route path="/best-advertising-company-sri-lanka" element={<BestAdvertisingCompanySriLanka />} />
+          <Route path="/digital-advertising-sri-lanka-complete-guide" element={<DigitalAdvertisingGuide />} />
+          <Route path="/online-vs-traditional-advertising-sri-lanka" element={<OnlineVsTraditionalAdvertising />} />
+          <Route path="/google-ads-sri-lanka-cost-guide" element={<GoogleAdsCostGuide />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

@@ -24,8 +24,39 @@ import articleFinanceMarketing from "@/assets/blog/article-finance-marketing.jpg
 import articleRestaurantMarketing from "@/assets/blog/article-restaurant-marketing.jpg";
 import articleRealestateMarketing from "@/assets/blog/article-realestate-marketing.jpg";
 import articleFashionMarketing from "@/assets/blog/article-fashion-marketing.jpg";
-
+import articleBestAdvertising from "@/assets/blog/article-best-advertising.jpg";
+import articleDigitalAdGuide from "@/assets/blog/article-digital-advertising-guide.jpg";
+import articleOnlineVsTraditional from "@/assets/blog/article-online-vs-traditional.jpg";
+import articleGoogleAdsCost from "@/assets/blog/article-google-ads-cost.jpg";
 const articles = [
+  {
+    title: "Best Advertising Company in Sri Lanka",
+    date: "Mar 24, 2025",
+    excerpt: "Discover why BuzzConnect is the best advertising company in Sri Lanka. Multi-channel email, SMS, WhatsApp & banner advertising solutions for 2,000+ businesses.",
+    path: "/best-advertising-company-sri-lanka",
+    image: articleBestAdvertising,
+  },
+  {
+    title: "Digital Advertising Sri Lanka: Complete Guide",
+    date: "Mar 24, 2025",
+    excerpt: "A complete guide to digital advertising in Sri Lanka covering email, SMS, WhatsApp, social media, and banner advertising strategies for maximum ROI.",
+    path: "/digital-advertising-sri-lanka-complete-guide",
+    image: articleDigitalAdGuide,
+  },
+  {
+    title: "Online Advertising vs Traditional Advertising in Sri Lanka",
+    date: "Mar 24, 2025",
+    excerpt: "Compare online and traditional advertising in Sri Lanka. Learn which method delivers better ROI, reach, and measurable results for your business.",
+    path: "/online-vs-traditional-advertising-sri-lanka",
+    image: articleOnlineVsTraditional,
+  },
+  {
+    title: "Google Ads Sri Lanka Cost Guide",
+    date: "Mar 24, 2025",
+    excerpt: "How much do Google Ads cost in Sri Lanka? Complete cost guide covering CPC rates, budgets, and tips to maximize ROI with alternative advertising options.",
+    path: "/google-ads-sri-lanka-cost-guide",
+    image: articleGoogleAdsCost,
+  },
   {
     title: "Hotel Marketing in Sri Lanka: How to Increase Bookings and Revenue",
     date: "Mar 24, 2025",
