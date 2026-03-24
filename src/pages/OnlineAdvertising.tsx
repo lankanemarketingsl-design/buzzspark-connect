@@ -256,7 +256,7 @@ const OnlineAdvertising = () => {
             <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Multi-channel campaigns (Email + SMS + WhatsApp + Banners)
           </li>
           <li className="flex items-center gap-3 text-foreground">
-            <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Affordable packages starting from LKR 1,000
+            <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Affordable packages starting from LKR 5,000
           </li>
           <li className="flex items-center gap-3 text-foreground">
             <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Proven track record of high ROI for Sri Lankan businesses
