@@ -28,6 +28,10 @@ import SmsMarketingInSriLanka from "./pages/articles/SmsMarketingInSriLanka.tsx"
 import EnableMissingImages from "./pages/articles/EnableMissingImages.tsx";
 import MultiChannelMarketingSriLanka from "./pages/articles/MultiChannelMarketingSriLanka.tsx";
 import FutureEmailMarketingSriLanka from "./pages/articles/FutureEmailMarketingSriLanka.tsx";
+import EmailMarketingPowerfulTool from "./pages/articles/EmailMarketingPowerfulTool.tsx";
+import SmsMarketingDrivingEngagement from "./pages/articles/SmsMarketingDrivingEngagement.tsx";
+import WhatsAppMarketingFuture from "./pages/articles/WhatsAppMarketingFuture.tsx";
+import MultiChannelMarketingMaxReach from "./pages/articles/MultiChannelMarketingMaxReach.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
@@ -82,6 +86,10 @@ const App = () => (
           <Route path="/enable-missing-images-to-display" element={<EnableMissingImages />} />
           <Route path="/multi-channel-marketing-in-sri-lanka" element={<MultiChannelMarketingSriLanka />} />
           <Route path="/future-of-email-marketing-sri-lanka" element={<FutureEmailMarketingSriLanka />} />
+          <Route path="/email-marketing-most-powerful-tool-sri-lanka" element={<EmailMarketingPowerfulTool />} />
+          <Route path="/sms-marketing-driving-engagement-sri-lanka" element={<SmsMarketingDrivingEngagement />} />
+          <Route path="/whatsapp-marketing-future-sri-lanka" element={<WhatsAppMarketingFuture />} />
+          <Route path="/multi-channel-marketing-maximum-reach-sri-lanka" element={<MultiChannelMarketingMaxReach />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

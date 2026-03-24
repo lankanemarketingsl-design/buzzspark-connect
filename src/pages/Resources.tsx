@@ -11,8 +11,40 @@ import article5 from "@/assets/blog/article-5.jpg";
 import article6 from "@/assets/blog/article-6.jpg";
 import article7 from "@/assets/blog/article-7.jpg";
 import article8 from "@/assets/blog/article-8.jpg";
+import articleEmailPower from "@/assets/blog/article-email-power.jpg";
+import articleSmsEngagement from "@/assets/blog/article-sms-engagement.jpg";
+import articleWhatsappFuture from "@/assets/blog/article-whatsapp-future.jpg";
+import articleMultichannelReach from "@/assets/blog/article-multichannel-reach.jpg";
 
 const articles = [
+  {
+    title: "Why Email Marketing is Still the Most Powerful Tool for Businesses in Sri Lanka",
+    date: "Mar 24, 2025",
+    excerpt: "Email marketing delivers the highest ROI for businesses in Sri Lanka. Learn why email campaigns outperform social media and how to leverage them for consistent growth.",
+    path: "/email-marketing-most-powerful-tool-sri-lanka",
+    image: articleEmailPower,
+  },
+  {
+    title: "How SMS Marketing is Driving Instant Customer Engagement in Sri Lanka",
+    date: "Mar 24, 2025",
+    excerpt: "With open rates exceeding 90%, SMS marketing is the fastest way to reach customers in Sri Lanka. Discover how instant text campaigns drive engagement and conversions.",
+    path: "/sms-marketing-driving-engagement-sri-lanka",
+    image: articleSmsEngagement,
+  },
+  {
+    title: "WhatsApp Marketing in Sri Lanka: The Future of Customer Communication",
+    date: "Mar 24, 2025",
+    excerpt: "Millions of Sri Lankans use WhatsApp daily. Learn how businesses use WhatsApp marketing for promotions, customer support, and higher conversion rates.",
+    path: "/whatsapp-marketing-future-sri-lanka",
+    image: articleWhatsappFuture,
+  },
+  {
+    title: "Multi-Channel Marketing in Sri Lanka: The Key to Maximum Reach",
+    date: "Mar 24, 2025",
+    excerpt: "Combine Email, SMS, WhatsApp and social media for maximum reach. Learn why multi-channel marketing strategies outperform single-channel approaches.",
+    path: "/multi-channel-marketing-maximum-reach-sri-lanka",
+    image: articleMultichannelReach,
+  },
   {
     title: "The Future of Email Marketing in Sri Lanka: Email Campaigns + Findit.lk Ads",
     date: "Mar 21, 2025",
