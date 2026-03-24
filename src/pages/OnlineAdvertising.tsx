@@ -189,7 +189,7 @@ const OnlineAdvertising = () => {
             <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 100% web traffic from people interested in promotions, discounts, and offers
           </li>
           <li className="flex items-start gap-2 text-sm text-foreground">
-            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 2000+ registered companies and 250,000+ subscribers database
+            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 2000+ registered companies and 350,000+ subscribers database
           </li>
           <li className="flex items-start gap-2 text-sm text-foreground">
             <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 200,000+ monthly hits from people looking for offers and promotions
