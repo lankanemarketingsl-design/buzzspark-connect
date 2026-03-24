@@ -34,6 +34,7 @@ import WhatsAppMarketingFuture from "./pages/articles/WhatsAppMarketingFuture.ts
 import MultiChannelMarketingMaxReach from "./pages/articles/MultiChannelMarketingMaxReach.tsx";
 import SeoWhyItMatters from "./pages/articles/SeoWhyItMatters.tsx";
 import LeadGenerationGetMoreCustomers from "./pages/articles/LeadGenerationGetMoreCustomers.tsx";
+import SocialMediaMarketingWhyYouNeedIt from "./pages/articles/SocialMediaMarketingWhyYouNeedIt.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
