@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
 
 const allArticles = [
+  { title: "Hotel Marketing: Increase Bookings", path: "/hotel-marketing-increase-bookings-sri-lanka" },
+  { title: "Education Marketing: Attract Students", path: "/education-marketing-attract-students-sri-lanka" },
+  { title: "Finance Marketing: Generate Leads", path: "/finance-marketing-generate-leads-sri-lanka" },
+  { title: "Restaurant Marketing: Attract Customers", path: "/restaurant-marketing-attract-customers-sri-lanka" },
+  { title: "Real Estate Marketing: Property Leads", path: "/real-estate-marketing-generate-property-leads-sri-lanka" },
+  { title: "Fashion Marketing: Grow Your Brand", path: "/fashion-marketing-grow-brand-sri-lanka" },
   { title: "Social Media Marketing: Why You Need It", path: "/social-media-marketing-why-your-business-needs-it-sri-lanka" },
   { title: "Lead Generation: Get More Customers", path: "/lead-generation-get-more-customers-sri-lanka" },
   { title: "What is SEO and Why It Matters", path: "/seo-why-it-matters-sri-lanka" },
