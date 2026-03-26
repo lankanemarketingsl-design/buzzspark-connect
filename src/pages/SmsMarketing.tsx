@@ -1,9 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { CheckCircle, Users, Crown, Target, Briefcase, Smartphone, Zap, BarChart3, Globe, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket } from "lucide-react";
+import { CheckCircle, Users, Crown, Target, Briefcase, Smartphone, Zap, BarChart3, Globe, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Stethoscope } from "lucide-react";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import SmsHeroContent from "@/components/sms/SmsHeroContent";
 
 const databases = [
   {
@@ -48,14 +49,6 @@ const districts = [
   { name: "Ampara", count: "15,000" }, { name: "Wattala", count: "10,000" },
 ];
 
-const benefits = [
-  "Instant message delivery",
-  "High open and response rates",
-  "Cost-effective marketing solution",
-  "Target specific audiences",
-  "Ideal for promotions and alerts",
-  "Works on all mobile devices",
-];
 
 const processSteps = [
   { icon: Target, title: "Select Database", desc: "Select your target database" },
@@ -65,19 +58,20 @@ const processSteps = [
 ];
 
 const useCases = [
-  { icon: GraduationCap, label: "Education institutes promoting course intakes" },
-  { icon: ShoppingCart, label: "Retail and e-commerce businesses" },
-  { icon: Building2, label: "Hotels and travel companies" },
-  { icon: Home, label: "Real estate marketing" },
-  { icon: Calendar, label: "Event promotions" },
-  { icon: Rocket, label: "SMEs and corporate businesses" },
+  { icon: Building2, label: "Hotels & Travel" },
+  { icon: GraduationCap, label: "Education Institutes" },
+  { icon: Home, label: "Real Estate Companies" },
+  { icon: Stethoscope, label: "Healthcare Providers" },
+  { icon: ShoppingCart, label: "Retail Businesses" },
+  { icon: Rocket, label: "SMEs and Corporate Businesses" },
 ];
 
 const faqs = [
-  { q: "What is SMS marketing in Sri Lanka?", a: "SMS marketing is a method of sending promotional or informational messages directly to customers' mobile phones." },
-  { q: "How effective is SMS marketing?", a: "SMS marketing has one of the highest open rates, making it highly effective for promotions and alerts." },
-  { q: "How many people can I reach?", a: "You can reach hundreds of thousands of targeted users across Sri Lanka using our databases." },
-  { q: "What is the cost of SMS marketing?", a: "Pricing starts from as low as 2 LKR per message depending on the selected database." },
+  { q: "What is SMS marketing in Sri Lanka?", a: "SMS marketing is a direct marketing method that allows businesses to send promotional or informational messages to customers via mobile phones. It's one of the most effective channels in Sri Lanka due to high open rates." },
+  { q: "How effective is bulk SMS marketing?", a: "SMS has one of the highest open rates (over 95%), making it extremely effective when combined with the right targeting and multi-channel strategy." },
+  { q: "What is multi-channel marketing?", a: "Multi-channel marketing uses multiple platforms together — SMS, email, WhatsApp, landing pages, and retargeting ads — to improve engagement and conversion rates." },
+  { q: "How much does SMS marketing cost in Sri Lanka?", a: "Costs depend on volume, database selection, and campaign strategy. Pricing starts from LKR 2 per message. Contact us for a customized quote." },
+  { q: "How many people can I reach?", a: "You can reach 600,000+ targeted contacts across Sri Lanka using our corporate, VIP, marketing, and district-wise databases." },
 ];
 
 const SmsMarketing = () => {
@@ -104,34 +98,22 @@ const SmsMarketing = () => {
   return (
     <ServicePageLayout
       badge="SMS Marketing Sri Lanka"
-      title="SMS Marketing Sri Lanka – Bulk SMS Advertising with Targeted Databases"
-      subtitle="Buzz Connect provides one of the most powerful SMS marketing services in Sri Lanka, enabling businesses to instantly reach thousands of customers with high-impact messaging."
+      title="SMS Marketing Sri Lanka That Drives Real Business Results"
+      subtitle="We combine bulk SMS campaigns with multi-channel marketing strategies to increase conversions and ROI for businesses across Sri Lanka."
     >
       <SEOHead
-        title="SMS Marketing Sri Lanka | Bulk SMS to 600K+ from LKR 2"
-        description="No.1 SMS marketing company in Sri Lanka. Reach 600,000+ contacts with targeted bulk SMS campaigns. Corporate, VIP & district-wise databases. From LKR 2 per SMS. Get instant results."
+        title="SMS Marketing Sri Lanka | Bulk SMS Campaigns with Multi-Channel Strategy"
+        description="Boost your business with SMS marketing in Sri Lanka. We combine bulk SMS campaigns with multi-channel marketing strategies to increase conversions and ROI. Start today."
         canonical="/sms-marketing"
-        keywords="sms marketing sri lanka, bulk sms sri lanka, sms advertising colombo, sms campaign sri lanka, targeted sms marketing, bulk sms service sri lanka, sms gateway sri lanka, cheap bulk sms sri lanka"
+        keywords="sms marketing sri lanka, bulk sms sri lanka, sms advertising colombo, sms campaign sri lanka, targeted sms marketing, bulk sms service sri lanka, multi-channel sms marketing, sms marketing services sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "SMS Marketing", url: "/sms-marketing" },
         ]}
         jsonLd={jsonLd}
       />
-      {/* Power Intro */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          With access to one of the largest and most targeted <strong>SMS databases in Sri Lanka</strong>, we help businesses connect with the right audience, increase engagement, and generate leads at a low cost.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Our <strong>bulk SMS marketing solutions</strong> are ideal for promotions, alerts, campaigns, and business communication, delivering fast and measurable results across all industries.
-        </p>
-      </motion.div>
+      {/* New SEO Content Sections */}
+      <SmsHeroContent />
 
       {/* Databases */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
@@ -198,29 +180,7 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
-      {/* Why SMS Marketing is Effective */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why SMS Marketing is Effective in Sri Lanka</h2>
-        <p className="text-muted-foreground mb-4 leading-relaxed">
-          SMS marketing is one of the most powerful digital marketing channels in Sri Lanka due to its extremely high open rates and instant delivery. Unlike email or social media, SMS messages are typically read within minutes, making them ideal for time-sensitive promotions and direct communication.
-        </p>
-        <p className="text-muted-foreground mb-6 leading-relaxed">
-          Businesses in Sri Lanka use SMS marketing to reach customers quickly, promote offers, and drive immediate responses.
-        </p>
-        <h3 className="font-heading text-xl font-semibold text-foreground mb-4">Benefits of SMS Marketing for Businesses</h3>
-        <ul className="space-y-3">
-          {benefits.map((b) => (
-            <li key={b} className="flex items-center gap-3 text-foreground">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {b}
-            </li>
-          ))}
-        </ul>
-      </motion.div>
+      {/* removed - now in SmsHeroContent */}
 
       {/* How It Works */}
       <motion.div
