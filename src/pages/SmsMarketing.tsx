@@ -110,10 +110,10 @@ const SmsMarketing = () => {
       subtitle="We combine bulk SMS campaigns with multi-channel marketing strategies to increase conversions and ROI for businesses across Sri Lanka."
     >
       <SEOHead
-        title="SMS Marketing Sri Lanka | Bulk SMS to 600K+ from LKR 2"
-        description="No.1 SMS marketing company in Sri Lanka. Reach 600,000+ contacts with targeted bulk SMS campaigns. Corporate, VIP & district-wise databases. From LKR 2 per SMS. Get instant results."
+        title="SMS Marketing Sri Lanka | Bulk SMS Campaigns with Multi-Channel Strategy"
+        description="Boost your business with SMS marketing in Sri Lanka. We combine bulk SMS campaigns with multi-channel marketing strategies to increase conversions and ROI. Start today."
         canonical="/sms-marketing"
-        keywords="sms marketing sri lanka, bulk sms sri lanka, sms advertising colombo, sms campaign sri lanka, targeted sms marketing, bulk sms service sri lanka, sms gateway sri lanka, cheap bulk sms sri lanka"
+        keywords="sms marketing sri lanka, bulk sms sri lanka, sms advertising colombo, sms campaign sri lanka, targeted sms marketing, bulk sms service sri lanka, multi-channel sms marketing, sms marketing services sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "SMS Marketing", url: "/sms-marketing" },
