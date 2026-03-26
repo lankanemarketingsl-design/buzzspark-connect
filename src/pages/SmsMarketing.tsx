@@ -106,8 +106,8 @@ const SmsMarketing = () => {
   return (
     <ServicePageLayout
       badge="SMS Marketing Sri Lanka"
-      title="SMS Marketing Sri Lanka – Bulk SMS Advertising with Targeted Databases"
-      subtitle="Buzz Connect provides one of the most powerful SMS marketing services in Sri Lanka, enabling businesses to instantly reach thousands of customers with high-impact messaging."
+      title="SMS Marketing Sri Lanka That Drives Real Business Results"
+      subtitle="We combine bulk SMS campaigns with multi-channel marketing strategies to increase conversions and ROI for businesses across Sri Lanka."
     >
       <SEOHead
         title="SMS Marketing Sri Lanka | Bulk SMS to 600K+ from LKR 2"
