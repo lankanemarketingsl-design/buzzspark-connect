@@ -75,10 +75,11 @@ const useCases = [
 ];
 
 const faqs = [
-  { q: "What is SMS marketing in Sri Lanka?", a: "SMS marketing is a method of sending promotional or informational messages directly to customers' mobile phones." },
-  { q: "How effective is SMS marketing?", a: "SMS marketing has one of the highest open rates, making it highly effective for promotions and alerts." },
-  { q: "How many people can I reach?", a: "You can reach hundreds of thousands of targeted users across Sri Lanka using our databases." },
-  { q: "What is the cost of SMS marketing?", a: "Pricing starts from as low as 2 LKR per message depending on the selected database." },
+  { q: "What is SMS marketing in Sri Lanka?", a: "SMS marketing is a direct marketing method that allows businesses to send promotional or informational messages to customers via mobile phones. It's one of the most effective channels in Sri Lanka due to high open rates." },
+  { q: "How effective is bulk SMS marketing?", a: "SMS has one of the highest open rates (over 95%), making it extremely effective when combined with the right targeting and multi-channel strategy." },
+  { q: "What is multi-channel marketing?", a: "Multi-channel marketing uses multiple platforms together — SMS, email, WhatsApp, landing pages, and retargeting ads — to improve engagement and conversion rates." },
+  { q: "How much does SMS marketing cost in Sri Lanka?", a: "Costs depend on volume, database selection, and campaign strategy. Pricing starts from LKR 2 per message. Contact us for a customized quote." },
+  { q: "How many people can I reach?", a: "You can reach 600,000+ targeted contacts across Sri Lanka using our corporate, VIP, marketing, and district-wise databases." },
 ];
 
 const SmsMarketing = () => {
