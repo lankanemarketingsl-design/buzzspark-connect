@@ -1,6 +1,14 @@
 [build]
   publish = "dist"
+  command = "npm run build"
 
 # Disable automatic trailing slash redirects for pre-rendered routes
 [build.processing.html]
   pretty_urls = false
+
+# Redirect all .html URLs to clean URLs (forced)
+[[redirects]]
+  from = "/*.html"
+  to = "/:splat"
+  status = 301
+  force = true
