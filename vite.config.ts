@@ -139,8 +139,14 @@ const staticRouteSeoPlugin = (): Plugin => ({
       if (entry.route === "/") {
         fs.writeFileSync(path.join(distDir, "index.html"), applyRouteSeo(template, entry), "utf8");
       } else {
-        // Flat file (e.g. dist/sms-marketing.html) — avoids Netlify folder-based trailing-slash issues
-        const flatPath = path.join(distDir, `${entry.route.replace(/^\//, "")}.html`);
+        const slug = entry.route.replace(/^\//, "");
+        // Remove old folder-based file if it exists (e.g. dist/sms-marketing/index.html)
+        const oldFolder = path.join(distDir, slug);
+        if (fs.existsSync(oldFolder) && fs.statSync(oldFolder).isDirectory()) {
+          fs.rmSync(oldFolder, { recursive: true });
+        }
+        // Create flat file (e.g. dist/sms-marketing.html)
+        const flatPath = path.join(distDir, `${slug}.html`);
         fs.mkdirSync(path.dirname(flatPath), { recursive: true });
         fs.writeFileSync(flatPath, applyRouteSeo(template, entry), "utf8");
       }
