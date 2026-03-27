@@ -3,6 +3,7 @@ import IntroductionSection from "@/components/home/IntroductionSection";
 import ServicesSection from "@/components/home/ServicesSection";
 import AboutSection from "@/components/home/AboutSection";
 import WhyUsSection from "@/components/home/WhyUsSection";
+import CompetitorComparison from "@/components/home/CompetitorComparison";
 import ContactSection from "@/components/home/ContactSection";
 import CTABanner from "@/components/home/CTABanner";
 import BrandAwarenessWidget from "@/components/home/BrandAwarenessWidget";
