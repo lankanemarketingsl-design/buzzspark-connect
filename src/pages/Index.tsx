@@ -72,6 +72,7 @@ const Index = () => {
       />
       <LogoCarousel />
       <TestimonialsSection />
+      <CompetitorComparison />
       <WhyUsSection />
       <ContactSection />
     </div>
