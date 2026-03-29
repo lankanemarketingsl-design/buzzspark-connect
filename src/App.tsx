@@ -63,63 +63,67 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollToTop />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/email-marketing" element={<EmailMarketing />} />
-          <Route path="/sms-marketing" element={<SmsMarketing />} />
-          <Route path="/whatsapp-marketing" element={<WhatsAppMarketing />} />
-          <Route path="/multi-channel-marketing-sri-lanka" element={<SpecialPackages />} />
-          <Route path="/special-advertising-packages" element={<SpecialPackages />} />
-          <Route path="/online-advertising-sri-lanka" element={<OnlineAdvertising />} />
-          <Route path="/graphic-designing-in-sri-lanka" element={<GraphicDesign />} />
-          <Route path="/seo-sri-lanka" element={<SeoServices />} />
-          <Route path="/website-design-sri-lanka" element={<WebsiteDesign />} />
-          <Route path="/lead-generation-sri-lanka" element={<LeadGeneration />} />
-          <Route path="/social-media-marketing-sri-lanka" element={<SocialMediaMarketing />} />
-          <Route path="/web-banner-advertising-sri-lanka" element={<WebBannerAdvertising />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/why-choose-us" element={<WhyChooseUs />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          {/* Industry-specific marketing pages */}
-          <Route path="/hotel-marketing-sri-lanka" element={<HotelMarketing />} />
-          <Route path="/education-marketing-sri-lanka" element={<EducationMarketing />} />
-          <Route path="/finance-marketing-sri-lanka" element={<FinanceMarketing />} />
-          <Route path="/restaurant-marketing-sri-lanka" element={<RestaurantMarketing />} />
-          <Route path="/real-estate-marketing-sri-lanka" element={<RealEstateMarketing />} />
-          <Route path="/fashion-marketing-sri-lanka" element={<FashionMarketing />} />
-          {/* Resource article pages */}
-          <Route path="/why-email-marketing-is-important" element={<WhyEmailMarketingIsImportant />} />
-          <Route path="/why-you-need-email-marketing" element={<WhyYouNeedEmailMarketing />} />
-          <Route path="/best-seo-services-sri-lanka" element={<BestSeoServicesSriLanka />} />
-          <Route path="/sms-marketing-in-sri-lanka" element={<SmsMarketingInSriLanka />} />
-          
-          <Route path="/enable-missing-images-to-display" element={<EnableMissingImages />} />
-          <Route path="/multi-channel-marketing-in-sri-lanka" element={<MultiChannelMarketingSriLanka />} />
-          <Route path="/future-of-email-marketing-sri-lanka" element={<FutureEmailMarketingSriLanka />} />
-          <Route path="/email-marketing-most-powerful-tool-sri-lanka" element={<EmailMarketingPowerfulTool />} />
-          <Route path="/sms-marketing-driving-engagement-sri-lanka" element={<SmsMarketingDrivingEngagement />} />
-          <Route path="/whatsapp-marketing-future-sri-lanka" element={<WhatsAppMarketingFuture />} />
-          <Route path="/multi-channel-marketing-maximum-reach-sri-lanka" element={<MultiChannelMarketingMaxReach />} />
-          <Route path="/seo-why-it-matters-sri-lanka" element={<SeoWhyItMatters />} />
-          <Route path="/lead-generation-get-more-customers-sri-lanka" element={<LeadGenerationGetMoreCustomers />} />
-          <Route path="/social-media-marketing-why-your-business-needs-it-sri-lanka" element={<SocialMediaMarketingWhyYouNeedIt />} />
-          <Route path="/hotel-marketing-increase-bookings-sri-lanka" element={<HotelMarketingIncreaseBookings />} />
-          <Route path="/education-marketing-attract-students-sri-lanka" element={<EducationMarketingAttractStudents />} />
-          <Route path="/finance-marketing-generate-leads-sri-lanka" element={<FinanceMarketingGenerateLeads />} />
-          <Route path="/restaurant-marketing-attract-customers-sri-lanka" element={<RestaurantMarketingAttractCustomers />} />
-          <Route path="/real-estate-marketing-generate-property-leads-sri-lanka" element={<RealEstateMarketingPropertyLeads />} />
-          <Route path="/fashion-marketing-grow-brand-sri-lanka" element={<FashionMarketingGrowBrand />} />
-          <Route path="/best-advertising-company-sri-lanka" element={<BestAdvertisingCompanySriLanka />} />
-          <Route path="/digital-advertising-sri-lanka-complete-guide" element={<DigitalAdvertisingGuide />} />
-          <Route path="/online-vs-traditional-advertising-sri-lanka" element={<OnlineVsTraditionalAdvertising />} />
-          <Route path="/google-ads-sri-lanka-cost-guide" element={<GoogleAdsCostGuide />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-        <WhatsAppCTA />
+        <div className="min-h-screen overflow-x-hidden bg-background">
+          <ScrollToTop />
+          <Navbar />
+          <main className="overflow-x-hidden">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/email-marketing" element={<EmailMarketing />} />
+              <Route path="/sms-marketing" element={<SmsMarketing />} />
+              <Route path="/whatsapp-marketing" element={<WhatsAppMarketing />} />
+              <Route path="/multi-channel-marketing-sri-lanka" element={<SpecialPackages />} />
+              <Route path="/special-advertising-packages" element={<SpecialPackages />} />
+              <Route path="/online-advertising-sri-lanka" element={<OnlineAdvertising />} />
+              <Route path="/graphic-designing-in-sri-lanka" element={<GraphicDesign />} />
+              <Route path="/seo-sri-lanka" element={<SeoServices />} />
+              <Route path="/website-design-sri-lanka" element={<WebsiteDesign />} />
+              <Route path="/lead-generation-sri-lanka" element={<LeadGeneration />} />
+              <Route path="/social-media-marketing-sri-lanka" element={<SocialMediaMarketing />} />
+              <Route path="/web-banner-advertising-sri-lanka" element={<WebBannerAdvertising />} />
+              <Route path="/resources" element={<Resources />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/why-choose-us" element={<WhyChooseUs />} />
+              <Route path="/contact-us" element={<ContactUs />} />
+              {/* Industry-specific marketing pages */}
+              <Route path="/hotel-marketing-sri-lanka" element={<HotelMarketing />} />
+              <Route path="/education-marketing-sri-lanka" element={<EducationMarketing />} />
+              <Route path="/finance-marketing-sri-lanka" element={<FinanceMarketing />} />
+              <Route path="/restaurant-marketing-sri-lanka" element={<RestaurantMarketing />} />
+              <Route path="/real-estate-marketing-sri-lanka" element={<RealEstateMarketing />} />
+              <Route path="/fashion-marketing-sri-lanka" element={<FashionMarketing />} />
+              {/* Resource article pages */}
+              <Route path="/why-email-marketing-is-important" element={<WhyEmailMarketingIsImportant />} />
+              <Route path="/why-you-need-email-marketing" element={<WhyYouNeedEmailMarketing />} />
+              <Route path="/best-seo-services-sri-lanka" element={<BestSeoServicesSriLanka />} />
+              <Route path="/sms-marketing-in-sri-lanka" element={<SmsMarketingInSriLanka />} />
+
+              <Route path="/enable-missing-images-to-display" element={<EnableMissingImages />} />
+              <Route path="/multi-channel-marketing-in-sri-lanka" element={<MultiChannelMarketingSriLanka />} />
+              <Route path="/future-of-email-marketing-sri-lanka" element={<FutureEmailMarketingSriLanka />} />
+              <Route path="/email-marketing-most-powerful-tool-sri-lanka" element={<EmailMarketingPowerfulTool />} />
+              <Route path="/sms-marketing-driving-engagement-sri-lanka" element={<SmsMarketingDrivingEngagement />} />
+              <Route path="/whatsapp-marketing-future-sri-lanka" element={<WhatsAppMarketingFuture />} />
+              <Route path="/multi-channel-marketing-maximum-reach-sri-lanka" element={<MultiChannelMarketingMaxReach />} />
+              <Route path="/seo-why-it-matters-sri-lanka" element={<SeoWhyItMatters />} />
+              <Route path="/lead-generation-get-more-customers-sri-lanka" element={<LeadGenerationGetMoreCustomers />} />
+              <Route path="/social-media-marketing-why-your-business-needs-it-sri-lanka" element={<SocialMediaMarketingWhyYouNeedIt />} />
+              <Route path="/hotel-marketing-increase-bookings-sri-lanka" element={<HotelMarketingIncreaseBookings />} />
+              <Route path="/education-marketing-attract-students-sri-lanka" element={<EducationMarketingAttractStudents />} />
+              <Route path="/finance-marketing-generate-leads-sri-lanka" element={<FinanceMarketingGenerateLeads />} />
+              <Route path="/restaurant-marketing-attract-customers-sri-lanka" element={<RestaurantMarketingAttractCustomers />} />
+              <Route path="/real-estate-marketing-generate-property-leads-sri-lanka" element={<RealEstateMarketingPropertyLeads />} />
+              <Route path="/fashion-marketing-grow-brand-sri-lanka" element={<FashionMarketingGrowBrand />} />
+              <Route path="/best-advertising-company-sri-lanka" element={<BestAdvertisingCompanySriLanka />} />
+              <Route path="/digital-advertising-sri-lanka-complete-guide" element={<DigitalAdvertisingGuide />} />
+              <Route path="/online-vs-traditional-advertising-sri-lanka" element={<OnlineVsTraditionalAdvertising />} />
+              <Route path="/google-ads-sri-lanka-cost-guide" element={<GoogleAdsCostGuide />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+          <WhatsAppCTA />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

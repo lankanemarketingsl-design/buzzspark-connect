@@ -44,6 +44,12 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    setMobileOpen(false);
+    setMobileIndustryOpen(false);
+    setIndustryOpen(false);
+  }, [location.pathname]);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 gradient-hero border-b border-navy-light/30 backdrop-blur-sm">
       <div className="container mx-auto flex items-center justify-between h-14 sm:h-16 px-4">
@@ -114,7 +120,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="xl:hidden gradient-hero border-t border-navy-light/30 pb-4">
+        <div className="xl:hidden gradient-hero border-t border-navy-light/30 pb-4 max-h-[calc(100vh-3.5rem)] sm:max-h-[calc(100vh-4rem)] overflow-y-auto">
           <div className="container mx-auto px-4 flex flex-col gap-1">
             {navItems.map((item) => (
               <Link

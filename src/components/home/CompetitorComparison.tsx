@@ -56,40 +56,44 @@ const CompetitorComparison = () => {
         >
           {/* Table */}
           <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-            {/* Header */}
-            <div className="grid grid-cols-[1fr_1fr_1fr] sm:grid-cols-[2fr_1.5fr_1.5fr]">
-              <div className="p-4 bg-white/5 text-white/50 text-xs sm:text-sm font-semibold uppercase tracking-wider">
-                Feature
-              </div>
-              <div className="p-4 bg-accent text-primary text-center text-xs sm:text-sm font-bold uppercase tracking-wider">
-                Buzz Connect
-              </div>
-              <div className="p-4 bg-white/5 text-white/50 text-center text-xs sm:text-sm font-semibold uppercase tracking-wider">
-                Other Providers
+            <div className="overflow-x-auto">
+              <div className="min-w-[640px]">
+                {/* Header */}
+                <div className="grid grid-cols-[2fr_1.5fr_1.5fr]">
+                  <div className="p-4 bg-white/5 text-white/50 text-xs sm:text-sm font-semibold uppercase tracking-wider">
+                    Feature
+                  </div>
+                  <div className="p-4 bg-accent text-primary text-center text-xs sm:text-sm font-bold uppercase tracking-wider">
+                    Buzz Connect
+                  </div>
+                  <div className="p-4 bg-white/5 text-white/50 text-center text-xs sm:text-sm font-semibold uppercase tracking-wider">
+                    Other Providers
+                  </div>
+                </div>
+
+                {/* Rows */}
+                {features.map((row, i) => (
+                  <div
+                    key={row.feature}
+                    className={`grid grid-cols-[2fr_1.5fr_1.5fr] border-t border-white/5 ${
+                      i % 2 === 0 ? "bg-white/[0.02]" : "bg-transparent"
+                    } hover:bg-white/[0.05] transition-colors`}
+                  >
+                    <div className="p-3 sm:p-4 text-white/90 text-xs sm:text-sm font-medium">
+                      {row.feature}
+                    </div>
+                    <div className="p-3 sm:p-4 bg-accent/[0.06] flex items-center justify-center gap-1.5 border-x border-accent/10">
+                      <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                      <span className="text-white text-xs sm:text-sm font-medium">{row.buzz}</span>
+                    </div>
+                    <div className="p-3 sm:p-4 flex items-center justify-center gap-1.5">
+                      <OtherIcon status={row.otherStatus} />
+                      <span className="text-white/40 text-xs sm:text-sm">{row.other}</span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-
-            {/* Rows */}
-            {features.map((row, i) => (
-              <div
-                key={row.feature}
-                className={`grid grid-cols-[1fr_1fr_1fr] sm:grid-cols-[2fr_1.5fr_1.5fr] border-t border-white/5 ${
-                  i % 2 === 0 ? "bg-white/[0.02]" : "bg-transparent"
-                } hover:bg-white/[0.05] transition-colors`}
-              >
-                <div className="p-3 sm:p-4 text-white/90 text-xs sm:text-sm font-medium">
-                  {row.feature}
-                </div>
-                <div className="p-3 sm:p-4 bg-accent/[0.06] flex items-center justify-center gap-1.5 border-x border-accent/10">
-                  <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                  <span className="text-white text-xs sm:text-sm font-medium">{row.buzz}</span>
-                </div>
-                <div className="p-3 sm:p-4 flex items-center justify-center gap-1.5">
-                  <OtherIcon status={row.otherStatus} />
-                  <span className="text-white/40 text-xs sm:text-sm">{row.other}</span>
-                </div>
-              </div>
-            ))}
           </div>
 
           {/* USP Punchline */}
