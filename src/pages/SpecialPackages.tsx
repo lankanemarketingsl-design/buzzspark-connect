@@ -32,7 +32,7 @@ const waFeatures: FeatureRow[] = [
   { label: "Findit.lk Lifetime Profile", budget: false, silver: false, gold: true, platinum: true },
   { label: "Findit.lk Main Banner", budget: false, silver: "2 Weeks", gold: "3 Weeks + 2 Weeks", platinum: "1 Month" },
   { label: "Findit.lk Side Banner", budget: false, silver: false, gold: "1 Week", platinum: "2 Weeks" },
-  { label: "Findit.lk Pop-Up Banner", budget: "1 Day", silver: false, gold: false, platinum: false },
+  { label: "Findit.lk Pop-Up Banner", budget: "1 Day", silver: false, gold: false, platinum: "4 Days" },
   { label: "Facebook Boosting", budget: true, silver: true, gold: true, platinum: true },
 ];
 
