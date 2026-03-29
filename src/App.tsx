@@ -54,6 +54,7 @@ import FinanceMarketing from "./pages/FinanceMarketing.tsx";
 import RestaurantMarketing from "./pages/RestaurantMarketing.tsx";
 import RealEstateMarketing from "./pages/RealEstateMarketing.tsx";
 import FashionMarketing from "./pages/FashionMarketing.tsx";
+import AdvertisingSriLanka from "./pages/AdvertisingSriLanka.tsx";
 
 const queryClient = new QueryClient();
 
