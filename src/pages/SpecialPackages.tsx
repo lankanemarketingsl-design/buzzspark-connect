@@ -24,7 +24,7 @@ const smsFeatures: FeatureRow[] = [
   { label: "Facebook Boosting", budget: true, silver: true, gold: true, platinum: true },
 ];
 
-const waFeatures = [
+const waFeatures: FeatureRow[] = [
   { label: "Total Reach", budget: "450,000", silver: "550,000", gold: "575,000", platinum: "625,000" },
   { label: "WhatsApp Campaign", budget: "30,000", silver: "60,000", gold: "110,000", platinum: "175,000" },
   { label: "Email Campaign", budget: "350,000", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
