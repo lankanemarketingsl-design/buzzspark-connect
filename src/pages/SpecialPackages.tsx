@@ -90,7 +90,7 @@ const smsFeatures: FeatureRow[] = [
 ];
 
 const waFeatures: FeatureRow[] = [
-  { label: "Total Reach", starter: "450,000", silver: "550,000", gold: "575,000", platinum: "625,000" },
+  { label: "Total Reach", starter: "450,000+ impressions", silver: "550,000+ impressions", gold: "575,000+ impressions", platinum: "625,000+ impressions" },
   { label: "WhatsApp Campaign", starter: "30,000", silver: "60,000", gold: "110,000", platinum: "175,000" },
   { label: "Email Campaign", starter: "350,000", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
   { label: "Findit.lk Featured Ad", starter: true, silver: true, gold: true, platinum: true },
