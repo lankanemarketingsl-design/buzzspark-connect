@@ -157,7 +157,7 @@ const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; 
               {row.label}
             </div>
             {tierKeys.map((key, ti) => (
-              <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${isReach ? "font-extrabold text-primary text-sm sm:text-base" : ""} ${ti === 3 ? "bg-accent/[0.04]" : ""}`}>
+              <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${isReach ? "font-extrabold text-primary text-sm sm:text-base" : ""} ${ti === 2 ? "bg-accent/[0.04]" : ""}`}>
                 <CellValue value={row[key]} />
               </div>
             ))}
