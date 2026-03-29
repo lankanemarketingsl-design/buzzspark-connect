@@ -36,7 +36,7 @@ const waFeatures = [
   { label: "Facebook Boosting", budget: true, silver: true, gold: true, platinum: true },
 ];
 
-type FeatureRow = { label: string; budget: string | boolean; silver: string | boolean; gold: string | boolean; platinum: string | boolean };
+
 
 const tierLabels = ["Budget", "Silver", "Gold", "Platinum"];
 const tierKeys = ["budget", "silver", "gold", "platinum"] as const;
