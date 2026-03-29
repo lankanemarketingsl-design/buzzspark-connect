@@ -4,7 +4,7 @@ import {
   CheckCircle, Globe, Mail, Smartphone, MessageSquare, Share2, Layout,
   TrendingUp, HelpCircle, Users, Shield, Zap, Target, BarChart3,
   GraduationCap, Building2, Home, ShoppingCart, Briefcase, Shirt,
-  Star, ArrowRight,
+  Star, ArrowRight, Rocket,
 } from "lucide-react";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
@@ -51,6 +51,12 @@ const adTypes = [
     title: "Display & Banner Advertising Sri Lanka",
     desc: "Premium banner placements on Findit.lk — one of Sri Lanka's highest-traffic promotion platforms. Get 200,000+ monthly impressions with homepage banners, popup ads, and featured promotion listings.",
     link: "/web-banner-advertising-sri-lanka",
+  },
+  {
+    icon: Rocket,
+    title: "Multi-Channel Advertising Sri Lanka",
+    desc: "Maximize your reach with BuzzConnect's multi-channel campaigns — combining Email, SMS, WhatsApp, Social Media & Banner Ads into one powerful strategy. Launch in 48–72 hours and reach 1.2M+ potential customers across Sri Lanka.",
+    link: "/multi-channel-marketing-sri-lanka",
   },
 ];
 
