@@ -33,6 +33,7 @@ import articleEmailPricing from "@/assets/blog/article-email-pricing-roi.jpg";
 import articleEmailIndustries from "@/assets/blog/article-email-industry-use-cases.jpg";
 import articleEmailVsSocial from "@/assets/blog/article-email-vs-social-media.jpg";
 import articleMultichannelVsFb from "@/assets/blog/article-multichannel-vs-facebook.jpg";
+import articleFinditlkEmail from "@/assets/blog/article-finditlk-email-conversions.jpg";
 import articleEducationEmail from "@/assets/blog/article-education-email-enrollments.jpg";
 import articleRealestateEmail from "@/assets/blog/article-realestate-email-leads.jpg";
 import articleHotelEmail from "@/assets/blog/article-hotel-email-bookings.jpg";
