@@ -70,6 +70,7 @@ import RestaurantMarketing from "./pages/RestaurantMarketing.tsx";
 import RealEstateMarketing from "./pages/RealEstateMarketing.tsx";
 import FashionMarketing from "./pages/FashionMarketing.tsx";
 import AdvertisingSriLanka from "./pages/AdvertisingSriLanka.tsx";
+import EventMarketing from "./pages/EventMarketing.tsx";
 
 const queryClient = new QueryClient();
 
@@ -109,6 +110,7 @@ const App = () => (
               <Route path="/real-estate-marketing-sri-lanka" element={<RealEstateMarketing />} />
               <Route path="/fashion-marketing-sri-lanka" element={<FashionMarketing />} />
               <Route path="/advertising-sri-lanka" element={<AdvertisingSriLanka />} />
+              <Route path="/event-marketing-sri-lanka" element={<EventMarketing />} />
               {/* Resource article pages */}
               <Route path="/why-email-marketing-is-important" element={<WhyEmailMarketingIsImportant />} />
               <Route path="/why-you-need-email-marketing" element={<WhyYouNeedEmailMarketing />} />
