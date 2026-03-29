@@ -317,6 +317,8 @@ const SpecialPackages = () => {
             { icon: Calendar, label: "Event Organizers", result: "→ Ticket sales" },
             { icon: ShoppingCart, label: "E-commerce & Retail", result: "→ Quick sales" },
             { icon: Building2, label: "Hotels & Travel", result: "→ Bookings" },
+            { icon: Shirt, label: "Fashion & Clothing", result: "→ Brand growth" },
+            { icon: Store, label: "Retail & Supermarkets", result: "→ Foot traffic & sales" },
             { icon: Rocket, label: "SMEs & Corporates", result: "→ Brand awareness" },
           ].map(({ icon: Icon, label, result }) => (
             <div key={label} className="flex items-center gap-4 p-4 rounded-xl bg-muted/40 border border-border">
