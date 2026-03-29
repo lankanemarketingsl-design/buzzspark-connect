@@ -220,74 +220,95 @@ const EventMarketing = () => {
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-10">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing Packages</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Event Marketing Packages</h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Every package includes multi-channel promotion to maximize your event's reach and attendance.</p>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Choose the Right Event Marketing Package for Your Campaign</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Every package includes Findit.lk event listing, remarketing, and multi-channel promotion to maximize attendance.</p>
+          <p className="text-accent font-semibold mt-3 max-w-2xl mx-auto">Event organizers typically recover their investment with just 50–100 ticket sales.</p>
           <div className="mt-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/10 border border-accent/30">
             <span className="text-accent font-bold text-sm">🎉 Multi-Event Subscription = 10% Discount on All Packages</span>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {/* Starter */}
+          {/* Event Launch Starter */}
           <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
             <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
-              <Rocket className="w-6 h-6 text-green-600" />
+              <Ticket className="w-6 h-6 text-green-600" />
             </div>
-            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Event Starter</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
-            <p className="text-xs text-muted-foreground mb-4">Perfect for smaller events & workshops</p>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Event Launch Starter</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 75,000</p>
+            <p className="text-xs text-muted-foreground mb-4">Best for small events, workshops & local promotions</p>
             <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 1 Targeted Email Campaign</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Featured listing on Findit.lk</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 1 Targeted Email Campaign (event audience)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Featured event listing on Findit.lk</li>
+              <li className="flex items-start gap-2">
+                <Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                <a href="https://www.findit.lk/events" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
+              </li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Findit.lk Banner Placement (events category)</li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 7-day visibility boost</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Basic creative (image + copy)</li>
+              <li className="flex items-start gap-2"><RefreshCw className="w-4 h-4 text-green-500 shrink-0 mt-0.5" /> Basic Remarketing (repeat exposure)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Event ad creative (poster + offer)</li>
             </ul>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Starter%20Package%20(LKR%2014%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <p className="text-xs text-muted-foreground italic mb-4">"Generate initial event registrations & awareness"</p>
+            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Launch%20Starter%20Package%20(LKR%2075%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
 
-          {/* Growth */}
+          {/* Event Growth Campaign */}
           <div className="relative p-6 rounded-2xl bg-card shadow-card border-2 border-accent flex flex-col ring-2 ring-accent/20">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full gradient-accent text-primary text-xs font-bold">⭐ MOST POPULAR</div>
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full gradient-accent text-primary text-xs font-bold">🔥 MOST POPULAR</div>
             <div className="w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center mb-4">
               <TrendingUp className="w-6 h-6 text-yellow-600" />
             </div>
-            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Event Growth</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
-            <p className="text-xs text-muted-foreground mb-4">Maximum value for growing events</p>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Event Growth Campaign</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 118,000</p>
+            <p className="text-xs text-muted-foreground mb-4">Best for consistent ticket sales & event promotions</p>
             <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 2–3 Targeted Email Campaigns</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Premium Findit.lk placement</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> SMS + WhatsApp reminders</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Countdown + last-minute push</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 2–3 Targeted Email Campaigns (segmented)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Premium Findit event placement</li>
+              <li className="flex items-start gap-2">
+                <Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                <a href="https://www.findit.lk/events" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
+              </li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Findit.lk Banner Placement (premium position)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> High-interest audience targeting</li>
+              <li className="flex items-start gap-2"><RefreshCw className="w-4 h-4 text-yellow-500 shrink-0 mt-0.5" /> Advanced Remarketing (multi-touch)</li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Performance report</li>
             </ul>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Growth%20Package%20(LKR%2039%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <p className="text-xs text-muted-foreground italic mb-4">"Drive consistent registrations & ticket sales"</p>
+            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Growth%20Campaign%20(LKR%20118%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
 
-          {/* Dominate */}
+          {/* High Impact Event Campaign */}
           <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
             <div className="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
               <Megaphone className="w-6 h-6 text-red-600" />
             </div>
-            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Event Dominate</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
-            <p className="text-xs text-muted-foreground mb-4">Full-funnel for major events</p>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">High Impact Event Campaign</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 298,000</p>
+            <p className="text-xs text-muted-foreground mb-4">Best for concerts, festivals & large-scale events</p>
             <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 4–6 Email Campaigns (full funnel)</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Top ranking on Findit.lk</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> SMS + WhatsApp + Social push</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 🎬 TikTok Video Ad</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Custom landing page</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Priority placement</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 4–6 Email Campaigns (full funnel strategy)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Top ranking in Findit events category</li>
+              <li className="flex items-start gap-2">
+                <Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                <a href="https://www.findit.lk/events" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
+              </li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Findit.lk Banner Placement (top-tier)</li>
+              <li className="flex items-start gap-2"><RefreshCw className="w-4 h-4 text-red-500 shrink-0 mt-0.5" /> Full Funnel Remarketing</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 🎬 TikTok Video Ad (event promo)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Custom event landing page</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Priority promotion for featured events</li>
             </ul>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Dominate%20Package%20(LKR%2089%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <p className="text-xs text-muted-foreground italic mb-4">"Maximize attendance & sell out your event faster"</p>
+            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20High%20Impact%20Event%20Campaign%20(LKR%20298%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
         </div>
+        <p className="text-center text-sm text-muted-foreground mt-6 font-medium">⏰ Limited slots available for upcoming event campaigns</p>
       </motion.div>
 
       {/* Multi-Channel Upsell Section */}
