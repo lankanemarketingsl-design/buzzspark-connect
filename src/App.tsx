@@ -143,6 +143,11 @@ const App = () => (
               <Route path="/education-email-marketing-enrollments-sri-lanka" element={<EducationEmailEnrollments />} />
               <Route path="/real-estate-email-marketing-leads-sri-lanka" element={<RealEstateEmailLeads />} />
               <Route path="/hotel-email-marketing-bookings-sri-lanka" element={<HotelEmailBookings />} />
+              <Route path="/ecommerce-email-marketing-sales-sri-lanka" element={<EcommerceEmailSales />} />
+              <Route path="/recruitment-email-marketing-hiring-sri-lanka" element={<RecruitmentEmailHiring />} />
+              <Route path="/healthcare-email-marketing-engagement-sri-lanka" element={<HealthcareEmailEngagement />} />
+              <Route path="/automotive-email-marketing-sales-sri-lanka" element={<AutomotiveEmailSales />} />
+              <Route path="/event-email-marketing-attendance-sri-lanka" element={<EventEmailAttendance />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
