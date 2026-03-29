@@ -5,7 +5,7 @@ import { useMemo } from "react";
 import {
   CheckCircle, Target, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, Calendar, Star, Users, TrendingUp,
-  ArrowRight, Send, Rocket, Zap, Clock, Gift, DollarSign,
+  ArrowRight, Send, Rocket, Zap, Clock, Gift, DollarSign, RefreshCw,
   Music, Briefcase, GraduationCap, ShoppingBag, Ticket, Megaphone, PartyPopper
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
