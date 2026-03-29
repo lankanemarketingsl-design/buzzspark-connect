@@ -12,7 +12,7 @@ type FeatureRow = {
   platinum: string | boolean;
 };
 
-const smsFeatures = [
+const smsFeatures: FeatureRow[] = [
   { label: "Total Reach", budget: "450,000", silver: "550,000", gold: "950,000", platinum: "1.2 Million+" },
   { label: "SMS Campaign", budget: "20,000", silver: "50,000", gold: "150,000", platinum: "400,000" },
   { label: "Email Campaign", budget: "350,000", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
