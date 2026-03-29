@@ -598,12 +598,12 @@ const SpecialPackages = () => {
       <Fade className="mb-0 max-w-3xl mx-auto">
         <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-foreground text-center mb-8 tracking-tight">Traditional Marketing vs Buzz Connect</h2>
         <div className="rounded-2xl overflow-hidden border border-border shadow-[0_8px_40px_-12px_hsl(var(--primary)/0.1)]">
-          <div className="grid grid-cols-2">
-            <div className="p-5 sm:p-6 text-center text-xs font-bold uppercase tracking-[0.12em] text-destructive flex items-center justify-center gap-2 bg-destructive/8 border-b-2 border-destructive/15">
-              <X className="w-4 h-4" /> Traditional
+      <div className="grid grid-cols-2">
+            <div className="p-3 sm:p-6 text-center text-[10px] sm:text-xs font-bold uppercase tracking-[0.08em] sm:tracking-[0.12em] text-destructive flex items-center justify-center gap-1.5 sm:gap-2 bg-destructive/8 border-b-2 border-destructive/15">
+              <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> Traditional
             </div>
-            <div className="p-5 sm:p-6 text-center text-xs font-bold uppercase tracking-[0.12em] text-accent flex items-center justify-center gap-2 bg-accent/8 border-b-2 border-accent/20">
-              <Check className="w-4 h-4" /> Buzz Connect
+            <div className="p-3 sm:p-6 text-center text-[10px] sm:text-xs font-bold uppercase tracking-[0.08em] sm:tracking-[0.12em] text-accent flex items-center justify-center gap-1.5 sm:gap-2 bg-accent/8 border-b-2 border-accent/20">
+              <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> Buzz Connect
             </div>
           </div>
           {[
@@ -614,8 +614,8 @@ const SpecialPackages = () => {
             { trad: "Expensive for SMEs", buzz: "Affordable packages for every budget" },
           ].map((row, i) => (
             <div key={i} className={`grid grid-cols-2 border-t border-border/60 ${i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/20 transition-colors`}>
-              <div className="p-4 sm:p-5 text-sm text-muted-foreground border-r border-border/60 leading-relaxed">{row.trad}</div>
-              <div className="p-4 sm:p-5 text-sm font-medium text-foreground leading-relaxed">{row.buzz}</div>
+              <div className="p-3 sm:p-5 text-xs sm:text-sm text-muted-foreground border-r border-border/60 leading-relaxed">{row.trad}</div>
+              <div className="p-3 sm:p-5 text-xs sm:text-sm font-medium text-foreground leading-relaxed">{row.buzz}</div>
             </div>
           ))}
         </div>
