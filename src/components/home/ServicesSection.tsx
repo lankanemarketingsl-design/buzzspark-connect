@@ -53,6 +53,7 @@ const services = [
     ],
     description: "Ideal for both SMEs and large-scale businesses.",
     path: "/multi-channel-marketing-sri-lanka",
+    highlight: true,
   },
   {
     icon: Target,
@@ -65,7 +66,6 @@ const services = [
     ],
     description: "Generate high-quality leads and grow your customer base across Sri Lanka.",
     path: "/lead-generation-sri-lanka",
-    highlight: true,
   },
   {
     icon: Share2,
@@ -78,7 +78,6 @@ const services = [
     ],
     description: "Grow your brand with targeted social media campaigns across all major platforms.",
     path: "/social-media-marketing-sri-lanka",
-    highlight: true,
   },
   {
     icon: Globe,
