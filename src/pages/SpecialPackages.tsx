@@ -32,31 +32,35 @@ const TestimonialsCarousel = () => {
   }, [next]);
 
   return (
-    <div className="relative">
-      <div className="overflow-hidden">
-        <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
+    <div className="relative px-10 sm:px-14">
+      <div className="overflow-hidden rounded-2xl">
+        <div className="flex transition-transform duration-600 ease-[cubic-bezier(0.25,0.1,0.25,1)]" style={{ transform: `translateX(-${current * 100}%)` }}>
           {testimonials.map((quote, i) => (
-            <div key={i} className="min-w-full px-4 sm:px-8">
-              <div className="max-w-2xl mx-auto p-6 sm:p-8 rounded-2xl bg-card border border-border shadow-card text-center">
-                <div className="flex justify-center gap-0.5 mb-4">
-                  {[...Array(5)].map((_, s) => <Star key={s} className="w-5 h-5 fill-accent text-accent" />)}
+            <div key={i} className="min-w-full px-2">
+              <div className="p-8 sm:p-10 rounded-2xl bg-gradient-to-br from-card via-card to-muted/20 border border-border shadow-[0_8px_32px_-8px_hsl(var(--primary)/0.08)] text-center">
+                <div className="flex justify-center gap-1 mb-5">
+                  {[...Array(5)].map((_, s) => <Star key={s} className="w-4 h-4 fill-accent text-accent" />)}
                 </div>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed italic">"{quote}"</p>
-                <p className="text-xs font-semibold text-foreground mt-4">— Valued Client</p>
+                <p className="text-sm sm:text-base text-muted-foreground leading-[1.8] italic max-w-lg mx-auto">"{quote}"</p>
+                <div className="mt-6 flex items-center justify-center gap-2">
+                  <div className="w-8 h-[1px] bg-border" />
+                  <p className="text-xs font-semibold text-foreground tracking-wide uppercase">Valued Client</p>
+                  <div className="w-8 h-[1px] bg-border" />
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <button onClick={prev} className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card border border-border shadow-sm hover:bg-muted transition-colors" aria-label="Previous">
-        <ChevronLeft className="w-5 h-5 text-foreground" />
+      <button onClick={prev} className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-card border border-border shadow-card flex items-center justify-center hover:bg-muted hover:shadow-card-hover transition-all" aria-label="Previous">
+        <ChevronLeft className="w-4 h-4 text-foreground" />
       </button>
-      <button onClick={next} className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card border border-border shadow-sm hover:bg-muted transition-colors" aria-label="Next">
-        <ChevronRight className="w-5 h-5 text-foreground" />
+      <button onClick={next} className="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-card border border-border shadow-card flex items-center justify-center hover:bg-muted hover:shadow-card-hover transition-all" aria-label="Next">
+        <ChevronRight className="w-4 h-4 text-foreground" />
       </button>
-      <div className="flex justify-center gap-2 mt-5">
+      <div className="flex justify-center gap-2.5 mt-6">
         {testimonials.map((_, i) => (
-          <button key={i} onClick={() => setCurrent(i)} className={`w-2.5 h-2.5 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-muted-foreground/30"}`} aria-label={`Testimonial ${i + 1}`} />
+          <button key={i} onClick={() => setCurrent(i)} className={`h-1.5 rounded-full transition-all duration-300 ${i === current ? "w-6 bg-accent" : "w-1.5 bg-muted-foreground/25 hover:bg-muted-foreground/40"}`} aria-label={`Testimonial ${i + 1}`} />
         ))}
       </div>
     </div>
@@ -112,7 +116,7 @@ const faqs = [
 
 const CellValue = ({ value }: { value: string | boolean }) => {
   if (value === true) return <Check className="w-4 h-4 text-emerald-500 mx-auto" />;
-  if (value === false) return <X className="w-4 h-4 text-muted-foreground/40 mx-auto" />;
+  if (value === false) return <X className="w-4 h-4 text-muted-foreground/30 mx-auto" />;
   return <span className="text-xs sm:text-sm font-medium text-foreground">{value}</span>;
 };
 
@@ -121,39 +125,40 @@ const WhatsAppButton = ({ text, label = "Get Started on WhatsApp", className = "
     href={`https://wa.me/94771437707?text=${encodeURIComponent(text)}`}
     target="_blank"
     rel="noopener noreferrer"
-    className={`inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-bold text-sm hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-[1.03] ${className}`}
+    className={`inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-accent text-accent-foreground font-bold text-sm shadow-[0_4px_20px_-4px_hsl(var(--accent)/0.4)] hover:shadow-[0_8px_30px_-4px_hsl(var(--accent)/0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 ${className}`}
   >
     {label} <ArrowRight className="w-4 h-4" />
   </a>
 );
 
 const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; subtitle: string; features: FeatureRow[]; emoji: string }) => (
-  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-10">
-    <div className="mb-5">
-      <h3 className="font-heading text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2">
-        <span>{emoji}</span> {title}
+  <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="mb-12">
+    <div className="mb-6">
+      <h3 className="font-heading text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2.5">
+        <span className="text-2xl">{emoji}</span> {title}
       </h3>
-      <p className="text-muted-foreground text-sm mt-1">{subtitle}</p>
+      <p className="text-muted-foreground text-sm mt-1.5">{subtitle}</p>
     </div>
-    <div className="rounded-2xl overflow-hidden border border-border shadow-card">
-      <div className="grid grid-cols-[1.4fr_repeat(4,1fr)] bg-muted/50">
-        <div className="p-3 sm:p-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Features</div>
+    <div className="rounded-2xl overflow-hidden border border-border shadow-[0_8px_40px_-12px_hsl(var(--primary)/0.1)]">
+      <div className="grid grid-cols-[1.4fr_repeat(4,1fr)]">
+        <div className="p-3.5 sm:p-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider bg-muted/60 border-b border-border">Features</div>
         {tierLabels.map((tier, i) => (
-          <div key={tier} className={`p-3 sm:p-4 text-center text-xs font-bold uppercase tracking-wider ${i === 3 ? "bg-accent text-accent-foreground" : "text-muted-foreground"}`}>
+          <div key={tier} className={`p-3.5 sm:p-4 text-center text-xs font-bold uppercase tracking-wider border-b border-border ${i === 3 ? "bg-accent text-accent-foreground" : "bg-muted/60 text-muted-foreground"}`}>
             {tier}
+            {i === 3 && <span className="block text-[9px] font-medium mt-0.5 opacity-80">Most Popular</span>}
           </div>
         ))}
       </div>
       {features.map((row, i) => {
         const isReach = row.label === "Total Reach";
         return (
-          <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border ${isReach ? "bg-primary/10 border-t-2 border-b-2 border-primary/30" : i % 2 === 0 ? "bg-card" : "bg-muted/20"} hover:bg-muted/40 transition-colors`}>
-            <div className={`p-3 sm:p-4 text-xs sm:text-sm flex items-center gap-1.5 ${isReach ? "font-bold text-primary" : "font-medium text-foreground"}`}>
+          <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border/60 ${isReach ? "bg-primary/8 border-t-2 border-b-2 border-primary/25" : i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/30 transition-colors`}>
+            <div className={`p-3 sm:p-4 text-xs sm:text-sm flex items-center gap-2 ${isReach ? "font-bold text-primary" : "font-medium text-foreground"}`}>
               {isReach && <span className="text-base">📡</span>}
               {row.label}
             </div>
             {tierKeys.map((key, ti) => (
-              <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${isReach ? "font-extrabold text-primary text-sm sm:text-base" : ""} ${ti === 3 ? "bg-accent/5 border-x border-accent/10" : ""}`}>
+              <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${isReach ? "font-extrabold text-primary text-sm sm:text-base" : ""} ${ti === 3 ? "bg-accent/[0.04]" : ""}`}>
                 <CellValue value={row[key]} />
               </div>
             ))}
@@ -161,15 +166,23 @@ const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; 
         );
       })}
     </div>
-    <div className="mt-5 text-center">
+    <div className="mt-6 text-center">
       <WhatsAppButton text={`Hi Buzz Connect, I'm interested in your ${title}.`} />
-      <p className="text-muted-foreground text-xs mt-2">Fast response · Campaign launch in 48–72 hrs</p>
+      <p className="text-muted-foreground text-xs mt-2.5 tracking-wide">Fast response · Campaign launch in 48–72 hrs</p>
     </div>
   </motion.div>
 );
 
-const Fade = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className={className}>
+const SectionDivider = () => (
+  <div className="flex items-center justify-center gap-3 my-16">
+    <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-border" />
+    <div className="w-1.5 h-1.5 rounded-full bg-accent/40" />
+    <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-border" />
+  </div>
+);
+
+const Fade = ({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) => (
+  <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay }} className={className}>
     {children}
   </motion.div>
 );
@@ -204,40 +217,41 @@ const SpecialPackages = () => {
         jsonLd={jsonLd}
       />
 
-      {/* ═══════════════════════════════════════════
-          SECTION 1 — TRUST BAR (Social Proof First)
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
+      {/* ═══ SECTION 1 — TRUST BAR ═══ */}
+      <Fade className="mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 max-w-4xl mx-auto">
           {[
             { number: "500+", label: "Campaigns Executed", icon: Rocket },
             { number: "100+", label: "Businesses Served", icon: Building2 },
             { number: "50M+", label: "Impressions", icon: BarChart3 },
             { number: "10+", label: "Years Experience", icon: Shield },
-          ].map(({ number, label, icon: Icon }) => (
-            <div key={label} className="text-center p-5 rounded-2xl bg-gradient-to-b from-card to-muted/30 border border-border shadow-card">
-              <Icon className="w-6 h-6 text-accent mx-auto mb-2" />
-              <div className="font-heading text-2xl sm:text-3xl font-bold text-foreground">{number}</div>
-              <span className="text-xs text-muted-foreground font-medium">{label}</span>
-            </div>
+          ].map(({ number, label, icon: Icon }, i) => (
+            <Fade key={label} delay={i * 0.1} className="text-center p-6 rounded-2xl bg-card border border-border shadow-card hover:shadow-card-hover transition-shadow duration-300">
+              <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mx-auto mb-3">
+                <Icon className="w-5 h-5 text-accent" />
+              </div>
+              <div className="font-heading text-2xl sm:text-3xl font-bold text-foreground tracking-tight">{number}</div>
+              <span className="text-[11px] text-muted-foreground font-medium uppercase tracking-wider mt-1 block">{label}</span>
+            </Fade>
           ))}
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 2 — SPEED + SCALE VALUE PROP
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-4xl mx-auto">
-        <div className="p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-primary/[0.04] via-accent/[0.06] to-primary/[0.04] border border-accent/15 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-48 h-48 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      {/* ═══ SECTION 2 — SPEED + SCALE ═══ */}
+      <Fade className="mb-0 max-w-4xl mx-auto">
+        <div className="p-7 sm:p-10 rounded-3xl border border-accent/12 relative overflow-hidden" style={{ background: "linear-gradient(135deg, hsl(var(--accent) / 0.04) 0%, hsl(var(--primary) / 0.03) 50%, hsl(var(--accent) / 0.06) 100%)" }}>
+          <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-accent/[0.06] blur-[80px]" />
+          <div className="absolute -bottom-20 -left-20 w-40 h-40 rounded-full bg-primary/[0.04] blur-[60px]" />
           <div className="relative">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-11 h-11 rounded-xl bg-accent/15 flex items-center justify-center">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-2xl bg-accent/12 flex items-center justify-center border border-accent/15">
                 <Zap className="w-5 h-5 text-accent" />
               </div>
-              <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground">Massive Reach in a Short Time</h2>
+              <div>
+                <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground">Massive Reach in a Short Time</h2>
+              </div>
             </div>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-muted-foreground mb-7 leading-relaxed text-[15px]">
               Unlike traditional marketing that takes months, our multi-channel campaigns deliver <strong className="text-foreground">results within days</strong>.
               Your message reaches customers across <strong className="text-foreground">Email, SMS, WhatsApp & Findit.lk simultaneously</strong>.
             </p>
@@ -246,59 +260,61 @@ const SpecialPackages = () => {
                 { icon: Clock, text: "Launch in 48–72 hours", sub: "Fast execution" },
                 { icon: Users, text: "1.2M+ total reach", sub: "Multi-channel exposure" },
                 { icon: TrendingUp, text: "Results within days", sub: "Not months" },
-              ].map(({ icon: Icon, text, sub }) => (
-                <div key={text} className="flex items-center gap-3 p-4 rounded-xl bg-card/80 border border-border backdrop-blur-sm">
-                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+              ].map(({ icon: Icon, text, sub }, i) => (
+                <Fade key={text} delay={i * 0.1} className="flex items-center gap-3 p-4 rounded-xl bg-card/90 border border-border/80 backdrop-blur-sm shadow-sm">
+                  <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center shrink-0">
                     <Icon className="w-4 h-4 text-primary" />
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-foreground block">{text}</span>
-                    <span className="text-xs text-muted-foreground">{sub}</span>
+                    <span className="text-sm font-semibold text-foreground block leading-tight">{text}</span>
+                    <span className="text-[11px] text-muted-foreground">{sub}</span>
                   </div>
-                </div>
+                </Fade>
               ))}
             </div>
           </div>
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 3 — CHANNELS OVERVIEW
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-4xl mx-auto">
-        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground text-center mb-2">Your Campaign Appears Across</h2>
-        <p className="text-muted-foreground text-center text-sm mb-8">One campaign = 4 powerful channels working together</p>
+      <SectionDivider />
+
+      {/* ═══ SECTION 3 — CHANNELS OVERVIEW ═══ */}
+      <Fade className="mb-0 max-w-4xl mx-auto">
+        <div className="text-center mb-8">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-2">Your Campaign Appears Across</h2>
+          <p className="text-muted-foreground text-sm">One campaign = 4 powerful channels working together</p>
+        </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
-            { icon: Mail, label: "Email Marketing", reach: "350,000+", color: "bg-blue-500/10 text-blue-600" },
-            { icon: Smartphone, label: "SMS Marketing", reach: "400,000+", color: "bg-emerald-500/10 text-emerald-600" },
-            { icon: MessageSquare, label: "WhatsApp Marketing", reach: "175,000+", color: "bg-green-500/10 text-green-600" },
-            { icon: Globe, label: "Findit.lk Exposure", reach: "Active Users", color: "bg-amber-500/10 text-amber-600" },
-          ].map(({ icon: Icon, label, reach, color }) => (
-            <div key={label} className="p-5 rounded-2xl bg-card border border-border shadow-card text-center hover:shadow-md transition-shadow group">
-              <div className={`w-12 h-12 rounded-xl ${color} flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
-                <Icon className="w-6 h-6" />
+            { icon: Mail, label: "Email Marketing", reach: "350,000+", gradient: "from-blue-500/8 to-blue-600/4", iconBg: "bg-blue-500/12", iconColor: "text-blue-600" },
+            { icon: Smartphone, label: "SMS Marketing", reach: "400,000+", gradient: "from-emerald-500/8 to-emerald-600/4", iconBg: "bg-emerald-500/12", iconColor: "text-emerald-600" },
+            { icon: MessageSquare, label: "WhatsApp Marketing", reach: "175,000+", gradient: "from-green-500/8 to-green-600/4", iconBg: "bg-green-500/12", iconColor: "text-green-600" },
+            { icon: Globe, label: "Findit.lk Exposure", reach: "Active Users", gradient: "from-amber-500/8 to-amber-600/4", iconBg: "bg-amber-500/12", iconColor: "text-amber-600" },
+          ].map(({ icon: Icon, label, reach, gradient, iconBg, iconColor }, i) => (
+            <Fade key={label} delay={i * 0.08} className={`p-5 sm:p-6 rounded-2xl bg-gradient-to-b ${gradient} border border-border shadow-card text-center group hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300`}>
+              <div className={`w-14 h-14 rounded-2xl ${iconBg} flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <Icon className={`w-6 h-6 ${iconColor}`} />
               </div>
-              <h3 className="text-sm font-bold text-foreground mb-1">{label}</h3>
-              <span className="text-xs font-semibold text-accent">{reach}</span>
-            </div>
+              <h3 className="text-sm font-bold text-foreground mb-1.5">{label}</h3>
+              <span className="text-xs font-bold text-accent tracking-wide">{reach}</span>
+            </Fade>
           ))}
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 4 — PACKAGES (KEY CONVERSION SECTION)
-          ═══════════════════════════════════════════ */}
-      <div className="mb-14" id="packages">
+      <SectionDivider />
+
+      {/* ═══ SECTION 4 — PACKAGES ═══ */}
+      <div className="mb-0" id="packages">
         <Fade>
           <div className="text-center mb-10">
-            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-accent/10 text-accent border border-accent/20 mb-3">
+            <span className="inline-block px-5 py-2 rounded-full text-[11px] font-bold uppercase tracking-[0.15em] bg-accent/10 text-accent border border-accent/15 mb-4">
               Choose Your Package
             </span>
             <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">
               Our Multi-Channel Advertising Packages
             </h2>
-            <p className="text-muted-foreground mt-2 max-w-2xl mx-auto text-sm">
+            <p className="text-muted-foreground mt-3 max-w-2xl mx-auto text-sm leading-relaxed">
               Fully managed campaigns across SMS, Email, WhatsApp & Findit.lk — choose the reach that fits your goals.
             </p>
           </div>
@@ -307,46 +323,55 @@ const SpecialPackages = () => {
         <ComparisonTable title="WhatsApp Marketing Packages" subtitle="High open rates, direct engagement, personal touch" features={waFeatures} emoji="💬" />
       </div>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 5 — FINDIT.LK ADVANTAGE
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-4xl mx-auto">
-        <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-primary/[0.06] to-primary/[0.02] border border-primary/15">
-          <div className="flex items-center gap-3 mb-4">
-            <Globe className="w-7 h-7 text-primary" />
-            <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground">Powered by Findit.lk — Your Unfair Advantage</h2>
-          </div>
-          <p className="text-muted-foreground mb-5 leading-relaxed">
-            Most agencies only <em>send</em> messages. We place your brand on a <strong className="text-foreground">high-traffic platform</strong> where users are actively searching for products and services like yours.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
-            {[
-              "Category-based visibility across industries",
-              "Banner placements on high-traffic pages",
-              "Exposure to actively searching audiences",
-              "Continuous awareness even after campaigns end",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-2.5 p-3 rounded-xl bg-card/80 border border-border">
-                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
-                <span className="text-sm text-foreground">{item}</span>
+      <SectionDivider />
+
+      {/* ═══ SECTION 5 — FINDIT.LK ADVANTAGE ═══ */}
+      <Fade className="mb-0 max-w-4xl mx-auto">
+        <div className="p-7 sm:p-10 rounded-3xl border border-primary/12 relative overflow-hidden" style={{ background: "linear-gradient(160deg, hsl(var(--primary) / 0.05) 0%, hsl(var(--primary) / 0.02) 60%, hsl(var(--accent) / 0.04) 100%)" }}>
+          <div className="absolute -top-16 -left-16 w-48 h-48 rounded-full bg-primary/[0.04] blur-[60px]" />
+          <div className="relative">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/15">
+                <Globe className="w-5 h-5 text-primary" />
               </div>
-            ))}
-          </div>
-          <div className="p-4 rounded-xl bg-accent/10 border border-accent/15 text-center">
-            <p className="text-sm font-medium text-foreground">
-              💡 You don't just reach people — you <strong>capture demand</strong>. No other provider in Sri Lanka offers this.
+              <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground">Powered by Findit.lk — Your Unfair Advantage</h2>
+            </div>
+            <p className="text-muted-foreground mb-6 leading-relaxed text-[15px]">
+              Most agencies only <em>send</em> messages. We place your brand on a <strong className="text-foreground">high-traffic platform</strong> where users are actively searching for products and services like yours.
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+              {[
+                "Category-based visibility across industries",
+                "Banner placements on high-traffic pages",
+                "Exposure to actively searching audiences",
+                "Continuous awareness even after campaigns end",
+              ].map((item, i) => (
+                <Fade key={item} delay={i * 0.08} className="flex items-center gap-3 p-3.5 rounded-xl bg-card/80 border border-border backdrop-blur-sm">
+                  <div className="w-6 h-6 rounded-full bg-accent/15 flex items-center justify-center shrink-0">
+                    <CheckCircle className="w-3.5 h-3.5 text-accent" />
+                  </div>
+                  <span className="text-sm text-foreground">{item}</span>
+                </Fade>
+              ))}
+            </div>
+            <div className="p-5 rounded-2xl bg-accent/8 border border-accent/12 text-center">
+              <p className="text-sm font-medium text-foreground leading-relaxed">
+                💡 You don't just reach people — you <strong>capture demand</strong>. No other provider in Sri Lanka offers this.
+              </p>
+            </div>
           </div>
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 6 — WHAT YOU CAN ACHIEVE (Outcomes Grid)
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14">
-        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground text-center mb-2">What You Can Achieve</h2>
-        <p className="text-muted-foreground text-center text-sm mb-8">Powerful outcomes for every business goal</p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+      <SectionDivider />
+
+      {/* ═══ SECTION 6 — WHAT YOU CAN ACHIEVE ═══ */}
+      <Fade className="mb-0">
+        <div className="text-center mb-9">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-2">What You Can Achieve</h2>
+          <p className="text-muted-foreground text-sm">Powerful outcomes for every business goal</p>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {[
             { icon: Target, title: "Brand Awareness", desc: "Reach thousands within days" },
             { icon: Rocket, title: "Product Launches", desc: "Instant visibility for new products" },
@@ -358,24 +383,24 @@ const SpecialPackages = () => {
             { icon: TrendingUp, title: "Sales Boost", desc: "Short-term revenue increase" },
             { icon: RefreshCw, title: "Re-Engagement", desc: "Bring back existing customers" },
             { icon: Globe, title: "Expand Reach", desc: "New audiences via Findit.lk" },
-          ].map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="p-4 rounded-xl bg-card border border-border shadow-card text-center hover:shadow-md transition-shadow">
-              <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-2.5">
-                <Icon className="w-4 h-4 text-primary" />
+          ].map(({ icon: Icon, title, desc }, i) => (
+            <Fade key={title} delay={i * 0.04} className="p-5 rounded-2xl bg-card border border-border shadow-card text-center group hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300">
+              <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/12 transition-colors">
+                <Icon className="w-5 h-5 text-primary" />
               </div>
-              <h3 className="text-xs font-bold text-foreground mb-0.5">{title}</h3>
-              <p className="text-[11px] text-muted-foreground leading-snug">{desc}</p>
-            </div>
+              <h3 className="text-xs font-bold text-foreground mb-1 tracking-wide">{title}</h3>
+              <p className="text-[11px] text-muted-foreground leading-relaxed">{desc}</p>
+            </Fade>
           ))}
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 7 — WHO THIS IS FOR
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-4xl mx-auto">
+      <SectionDivider />
+
+      {/* ═══ SECTION 7 — WHO THIS IS FOR ═══ */}
+      <Fade className="mb-0 max-w-4xl mx-auto">
         <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-2">Who Should Use Multi-Channel Campaigns?</h2>
-        <p className="text-muted-foreground text-sm mb-6">If you need <strong className="text-foreground">quick results</strong>, this is the best solution.</p>
+        <p className="text-muted-foreground text-sm mb-7">If you need <strong className="text-foreground">quick results</strong>, this is the best solution.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {[
             { icon: GraduationCap, label: "Education Institutes", result: "→ Student inquiries" },
@@ -386,26 +411,26 @@ const SpecialPackages = () => {
             { icon: Shirt, label: "Fashion & Clothing", result: "→ Brand growth" },
             { icon: Store, label: "Retail & Supermarkets", result: "→ Foot traffic & sales" },
             { icon: Rocket, label: "SMEs & Corporates", result: "→ Brand awareness" },
-          ].map(({ icon: Icon, label, result }) => (
-            <div key={label} className="flex items-center gap-3 p-3.5 rounded-xl bg-muted/30 border border-border hover:bg-muted/50 transition-colors">
-              <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                <Icon className="w-4 h-4 text-primary" />
+          ].map(({ icon: Icon, label, result }, i) => (
+            <Fade key={label} delay={i * 0.05} className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border shadow-sm hover:shadow-card transition-shadow group">
+              <div className="w-11 h-11 rounded-xl bg-primary/8 flex items-center justify-center shrink-0 group-hover:bg-primary/12 transition-colors">
+                <Icon className="w-5 h-5 text-primary" />
               </div>
-              <div className="flex items-center gap-2 flex-wrap">
+              <div className="flex items-center gap-2.5 flex-wrap">
                 <span className="text-sm font-semibold text-foreground">{label}</span>
-                <span className="text-xs font-semibold text-accent">{result}</span>
+                <span className="text-xs font-bold text-accent bg-accent/8 px-2.5 py-0.5 rounded-full">{result}</span>
               </div>
-            </div>
+            </Fade>
           ))}
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 8 — USE CASES CHECKLIST
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-4xl mx-auto">
-        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6 text-center">What You Can Use Multi-Channel Campaigns For</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 p-6 sm:p-8 rounded-2xl bg-card border border-border shadow-card">
+      <SectionDivider />
+
+      {/* ═══ SECTION 8 — USE CASES CHECKLIST ═══ */}
+      <Fade className="mb-0 max-w-4xl mx-auto">
+        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-7 text-center">What You Can Use Multi-Channel Campaigns For</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 p-7 sm:p-9 rounded-2xl bg-card border border-border shadow-card">
           {[
             "Brand awareness campaigns",
             "New business or outlet openings",
@@ -427,51 +452,55 @@ const SpecialPackages = () => {
             "Testing new products or services",
             "Expanding business reach across Sri Lanka",
           ].map((item) => (
-            <div key={item} className="flex items-center gap-2.5 py-1.5">
-              <CheckCircle className="w-4 h-4 text-accent shrink-0" />
-              <span className="text-sm text-muted-foreground">{item}</span>
+            <div key={item} className="flex items-center gap-3 py-1.5 group">
+              <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent/20 transition-colors">
+                <CheckCircle className="w-3 h-3 text-accent" />
+              </div>
+              <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">{item}</span>
             </div>
           ))}
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 9 — HOW IT WORKS
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14">
-        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground text-center mb-2">How It Works</h2>
-        <p className="text-muted-foreground text-center text-sm mb-8">Simple. Fast. Effective.</p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+      <SectionDivider />
+
+      {/* ═══ SECTION 9 — HOW IT WORKS ═══ */}
+      <Fade className="mb-0">
+        <div className="text-center mb-9">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-2">How It Works</h2>
+          <p className="text-muted-foreground text-sm">Simple. Fast. Effective.</p>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
           {[
             { icon: Target, title: "Choose Audience", desc: "Select your industry & target", step: 1 },
             { icon: Rocket, title: "Launch Campaign", desc: "We execute in 48–72 hours", step: 2 },
             { icon: Mail, title: "Reach Customers", desc: "Multi-channel delivery", step: 3 },
             { icon: BarChart3, title: "Track Results", desc: "Monitor engagement & ROI", step: 4 },
-          ].map(({ icon: Icon, title, desc, step }) => (
-            <div key={title} className="p-5 rounded-2xl bg-card border border-border shadow-card text-center relative">
-              <span className="absolute top-3 right-3 text-[10px] font-bold text-accent bg-accent/10 px-2 py-0.5 rounded-full">Step {step}</span>
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+          ].map(({ icon: Icon, title, desc, step }, i) => (
+            <Fade key={title} delay={i * 0.1} className="p-6 rounded-2xl bg-card border border-border shadow-card text-center relative group hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+              <span className="absolute top-3 right-3 text-[10px] font-bold text-accent bg-accent/10 px-2.5 py-1 rounded-full border border-accent/10">Step {step}</span>
+              <div className="w-14 h-14 rounded-2xl bg-primary/8 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/12 transition-colors">
                 <Icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-heading text-sm font-bold text-foreground mb-1">{title}</h3>
-              <p className="text-xs text-muted-foreground">{desc}</p>
-            </div>
+              <h3 className="font-heading text-sm font-bold text-foreground mb-1.5">{title}</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
+            </Fade>
           ))}
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 10 — TRADITIONAL VS BUZZ CONNECT
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-3xl mx-auto">
-        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground text-center mb-6">Traditional Marketing vs Buzz Connect</h2>
-        <div className="rounded-2xl overflow-hidden border border-border shadow-card">
-          <div className="grid grid-cols-2 bg-muted/50">
-            <div className="p-4 text-center text-xs font-bold uppercase tracking-wider text-muted-foreground flex items-center justify-center gap-1.5">
-              <X className="w-3.5 h-3.5 text-destructive" /> Traditional
+      <SectionDivider />
+
+      {/* ═══ SECTION 10 — TRADITIONAL VS BUZZ CONNECT ═══ */}
+      <Fade className="mb-0 max-w-3xl mx-auto">
+        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground text-center mb-7">Traditional Marketing vs Buzz Connect</h2>
+        <div className="rounded-2xl overflow-hidden border border-border shadow-[0_8px_40px_-12px_hsl(var(--primary)/0.1)]">
+          <div className="grid grid-cols-2">
+            <div className="p-4 sm:p-5 text-center text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground flex items-center justify-center gap-2 bg-destructive/5 border-b border-border">
+              <X className="w-4 h-4 text-destructive" /> Traditional
             </div>
-            <div className="p-4 text-center text-xs font-bold uppercase tracking-wider text-accent flex items-center justify-center gap-1.5">
-              <Check className="w-3.5 h-3.5" /> Buzz Connect
+            <div className="p-4 sm:p-5 text-center text-xs font-bold uppercase tracking-[0.12em] text-accent flex items-center justify-center gap-2 bg-accent/5 border-b border-border">
+              <Check className="w-4 h-4" /> Buzz Connect
             </div>
           </div>
           {[
@@ -481,33 +510,37 @@ const SpecialPackages = () => {
             { trad: "Hard to measure results", buzz: "Detailed performance tracking & reports" },
             { trad: "Expensive for SMEs", buzz: "Affordable packages for every budget" },
           ].map((row, i) => (
-            <div key={i} className={`grid grid-cols-2 border-t border-border ${i % 2 === 0 ? "bg-card" : "bg-muted/20"}`}>
-              <div className="p-4 text-sm text-muted-foreground border-r border-border">{row.trad}</div>
-              <div className="p-4 text-sm font-medium text-foreground">{row.buzz}</div>
+            <div key={i} className={`grid grid-cols-2 border-t border-border/60 ${i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/20 transition-colors`}>
+              <div className="p-4 sm:p-5 text-sm text-muted-foreground border-r border-border/60 leading-relaxed">{row.trad}</div>
+              <div className="p-4 sm:p-5 text-sm font-medium text-foreground leading-relaxed">{row.buzz}</div>
             </div>
           ))}
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 11 — TESTIMONIALS
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-5xl mx-auto">
-        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground text-center mb-2">What Our Clients Say</h2>
-        <p className="text-muted-foreground text-center text-sm mb-8">Real results from real businesses across Sri Lanka</p>
+      <SectionDivider />
+
+      {/* ═══ SECTION 11 — TESTIMONIALS ═══ */}
+      <Fade className="mb-0 max-w-5xl mx-auto">
+        <div className="text-center mb-9">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-2">What Our Clients Say</h2>
+          <p className="text-muted-foreground text-sm">Real results from real businesses across Sri Lanka</p>
+        </div>
         <TestimonialsCarousel />
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 12 — WHY CHOOSE US (TRUST)
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-4xl mx-auto">
-        <div className="p-6 sm:p-8 rounded-2xl bg-card border border-border shadow-card">
-          <div className="flex items-center gap-3 mb-5">
-            <Shield className="w-6 h-6 text-primary" />
+      <SectionDivider />
+
+      {/* ═══ SECTION 12 — WHY CHOOSE US ═══ */}
+      <Fade className="mb-0 max-w-4xl mx-auto">
+        <div className="p-7 sm:p-9 rounded-2xl bg-card border border-border shadow-card">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+              <Shield className="w-5 h-5 text-primary" />
+            </div>
             <h2 className="font-heading text-xl font-bold text-foreground">Why Businesses Choose Buzz Connect</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               "Proven multi-channel marketing strategy",
               "350,000+ segmented audience database",
@@ -517,73 +550,84 @@ const SpecialPackages = () => {
               "Affordable packages for every business size",
               "Industry-specific audience targeting",
               "Detailed performance tracking & reports",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-2.5 p-3 rounded-xl bg-muted/30">
-                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
+            ].map((item, i) => (
+              <Fade key={item} delay={i * 0.04} className="flex items-center gap-3 p-3.5 rounded-xl bg-muted/20 border border-border/50 hover:bg-muted/40 transition-colors">
+                <div className="w-6 h-6 rounded-full bg-accent/12 flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-3.5 h-3.5 text-accent" />
+                </div>
                 <span className="text-sm text-foreground">{item}</span>
-              </div>
+              </Fade>
             ))}
           </div>
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 13 — URGENCY
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-3xl mx-auto">
-        <div className="p-6 rounded-2xl bg-destructive/5 border border-destructive/15 text-center">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <AlertTriangle className="w-5 h-5 text-destructive" />
-            <h3 className="font-heading text-base font-bold text-foreground">Limited Weekly Campaign Slots</h3>
+      <SectionDivider />
+
+      {/* ═══ SECTION 13 — URGENCY ═══ */}
+      <Fade className="mb-0 max-w-3xl mx-auto">
+        <div className="p-7 sm:p-8 rounded-2xl bg-destructive/[0.04] border border-destructive/12 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,hsl(var(--destructive)/0.06),transparent_60%)]" />
+          <div className="relative">
+            <div className="flex items-center justify-center gap-2.5 mb-4">
+              <div className="w-9 h-9 rounded-full bg-destructive/10 flex items-center justify-center">
+                <AlertTriangle className="w-4 h-4 text-destructive" />
+              </div>
+              <h3 className="font-heading text-base sm:text-lg font-bold text-foreground">Limited Weekly Campaign Slots</h3>
+            </div>
+            <p className="text-sm text-muted-foreground mb-5 max-w-md mx-auto leading-relaxed">
+              We only run a limited number of campaigns each week to ensure quality. <strong className="text-foreground">Book early to secure your slot.</strong>
+            </p>
+            <WhatsAppButton text="Hi Buzz Connect, I want to secure a campaign slot." label="Secure Your Slot Now" className="bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-[0_4px_20px_-4px_hsl(var(--destructive)/0.3)]" />
           </div>
-          <p className="text-sm text-muted-foreground mb-4">
-            We only run a limited number of campaigns each week to ensure quality. <strong className="text-foreground">Book early to secure your slot.</strong>
-          </p>
-          <WhatsAppButton text="Hi Buzz Connect, I want to secure a campaign slot." label="Secure Your Slot Now" className="bg-destructive text-destructive-foreground hover:bg-destructive/90" />
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          SECTION 14 — FAQ
-          ═══════════════════════════════════════════ */}
-      <Fade className="mb-14 max-w-4xl mx-auto">
-        <div className="flex items-center gap-3 mb-6">
-          <HelpCircle className="w-6 h-6 text-primary" />
+      <SectionDivider />
+
+      {/* ═══ SECTION 14 — FAQ ═══ */}
+      <Fade className="mb-16 max-w-4xl mx-auto">
+        <div className="flex items-center gap-3 mb-7">
+          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+            <HelpCircle className="w-5 h-5 text-primary" />
+          </div>
           <h2 className="font-heading text-xl font-bold text-foreground">Frequently Asked Questions</h2>
         </div>
         <div className="space-y-3">
           {faqs.map((faq) => (
-            <details key={faq.q} className="group p-4 sm:p-5 rounded-xl bg-card border border-border shadow-card">
-              <summary className="font-heading font-semibold text-sm text-foreground cursor-pointer list-none flex items-center justify-between">
-                {faq.q}
-                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-xs ml-2">▼</span>
+            <details key={faq.q} className="group p-5 sm:p-6 rounded-xl bg-card border border-border shadow-sm hover:shadow-card transition-shadow">
+              <summary className="font-heading font-semibold text-sm text-foreground cursor-pointer list-none flex items-center justify-between gap-4">
+                <span>{faq.q}</span>
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform duration-300 shrink-0">
+                  <ChevronRight className="w-4 h-4 rotate-90" />
+                </span>
               </summary>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
+              <p className="mt-4 text-sm text-muted-foreground leading-[1.8] pl-0">{faq.a}</p>
             </details>
           ))}
         </div>
       </Fade>
 
-      {/* ═══════════════════════════════════════════
-          FINAL CTA — CONVERSION BLOCK
-          ═══════════════════════════════════════════ */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-8 sm:p-12 rounded-3xl gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--accent)/0.15),transparent_50%)]" />
+      {/* ═══ FINAL CTA ═══ */}
+      <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center p-10 sm:p-14 rounded-3xl gradient-hero relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,hsl(var(--accent)/0.12),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_80%,hsl(var(--secondary)/0.1),transparent_50%)]" />
         <div className="relative">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-3">
+          <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4 tracking-tight">
             Launch Your Campaign in 48 Hours
           </h2>
-          <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto text-sm sm:text-base">
+          <p className="text-primary-foreground/75 mb-7 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
             Reach thousands of customers this week through SMS, WhatsApp, Email & Findit.lk — the fastest way to boost awareness in Sri Lanka.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-primary-foreground/70 text-xs sm:text-sm mb-6">
-            <span className="flex items-center gap-1"><Check className="w-3.5 h-3.5 text-accent" /> Fast execution</span>
-            <span className="flex items-center gap-1"><Check className="w-3.5 h-3.5 text-accent" /> 1.2M+ reach</span>
-            <span className="flex items-center gap-1"><Check className="w-3.5 h-3.5 text-accent" /> Multi-channel</span>
-            <span className="flex items-center gap-1"><Check className="w-3.5 h-3.5 text-accent" /> Findit.lk exposure</span>
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-primary-foreground/60 text-xs sm:text-sm mb-8">
+            {["Fast execution", "1.2M+ reach", "Multi-channel", "Findit.lk exposure"].map((item) => (
+              <span key={item} className="flex items-center gap-1.5">
+                <Check className="w-3.5 h-3.5 text-accent" /> {item}
+              </span>
+            ))}
           </div>
-          <WhatsAppButton text="Hi Buzz Connect, I want to launch a multi-channel campaign." label="Chat on WhatsApp Now" className="px-8 py-4 text-base" />
-          <p className="text-primary-foreground/50 text-xs mt-3">Limited slots available — secure yours today</p>
+          <WhatsAppButton text="Hi Buzz Connect, I want to launch a multi-channel campaign." label="Chat on WhatsApp Now" className="px-9 py-4 text-base" />
+          <p className="text-primary-foreground/40 text-xs mt-4 tracking-wide">Limited slots available — secure yours today</p>
         </div>
       </motion.div>
     </ServicePageLayout>
