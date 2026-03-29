@@ -151,7 +151,7 @@ const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; 
       {features.map((row, i) => {
         const isReach = row.label === "Total Reach";
         return (
-          <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border/60 ${isReach ? "bg-primary/8 border-t-2 border-b-2 border-primary/25" : i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/30 transition-colors`}>
+          <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(3,1fr)] border-t border-border/60 ${isReach ? "bg-primary/8 border-t-2 border-b-2 border-primary/25" : i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/30 transition-colors`}>
             <div className={`p-3 sm:p-4 text-xs sm:text-sm flex items-center gap-2 ${isReach ? "font-bold text-primary" : "font-medium text-foreground"}`}>
               {isReach && <span className="text-base">📡</span>}
               {row.label}
