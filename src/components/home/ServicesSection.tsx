@@ -66,6 +66,7 @@ const services = [
     ],
     description: "Generate high-quality leads and grow your customer base across Sri Lanka.",
     path: "/lead-generation-sri-lanka",
+  },
     highlight: true,
   },
   {
