@@ -78,7 +78,7 @@ const faqs = [
   { q: "What is event marketing in Sri Lanka?", a: "Event marketing involves promoting your event through strategic multi-channel campaigns to attract the right audience, boost attendance, and drive ticket sales using platforms like email, SMS, WhatsApp, and Findit.lk." },
   { q: "How can Buzz Connect help promote my event?", a: "We use a multi-channel approach combining email campaigns, SMS alerts, WhatsApp messaging, and Findit.lk visibility to reach thousands of potential attendees and drive registrations." },
   { q: "What makes Buzz Connect different from other event marketing agencies?", a: "Our unique combination of direct marketing (email, SMS, WhatsApp) with Findit.lk event listings provides both instant reach and continuous visibility — something traditional agencies cannot offer." },
-  { q: "How much does event marketing cost in Sri Lanka?", a: "Buzz Connect offers cost-effective event marketing packages starting from LKR 14,900. Contact us for a customized quote based on your event type and target audience." },
+  { q: "How much does event marketing cost in Sri Lanka?", a: "Buzz Connect offers cost-effective event marketing packages starting from LKR 75,000. Contact us for a customized quote based on your event type and target audience." },
   { q: "What types of events can you promote?", a: "We promote all types of events including concerts, corporate events, workshops, seminars, exhibitions, product launches, festivals, and brand activations across Sri Lanka." },
 ];
 
@@ -261,7 +261,7 @@ const EventMarketing = () => {
               <TrendingUp className="w-6 h-6 text-yellow-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">Event Growth Campaign</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 118,000</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 125,000</p>
             <p className="text-xs text-muted-foreground mb-4">Best for consistent ticket sales & event promotions</p>
             <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 2–3 Targeted Email Campaigns (segmented)</li>
@@ -276,7 +276,7 @@ const EventMarketing = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Performance report</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Drive consistent registrations & ticket sales"</p>
-            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Growth%20Campaign%20(LKR%20118%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Growth%20Campaign%20(LKR%20125%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -287,7 +287,7 @@ const EventMarketing = () => {
               <Megaphone className="w-6 h-6 text-red-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">High Impact Event Campaign</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 298,000</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 175,000</p>
             <p className="text-xs text-muted-foreground mb-4">Best for concerts, festivals & large-scale events</p>
             <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 4–6 Email Campaigns (full funnel strategy)</li>
@@ -303,7 +303,7 @@ const EventMarketing = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Priority promotion for featured events</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Maximize attendance & sell out your event faster"</p>
-            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20High%20Impact%20Event%20Campaign%20(LKR%20298%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20High%20Impact%20Event%20Campaign%20(LKR%20175%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
