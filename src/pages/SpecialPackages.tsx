@@ -71,38 +71,37 @@ const TestimonialsCarousel = () => {
 
 type FeatureRow = {
   label: string;
-  budget: string | boolean;
   silver: string | boolean;
   gold: string | boolean;
   platinum: string | boolean;
 };
 
 const smsFeatures: FeatureRow[] = [
-  { label: "Total Reach", budget: "450,000", silver: "550,000", gold: "950,000", platinum: "1.2 Million+" },
-  { label: "SMS Campaign", budget: "20,000", silver: "50,000", gold: "150,000", platinum: "400,000" },
-  { label: "Email Campaign", budget: "350,000", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
-  { label: "Findit.lk Featured Ad", budget: true, silver: true, gold: true, platinum: true },
-  { label: "Findit.lk Pop-Up Banner", budget: "1 Day", silver: "1 Day", gold: "2 Days", platinum: "4 Days" },
-  { label: "Landing Page", budget: true, silver: true, gold: true, platinum: true },
-  { label: "Findit.lk Main Banner", budget: false, silver: false, gold: "2 Weeks", platinum: "1 Month" },
-  { label: "Findit.lk Side Banner", budget: false, silver: false, gold: "1 Week", platinum: "2 Weeks" },
-  { label: "Facebook Boosting", budget: true, silver: true, gold: true, platinum: true },
+  { label: "Total Reach", silver: "550,000", gold: "950,000", platinum: "1.2 Million+" },
+  { label: "SMS Campaign", silver: "50,000", gold: "150,000", platinum: "400,000" },
+  { label: "Email Campaign", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
+  { label: "Findit.lk Featured Ad", silver: true, gold: true, platinum: true },
+  { label: "Findit.lk Pop-Up Banner", silver: "1 Day", gold: "2 Days", platinum: "4 Days" },
+  { label: "Landing Page", silver: true, gold: true, platinum: true },
+  { label: "Findit.lk Main Banner", silver: false, gold: "2 Weeks", platinum: "1 Month" },
+  { label: "Findit.lk Side Banner", silver: false, gold: "1 Week", platinum: "2 Weeks" },
+  { label: "Facebook Boosting", silver: true, gold: true, platinum: true },
 ];
 
 const waFeatures: FeatureRow[] = [
-  { label: "Total Reach", budget: "450,000", silver: "550,000", gold: "575,000", platinum: "625,000" },
-  { label: "WhatsApp Campaign", budget: "30,000", silver: "60,000", gold: "110,000", platinum: "175,000" },
-  { label: "Email Campaign", budget: "350,000", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
-  { label: "Findit.lk Featured Ad", budget: true, silver: true, gold: true, platinum: true },
-  { label: "Findit.lk Lifetime Profile", budget: false, silver: false, gold: true, platinum: true },
-  { label: "Findit.lk Main Banner", budget: false, silver: "2 Weeks", gold: "3 Weeks + 2 Weeks", platinum: "1 Month" },
-  { label: "Findit.lk Side Banner", budget: false, silver: false, gold: "1 Week", platinum: "2 Weeks" },
-  { label: "Findit.lk Pop-Up Banner", budget: "1 Day", silver: false, gold: false, platinum: "4 Days" },
-  { label: "Facebook Boosting", budget: true, silver: true, gold: true, platinum: true },
+  { label: "Total Reach", silver: "550,000", gold: "575,000", platinum: "625,000" },
+  { label: "WhatsApp Campaign", silver: "60,000", gold: "110,000", platinum: "175,000" },
+  { label: "Email Campaign", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
+  { label: "Findit.lk Featured Ad", silver: true, gold: true, platinum: true },
+  { label: "Findit.lk Lifetime Profile", silver: false, gold: true, platinum: true },
+  { label: "Findit.lk Main Banner", silver: "2 Weeks", gold: "3 Weeks + 2 Weeks", platinum: "1 Month" },
+  { label: "Findit.lk Side Banner", silver: false, gold: "1 Week", platinum: "2 Weeks" },
+  { label: "Findit.lk Pop-Up Banner", silver: false, gold: false, platinum: "4 Days" },
+  { label: "Facebook Boosting", silver: true, gold: true, platinum: true },
 ];
 
-const tierLabels = ["Budget", "Silver", "Gold", "Platinum"];
-const tierKeys = ["budget", "silver", "gold", "platinum"] as const;
+const tierLabels = ["Silver", "Gold", "Platinum"];
+const tierKeys = ["silver", "gold", "platinum"] as const;
 
 const faqs = [
   { q: "What is multi channel marketing?", a: "It is a strategy that uses multiple platforms like email, SMS, WhatsApp, and web ads to reach customers simultaneously for maximum engagement." },
@@ -140,25 +139,25 @@ const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; 
       <p className="text-muted-foreground text-sm mt-1.5">{subtitle}</p>
     </div>
     <div className="rounded-2xl overflow-hidden border border-border shadow-[0_8px_40px_-12px_hsl(var(--primary)/0.1)]">
-      <div className="grid grid-cols-[1.4fr_repeat(4,1fr)]">
+      <div className="grid grid-cols-[1.4fr_repeat(3,1fr)]">
         <div className="p-3.5 sm:p-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider bg-muted/60 border-b border-border">Features</div>
         {tierLabels.map((tier, i) => (
-          <div key={tier} className={`p-3.5 sm:p-4 text-center text-xs font-bold uppercase tracking-wider border-b border-border ${i === 3 ? "bg-accent text-accent-foreground" : "bg-muted/60 text-muted-foreground"}`}>
+          <div key={tier} className={`p-3.5 sm:p-4 text-center text-xs font-bold uppercase tracking-wider border-b border-border ${i === 2 ? "bg-accent text-accent-foreground" : "bg-muted/60 text-muted-foreground"}`}>
             {tier}
-            {i === 3 && <span className="block text-[9px] font-medium mt-0.5 opacity-80">Most Popular</span>}
+            {i === 2 && <span className="block text-[9px] font-medium mt-0.5 opacity-80">Most Popular</span>}
           </div>
         ))}
       </div>
       {features.map((row, i) => {
         const isReach = row.label === "Total Reach";
         return (
-          <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border/60 ${isReach ? "bg-primary/8 border-t-2 border-b-2 border-primary/25" : i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/30 transition-colors`}>
+          <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(3,1fr)] border-t border-border/60 ${isReach ? "bg-primary/8 border-t-2 border-b-2 border-primary/25" : i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/30 transition-colors`}>
             <div className={`p-3 sm:p-4 text-xs sm:text-sm flex items-center gap-2 ${isReach ? "font-bold text-primary" : "font-medium text-foreground"}`}>
               {isReach && <span className="text-base">📡</span>}
               {row.label}
             </div>
             {tierKeys.map((key, ti) => (
-              <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${isReach ? "font-extrabold text-primary text-sm sm:text-base" : ""} ${ti === 3 ? "bg-accent/[0.04]" : ""}`}>
+              <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${isReach ? "font-extrabold text-primary text-sm sm:text-base" : ""} ${ti === 2 ? "bg-accent/[0.04]" : ""}`}>
                 <CellValue value={row[key]} />
               </div>
             ))}
