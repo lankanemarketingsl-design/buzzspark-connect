@@ -37,7 +37,47 @@ import articleFinditlkEmail from "@/assets/blog/article-finditlk-email-conversio
 import articleEducationEmail from "@/assets/blog/article-education-email-enrollments.jpg";
 import articleRealestateEmail from "@/assets/blog/article-realestate-email-leads.jpg";
 import articleHotelEmail from "@/assets/blog/article-hotel-email-bookings.jpg";
+import articleEcommerceEmail from "@/assets/blog/article-ecommerce-email-sales.jpg";
+import articleRecruitmentEmail from "@/assets/blog/article-recruitment-email-hiring.jpg";
+import articleHealthcareEmail from "@/assets/blog/article-healthcare-email-engagement.jpg";
+import articleAutomotiveEmail from "@/assets/blog/article-automotive-email-sales.jpg";
+import articleEventEmail from "@/assets/blog/article-event-email-attendance.jpg";
 const articles = [
+  {
+    title: "E-commerce Email Marketing: Increase Sales & Retention",
+    date: "Mar 29, 2026",
+    excerpt: "How email marketing increases sales and customer retention for e-commerce businesses in Sri Lanka with cart recovery, flash sales & multi-channel strategies.",
+    path: "/ecommerce-email-marketing-sales-sri-lanka",
+    image: articleEcommerceEmail,
+  },
+  {
+    title: "Recruitment Marketing: How Email Campaigns Speed Up Hiring",
+    date: "Mar 29, 2026",
+    excerpt: "How email marketing helps companies in Sri Lanka speed up hiring with targeted job campaigns, candidate sourcing & multi-channel recruitment strategies.",
+    path: "/recruitment-email-marketing-hiring-sri-lanka",
+    image: articleRecruitmentEmail,
+  },
+  {
+    title: "Healthcare Marketing: How Email Campaigns Improve Patient Engagement",
+    date: "Mar 29, 2026",
+    excerpt: "How email marketing improves patient engagement for healthcare providers in Sri Lanka with appointment reminders, health promotions & multi-channel strategies.",
+    path: "/healthcare-email-marketing-engagement-sri-lanka",
+    image: articleHealthcareEmail,
+  },
+  {
+    title: "Automotive Marketing: How Email Campaigns Drive Sales",
+    date: "Mar 29, 2026",
+    excerpt: "How email marketing drives vehicle sales and service bookings for automotive businesses in Sri Lanka with targeted campaigns & Findit.lk integration.",
+    path: "/automotive-email-marketing-sales-sri-lanka",
+    image: articleAutomotiveEmail,
+  },
+  {
+    title: "Event Marketing: How Email Campaigns Increase Attendance",
+    date: "Mar 29, 2026",
+    excerpt: "How email marketing increases attendance for events, workshops & training programs in Sri Lanka with targeted campaigns & multi-channel promotion.",
+    path: "/event-email-marketing-attendance-sri-lanka",
+    image: articleEventEmail,
+  },
   {
     title: "Education Marketing: How Email Campaigns Increase Student Enrollments",
     date: "Mar 29, 2026",
