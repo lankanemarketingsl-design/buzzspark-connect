@@ -85,16 +85,16 @@ const TestimonialsSection = () => {
         <div className="relative max-w-6xl mx-auto">
           <button
             onClick={prev}
-            className="absolute -left-4 md:-left-14 top-1/2 -translate-y-1/2 z-10 bg-card border border-border rounded-full p-2.5 shadow-lg hover:bg-accent hover:border-accent hover:text-primary transition-all duration-300"
+            className="absolute left-2 sm:-left-4 md:-left-14 top-1/2 -translate-y-1/2 z-10 bg-card border border-border rounded-full p-2 sm:p-2.5 shadow-lg hover:bg-accent hover:border-accent hover:text-primary transition-all duration-300"
             aria-label="Previous testimonials"
           >
-            <ChevronLeft className="h-5 w-5" />
+            <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
           </button>
 
           <AnimatePresence mode="wait">
             <motion.div
               key={current}
-              className="grid grid-cols-1 md:grid-cols-3 gap-6"
+              className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6"
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -40 }}
@@ -103,9 +103,9 @@ const TestimonialsSection = () => {
               {visibleTestimonials.map((t, i) => (
                 <div
                   key={startIdx + i}
-                  className="relative bg-card rounded-2xl p-7 shadow-card hover:shadow-card-hover border border-border hover:border-accent/20 flex flex-col transition-all duration-300"
+                  className="relative bg-card rounded-2xl p-5 sm:p-7 shadow-card hover:shadow-card-hover border border-border hover:border-accent/20 flex flex-col transition-all duration-300"
                 >
-                  <Quote className="absolute top-5 left-5 h-8 w-8 text-accent/10" />
+                  <Quote className="absolute top-4 sm:top-5 left-4 sm:left-5 h-7 w-7 sm:h-8 sm:w-8 text-accent/10" />
                   <div className="flex gap-1 mb-4 justify-center">
                     {[...Array(5)].map((_, s) => (
                       <Star key={s} className="h-4 w-4 fill-accent text-accent" />
@@ -125,10 +125,10 @@ const TestimonialsSection = () => {
 
           <button
             onClick={next}
-            className="absolute -right-4 md:-right-14 top-1/2 -translate-y-1/2 z-10 bg-card border border-border rounded-full p-2.5 shadow-lg hover:bg-accent hover:border-accent hover:text-primary transition-all duration-300"
+            className="absolute right-2 sm:-right-4 md:-right-14 top-1/2 -translate-y-1/2 z-10 bg-card border border-border rounded-full p-2 sm:p-2.5 shadow-lg hover:bg-accent hover:border-accent hover:text-primary transition-all duration-300"
             aria-label="Next testimonials"
           >
-            <ChevronRight className="h-5 w-5" />
+            <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
           </button>
         </div>
 

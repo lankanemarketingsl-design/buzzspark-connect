@@ -85,7 +85,7 @@ const BrandAwarenessWidget = () => {
                         viewport={{ once: true }}
                         transition={{ delay: step.delay + 0.1 }}
                       >
-                        <ArrowRight className="w-4 h-4 text-accent shrink-0 -mt-5" />
+                        <ArrowRight className="w-4 h-4 text-accent shrink-0 sm:-mt-5" />
                       </motion.div>
                     )}
                   </div>
