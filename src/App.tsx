@@ -59,6 +59,7 @@ import RecruitmentEmailHiring from "./pages/articles/RecruitmentEmailHiring.tsx"
 import HealthcareEmailEngagement from "./pages/articles/HealthcareEmailEngagement.tsx";
 import AutomotiveEmailSales from "./pages/articles/AutomotiveEmailSales.tsx";
 import EventEmailAttendance from "./pages/articles/EventEmailAttendance.tsx";
+import LeadGenAgency from "./pages/articles/LeadGenAgency.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
