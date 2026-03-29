@@ -342,20 +342,20 @@ const Resources = () => {
           { name: "Resources", url: "/resources" },
         ]}
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {articles.map((a, i) => (
           <motion.div
             key={a.path}
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: Math.min(i * 0.03, 0.3) }}
+            transition={{ delay: Math.min(i * 0.04, 0.3) }}
           >
             <Link
               to={a.path}
-              className="group flex gap-3 p-3 rounded-xl bg-card border border-border hover:border-accent/30 hover:shadow-card-hover transition-all h-full"
+              className="group flex gap-4 p-4 rounded-xl bg-card border border-border hover:border-accent/30 hover:shadow-card-hover transition-all h-full"
             >
-              <div className="w-20 h-20 rounded-lg overflow-hidden shrink-0">
+              <div className="w-24 h-24 rounded-lg overflow-hidden shrink-0">
                 <img
                   src={a.image}
                   alt={a.title}
@@ -364,10 +364,10 @@ const Resources = () => {
                 />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-heading text-sm font-semibold text-foreground mb-1 group-hover:text-accent transition-colors leading-snug line-clamp-2">
+                <h3 className="font-heading text-sm font-semibold text-foreground mb-1.5 group-hover:text-accent transition-colors leading-snug line-clamp-2">
                   {a.title}
                 </h3>
-                <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground mb-1.5">
+                <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-2">
                   <Calendar className="w-3 h-3" />
                   {a.date}
                 </div>
