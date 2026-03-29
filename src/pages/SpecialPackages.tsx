@@ -87,16 +87,22 @@ const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; 
           </div>
         ))}
       </div>
-      {features.map((row, i) => (
-        <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border ${i % 2 === 0 ? "bg-card" : "bg-muted/20"} hover:bg-muted/40 transition-colors`}>
-          <div className="p-3 sm:p-4 text-xs sm:text-sm font-medium text-foreground flex items-center">{row.label}</div>
-          {tierKeys.map((key, ti) => (
-            <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${ti === 3 ? "bg-accent/5 border-x border-accent/10" : ""}`}>
-              <CellValue value={row[key]} />
+      {features.map((row, i) => {
+        const isReach = row.label === "Total Reach";
+        return (
+          <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border ${isReach ? "bg-primary/10 border-t-2 border-b-2 border-primary/30" : i % 2 === 0 ? "bg-card" : "bg-muted/20"} hover:bg-muted/40 transition-colors`}>
+            <div className={`p-3 sm:p-4 text-xs sm:text-sm flex items-center gap-1.5 ${isReach ? "font-bold text-primary" : "font-medium text-foreground"}`}>
+              {isReach && <span className="text-base">📡</span>}
+              {row.label}
             </div>
-          ))}
-        </div>
-      ))}
+            {tierKeys.map((key, ti) => (
+              <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${isReach ? "font-extrabold text-primary text-sm sm:text-base" : ""} ${ti === 3 ? "bg-accent/5 border-x border-accent/10" : ""}`}>
+                <CellValue value={row[key]} />
+              </div>
+            ))}
+          </div>
+        );
+      })}
     </div>
     <div className="mt-6 text-center">
       <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20multi-channel%20marketing%20packages." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-primary font-bold text-sm hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-105">
