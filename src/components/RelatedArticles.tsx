@@ -35,6 +35,11 @@ const allArticles = [
   { title: "Education Email Marketing: Enrollments", path: "/education-email-marketing-enrollments-sri-lanka" },
   { title: "Real Estate Email Marketing: Property Leads", path: "/real-estate-email-marketing-leads-sri-lanka" },
   { title: "Hotel Email Marketing: Increase Bookings", path: "/hotel-email-marketing-bookings-sri-lanka" },
+  { title: "E-commerce Email Marketing: Increase Sales", path: "/ecommerce-email-marketing-sales-sri-lanka" },
+  { title: "Recruitment Email Marketing: Speed Up Hiring", path: "/recruitment-email-marketing-hiring-sri-lanka" },
+  { title: "Healthcare Email Marketing: Patient Engagement", path: "/healthcare-email-marketing-engagement-sri-lanka" },
+  { title: "Automotive Email Marketing: Drive Sales", path: "/automotive-email-marketing-sales-sri-lanka" },
+  { title: "Event Email Marketing: Increase Attendance", path: "/event-email-marketing-attendance-sri-lanka" },
 ];
 
 interface RelatedArticlesProps {
