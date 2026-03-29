@@ -54,6 +54,11 @@ import FinditlkEmailConversions from "./pages/articles/FinditlkEmailConversions.
 import EducationEmailEnrollments from "./pages/articles/EducationEmailEnrollments.tsx";
 import RealEstateEmailLeads from "./pages/articles/RealEstateEmailLeads.tsx";
 import HotelEmailBookings from "./pages/articles/HotelEmailBookings.tsx";
+import EcommerceEmailSales from "./pages/articles/EcommerceEmailSales.tsx";
+import RecruitmentEmailHiring from "./pages/articles/RecruitmentEmailHiring.tsx";
+import HealthcareEmailEngagement from "./pages/articles/HealthcareEmailEngagement.tsx";
+import AutomotiveEmailSales from "./pages/articles/AutomotiveEmailSales.tsx";
+import EventEmailAttendance from "./pages/articles/EventEmailAttendance.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
