@@ -62,10 +62,10 @@ const MultiChannelMarketingSriLanka = () => {
         {/* Introduction */}
         <section className="prose prose-lg max-w-none">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            In today's fast-moving digital landscape, businesses in Sri Lanka need more than just a single marketing channel to succeed. Customers interact with brands across multiple platforms, making it essential to adopt a <strong>multi-channel marketing strategy</strong> that delivers consistent messaging and maximum reach.
+            In today's fast-moving digital landscape, businesses in Sri Lanka need more than just a single marketing channel to succeed. Customers interact with brands across multiple platforms, making it essential to adopt a <strong><Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline">multi-channel marketing strategy</Link></strong> that delivers consistent messaging and maximum reach.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            <strong>Buzz Connect</strong> introduces a unique, results-driven approach to multi-channel marketing in Sri Lanka, combining direct marketing tools with the power of <strong>Findit.lk</strong> to deliver unmatched visibility and engagement.
+            <strong>Buzz Connect</strong> introduces a unique, results-driven approach to <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-semibold">multi-channel marketing in Sri Lanka</Link>, combining direct marketing tools with the power of <strong>Findit.lk</strong> to deliver unmatched visibility and engagement.
           </p>
         </section>
 
