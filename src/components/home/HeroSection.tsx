@@ -113,7 +113,7 @@ const HeroSection = () => {
 
           {/* Channel pills */}
           <motion.div
-            className="flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-10"
+            className="flex flex-wrap gap-2 sm:gap-3 mb-5 sm:mb-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.35 }}
