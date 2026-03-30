@@ -94,6 +94,7 @@ const App = () => (
               <Route path="/special-advertising-packages" element={<SpecialPackages />} />
               <Route path="/online-advertising-sri-lanka" element={<OnlineAdvertising />} />
               <Route path="/graphic-designing-in-sri-lanka" element={<GraphicDesign />} />
+              <Route path="/:slug" element={<GraphicDesignService />} />
               <Route path="/seo-sri-lanka" element={<SeoServices />} />
               <Route path="/website-design-sri-lanka" element={<WebsiteDesign />} />
               <Route path="/lead-generation-sri-lanka" element={<LeadGeneration />} />
