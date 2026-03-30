@@ -19,6 +19,8 @@ const services = [
   { icon: Image, title: "Photo Editing", desc: "Professional photo editing services" },
   { icon: Smartphone, title: "Social media post designing", desc: "We will create advertising friendly beautiful social media post for your business" },
   { icon: Layout, title: "Menu Card Design", desc: "We will create Attractive menu card for your business" },
+  { icon: Tag, title: "Label Designing", desc: "Professional product label designs for food, beverages, cosmetics, and retail products. Eye-catching labels that stand out on shelves and attract customers." },
+  { icon: Box, title: "Package Designing", desc: "Custom product packaging designs that protect your product and promote your brand. Creative packaging solutions for all industries." },
 ];
 
 const moreCategories = [
