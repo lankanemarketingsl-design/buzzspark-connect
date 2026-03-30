@@ -7,6 +7,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { graphicDesignServices } from "@/data/graphicDesignServices";
 
 const pathLabels: Record<string, string> = {
   "/email-marketing": "Email Marketing",
@@ -27,23 +28,42 @@ const pathLabels: Record<string, string> = {
   "/enable-missing-images-to-display": "Enable Missing Images",
   "/multi-channel-marketing-in-sri-lanka": "Multi-Channel Marketing in Sri Lanka",
   "/special-advertising-packages": "Special Packages",
+  // Industry pages
+  "/hotel-marketing-sri-lanka": "Hotel & Travel Marketing",
+  "/education-marketing-sri-lanka": "Education Marketing",
+  "/finance-marketing-sri-lanka": "Finance & Credit Marketing",
+  "/restaurant-marketing-sri-lanka": "Restaurant & Retail Marketing",
+  "/real-estate-marketing-sri-lanka": "Real Estate Marketing",
+  "/fashion-marketing-sri-lanka": "Fashion & Clothing Marketing",
+  "/event-marketing-sri-lanka": "Event Marketing",
+  "/advertising-sri-lanka": "Advertising",
 };
+
+// Build graphic design service labels from data
+const graphicDesignLabels: Record<string, string> = {};
+graphicDesignServices.forEach((s) => {
+  graphicDesignLabels[`/${s.slug}`] = s.title;
+});
+
+const articlePaths = [
+  "/why-email-marketing-is-important",
+  "/why-you-need-email-marketing",
+  "/best-seo-services-sri-lanka",
+  "/sms-marketing-in-sri-lanka",
+  "/enable-missing-images-to-display",
+  "/multi-channel-marketing-in-sri-lanka",
+];
 
 const Breadcrumbs = () => {
   const location = useLocation();
-  const currentLabel = pathLabels[location.pathname];
+  const path = location.pathname;
 
-  if (!currentLabel || location.pathname === "/") return null;
+  const isGraphicDesignService = !!graphicDesignLabels[path];
+  const currentLabel = pathLabels[path] || graphicDesignLabels[path];
 
-  // Check if it's an article page (nested under resources)
-  const isArticle = [
-    "/why-email-marketing-is-important",
-    "/why-you-need-email-marketing",
-    "/best-seo-services-sri-lanka",
-    "/sms-marketing-in-sri-lanka",
-    "/enable-missing-images-to-display",
-    "/multi-channel-marketing-in-sri-lanka",
-  ].includes(location.pathname);
+  if (!currentLabel || path === "/") return null;
+
+  const isArticle = articlePaths.includes(path);
 
   return (
     <nav className="container mx-auto px-4 py-3" aria-label="Breadcrumb">
@@ -60,6 +80,16 @@ const Breadcrumbs = () => {
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
                   <Link to="/resources" className="text-primary-foreground/60 hover:text-accent text-xs sm:text-sm">Resources</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="text-primary-foreground/40" />
+            </>
+          )}
+          {isGraphicDesignService && (
+            <>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/graphic-designing-in-sri-lanka" className="text-primary-foreground/60 hover:text-accent text-xs sm:text-sm">Graphic Design</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="text-primary-foreground/40" />
