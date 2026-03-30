@@ -197,7 +197,7 @@ const GraphicDesign = () => {
                 "2 E-Flyer Designs",
                 "1 Brochure Design (bi-fold)",
                 "Company Profile (up to 8 pages)",
-                "Unlimited revisions",
+                "3 Revisions per design",
                 "Source files (AI, PSD, PDF)",
               ],
             },
