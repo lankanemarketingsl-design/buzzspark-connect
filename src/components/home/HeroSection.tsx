@@ -82,7 +82,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-accent/10 text-accent border border-accent/20 mb-6 sm:mb-8 backdrop-blur-md">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-accent/10 text-accent border border-accent/20 mb-4 sm:mb-5 backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
               No.1 Multi-Channel Marketing in Sri Lanka
             </span>
