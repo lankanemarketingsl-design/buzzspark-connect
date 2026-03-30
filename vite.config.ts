@@ -35,6 +35,35 @@ const toAbsoluteCanonical = (canonical: string, route: string) => {
   return `${SITE_URL}${basePath}`;
 };
 
+const parseGraphicDesignSeo = (projectRoot: string): Map<string, { title: string; description: string; h1: string }> => {
+  const dataFile = path.join(projectRoot, "src", "data", "graphicDesignServices.ts");
+  if (!fs.existsSync(dataFile)) return new Map();
+  const content = fs.readFileSync(dataFile, "utf8");
+  const map = new Map<string, { title: string; description: string; h1: string }>();
+  
+  // Extract each service object's slug, metaTitle, metaDescription, h1
+  const slugRegex = /slug:\s*"([^"]+)"/g;
+  const allSlugs: string[] = [];
+  for (const m of content.matchAll(slugRegex)) allSlugs.push(m[1]);
+  
+  for (const slug of allSlugs) {
+    // Find the block for this slug
+    const blockStart = content.indexOf(`slug: "${slug}"`);
+    if (blockStart === -1) continue;
+    const blockEnd = content.indexOf(`slug: "`, blockStart + 10);
+    const block = content.substring(blockStart, blockEnd === -1 ? content.length : blockEnd);
+    
+    const metaTitle = block.match(/metaTitle:\s*"([^"]+)"/)?.[1] ?? "";
+    const metaDescription = block.match(/metaDescription:\s*"([^"]+)"/)?.[1] ?? "";
+    const h1 = block.match(/h1:\s*"([^"]+)"/)?.[1] ?? "";
+    
+    if (metaTitle) {
+      map.set(slug, { title: metaTitle, description: metaDescription, h1 });
+    }
+  }
+  return map;
+};
+
 const collectRouteSeo = (projectRoot: string): RouteSeoEntry[] => {
   const appFile = path.join(projectRoot, "src", "App.tsx");
   const appContent = fs.readFileSync(appFile, "utf8");
@@ -49,6 +78,7 @@ const collectRouteSeo = (projectRoot: string): RouteSeoEntry[] => {
     importMap.set(component, resolvedPath.endsWith(".tsx") ? resolvedPath : `${resolvedPath}.tsx`);
   }
 
+  const graphicDesignSeo = parseGraphicDesignSeo(projectRoot);
   const entries: RouteSeoEntry[] = [];
   const routeRegex = /<Route\s+path="([^"]+)"\s+element={<(\w+)\s*\/>}\s*\/>/g;
 
@@ -57,6 +87,20 @@ const collectRouteSeo = (projectRoot: string): RouteSeoEntry[] => {
     const component = match[2];
 
     if (route === "*") continue;
+
+    // Check if this is a graphic design service route with dynamic SEO
+    const slug = route.replace(/^\//, "");
+    const gdSeo = graphicDesignSeo.get(slug);
+    if (gdSeo) {
+      entries.push({
+        route,
+        title: gdSeo.title,
+        description: gdSeo.description,
+        canonical: `${SITE_URL}${route}`,
+        h1: gdSeo.h1,
+      });
+      continue;
+    }
 
     const componentPath = importMap.get(component);
     if (!componentPath || !fs.existsSync(componentPath)) continue;
