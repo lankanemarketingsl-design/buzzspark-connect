@@ -122,17 +122,17 @@ const ServicesSection = () => {
                   <div className="w-12 h-12 rounded-lg gradient-accent flex items-center justify-center mb-4 group-hover:shadow-glow group-hover:scale-105 transition-all duration-300">
                     <s.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-heading font-bold text-foreground mb-2 text-base">{s.title}</h3>
-                  <ul className="space-y-1 mb-3">
+                  <h3 className="font-heading font-bold text-foreground mb-2 text-lg">{s.title}</h3>
+                  <ul className="space-y-1.5 mb-3">
                     {s.bullets.map((b) => (
-                      <li key={b} className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5">
-                        <span className="text-accent mt-0.5 text-[8px]">●</span> {b}
+                      <li key={b} className="text-sm text-muted-foreground leading-relaxed flex items-start gap-1.5">
+                        <span className="text-accent mt-1 text-[8px]">●</span> {b}
                       </li>
                     ))}
                   </ul>
-                  <p className="text-[11px] text-muted-foreground/60 italic">{s.description}</p>
-                  <span className="inline-flex items-center mt-3 text-xs font-bold text-accent group-hover:gap-1.5 transition-all">
-                    Learn More <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
+                  <p className="text-xs text-muted-foreground/60 italic">{s.description}</p>
+                  <span className="inline-flex items-center mt-3 text-sm font-bold text-accent group-hover:gap-1.5 transition-all">
+                    Learn More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </Link>
@@ -159,15 +159,15 @@ const ServicesSection = () => {
                     <s.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-heading font-semibold text-foreground mb-1.5 text-sm">{s.title}</h3>
-                    <ul className="space-y-0.5 mb-2">
+                    <h3 className="font-heading font-semibold text-foreground mb-1.5 text-base">{s.title}</h3>
+                    <ul className="space-y-1 mb-2">
                       {s.bullets.map((b) => (
-                        <li key={b} className="text-xs text-muted-foreground leading-relaxed">• {b}</li>
+                        <li key={b} className="text-sm text-muted-foreground leading-relaxed">• {b}</li>
                       ))}
                     </ul>
-                    <p className="text-[11px] text-muted-foreground/60 italic">{s.description}</p>
-                    <span className="inline-flex items-center mt-2 text-xs font-semibold text-accent group-hover:gap-1.5 transition-all">
-                      Learn More <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
+                    <p className="text-xs text-muted-foreground/60 italic">{s.description}</p>
+                    <span className="inline-flex items-center mt-2 text-sm font-semibold text-accent group-hover:gap-1.5 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
                 </div>
