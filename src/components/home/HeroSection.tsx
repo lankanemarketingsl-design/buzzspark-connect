@@ -74,7 +74,7 @@ const HeroSection = () => {
         <Zap size={38} strokeWidth={1.5} />
       </motion.div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 sm:py-20">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 py-8 sm:py-14">
         <div className="max-w-4xl">
           {/* Badge */}
           <motion.div
