@@ -217,7 +217,7 @@ const GraphicDesign = () => {
                 "Company Profile (up to 16 pages)",
                 "1 Short Animated Video (30s)",
                 "Menu Card / Product Catalog",
-                "Unlimited revisions",
+                "3 Revisions per design",
                 "All source files included",
               ],
             },
