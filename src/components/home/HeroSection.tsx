@@ -6,7 +6,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const stats = [
   { num: "350K+", label: "Email Database" },
-  { num: "20K+", label: "Campaigns Sent" },
+  { num: "25K+", label: "Campaigns Sent" },
   { num: "1,500+", label: "Happy Clients" },
   { num: "10+", label: "Years Experience" },
 ];
