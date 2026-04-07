@@ -573,10 +573,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Brochure & Leaflet Design Sri Lanka",
     metaTitle: "Brochure Design Sri Lanka | Professional Leaflet & Brochure Design",
     metaDescription: "Professional brochure and leaflet design services in Sri Lanka. Bi-fold, tri-fold & custom brochure layouts that showcase your business effectively. Get a quote.",
-    h1: "Brochure & Leaflet Design Sri Lanka – Professional Brochure Design Services",
+    h1: "Brochure Design Sri Lanka – Professional Brochures That Showcase Your Business",
     intro: [
-      "Brochures and leaflets remain one of the most effective marketing materials for businesses in Sri Lanka. A well-designed brochure can communicate your complete product range, services, and brand story in a tangible, shareable format.",
-      "Buzz Connect creates professional brochure and leaflet designs that capture attention, convey information clearly, and drive your audience to take action.",
+      "Looking for professional brochure design Sri Lanka services that effectively communicate your brand story?",
+      "At Buzz Connect, we create professional brochure and leaflet designs that capture attention, convey information clearly, and drive your audience to take action.",
+      "Brochures remain one of the most powerful marketing tools for businesses in Sri Lanka. Whether distributed at events, mailed to prospects, or displayed in-store, a well-designed brochure can communicate your complete product range and brand value in a tangible, shareable format.",
     ],
     benefits: [
       "Bi-fold, tri-fold, and custom layouts",
@@ -587,16 +588,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable rates with quick delivery",
     ],
     process: [
-      { step: "Brief", desc: "Share your content, images, and brand guidelines" },
-      { step: "Layout", desc: "We create the brochure layout and design" },
-      { step: "Review", desc: "Refine content placement and visuals" },
-      { step: "Deliver", desc: "Print-ready PDF and source files delivered" },
+      { step: "Discovery & Brief", desc: "Share your content, images, and brand guidelines" },
+      { step: "Layout Development", desc: "We create the brochure layout and design" },
+      { step: "Design Refinement", desc: "Refine content placement and visuals" },
+      { step: "Final Delivery", desc: "Print-ready PDF and source files delivered" },
     ],
     faqs: [
       { q: "What types of brochures do you design?", a: "We design bi-fold, tri-fold, gate-fold, and custom format brochures and leaflets." },
       { q: "Can you write the content for the brochure?", a: "Yes, we offer professional copywriting services to complement the design." },
       { q: "Do you handle printing?", a: "We deliver print-ready files and can recommend printing partners for competitive rates." },
+      { q: "How much does brochure design cost in Sri Lanka?", a: "Pricing varies based on number of pages, folds, and design complexity. Contact us for a quote." },
+      { q: "Can you design brochures in multiple languages?", a: "Yes, we design brochures in Sinhala, Tamil, and English to reach diverse audiences." },
     ],
+    extraSections: [
+      {
+        title: "Why Brochure Design Matters for Businesses in Sri Lanka",
+        paragraphs: [
+          "Brochures are tangible marketing tools that customers can hold, share, and refer back to. In Sri Lanka's business environment, professionally designed brochures are essential for trade shows, client meetings, product launches, and retail displays.",
+          "A well-crafted brochure positions your brand as professional and trustworthy, while clearly presenting your products, services, and unique value proposition.",
+        ],
+      },
+      {
+        title: "Our Brochure Design Services in Sri Lanka",
+        paragraphs: ["We create brochures for every industry and purpose."],
+        subsections: [
+          { title: "Corporate Brochures", bullets: ["Company capability brochures", "Annual report design", "Investor relations materials", "Product catalogs"] },
+          { title: "Marketing Brochures", bullets: ["Product launch brochures", "Service overview leaflets", "Trade show handouts", "Direct mail brochures"] },
+          { title: "Industry-Specific Brochures", bullets: ["Real estate property brochures", "Hotel and tourism leaflets", "Educational institution brochures", "Healthcare and wellness"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Brochure Design in Sri Lanka",
+        paragraphs: ["We design brochures that inform, engage, and convert."],
+        bullets: [
+          "Professional layout and visual hierarchy",
+          "Copywriting support available",
+          "Print-ready with bleed and crop marks",
+          "Multi-language design capability",
+          "Affordable packages for all business sizes",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "company-profile-design-sri-lanka",
