@@ -903,10 +903,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Menu Card Design Sri Lanka",
     metaTitle: "Menu Card Design Sri Lanka | Restaurant & Café Menu Design",
     metaDescription: "Professional menu card design services in Sri Lanka for restaurants, cafés & hotels. Attractive, well-organized menu designs that enhance dining experience. Get a quote.",
-    h1: "Menu Card Design Sri Lanka – Professional Restaurant Menu Design",
+    h1: "Menu Card Design Sri Lanka – Restaurant Menus That Drive Orders",
     intro: [
-      "Your menu is more than a list of dishes – it's a marketing tool that influences ordering decisions and reflects your restaurant's brand. A well-designed menu can increase average order value and enhance the dining experience.",
-      "Buzz Connect creates attractive, well-organized menu card designs for restaurants, cafés, hotels, and food businesses across Sri Lanka.",
+      "Looking for professional menu card design Sri Lanka services that increase your average order value?",
+      "At Buzz Connect, we create attractive, well-organized menu card designs for restaurants, cafés, hotels, and food businesses across Sri Lanka.",
+      "Your menu is more than a list of dishes — it's a powerful marketing tool that influences ordering decisions and reflects your restaurant's brand. A well-designed menu uses layout psychology to guide customers toward your most profitable items.",
     ],
     benefits: [
       "Attractive layouts that drive higher orders",
@@ -917,16 +918,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Easy to update with seasonal changes",
     ],
     process: [
-      { step: "Brief", desc: "Share your menu items, prices, and brand style" },
-      { step: "Design", desc: "We create an attractive menu layout" },
-      { step: "Review", desc: "Refine layout, fonts, and imagery" },
-      { step: "Deliver", desc: "Print-ready and digital menu files delivered" },
+      { step: "Discovery & Brief", desc: "Share your menu items, prices, and brand style" },
+      { step: "Layout Design", desc: "We create an attractive menu layout" },
+      { step: "Design Refinement", desc: "Refine layout, fonts, and imagery" },
+      { step: "Final Delivery", desc: "Print-ready and digital menu files delivered" },
     ],
     faqs: [
       { q: "Can you design digital menus with QR codes?", a: "Yes, we create digital menus that customers can access via QR code on their smartphones." },
       { q: "Do you include food photography?", a: "We can integrate your food photos or source stock imagery to complement the menu design." },
       { q: "Can I easily update the menu later?", a: "Yes, we provide editable templates so you can update prices and items as needed." },
+      { q: "How much does menu card design cost in Sri Lanka?", a: "Pricing depends on format, pages, and design complexity. Contact us for a competitive quote." },
+      { q: "Do you design menus for hotels and catering services?", a: "Yes, we design menus for restaurants, hotels, catering companies, cafés, and food trucks." },
     ],
+    extraSections: [
+      {
+        title: "Why Menu Card Design Matters for Restaurants in Sri Lanka",
+        paragraphs: [
+          "In Sri Lanka's thriving food and hospitality industry, your menu is a critical sales tool. Research shows that strategic menu design and layout can increase average order value by 15-25%.",
+          "A professionally designed menu enhances the dining experience, reinforces your brand identity, and subtly guides customers toward your signature dishes and high-margin items.",
+        ],
+      },
+      {
+        title: "Our Menu Card Design Services in Sri Lanka",
+        paragraphs: ["We design menus for every type of food business."],
+        subsections: [
+          { title: "Restaurant Menus", bullets: ["Fine dining menus", "Casual dining menus", "Fast food and takeaway menus", "Buffet and set menu designs"] },
+          { title: "Café & Bakery Menus", bullets: ["Coffee shop menus", "Bakery display menus", "Dessert and ice cream menus", "Beverage menus"] },
+          { title: "Hotel & Catering Menus", bullets: ["Room service menus", "Banquet and event menus", "Catering packages", "Wine and bar menus"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Menu Card Design in Sri Lanka",
+        paragraphs: ["We design menus that make mouths water and orders increase."],
+        bullets: [
+          "Strategic layout for maximum sales impact",
+          "Food photography integration",
+          "QR code and digital menu options",
+          "Editable templates for easy updates",
+          "Print-ready with lamination-ready files",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "label-design-sri-lanka",
