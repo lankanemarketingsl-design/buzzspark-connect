@@ -35,10 +35,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "E-Flyer Design Sri Lanka",
     metaTitle: "E-Flyer Design Sri Lanka | Professional Digital Flyer Design",
     metaDescription: "Professional e-flyer and digital artwork design services in Sri Lanka from LKR 4,000. Eye-catching e-flyers for email campaigns, social media & digital marketing.",
-    h1: "E-Flyer Design Sri Lanka – Professional Digital Flyer Design Services",
+    h1: "E-Flyer Design Sri Lanka – Digital Flyer Designs That Drive Results",
     intro: [
-      "E-flyers are one of the most effective digital marketing tools for businesses in Sri Lanka. A well-designed e-flyer can capture attention, convey your message clearly, and drive action from your target audience.",
-      "At Buzz Connect, we create professional, visually stunning e-flyers that help you stand out in crowded inboxes and social media feeds. Whether you need promotional flyers, event announcements, or product launches, we deliver designs that convert.",
+      "Looking for professional e-flyer design Sri Lanka services that boost your marketing campaigns?",
+      "At Buzz Connect, we create visually stunning e-flyers that capture attention, convey your message clearly, and drive action from your target audience across email, WhatsApp, and social media.",
+      "In today's digital-first Sri Lankan market, e-flyers are one of the most cost-effective ways to promote products, events, and services. Our designs combine creativity with marketing strategy to maximize engagement and conversions.",
     ],
     benefits: [
       "Cost-effective marketing material",
@@ -49,16 +50,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Increases engagement and click-through rates",
     ],
     process: [
-      { step: "Brief", desc: "Share your requirements, content, and brand guidelines" },
-      { step: "Concept", desc: "We create initial design concepts for your review" },
-      { step: "Refine", desc: "We refine the design based on your feedback" },
-      { step: "Deliver", desc: "Final files delivered in high-resolution formats" },
+      { step: "Discovery & Brief", desc: "Share your requirements, content, and brand guidelines" },
+      { step: "Concept Development", desc: "We create initial design concepts for your review" },
+      { step: "Design Refinement", desc: "We refine the design based on your feedback" },
+      { step: "Final Delivery", desc: "Final files delivered in high-resolution formats" },
     ],
     faqs: [
       { q: "How much does e-flyer design cost in Sri Lanka?", a: "E-flyer design starts from LKR 4,000. Pricing varies based on complexity and number of designs needed." },
       { q: "What formats do you deliver e-flyers in?", a: "We deliver in JPG, PNG, and PDF formats suitable for email, social media, and print." },
       { q: "How long does it take to design an e-flyer?", a: "Standard e-flyer designs are completed within 24-48 hours after receiving your brief." },
+      { q: "Can you design e-flyers for email campaigns?", a: "Yes, we design e-flyers optimized for email marketing with proper dimensions and file sizes for maximum deliverability." },
+      { q: "Do you offer bulk e-flyer design packages?", a: "Yes, we offer monthly and bulk packages for businesses that need regular promotional e-flyers." },
     ],
+    extraSections: [
+      {
+        title: "Why E-Flyer Design Matters for Marketing in Sri Lanka",
+        paragraphs: [
+          "E-flyers are one of the most versatile digital marketing tools available to Sri Lankan businesses. They can be distributed instantly via email, WhatsApp, social media, and websites at minimal cost.",
+          "A professionally designed e-flyer communicates your brand's quality and professionalism, while a poorly designed one can damage your credibility. Our e-flyer designs ensure your message gets noticed and acted upon.",
+        ],
+      },
+      {
+        title: "Our E-Flyer Design Services in Sri Lanka",
+        paragraphs: ["We create e-flyers for every marketing need."],
+        subsections: [
+          { title: "Promotional E-Flyers", bullets: ["Product launches", "Seasonal sales and offers", "Discount and coupon promotions", "New store openings"] },
+          { title: "Event E-Flyers", bullets: ["Corporate events and conferences", "Workshops and seminars", "Social gatherings", "Exhibition invitations"] },
+          { title: "Business E-Flyers", bullets: ["Service announcements", "Newsletter designs", "Company updates", "Recruitment flyers"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for E-Flyer Design in Sri Lanka",
+        paragraphs: ["We combine design expertise with marketing knowledge to create e-flyers that convert."],
+        bullets: [
+          "Fast 24-48 hour turnaround",
+          "Optimized for email, WhatsApp & social media",
+          "Marketing-focused design approach",
+          "Affordable starting from LKR 4,000",
+          "Bulk and monthly packages available",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "business-card-design-sri-lanka",
