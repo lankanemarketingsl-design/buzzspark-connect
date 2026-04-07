@@ -441,10 +441,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Signboard Design Sri Lanka",
     metaTitle: "Signboard Design Sri Lanka | Name Board & Sign Board Design",
     metaDescription: "Professional name board and signboard design services in Sri Lanka. Indoor & outdoor sign boards for businesses. Affordable, eye-catching designs. Get a quote today.",
-    h1: "Signboard Design Sri Lanka – Name Board & Sign Board Design Services",
+    h1: "Signboard Design Sri Lanka – Name Boards That Attract Customers",
     intro: [
-      "Your signboard is the first thing customers see when they visit your business. A well-designed signboard attracts foot traffic, builds brand recognition, and creates a professional image.",
-      "Buzz Connect designs custom name boards and sign boards that make your business stand out, whether it's a storefront sign, indoor directory, or outdoor banner.",
+      "Looking for professional signboard design Sri Lanka services that attract foot traffic and build brand recognition?",
+      "At Buzz Connect, we design custom name boards and sign boards that make your business stand out — whether it's a storefront sign, indoor directory, or outdoor banner.",
+      "Your signboard is often the first thing customers see when they approach your business. A well-designed signboard creates a professional image, attracts walk-in customers, and reinforces your brand identity.",
     ],
     benefits: [
       "Attracts foot traffic to your business",
@@ -455,16 +456,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable pricing for all businesses",
     ],
     process: [
-      { step: "Brief", desc: "Share your business name, logo, and location details" },
-      { step: "Design", desc: "We create sign board concepts with mockups" },
-      { step: "Review", desc: "Refine the design for your approval" },
-      { step: "Deliver", desc: "Production-ready files with specifications" },
+      { step: "Discovery & Brief", desc: "Share your business name, logo, and location details" },
+      { step: "Concept Development", desc: "We create sign board concepts with mockups" },
+      { step: "Design Refinement", desc: "Refine the design for your approval" },
+      { step: "Final Delivery", desc: "Production-ready files with specifications" },
     ],
     faqs: [
       { q: "Do you design LED sign boards?", a: "Yes, we design for all types including LED, neon, backlit, and standard signage." },
       { q: "Can you provide installation guidance?", a: "We provide detailed specifications and can recommend installation partners in Sri Lanka." },
       { q: "What information do you need to start?", a: "Your business name, logo, preferred colors, sign dimensions, and mounting location details." },
+      { q: "How much does signboard design cost in Sri Lanka?", a: "Costs vary based on type, size, and material. Contact us for a competitive quote." },
+      { q: "Can you design both indoor and outdoor signage?", a: "Yes, we design reception signs, directional boards, outdoor nameboards, and more." },
     ],
+    extraSections: [
+      {
+        title: "Why Signboard Design Matters for Businesses in Sri Lanka",
+        paragraphs: [
+          "Your signboard is your business's most visible marketing asset. In busy commercial areas of Colombo, Kandy, Galle, and other cities, a well-designed signboard can attract foot traffic and differentiate your business from competitors.",
+          "Professional signage communicates quality and trustworthiness to potential customers before they even walk through your door.",
+        ],
+      },
+      {
+        title: "Our Signboard Design Services in Sri Lanka",
+        paragraphs: ["We design all types of signage for businesses across Sri Lanka."],
+        subsections: [
+          { title: "Outdoor Signage", bullets: ["Storefront name boards", "Building fascia signs", "Free-standing signs", "Directional and wayfinding signs"] },
+          { title: "Indoor Signage", bullets: ["Reception and lobby signs", "Office directory boards", "Room identification signs", "Promotional displays"] },
+          { title: "Specialty Signage", bullets: ["LED and backlit designs", "Neon-style signage", "3D lettering designs", "Vehicle and fleet signage"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Signboard Design in Sri Lanka",
+        paragraphs: ["We design signs that work as hard as your business does."],
+        bullets: [
+          "Designs optimized for visibility and readability",
+          "Experience with all signage types and materials",
+          "Production-ready files with specifications",
+          "Affordable pricing for SMEs and corporates",
+          "Fast turnaround and responsive service",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "invitation-design-sri-lanka",
