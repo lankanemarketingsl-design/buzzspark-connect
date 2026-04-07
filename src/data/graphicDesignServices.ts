@@ -35,10 +35,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "E-Flyer Design Sri Lanka",
     metaTitle: "E-Flyer Design Sri Lanka | Professional Digital Flyer Design",
     metaDescription: "Professional e-flyer and digital artwork design services in Sri Lanka from LKR 4,000. Eye-catching e-flyers for email campaigns, social media & digital marketing.",
-    h1: "E-Flyer Design Sri Lanka – Professional Digital Flyer Design Services",
+    h1: "E-Flyer Design Sri Lanka – Digital Flyer Designs That Drive Results",
     intro: [
-      "E-flyers are one of the most effective digital marketing tools for businesses in Sri Lanka. A well-designed e-flyer can capture attention, convey your message clearly, and drive action from your target audience.",
-      "At Buzz Connect, we create professional, visually stunning e-flyers that help you stand out in crowded inboxes and social media feeds. Whether you need promotional flyers, event announcements, or product launches, we deliver designs that convert.",
+      "Looking for professional e-flyer design Sri Lanka services that boost your marketing campaigns?",
+      "At Buzz Connect, we create visually stunning e-flyers that capture attention, convey your message clearly, and drive action from your target audience across email, WhatsApp, and social media.",
+      "In today's digital-first Sri Lankan market, e-flyers are one of the most cost-effective ways to promote products, events, and services. Our designs combine creativity with marketing strategy to maximize engagement and conversions.",
     ],
     benefits: [
       "Cost-effective marketing material",
@@ -49,16 +50,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Increases engagement and click-through rates",
     ],
     process: [
-      { step: "Brief", desc: "Share your requirements, content, and brand guidelines" },
-      { step: "Concept", desc: "We create initial design concepts for your review" },
-      { step: "Refine", desc: "We refine the design based on your feedback" },
-      { step: "Deliver", desc: "Final files delivered in high-resolution formats" },
+      { step: "Discovery & Brief", desc: "Share your requirements, content, and brand guidelines" },
+      { step: "Concept Development", desc: "We create initial design concepts for your review" },
+      { step: "Design Refinement", desc: "We refine the design based on your feedback" },
+      { step: "Final Delivery", desc: "Final files delivered in high-resolution formats" },
     ],
     faqs: [
       { q: "How much does e-flyer design cost in Sri Lanka?", a: "E-flyer design starts from LKR 4,000. Pricing varies based on complexity and number of designs needed." },
       { q: "What formats do you deliver e-flyers in?", a: "We deliver in JPG, PNG, and PDF formats suitable for email, social media, and print." },
       { q: "How long does it take to design an e-flyer?", a: "Standard e-flyer designs are completed within 24-48 hours after receiving your brief." },
+      { q: "Can you design e-flyers for email campaigns?", a: "Yes, we design e-flyers optimized for email marketing with proper dimensions and file sizes for maximum deliverability." },
+      { q: "Do you offer bulk e-flyer design packages?", a: "Yes, we offer monthly and bulk packages for businesses that need regular promotional e-flyers." },
     ],
+    extraSections: [
+      {
+        title: "Why E-Flyer Design Matters for Marketing in Sri Lanka",
+        paragraphs: [
+          "E-flyers are one of the most versatile digital marketing tools available to Sri Lankan businesses. They can be distributed instantly via email, WhatsApp, social media, and websites at minimal cost.",
+          "A professionally designed e-flyer communicates your brand's quality and professionalism, while a poorly designed one can damage your credibility. Our e-flyer designs ensure your message gets noticed and acted upon.",
+        ],
+      },
+      {
+        title: "Our E-Flyer Design Services in Sri Lanka",
+        paragraphs: ["We create e-flyers for every marketing need."],
+        subsections: [
+          { title: "Promotional E-Flyers", bullets: ["Product launches", "Seasonal sales and offers", "Discount and coupon promotions", "New store openings"] },
+          { title: "Event E-Flyers", bullets: ["Corporate events and conferences", "Workshops and seminars", "Social gatherings", "Exhibition invitations"] },
+          { title: "Business E-Flyers", bullets: ["Service announcements", "Newsletter designs", "Company updates", "Recruitment flyers"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for E-Flyer Design in Sri Lanka",
+        paragraphs: ["We combine design expertise with marketing knowledge to create e-flyers that convert."],
+        bullets: [
+          "Fast 24-48 hour turnaround",
+          "Optimized for email, WhatsApp & social media",
+          "Marketing-focused design approach",
+          "Affordable starting from LKR 4,000",
+          "Bulk and monthly packages available",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "business-card-design-sri-lanka",
@@ -68,10 +101,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Business Card Design Sri Lanka",
     metaTitle: "Business Card Design Sri Lanka | Professional Card Designs",
     metaDescription: "Professional business card design services in Sri Lanka. Custom, affordable business card designs that make a lasting impression. Single & double-sided options.",
-    h1: "Business Card Design Sri Lanka – Professional Business Card Design Services",
+    h1: "Business Card Design Sri Lanka – Professional Cards That Make an Impact",
     intro: [
-      "Your business card is often the first impression potential clients have of your business. A professionally designed business card communicates credibility, quality, and attention to detail.",
-      "Buzz Connect creates custom business card designs that reflect your brand identity and leave a lasting impression on everyone you meet.",
+      "Looking for professional business card design Sri Lanka services that leave a lasting impression?",
+      "At Buzz Connect, we create custom business card designs that communicate credibility, quality, and professionalism — making every networking opportunity count.",
+      "In Sri Lanka's growing business landscape, a well-designed business card is still one of the most powerful personal branding tools. Our designs combine modern aesthetics with strategic branding to represent your business perfectly.",
     ],
     benefits: [
       "Professional first impression for your business",
@@ -82,16 +116,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable rates for startups and corporates",
     ],
     process: [
-      { step: "Brief", desc: "Share your business details, logo, and preferences" },
-      { step: "Design", desc: "We create multiple design concepts" },
-      { step: "Review", desc: "Select your preferred design and request changes" },
-      { step: "Deliver", desc: "Print-ready files delivered in all required formats" },
+      { step: "Discovery & Brief", desc: "Share your business details, logo, and preferences" },
+      { step: "Concept Development", desc: "We create multiple design concepts" },
+      { step: "Design Refinement", desc: "Select your preferred design and request changes" },
+      { step: "Final Delivery", desc: "Print-ready files delivered in all required formats" },
     ],
     faqs: [
-      { q: "How much does business card design cost?", a: "Business card design pricing depends on the complexity. Contact us for a custom quote." },
-      { q: "Do you provide print-ready files?", a: "Yes, we deliver files with proper bleed, crop marks, and CMYK color profiles for printing." },
+      { q: "How much does business card design cost in Sri Lanka?", a: "Business card design pricing depends on complexity and package. Contact us for a custom quote." },
+      { q: "Do you provide print-ready files?", a: "Yes, we deliver files with proper bleed, crop marks, and CMYK color profiles for professional printing." },
       { q: "Can you design both sides of the card?", a: "Yes, we offer both single-sided and double-sided business card designs." },
+      { q: "What information should I include on my business card?", a: "Typically your name, title, company name, phone, email, website, and social media. We help you decide the best layout." },
+      { q: "Do you offer matching stationery design?", a: "Yes, we can design matching letterheads, envelopes, and compliment slips for a complete brand identity package." },
     ],
+    extraSections: [
+      {
+        title: "Why Business Card Design Matters in Sri Lanka",
+        paragraphs: [
+          "Despite the digital age, business cards remain essential in Sri Lanka's business culture. They are exchanged at meetings, networking events, exhibitions, and client visits — making them a critical touchpoint for your brand.",
+          "A professionally designed business card builds trust instantly and ensures your contact information is kept and remembered.",
+        ],
+      },
+      {
+        title: "Our Business Card Design Services in Sri Lanka",
+        paragraphs: ["We provide complete business card design solutions for every industry."],
+        subsections: [
+          { title: "Corporate Business Cards", bullets: ["Executive and management cards", "Multi-employee batch designs", "Consistent brand identity", "Premium finishes and materials"] },
+          { title: "Creative & Modern Cards", bullets: ["Minimalist designs", "Unique shapes and die-cuts", "Foil stamping and embossing", "Transparent and metal card designs"] },
+          { title: "Industry-Specific Cards", bullets: ["Real estate agent cards", "Restaurant and hospitality", "Healthcare professional cards", "Legal and finance"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Business Card Design in Sri Lanka",
+        paragraphs: ["We don't just design cards — we create networking tools that work."],
+        bullets: [
+          "Modern, professional design approach",
+          "CMYK print-ready with bleed marks",
+          "Multiple concept options",
+          "Fast turnaround and delivery",
+          "Affordable packages for all business sizes",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "animated-video-creation-sri-lanka",
@@ -101,10 +167,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Animated Video Creation Sri Lanka",
     metaTitle: "Animated Video Creation Sri Lanka | Explainer Videos",
     metaDescription: "Professional animated explainer video creation in Sri Lanka. Short, engaging animation videos to tell your business story and explain products or services effectively.",
-    h1: "Animated Video Creation Sri Lanka – Professional Explainer Videos",
+    h1: "Animated Video Creation Sri Lanka – Explainer Videos That Convert",
     intro: [
-      "Animated explainer videos are a powerful way to communicate your brand message, explain complex products, and engage your audience. Video content drives higher engagement than any other content format.",
-      "At Buzz Connect, we create short, compelling animated videos that bring your business story to life and help convert viewers into customers.",
+      "Looking for professional animated video creation Sri Lanka services that bring your brand story to life?",
+      "At Buzz Connect, we create short, compelling animated explainer videos that simplify complex ideas, engage your audience, and drive conversions.",
+      "Video content is the most engaging format online. Our animations combine storytelling, visual design, and marketing strategy to deliver videos that capture attention and communicate your message effectively.",
     ],
     benefits: [
       "Increase audience engagement by up to 80%",
@@ -115,16 +182,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Custom animations matching your brand",
     ],
     process: [
-      { step: "Script", desc: "We develop a compelling script for your video" },
+      { step: "Script & Brief", desc: "We develop a compelling script for your video" },
       { step: "Storyboard", desc: "Visual storyboard created for your approval" },
-      { step: "Animate", desc: "Full animation production with effects and transitions" },
-      { step: "Deliver", desc: "Final video with voiceover and background music" },
+      { step: "Animation", desc: "Full animation production with effects and transitions" },
+      { step: "Final Delivery", desc: "Final video with voiceover and background music" },
     ],
     faqs: [
       { q: "How long are animated explainer videos?", a: "Typically 30 seconds to 2 minutes, depending on your message and requirements." },
       { q: "Can you add voiceover to the video?", a: "Yes, we offer professional voiceover services in Sinhala, Tamil, and English." },
       { q: "What format is the video delivered in?", a: "Videos are delivered in MP4 format, optimized for web, social media, and presentations." },
+      { q: "How much does animated video creation cost in Sri Lanka?", a: "Pricing depends on video length, complexity, and voiceover requirements. Contact us for a custom quotation." },
+      { q: "Can you create videos for social media ads?", a: "Yes, we create short animated videos optimized for Facebook, Instagram, YouTube, and TikTok ads." },
     ],
+    extraSections: [
+      {
+        title: "Why Animated Videos Matter for Your Business in Sri Lanka",
+        paragraphs: [
+          "Video content generates 1200% more shares than text and image content combined. For Sri Lankan businesses looking to stand out online, animated explainer videos are the most effective way to communicate your value proposition.",
+          "Whether you're explaining a product, onboarding customers, or running social media ads, animated videos help you connect with your audience faster and more memorably.",
+        ],
+      },
+      {
+        title: "Our Animated Video Services in Sri Lanka",
+        paragraphs: ["We create different types of animated videos to meet every marketing need."],
+        subsections: [
+          { title: "Explainer Videos", bullets: ["Product and service explainers", "How-it-works videos", "Onboarding and tutorial videos", "FAQ and support videos"] },
+          { title: "Promotional Videos", bullets: ["Social media ad videos", "Product launch videos", "Event promotion videos", "Brand awareness campaigns"] },
+          { title: "Corporate Videos", bullets: ["Company introduction videos", "Training and education videos", "Investor pitch videos", "Internal communication"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Animated Videos in Sri Lanka",
+        paragraphs: ["We create videos that don't just look good — they deliver results."],
+        bullets: [
+          "Professional scriptwriting and storyboarding",
+          "Voiceover in Sinhala, Tamil, and English",
+          "Optimized for social media and web",
+          "Fast turnaround and responsive communication",
+          "Affordable packages for SMEs and corporates",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "logo-design-sri-lanka",
@@ -212,10 +311,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Letterhead Design Sri Lanka",
     metaTitle: "Letterhead Design Sri Lanka | Professional Letterhead Designs",
     metaDescription: "Professional letterhead design services in Sri Lanka. Single & double-sided designs that represent a powerful brand image. Affordable rates. Contact us today.",
-    h1: "Letterhead Design Sri Lanka – Professional Letterhead Design Services",
+    h1: "Letterhead Design Sri Lanka – Professional Letterhead Designs That Build Trust",
     intro: [
-      "A professionally designed letterhead reinforces your brand identity on every piece of correspondence. It communicates professionalism and attention to detail to clients and partners.",
-      "Buzz Connect creates custom letterhead designs that align with your brand identity, ensuring consistency across all your business communications.",
+      "Looking for professional letterhead design Sri Lanka services that reinforce your brand identity?",
+      "At Buzz Connect, we create custom letterhead designs that communicate professionalism, attention to detail, and brand consistency on every piece of correspondence.",
+      "A well-designed letterhead is a critical element of your corporate identity. It ensures every letter, invoice, and proposal you send reinforces your brand image and builds trust with clients and partners.",
     ],
     benefits: [
       "Strengthens brand identity and professionalism",
@@ -226,16 +326,47 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable rates for all business sizes",
     ],
     process: [
-      { step: "Brief", desc: "Share your brand assets and requirements" },
-      { step: "Design", desc: "We create letterhead concepts matching your brand" },
-      { step: "Review", desc: "Refine the design based on your feedback" },
-      { step: "Deliver", desc: "Print-ready and digital files delivered" },
+      { step: "Discovery & Brief", desc: "Share your brand assets and requirements" },
+      { step: "Concept Development", desc: "We create letterhead concepts matching your brand" },
+      { step: "Design Refinement", desc: "Refine the design based on your feedback" },
+      { step: "Final Delivery", desc: "Print-ready and digital files delivered" },
     ],
     faqs: [
       { q: "Do you design matching stationery sets?", a: "Yes, we can design matching letterheads, envelopes, compliment slips, and business cards." },
       { q: "What format are letterhead designs delivered in?", a: "Designs are delivered in AI, PDF, and Word template formats for easy use." },
       { q: "Can I edit the letterhead myself later?", a: "Yes, we provide editable Word templates so you can update content as needed." },
+      { q: "How much does letterhead design cost in Sri Lanka?", a: "Pricing depends on design complexity and stationery package. Contact us for a custom quote." },
+      { q: "Do you design digital letterheads for email?", a: "Yes, we create digital letterhead templates optimized for email and document use." },
     ],
+    extraSections: [
+      {
+        title: "Why Letterhead Design Matters for Your Business in Sri Lanka",
+        paragraphs: [
+          "Every official document your business sends — from quotations and invoices to contracts and proposals — carries your letterhead. A professionally designed letterhead ensures these communications reinforce your brand identity and professionalism.",
+          "In Sri Lanka's competitive business environment, consistent branding across all touchpoints, including letterheads, helps build trust and credibility with clients and partners.",
+        ],
+      },
+      {
+        title: "Our Letterhead Design Services in Sri Lanka",
+        paragraphs: ["We provide complete corporate stationery design solutions."],
+        subsections: [
+          { title: "Corporate Stationery Suite", bullets: ["Letterheads (single & double-sided)", "Envelopes (DL, C5, C4)", "Compliment slips", "Invoice and quotation templates"] },
+          { title: "Digital Stationery", bullets: ["Email letterhead templates", "Digital document headers", "Word and Google Docs templates", "PDF letterhead overlays"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Letterhead Design in Sri Lanka",
+        paragraphs: ["We create stationery that represents your brand at its best."],
+        bullets: [
+          "Consistent brand identity across all documents",
+          "Print-ready CMYK and digital RGB formats",
+          "Editable templates for easy updates",
+          "Matching stationery suite design",
+          "Affordable packages for all business sizes",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "hoarding-design-sri-lanka",
@@ -245,10 +376,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Hoarding Design Sri Lanka",
     metaTitle: "Hoarding Design Sri Lanka | Professional Billboard & Hoarding Design",
     metaDescription: "Professional hoarding and billboard design services in Sri Lanka. Eye-catching outdoor advertising designs that grab attention. Superior quality at competitive rates.",
-    h1: "Hoarding Design Sri Lanka – Professional Billboard & Hoarding Design",
+    h1: "Hoarding Design Sri Lanka – Billboard Designs That Grab Attention",
     intro: [
-      "Hoardings and billboards remain one of the most impactful forms of outdoor advertising in Sri Lanka. A well-designed hoarding can capture thousands of impressions daily and significantly boost brand awareness.",
-      "Buzz Connect creates bold, eye-catching hoarding designs that communicate your message effectively to passing audiences and leave a memorable impression.",
+      "Looking for professional hoarding design Sri Lanka services that maximize your outdoor advertising impact?",
+      "At Buzz Connect, we create bold, eye-catching hoarding and billboard designs that capture thousands of impressions daily and significantly boost brand awareness across Sri Lanka.",
+      "Outdoor advertising remains one of the most powerful marketing channels in Sri Lanka. Our designs combine strategic messaging with high-impact visuals to ensure your brand gets noticed by the right audience.",
     ],
     benefits: [
       "High-impact outdoor advertising designs",
@@ -259,16 +391,47 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Competitive rates for quality designs",
     ],
     process: [
-      { step: "Brief", desc: "Share location details, dimensions, and message" },
-      { step: "Design", desc: "We create impactful hoarding concepts" },
-      { step: "Review", desc: "Refine visuals for maximum impact" },
-      { step: "Deliver", desc: "High-resolution print-ready files delivered" },
+      { step: "Discovery & Brief", desc: "Share location details, dimensions, and message" },
+      { step: "Concept Development", desc: "We create impactful hoarding concepts" },
+      { step: "Design Refinement", desc: "Refine visuals for maximum impact" },
+      { step: "Final Delivery", desc: "High-resolution print-ready files delivered" },
     ],
     faqs: [
       { q: "What sizes do you design hoardings for?", a: "We design for all standard and custom hoarding sizes, from small roadside signs to large billboards." },
       { q: "Do you handle printing as well?", a: "We focus on design; however, we can recommend trusted printing partners in Sri Lanka." },
       { q: "How do you ensure readability?", a: "We follow outdoor advertising best practices – bold fonts, high contrast, and minimal text for quick comprehension." },
+      { q: "How much does hoarding design cost in Sri Lanka?", a: "Pricing depends on size and complexity. Contact us for a competitive quotation." },
+      { q: "Can you design hoardings for multiple locations?", a: "Yes, we can adapt your hoarding design for different sizes and locations across Sri Lanka." },
     ],
+    extraSections: [
+      {
+        title: "Why Hoarding Design Matters for Advertising in Sri Lanka",
+        paragraphs: [
+          "Hoardings and billboards along major highways, city centres, and commercial areas in Sri Lanka reach thousands of potential customers daily. They provide continuous, 24/7 brand visibility that digital ads cannot match.",
+          "A professionally designed hoarding communicates your message in seconds to passing traffic. Our designs ensure your brand stands out in the outdoor advertising landscape.",
+        ],
+      },
+      {
+        title: "Our Hoarding Design Services in Sri Lanka",
+        paragraphs: ["We create hoarding designs for every outdoor advertising need."],
+        subsections: [
+          { title: "Highway & Roadside Hoardings", bullets: ["Large-format billboard designs", "Highway directional signs", "Roadside promotional boards", "Illuminated hoarding designs"] },
+          { title: "Commercial & Retail Hoardings", bullets: ["Shopping centre displays", "Retail store frontage", "Construction site hoardings", "Exhibition banners"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Hoarding Design in Sri Lanka",
+        paragraphs: ["We design hoardings that stop traffic — literally."],
+        bullets: [
+          "Bold, high-contrast designs for maximum visibility",
+          "Optimized for readability at speed and distance",
+          "Large-format print expertise",
+          "Custom sizes for any location",
+          "Fast turnaround and competitive pricing",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "signboard-design-sri-lanka",
@@ -278,10 +441,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Signboard Design Sri Lanka",
     metaTitle: "Signboard Design Sri Lanka | Name Board & Sign Board Design",
     metaDescription: "Professional name board and signboard design services in Sri Lanka. Indoor & outdoor sign boards for businesses. Affordable, eye-catching designs. Get a quote today.",
-    h1: "Signboard Design Sri Lanka – Name Board & Sign Board Design Services",
+    h1: "Signboard Design Sri Lanka – Name Boards That Attract Customers",
     intro: [
-      "Your signboard is the first thing customers see when they visit your business. A well-designed signboard attracts foot traffic, builds brand recognition, and creates a professional image.",
-      "Buzz Connect designs custom name boards and sign boards that make your business stand out, whether it's a storefront sign, indoor directory, or outdoor banner.",
+      "Looking for professional signboard design Sri Lanka services that attract foot traffic and build brand recognition?",
+      "At Buzz Connect, we design custom name boards and sign boards that make your business stand out — whether it's a storefront sign, indoor directory, or outdoor banner.",
+      "Your signboard is often the first thing customers see when they approach your business. A well-designed signboard creates a professional image, attracts walk-in customers, and reinforces your brand identity.",
     ],
     benefits: [
       "Attracts foot traffic to your business",
@@ -292,16 +456,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable pricing for all businesses",
     ],
     process: [
-      { step: "Brief", desc: "Share your business name, logo, and location details" },
-      { step: "Design", desc: "We create sign board concepts with mockups" },
-      { step: "Review", desc: "Refine the design for your approval" },
-      { step: "Deliver", desc: "Production-ready files with specifications" },
+      { step: "Discovery & Brief", desc: "Share your business name, logo, and location details" },
+      { step: "Concept Development", desc: "We create sign board concepts with mockups" },
+      { step: "Design Refinement", desc: "Refine the design for your approval" },
+      { step: "Final Delivery", desc: "Production-ready files with specifications" },
     ],
     faqs: [
       { q: "Do you design LED sign boards?", a: "Yes, we design for all types including LED, neon, backlit, and standard signage." },
       { q: "Can you provide installation guidance?", a: "We provide detailed specifications and can recommend installation partners in Sri Lanka." },
       { q: "What information do you need to start?", a: "Your business name, logo, preferred colors, sign dimensions, and mounting location details." },
+      { q: "How much does signboard design cost in Sri Lanka?", a: "Costs vary based on type, size, and material. Contact us for a competitive quote." },
+      { q: "Can you design both indoor and outdoor signage?", a: "Yes, we design reception signs, directional boards, outdoor nameboards, and more." },
     ],
+    extraSections: [
+      {
+        title: "Why Signboard Design Matters for Businesses in Sri Lanka",
+        paragraphs: [
+          "Your signboard is your business's most visible marketing asset. In busy commercial areas of Colombo, Kandy, Galle, and other cities, a well-designed signboard can attract foot traffic and differentiate your business from competitors.",
+          "Professional signage communicates quality and trustworthiness to potential customers before they even walk through your door.",
+        ],
+      },
+      {
+        title: "Our Signboard Design Services in Sri Lanka",
+        paragraphs: ["We design all types of signage for businesses across Sri Lanka."],
+        subsections: [
+          { title: "Outdoor Signage", bullets: ["Storefront name boards", "Building fascia signs", "Free-standing signs", "Directional and wayfinding signs"] },
+          { title: "Indoor Signage", bullets: ["Reception and lobby signs", "Office directory boards", "Room identification signs", "Promotional displays"] },
+          { title: "Specialty Signage", bullets: ["LED and backlit designs", "Neon-style signage", "3D lettering designs", "Vehicle and fleet signage"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Signboard Design in Sri Lanka",
+        paragraphs: ["We design signs that work as hard as your business does."],
+        bullets: [
+          "Designs optimized for visibility and readability",
+          "Experience with all signage types and materials",
+          "Production-ready files with specifications",
+          "Affordable pricing for SMEs and corporates",
+          "Fast turnaround and responsive service",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "invitation-design-sri-lanka",
@@ -311,10 +507,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Invitation Design Sri Lanka",
     metaTitle: "Invitation Design Sri Lanka | Custom Invitation Card Design",
     metaDescription: "Professional invitation card design services in Sri Lanka for weddings, corporate events, birthdays & more. Beautiful, customized invitation designs at affordable rates.",
-    h1: "Invitation Design Sri Lanka – Custom Invitation Card Design Services",
+    h1: "Invitation Design Sri Lanka – Custom Invitations That Set the Tone",
     intro: [
-      "A beautifully designed invitation sets the tone for any event. Whether it's a wedding, corporate event, birthday celebration, or grand opening, the invitation is the first impression your guests receive.",
-      "Buzz Connect creates stunning, customized invitation designs that reflect the theme and elegance of your event, available in both digital and print-ready formats.",
+      "Looking for professional invitation design Sri Lanka services that make your event unforgettable from the first touchpoint?",
+      "At Buzz Connect, we create stunning, customized invitation designs that reflect the theme and elegance of your event — available in both digital and print-ready formats.",
+      "Whether it's a wedding, corporate event, birthday celebration, or grand opening, your invitation sets the tone and builds anticipation. Our designs ensure your event makes the right impression from the start.",
     ],
     benefits: [
       "Custom designs for any occasion",
@@ -325,16 +522,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable rates with premium quality",
     ],
     process: [
-      { step: "Brief", desc: "Share event details, theme, and preferences" },
-      { step: "Design", desc: "We create beautiful invitation concepts" },
-      { step: "Review", desc: "Refine colors, fonts, and layout" },
-      { step: "Deliver", desc: "Print-ready and digital versions delivered" },
+      { step: "Discovery & Brief", desc: "Share event details, theme, and preferences" },
+      { step: "Concept Development", desc: "We create beautiful invitation concepts" },
+      { step: "Design Refinement", desc: "Refine colors, fonts, and layout" },
+      { step: "Final Delivery", desc: "Print-ready and digital versions delivered" },
     ],
     faqs: [
       { q: "Can you design wedding invitations?", a: "Yes, we specialize in elegant wedding invitation designs in various styles and themes." },
       { q: "Do you provide digital invitations?", a: "Yes, we create digital invitations optimized for WhatsApp, email, and social media sharing." },
       { q: "How fast can you deliver?", a: "Standard delivery is 2-3 days. Rush delivery within 24 hours is available for urgent requests." },
+      { q: "How much does invitation design cost in Sri Lanka?", a: "Pricing varies based on design complexity and format. Contact us for a custom quotation." },
+      { q: "Can you design invitations in Sinhala or Tamil?", a: "Yes, we design bilingual and trilingual invitations in Sinhala, Tamil, and English." },
     ],
+    extraSections: [
+      {
+        title: "Why Professional Invitation Design Matters in Sri Lanka",
+        paragraphs: [
+          "In Sri Lankan culture, invitations carry significant importance — especially for weddings, religious events, and corporate functions. A professionally designed invitation reflects the prestige of your event and respect for your guests.",
+          "Our invitation designs ensure your event stands out and creates excitement among attendees before the event even begins.",
+        ],
+      },
+      {
+        title: "Our Invitation Design Services in Sri Lanka",
+        paragraphs: ["We design invitations for every occasion and celebration."],
+        subsections: [
+          { title: "Wedding Invitations", bullets: ["Traditional and modern styles", "Sinhala, Tamil, and English designs", "Save the date cards", "RSVP and map cards"] },
+          { title: "Corporate Event Invitations", bullets: ["Product launches and openings", "Annual dinners and galas", "Conferences and seminars", "Awards ceremonies"] },
+          { title: "Social Event Invitations", bullets: ["Birthday celebrations", "Anniversary parties", "Baby showers and christenings", "Farewell and retirement events"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Invitation Design in Sri Lanka",
+        paragraphs: ["We create invitations that excite and inspire your guests."],
+        bullets: [
+          "Custom designs tailored to your event theme",
+          "Digital and print-ready formats",
+          "Bilingual and trilingual options",
+          "Rush delivery for urgent events",
+          "Affordable packages for all budgets",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "brochure-design-sri-lanka",
@@ -344,10 +573,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Brochure & Leaflet Design Sri Lanka",
     metaTitle: "Brochure Design Sri Lanka | Professional Leaflet & Brochure Design",
     metaDescription: "Professional brochure and leaflet design services in Sri Lanka. Bi-fold, tri-fold & custom brochure layouts that showcase your business effectively. Get a quote.",
-    h1: "Brochure & Leaflet Design Sri Lanka – Professional Brochure Design Services",
+    h1: "Brochure Design Sri Lanka – Professional Brochures That Showcase Your Business",
     intro: [
-      "Brochures and leaflets remain one of the most effective marketing materials for businesses in Sri Lanka. A well-designed brochure can communicate your complete product range, services, and brand story in a tangible, shareable format.",
-      "Buzz Connect creates professional brochure and leaflet designs that capture attention, convey information clearly, and drive your audience to take action.",
+      "Looking for professional brochure design Sri Lanka services that effectively communicate your brand story?",
+      "At Buzz Connect, we create professional brochure and leaflet designs that capture attention, convey information clearly, and drive your audience to take action.",
+      "Brochures remain one of the most powerful marketing tools for businesses in Sri Lanka. Whether distributed at events, mailed to prospects, or displayed in-store, a well-designed brochure can communicate your complete product range and brand value in a tangible, shareable format.",
     ],
     benefits: [
       "Bi-fold, tri-fold, and custom layouts",
@@ -358,16 +588,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable rates with quick delivery",
     ],
     process: [
-      { step: "Brief", desc: "Share your content, images, and brand guidelines" },
-      { step: "Layout", desc: "We create the brochure layout and design" },
-      { step: "Review", desc: "Refine content placement and visuals" },
-      { step: "Deliver", desc: "Print-ready PDF and source files delivered" },
+      { step: "Discovery & Brief", desc: "Share your content, images, and brand guidelines" },
+      { step: "Layout Development", desc: "We create the brochure layout and design" },
+      { step: "Design Refinement", desc: "Refine content placement and visuals" },
+      { step: "Final Delivery", desc: "Print-ready PDF and source files delivered" },
     ],
     faqs: [
       { q: "What types of brochures do you design?", a: "We design bi-fold, tri-fold, gate-fold, and custom format brochures and leaflets." },
       { q: "Can you write the content for the brochure?", a: "Yes, we offer professional copywriting services to complement the design." },
       { q: "Do you handle printing?", a: "We deliver print-ready files and can recommend printing partners for competitive rates." },
+      { q: "How much does brochure design cost in Sri Lanka?", a: "Pricing varies based on number of pages, folds, and design complexity. Contact us for a quote." },
+      { q: "Can you design brochures in multiple languages?", a: "Yes, we design brochures in Sinhala, Tamil, and English to reach diverse audiences." },
     ],
+    extraSections: [
+      {
+        title: "Why Brochure Design Matters for Businesses in Sri Lanka",
+        paragraphs: [
+          "Brochures are tangible marketing tools that customers can hold, share, and refer back to. In Sri Lanka's business environment, professionally designed brochures are essential for trade shows, client meetings, product launches, and retail displays.",
+          "A well-crafted brochure positions your brand as professional and trustworthy, while clearly presenting your products, services, and unique value proposition.",
+        ],
+      },
+      {
+        title: "Our Brochure Design Services in Sri Lanka",
+        paragraphs: ["We create brochures for every industry and purpose."],
+        subsections: [
+          { title: "Corporate Brochures", bullets: ["Company capability brochures", "Annual report design", "Investor relations materials", "Product catalogs"] },
+          { title: "Marketing Brochures", bullets: ["Product launch brochures", "Service overview leaflets", "Trade show handouts", "Direct mail brochures"] },
+          { title: "Industry-Specific Brochures", bullets: ["Real estate property brochures", "Hotel and tourism leaflets", "Educational institution brochures", "Healthcare and wellness"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Brochure Design in Sri Lanka",
+        paragraphs: ["We design brochures that inform, engage, and convert."],
+        bullets: [
+          "Professional layout and visual hierarchy",
+          "Copywriting support available",
+          "Print-ready with bleed and crop marks",
+          "Multi-language design capability",
+          "Affordable packages for all business sizes",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "company-profile-design-sri-lanka",
@@ -377,10 +639,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Company Profile Design Sri Lanka",
     metaTitle: "Company Profile Design Sri Lanka | Professional Corporate Profiles",
     metaDescription: "Professional company profile design services in Sri Lanka. Create a polished corporate profile that represents your business. Up to 16 pages. Digital & print formats.",
-    h1: "Company Profile Design Sri Lanka – Professional Corporate Profile Design",
+    h1: "Company Profile Design Sri Lanka – Corporate Profiles That Win Clients",
     intro: [
-      "A company profile is the face of your organization – it tells your story, showcases your capabilities, and builds trust with potential clients and partners. A professionally designed company profile can be a powerful business development tool.",
-      "Buzz Connect creates polished, professionally designed company profiles that effectively communicate your brand value, services, team, and achievements.",
+      "Looking for professional company profile design Sri Lanka services that impress clients and win business?",
+      "At Buzz Connect, we create polished, professionally designed company profiles that effectively communicate your brand value, services, team, and achievements.",
+      "A company profile is the face of your organization — it tells your story, showcases your capabilities, and builds trust with potential clients, partners, and investors. Our designs turn your company information into a powerful business development tool.",
     ],
     benefits: [
       "Professional representation of your company",
@@ -391,16 +654,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Consistent branding throughout",
     ],
     process: [
-      { step: "Content", desc: "Gather company information, images, and milestones" },
-      { step: "Design", desc: "Create a professional layout and visual structure" },
-      { step: "Review", desc: "Iterate on content and design refinements" },
-      { step: "Deliver", desc: "Final profile in PDF, PowerPoint, and print formats" },
+      { step: "Content Gathering", desc: "Gather company information, images, and milestones" },
+      { step: "Layout Development", desc: "Create a professional layout and visual structure" },
+      { step: "Design Refinement", desc: "Iterate on content and design refinements" },
+      { step: "Final Delivery", desc: "Final profile in PDF, PowerPoint, and print formats" },
     ],
     faqs: [
       { q: "How many pages can a company profile have?", a: "We design company profiles from 4 pages to 30+ pages depending on your requirements." },
       { q: "Can you write the company profile content?", a: "Yes, our team can help craft professional content based on your inputs and interviews." },
       { q: "What format is the profile delivered in?", a: "We deliver in PDF, editable PowerPoint, and print-ready formats." },
+      { q: "How much does company profile design cost in Sri Lanka?", a: "Pricing depends on page count and complexity. Contact us for a custom quotation." },
+      { q: "Can you update an existing company profile?", a: "Yes, we can redesign or update your existing company profile with new content and modern design." },
     ],
+    extraSections: [
+      {
+        title: "Why a Professional Company Profile Matters in Sri Lanka",
+        paragraphs: [
+          "In Sri Lanka's business landscape, a company profile is often the first document shared with potential clients, partners, and government bodies during tender processes. A professionally designed profile can differentiate your business and win contracts.",
+          "Whether you're bidding for projects, meeting investors, or onboarding new clients, your company profile represents your brand's credibility and capability.",
+        ],
+      },
+      {
+        title: "Our Company Profile Design Services in Sri Lanka",
+        paragraphs: ["We create comprehensive company profiles for every business need."],
+        subsections: [
+          { title: "Corporate Company Profiles", bullets: ["Full company overview and history", "Vision, mission, and values", "Team and leadership profiles", "Client portfolio and testimonials"] },
+          { title: "Tender & Bid Profiles", bullets: ["Government tender documentation", "Project capability statements", "Financial and compliance sections", "Professional formatting standards"] },
+          { title: "Startup Profiles", bullets: ["Business model presentation", "Investor-ready design", "Growth and milestone highlights", "Product and service showcase"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Company Profile Design in Sri Lanka",
+        paragraphs: ["We create profiles that position your company for success."],
+        bullets: [
+          "Professional design and content structure",
+          "Infographics and data visualization",
+          "Content writing support included",
+          "Print-ready and digital formats",
+          "Fast turnaround for tender deadlines",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "presentation-design-sri-lanka",
@@ -410,10 +705,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Presentation Design Sri Lanka",
     metaTitle: "Presentation Design Sri Lanka | Professional PowerPoint Design",
     metaDescription: "Professional PowerPoint presentation design in Sri Lanka. Polished, creative slides for corporate meetings, pitches & conferences. Engaging visual storytelling.",
-    h1: "Presentation Design Sri Lanka – Professional PowerPoint Design Services",
+    h1: "Presentation Design Sri Lanka – PowerPoint Slides That Win Pitches",
     intro: [
-      "A well-designed presentation can make the difference between winning and losing a client pitch, impressing stakeholders, or engaging a conference audience. Generic templates won't cut it.",
-      "Buzz Connect creates custom, visually stunning PowerPoint presentations that communicate your ideas clearly and leave a lasting impression on your audience.",
+      "Looking for professional presentation design Sri Lanka services that help you win pitches and impress audiences?",
+      "At Buzz Connect, we create custom, visually stunning PowerPoint presentations that communicate your ideas clearly and leave a lasting impression.",
+      "A well-designed presentation can make the difference between winning and losing a client pitch, impressing stakeholders, or engaging a conference audience. Generic templates won't cut it — you need designs that match the quality of your ideas.",
     ],
     benefits: [
       "Custom slide designs – no generic templates",
@@ -424,16 +720,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Corporate, pitch deck, and conference styles",
     ],
     process: [
-      { step: "Brief", desc: "Share your content, data, and presentation goals" },
-      { step: "Design", desc: "We create custom slides with professional layouts" },
-      { step: "Review", desc: "Refine slides, animations, and flow" },
-      { step: "Deliver", desc: "Editable PPTX and PDF versions delivered" },
+      { step: "Discovery & Brief", desc: "Share your content, data, and presentation goals" },
+      { step: "Slide Design", desc: "We create custom slides with professional layouts" },
+      { step: "Design Refinement", desc: "Refine slides, animations, and flow" },
+      { step: "Final Delivery", desc: "Editable PPTX and PDF versions delivered" },
     ],
     faqs: [
       { q: "How many slides can you design?", a: "We design presentations of any length, from 10-slide pitch decks to 50+ slide corporate presentations." },
       { q: "Can you add animations?", a: "Yes, we add professional animations and transitions to enhance your presentation flow." },
       { q: "Do you provide editable files?", a: "Yes, all presentations are delivered as editable PowerPoint (.pptx) files." },
+      { q: "How much does presentation design cost in Sri Lanka?", a: "Pricing depends on slide count and complexity. Contact us for a competitive quote." },
+      { q: "Can you design Google Slides presentations?", a: "Yes, we create presentations in both PowerPoint and Google Slides formats." },
     ],
+    extraSections: [
+      {
+        title: "Why Professional Presentation Design Matters in Sri Lanka",
+        paragraphs: [
+          "In boardrooms, conferences, and client meetings across Sri Lanka, your presentation slides directly impact how your ideas are perceived. Poor slides undermine even the best content, while stunning visuals amplify your message.",
+          "Professional presentation design helps you communicate complex data clearly, maintain audience attention, and close deals with confidence.",
+        ],
+      },
+      {
+        title: "Our Presentation Design Services in Sri Lanka",
+        paragraphs: ["We design presentations for every business scenario."],
+        subsections: [
+          { title: "Corporate Presentations", bullets: ["Board meeting decks", "Quarterly review slides", "Training and onboarding", "Internal communications"] },
+          { title: "Sales & Pitch Decks", bullets: ["Investor pitch decks", "Client proposal presentations", "Product demo slides", "Partnership proposals"] },
+          { title: "Event Presentations", bullets: ["Conference keynotes", "Seminar and workshop slides", "Award ceremony visuals", "Webinar presentations"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Presentation Design in Sri Lanka",
+        paragraphs: ["We design slides that tell your story and win your audience."],
+        bullets: [
+          "Custom designs — never generic templates",
+          "Data-driven infographics and charts",
+          "Consistent brand theming",
+          "Editable files for future use",
+          "Fast turnaround for urgent deadlines",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "photo-editing-sri-lanka",
@@ -443,10 +771,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Photo Editing Sri Lanka",
     metaTitle: "Photo Editing Sri Lanka | Professional Image Editing Services",
     metaDescription: "Professional photo editing services in Sri Lanka. Retouching, background removal, color correction, product photography editing & more. Fast delivery, affordable rates.",
-    h1: "Photo Editing Sri Lanka – Professional Image Editing Services",
+    h1: "Photo Editing Sri Lanka – Professional Image Editing That Transforms",
     intro: [
-      "High-quality images are essential for marketing, e-commerce, social media, and print materials. Professional photo editing can transform ordinary images into stunning visuals that capture attention and drive engagement.",
-      "Buzz Connect offers comprehensive photo editing services including retouching, background removal, color correction, and product image enhancement for businesses in Sri Lanka.",
+      "Looking for professional photo editing Sri Lanka services that transform your images into stunning visuals?",
+      "At Buzz Connect, we offer comprehensive photo editing services including retouching, background removal, color correction, and product image enhancement for businesses across Sri Lanka.",
+      "High-quality images are essential for marketing, e-commerce, social media, and print materials. Professional editing can turn ordinary photos into powerful visual assets that capture attention, build trust, and drive sales.",
     ],
     benefits: [
       "Professional retouching and enhancement",
@@ -457,16 +786,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Fast turnaround times",
     ],
     process: [
-      { step: "Upload", desc: "Send us your images and editing requirements" },
-      { step: "Edit", desc: "Our team applies professional edits" },
-      { step: "Review", desc: "Review edited images and request adjustments" },
-      { step: "Deliver", desc: "Final images delivered in your preferred format" },
+      { step: "Upload & Brief", desc: "Send us your images and editing requirements" },
+      { step: "Professional Editing", desc: "Our team applies professional edits" },
+      { step: "Review & Refine", desc: "Review edited images and request adjustments" },
+      { step: "Final Delivery", desc: "Final images delivered in your preferred format" },
     ],
     faqs: [
       { q: "What types of photo editing do you offer?", a: "We offer retouching, background removal, color correction, image compositing, and product photo enhancement." },
       { q: "Can you handle bulk photo editing?", a: "Yes, we handle batch editing for e-commerce catalogs and marketing campaigns at competitive rates." },
       { q: "What file formats do you accept?", a: "We work with JPG, PNG, RAW, TIFF, and PSD files." },
+      { q: "How much does photo editing cost in Sri Lanka?", a: "Pricing depends on editing complexity and volume. Contact us for competitive bulk rates." },
+      { q: "How fast can you deliver edited photos?", a: "Standard turnaround is 24-48 hours. Rush delivery is available for urgent projects." },
     ],
+    extraSections: [
+      {
+        title: "Why Professional Photo Editing Matters in Sri Lanka",
+        paragraphs: [
+          "In the age of visual marketing, the quality of your images directly impacts customer perception and buying decisions. For e-commerce, social media, and advertising in Sri Lanka, professional photo editing is no longer optional — it's essential.",
+          "Whether you're running an online store, creating marketing materials, or building a brand presence, our photo editing services ensure every image represents your business at its best.",
+        ],
+      },
+      {
+        title: "Our Photo Editing Services in Sri Lanka",
+        paragraphs: ["We provide complete photo editing solutions for every need."],
+        subsections: [
+          { title: "E-Commerce Photo Editing", bullets: ["Product photo enhancement", "Background removal and replacement", "Ghost mannequin editing", "Amazon and eBay optimization"] },
+          { title: "Portrait & Event Editing", bullets: ["Skin retouching and enhancement", "Event photo editing", "Wedding photo editing", "Corporate headshots"] },
+          { title: "Commercial Photo Editing", bullets: ["Real estate photo editing", "Food photography enhancement", "Fashion and lifestyle editing", "Advertising image compositing"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Photo Editing in Sri Lanka",
+        paragraphs: ["We deliver quality edits that enhance your visual presence."],
+        bullets: [
+          "Professional editing by experienced designers",
+          "Fast 24-48 hour turnaround",
+          "Competitive bulk editing rates",
+          "Consistent quality across all images",
+          "All major file formats supported",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "social-media-post-design-sri-lanka",
@@ -476,10 +837,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Social Media Post Design Sri Lanka",
     metaTitle: "Social Media Post Design Sri Lanka | Facebook & Instagram Posts",
     metaDescription: "Professional social media post design in Sri Lanka for Facebook, Instagram & LinkedIn. Eye-catching, advertising-friendly designs that boost engagement and reach.",
-    h1: "Social Media Post Design Sri Lanka – Professional Social Media Graphics",
+    h1: "Social Media Post Design Sri Lanka – Graphics That Boost Engagement",
     intro: [
-      "Social media is where your customers spend their time. Eye-catching, professionally designed social media posts can significantly boost your engagement, reach, and brand awareness across platforms like Facebook, Instagram, and LinkedIn.",
-      "Buzz Connect creates scroll-stopping social media designs that align with your brand identity and are optimized for each platform's best practices.",
+      "Looking for professional social media post design Sri Lanka services that boost your engagement and brand awareness?",
+      "At Buzz Connect, we create scroll-stopping social media designs that align with your brand identity and are optimized for each platform's best practices.",
+      "Social media is where your customers spend their time. Eye-catching, professionally designed posts can significantly boost your engagement, reach, and brand awareness across Facebook, Instagram, LinkedIn, and more.",
     ],
     benefits: [
       "Platform-optimized designs (FB, IG, LinkedIn)",
@@ -490,16 +852,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Monthly content packages available",
     ],
     process: [
-      { step: "Plan", desc: "Discuss your content calendar and themes" },
-      { step: "Design", desc: "Create posts optimized for each platform" },
-      { step: "Review", desc: "Approve designs with any adjustments" },
-      { step: "Deliver", desc: "Ready-to-post files in correct dimensions" },
+      { step: "Strategy & Planning", desc: "Discuss your content calendar and themes" },
+      { step: "Design Creation", desc: "Create posts optimized for each platform" },
+      { step: "Review & Approve", desc: "Approve designs with any adjustments" },
+      { step: "Final Delivery", desc: "Ready-to-post files in correct dimensions" },
     ],
     faqs: [
       { q: "Which platforms do you design for?", a: "We design for Facebook, Instagram, LinkedIn, Twitter/X, TikTok, and YouTube." },
       { q: "Do you offer monthly design packages?", a: "Yes, we offer monthly social media design packages for consistent content posting." },
       { q: "Can you create video content for social media?", a: "Yes, we create short video posts and animations for social media platforms." },
+      { q: "How much do social media post designs cost in Sri Lanka?", a: "We offer individual post designs and monthly packages. Contact us for pricing tailored to your needs." },
+      { q: "Do you provide content calendars?", a: "Yes, we can help plan your content calendar with strategic post themes and scheduling recommendations." },
     ],
+    extraSections: [
+      {
+        title: "Why Social Media Post Design Matters in Sri Lanka",
+        paragraphs: [
+          "With millions of Sri Lankans active on Facebook, Instagram, and LinkedIn, your social media presence directly impacts brand awareness and customer engagement. Professionally designed posts stand out in crowded feeds and drive meaningful interactions.",
+          "Generic or low-quality posts damage your brand credibility. Our designs ensure every post reinforces your brand identity and marketing goals.",
+        ],
+      },
+      {
+        title: "Our Social Media Design Services in Sri Lanka",
+        paragraphs: ["We create content for every social media marketing need."],
+        subsections: [
+          { title: "Promotional Posts", bullets: ["Product launches and offers", "Seasonal campaigns", "Sale and discount announcements", "Event promotions"] },
+          { title: "Brand Building Posts", bullets: ["Testimonial and review graphics", "Behind-the-scenes content", "Team and culture posts", "Milestone celebrations"] },
+          { title: "Engagement Posts", bullets: ["Polls and quizzes", "Tips and educational content", "Infographics and statistics", "Story and reel designs"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Social Media Design in Sri Lanka",
+        paragraphs: ["We design posts that get liked, shared, and remembered."],
+        bullets: [
+          "Platform-specific dimensions and optimization",
+          "Consistent brand identity across channels",
+          "Monthly packages for regular content",
+          "Caption and hashtag suggestions included",
+          "Fast turnaround and responsive communication",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "menu-card-design-sri-lanka",
@@ -509,10 +903,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Menu Card Design Sri Lanka",
     metaTitle: "Menu Card Design Sri Lanka | Restaurant & Café Menu Design",
     metaDescription: "Professional menu card design services in Sri Lanka for restaurants, cafés & hotels. Attractive, well-organized menu designs that enhance dining experience. Get a quote.",
-    h1: "Menu Card Design Sri Lanka – Professional Restaurant Menu Design",
+    h1: "Menu Card Design Sri Lanka – Restaurant Menus That Drive Orders",
     intro: [
-      "Your menu is more than a list of dishes – it's a marketing tool that influences ordering decisions and reflects your restaurant's brand. A well-designed menu can increase average order value and enhance the dining experience.",
-      "Buzz Connect creates attractive, well-organized menu card designs for restaurants, cafés, hotels, and food businesses across Sri Lanka.",
+      "Looking for professional menu card design Sri Lanka services that increase your average order value?",
+      "At Buzz Connect, we create attractive, well-organized menu card designs for restaurants, cafés, hotels, and food businesses across Sri Lanka.",
+      "Your menu is more than a list of dishes — it's a powerful marketing tool that influences ordering decisions and reflects your restaurant's brand. A well-designed menu uses layout psychology to guide customers toward your most profitable items.",
     ],
     benefits: [
       "Attractive layouts that drive higher orders",
@@ -523,16 +918,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Easy to update with seasonal changes",
     ],
     process: [
-      { step: "Brief", desc: "Share your menu items, prices, and brand style" },
-      { step: "Design", desc: "We create an attractive menu layout" },
-      { step: "Review", desc: "Refine layout, fonts, and imagery" },
-      { step: "Deliver", desc: "Print-ready and digital menu files delivered" },
+      { step: "Discovery & Brief", desc: "Share your menu items, prices, and brand style" },
+      { step: "Layout Design", desc: "We create an attractive menu layout" },
+      { step: "Design Refinement", desc: "Refine layout, fonts, and imagery" },
+      { step: "Final Delivery", desc: "Print-ready and digital menu files delivered" },
     ],
     faqs: [
       { q: "Can you design digital menus with QR codes?", a: "Yes, we create digital menus that customers can access via QR code on their smartphones." },
       { q: "Do you include food photography?", a: "We can integrate your food photos or source stock imagery to complement the menu design." },
       { q: "Can I easily update the menu later?", a: "Yes, we provide editable templates so you can update prices and items as needed." },
+      { q: "How much does menu card design cost in Sri Lanka?", a: "Pricing depends on format, pages, and design complexity. Contact us for a competitive quote." },
+      { q: "Do you design menus for hotels and catering services?", a: "Yes, we design menus for restaurants, hotels, catering companies, cafés, and food trucks." },
     ],
+    extraSections: [
+      {
+        title: "Why Menu Card Design Matters for Restaurants in Sri Lanka",
+        paragraphs: [
+          "In Sri Lanka's thriving food and hospitality industry, your menu is a critical sales tool. Research shows that strategic menu design and layout can increase average order value by 15-25%.",
+          "A professionally designed menu enhances the dining experience, reinforces your brand identity, and subtly guides customers toward your signature dishes and high-margin items.",
+        ],
+      },
+      {
+        title: "Our Menu Card Design Services in Sri Lanka",
+        paragraphs: ["We design menus for every type of food business."],
+        subsections: [
+          { title: "Restaurant Menus", bullets: ["Fine dining menus", "Casual dining menus", "Fast food and takeaway menus", "Buffet and set menu designs"] },
+          { title: "Café & Bakery Menus", bullets: ["Coffee shop menus", "Bakery display menus", "Dessert and ice cream menus", "Beverage menus"] },
+          { title: "Hotel & Catering Menus", bullets: ["Room service menus", "Banquet and event menus", "Catering packages", "Wine and bar menus"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Menu Card Design in Sri Lanka",
+        paragraphs: ["We design menus that make mouths water and orders increase."],
+        bullets: [
+          "Strategic layout for maximum sales impact",
+          "Food photography integration",
+          "QR code and digital menu options",
+          "Editable templates for easy updates",
+          "Print-ready with lamination-ready files",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "label-design-sri-lanka",
