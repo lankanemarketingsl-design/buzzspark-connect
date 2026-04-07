@@ -837,10 +837,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Social Media Post Design Sri Lanka",
     metaTitle: "Social Media Post Design Sri Lanka | Facebook & Instagram Posts",
     metaDescription: "Professional social media post design in Sri Lanka for Facebook, Instagram & LinkedIn. Eye-catching, advertising-friendly designs that boost engagement and reach.",
-    h1: "Social Media Post Design Sri Lanka – Professional Social Media Graphics",
+    h1: "Social Media Post Design Sri Lanka – Graphics That Boost Engagement",
     intro: [
-      "Social media is where your customers spend their time. Eye-catching, professionally designed social media posts can significantly boost your engagement, reach, and brand awareness across platforms like Facebook, Instagram, and LinkedIn.",
-      "Buzz Connect creates scroll-stopping social media designs that align with your brand identity and are optimized for each platform's best practices.",
+      "Looking for professional social media post design Sri Lanka services that boost your engagement and brand awareness?",
+      "At Buzz Connect, we create scroll-stopping social media designs that align with your brand identity and are optimized for each platform's best practices.",
+      "Social media is where your customers spend their time. Eye-catching, professionally designed posts can significantly boost your engagement, reach, and brand awareness across Facebook, Instagram, LinkedIn, and more.",
     ],
     benefits: [
       "Platform-optimized designs (FB, IG, LinkedIn)",
@@ -851,16 +852,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Monthly content packages available",
     ],
     process: [
-      { step: "Plan", desc: "Discuss your content calendar and themes" },
-      { step: "Design", desc: "Create posts optimized for each platform" },
-      { step: "Review", desc: "Approve designs with any adjustments" },
-      { step: "Deliver", desc: "Ready-to-post files in correct dimensions" },
+      { step: "Strategy & Planning", desc: "Discuss your content calendar and themes" },
+      { step: "Design Creation", desc: "Create posts optimized for each platform" },
+      { step: "Review & Approve", desc: "Approve designs with any adjustments" },
+      { step: "Final Delivery", desc: "Ready-to-post files in correct dimensions" },
     ],
     faqs: [
       { q: "Which platforms do you design for?", a: "We design for Facebook, Instagram, LinkedIn, Twitter/X, TikTok, and YouTube." },
       { q: "Do you offer monthly design packages?", a: "Yes, we offer monthly social media design packages for consistent content posting." },
       { q: "Can you create video content for social media?", a: "Yes, we create short video posts and animations for social media platforms." },
+      { q: "How much do social media post designs cost in Sri Lanka?", a: "We offer individual post designs and monthly packages. Contact us for pricing tailored to your needs." },
+      { q: "Do you provide content calendars?", a: "Yes, we can help plan your content calendar with strategic post themes and scheduling recommendations." },
     ],
+    extraSections: [
+      {
+        title: "Why Social Media Post Design Matters in Sri Lanka",
+        paragraphs: [
+          "With millions of Sri Lankans active on Facebook, Instagram, and LinkedIn, your social media presence directly impacts brand awareness and customer engagement. Professionally designed posts stand out in crowded feeds and drive meaningful interactions.",
+          "Generic or low-quality posts damage your brand credibility. Our designs ensure every post reinforces your brand identity and marketing goals.",
+        ],
+      },
+      {
+        title: "Our Social Media Design Services in Sri Lanka",
+        paragraphs: ["We create content for every social media marketing need."],
+        subsections: [
+          { title: "Promotional Posts", bullets: ["Product launches and offers", "Seasonal campaigns", "Sale and discount announcements", "Event promotions"] },
+          { title: "Brand Building Posts", bullets: ["Testimonial and review graphics", "Behind-the-scenes content", "Team and culture posts", "Milestone celebrations"] },
+          { title: "Engagement Posts", bullets: ["Polls and quizzes", "Tips and educational content", "Infographics and statistics", "Story and reel designs"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Social Media Design in Sri Lanka",
+        paragraphs: ["We design posts that get liked, shared, and remembered."],
+        bullets: [
+          "Platform-specific dimensions and optimization",
+          "Consistent brand identity across channels",
+          "Monthly packages for regular content",
+          "Caption and hashtag suggestions included",
+          "Fast turnaround and responsive communication",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "menu-card-design-sri-lanka",
