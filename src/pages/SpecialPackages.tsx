@@ -462,16 +462,16 @@ const SpecialPackages = () => {
         <p className="text-muted-foreground text-sm mb-8">If you need <strong className="text-foreground">quick results</strong>, this is the best solution.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
-            { icon: GraduationCap, label: "Education Institutes", result: "→ Student inquiries" },
-            { icon: Home, label: "Real Estate Companies", result: "→ Property leads" },
-            { icon: Calendar, label: "Event Organizers", result: "→ Ticket sales" },
-            { icon: ShoppingCart, label: "E-commerce & Retail", result: "→ Quick sales" },
-            { icon: Building2, label: "Hotels & Travel", result: "→ Bookings" },
-            { icon: Shirt, label: "Fashion & Clothing", result: "→ Brand growth" },
-            { icon: Store, label: "Retail & Supermarkets", result: "→ Foot traffic & sales" },
-            { icon: Rocket, label: "SMEs & Corporates", result: "→ Brand awareness" },
-          ].map(({ icon: Icon, label, result }) => (
-            <div key={label} className="flex items-center gap-4 p-5 rounded-xl bg-card shadow-card border border-border hover:border-accent/40 transition-all">
+            { icon: GraduationCap, label: "Education Institutes", result: "→ Student inquiries", link: "/education-marketing-sri-lanka" },
+            { icon: Home, label: "Real Estate Companies", result: "→ Property leads", link: "/real-estate-marketing-sri-lanka" },
+            { icon: Calendar, label: "Event Organizers", result: "→ Ticket sales", link: "/event-marketing-sri-lanka" },
+            { icon: ShoppingCart, label: "Restaurants & Food", result: "→ Customer traffic", link: "/restaurant-marketing-sri-lanka" },
+            { icon: Building2, label: "Hotels & Travel", result: "→ Bookings", link: "/hotel-marketing-sri-lanka" },
+            { icon: Shirt, label: "Fashion & Clothing", result: "→ Brand growth", link: "/fashion-marketing-sri-lanka" },
+            { icon: Store, label: "Staff Recruitment", result: "→ Quality applicants", link: "/staff-recruitment-campaigns-sri-lanka" },
+            { icon: Rocket, label: "Finance & Insurance", result: "→ Lead generation", link: "/finance-marketing-sri-lanka" },
+          ].map(({ icon: Icon, label, result, link }) => (
+            <Link key={label} to={link} className="flex items-center gap-4 p-5 rounded-xl bg-card shadow-card border border-border hover:border-accent/40 hover:shadow-md transition-all">
               <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
                 <Icon className="w-5 h-5 text-secondary-foreground" />
               </div>
@@ -479,7 +479,7 @@ const SpecialPackages = () => {
                 <span className="text-sm font-bold text-foreground">{label}</span>
                 <span className="text-xs font-bold text-accent bg-accent/10 px-3 py-1 rounded-full">{result}</span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </motion.div>
