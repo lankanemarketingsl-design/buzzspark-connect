@@ -1,4 +1,4 @@
-import { Image, Layout, Film, Palette, FileText, PenTool, Award, CreditCard, BookOpen, Type, Edit, Smartphone, Tag, Box, LucideIcon } from "lucide-react";
+import { Image, Layout, Film, Palette, FileText, PenTool, Award, CreditCard, BookOpen, Type, Edit, Smartphone, Tag, Box, Video, LucideIcon } from "lucide-react";
 
 export interface ExtraSection {
   title: string;
