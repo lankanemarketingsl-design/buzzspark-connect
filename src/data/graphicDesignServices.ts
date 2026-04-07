@@ -376,10 +376,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Hoarding Design Sri Lanka",
     metaTitle: "Hoarding Design Sri Lanka | Professional Billboard & Hoarding Design",
     metaDescription: "Professional hoarding and billboard design services in Sri Lanka. Eye-catching outdoor advertising designs that grab attention. Superior quality at competitive rates.",
-    h1: "Hoarding Design Sri Lanka – Professional Billboard & Hoarding Design",
+    h1: "Hoarding Design Sri Lanka – Billboard Designs That Grab Attention",
     intro: [
-      "Hoardings and billboards remain one of the most impactful forms of outdoor advertising in Sri Lanka. A well-designed hoarding can capture thousands of impressions daily and significantly boost brand awareness.",
-      "Buzz Connect creates bold, eye-catching hoarding designs that communicate your message effectively to passing audiences and leave a memorable impression.",
+      "Looking for professional hoarding design Sri Lanka services that maximize your outdoor advertising impact?",
+      "At Buzz Connect, we create bold, eye-catching hoarding and billboard designs that capture thousands of impressions daily and significantly boost brand awareness across Sri Lanka.",
+      "Outdoor advertising remains one of the most powerful marketing channels in Sri Lanka. Our designs combine strategic messaging with high-impact visuals to ensure your brand gets noticed by the right audience.",
     ],
     benefits: [
       "High-impact outdoor advertising designs",
@@ -390,16 +391,47 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Competitive rates for quality designs",
     ],
     process: [
-      { step: "Brief", desc: "Share location details, dimensions, and message" },
-      { step: "Design", desc: "We create impactful hoarding concepts" },
-      { step: "Review", desc: "Refine visuals for maximum impact" },
-      { step: "Deliver", desc: "High-resolution print-ready files delivered" },
+      { step: "Discovery & Brief", desc: "Share location details, dimensions, and message" },
+      { step: "Concept Development", desc: "We create impactful hoarding concepts" },
+      { step: "Design Refinement", desc: "Refine visuals for maximum impact" },
+      { step: "Final Delivery", desc: "High-resolution print-ready files delivered" },
     ],
     faqs: [
       { q: "What sizes do you design hoardings for?", a: "We design for all standard and custom hoarding sizes, from small roadside signs to large billboards." },
       { q: "Do you handle printing as well?", a: "We focus on design; however, we can recommend trusted printing partners in Sri Lanka." },
       { q: "How do you ensure readability?", a: "We follow outdoor advertising best practices – bold fonts, high contrast, and minimal text for quick comprehension." },
+      { q: "How much does hoarding design cost in Sri Lanka?", a: "Pricing depends on size and complexity. Contact us for a competitive quotation." },
+      { q: "Can you design hoardings for multiple locations?", a: "Yes, we can adapt your hoarding design for different sizes and locations across Sri Lanka." },
     ],
+    extraSections: [
+      {
+        title: "Why Hoarding Design Matters for Advertising in Sri Lanka",
+        paragraphs: [
+          "Hoardings and billboards along major highways, city centres, and commercial areas in Sri Lanka reach thousands of potential customers daily. They provide continuous, 24/7 brand visibility that digital ads cannot match.",
+          "A professionally designed hoarding communicates your message in seconds to passing traffic. Our designs ensure your brand stands out in the outdoor advertising landscape.",
+        ],
+      },
+      {
+        title: "Our Hoarding Design Services in Sri Lanka",
+        paragraphs: ["We create hoarding designs for every outdoor advertising need."],
+        subsections: [
+          { title: "Highway & Roadside Hoardings", bullets: ["Large-format billboard designs", "Highway directional signs", "Roadside promotional boards", "Illuminated hoarding designs"] },
+          { title: "Commercial & Retail Hoardings", bullets: ["Shopping centre displays", "Retail store frontage", "Construction site hoardings", "Exhibition banners"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Hoarding Design in Sri Lanka",
+        paragraphs: ["We design hoardings that stop traffic — literally."],
+        bullets: [
+          "Bold, high-contrast designs for maximum visibility",
+          "Optimized for readability at speed and distance",
+          "Large-format print expertise",
+          "Custom sizes for any location",
+          "Fast turnaround and competitive pricing",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "signboard-design-sri-lanka",
