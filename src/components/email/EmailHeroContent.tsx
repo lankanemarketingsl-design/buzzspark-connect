@@ -160,14 +160,15 @@ const EmailHeroContent = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">🔄 How It Works</h2>
-        <p className="text-muted-foreground text-center mb-4 text-sm">Email Campaign → Findit.lk Exposure → Retargeting → Conversion</p>
+        <p className="text-foreground font-medium text-center mb-2">From Message to Conversion — A Complete Multi-Channel Funnel</p>
+        <p className="text-muted-foreground text-center mb-8 text-sm">Email Campaign → Findit.lk Exposure → Retargeting → Conversion</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: Mail, title: "Email Campaign", desc: "We send your message to a targeted audience of 350,000+ professionals", num: "01", emoji: "📧" },
-            { icon: Globe, title: "Findit.lk Exposure", desc: "Your business appears on Findit.lk — reaching 200,000+ monthly users", num: "02", emoji: "🌐" },
-            { icon: Target, title: "Retargeting", desc: "Re-engage interested users across FB, IG & LinkedIn for maximum reach", num: "03", emoji: "🎯" },
-            { icon: DollarSign, title: "Conversion", desc: "Turn visibility into real inquiries and paying customers", num: "04", emoji: "💰" },
-          ].map((step) => (
+            { icon: Mail, title: "Email Campaign", desc: "Reach a targeted audience of 350,000+ professionals with your message", num: "01", emoji: "📧" },
+            { icon: Globe, title: "Findit.lk Exposure", desc: "Your business is featured on Findit.lk — reaching 200,000+ monthly active users", num: "02", emoji: "🌐" },
+            { icon: Target, title: "Retargeting", desc: "Reconnect with interested users across Facebook, Instagram & LinkedIn to maximize visibility", num: "03", emoji: "🎯" },
+            { icon: DollarSign, title: "Conversion", desc: "Turn repeated exposure into real inquiries, leads, and paying customers", num: "04", emoji: "💰" },
+          ].map((step, index) => (
             <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-accent text-accent-foreground text-xs font-bold flex items-center justify-center">{step.num}</div>
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 mt-2">
@@ -178,8 +179,27 @@ const EmailHeroContent = () => {
             </div>
           ))}
         </div>
+
+        {/* Why This Works - Conversion Booster */}
+        <div className="mt-8 p-6 rounded-2xl bg-accent/5 border border-accent/20">
+          <h3 className="font-heading font-bold text-foreground text-center mb-4">🔥 Why This Works</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              "Multiple touchpoints increase customer trust",
+              "Repeated visibility improves brand recall",
+              "Multi-channel exposure drives higher engagement",
+              "Designed to convert attention into action",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                <span className="text-sm text-foreground">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <p className="text-center text-foreground font-semibold mt-6">
-          👉 From inbox to inquiry — a complete conversion funnel
+          👉 This is how Buzz Connect turns campaigns into real business results.
         </p>
       </motion.div>
 
