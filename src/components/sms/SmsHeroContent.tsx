@@ -23,8 +23,8 @@ const SmsHeroContent = () => {
             <span className="text-muted-foreground text-xs font-medium">600,000+ Targeted Contacts</span>
           </div>
           <div className="flex items-center gap-2 px-3 py-2 rounded-full bg-muted/60 border border-border">
-            <Shield className="w-3.5 h-3.5 text-muted-foreground" />
-            <span className="text-muted-foreground text-xs font-medium">95%+ Open Rate</span>
+            <Globe className="w-3.5 h-3.5 text-muted-foreground" />
+            <span className="text-muted-foreground text-xs font-medium">Extended Reach via Findit.lk</span>
           </div>
         </div>
 
