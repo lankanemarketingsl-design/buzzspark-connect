@@ -41,7 +41,7 @@ const Careers = () => {
       <section className="pt-24 sm:pt-32 pb-16 gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsla(var(--accent),0.15),transparent_60%)]" />
         <div className="container mx-auto px-4 relative z-10">
-          <Breadcrumbs items={breadcrumbs} />
+          <Breadcrumbs />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
