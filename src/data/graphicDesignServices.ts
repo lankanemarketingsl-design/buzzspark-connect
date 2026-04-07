@@ -101,10 +101,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Business Card Design Sri Lanka",
     metaTitle: "Business Card Design Sri Lanka | Professional Card Designs",
     metaDescription: "Professional business card design services in Sri Lanka. Custom, affordable business card designs that make a lasting impression. Single & double-sided options.",
-    h1: "Business Card Design Sri Lanka – Professional Business Card Design Services",
+    h1: "Business Card Design Sri Lanka – Professional Cards That Make an Impact",
     intro: [
-      "Your business card is often the first impression potential clients have of your business. A professionally designed business card communicates credibility, quality, and attention to detail.",
-      "Buzz Connect creates custom business card designs that reflect your brand identity and leave a lasting impression on everyone you meet.",
+      "Looking for professional business card design Sri Lanka services that leave a lasting impression?",
+      "At Buzz Connect, we create custom business card designs that communicate credibility, quality, and professionalism — making every networking opportunity count.",
+      "In Sri Lanka's growing business landscape, a well-designed business card is still one of the most powerful personal branding tools. Our designs combine modern aesthetics with strategic branding to represent your business perfectly.",
     ],
     benefits: [
       "Professional first impression for your business",
@@ -115,16 +116,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable rates for startups and corporates",
     ],
     process: [
-      { step: "Brief", desc: "Share your business details, logo, and preferences" },
-      { step: "Design", desc: "We create multiple design concepts" },
-      { step: "Review", desc: "Select your preferred design and request changes" },
-      { step: "Deliver", desc: "Print-ready files delivered in all required formats" },
+      { step: "Discovery & Brief", desc: "Share your business details, logo, and preferences" },
+      { step: "Concept Development", desc: "We create multiple design concepts" },
+      { step: "Design Refinement", desc: "Select your preferred design and request changes" },
+      { step: "Final Delivery", desc: "Print-ready files delivered in all required formats" },
     ],
     faqs: [
-      { q: "How much does business card design cost?", a: "Business card design pricing depends on the complexity. Contact us for a custom quote." },
-      { q: "Do you provide print-ready files?", a: "Yes, we deliver files with proper bleed, crop marks, and CMYK color profiles for printing." },
+      { q: "How much does business card design cost in Sri Lanka?", a: "Business card design pricing depends on complexity and package. Contact us for a custom quote." },
+      { q: "Do you provide print-ready files?", a: "Yes, we deliver files with proper bleed, crop marks, and CMYK color profiles for professional printing." },
       { q: "Can you design both sides of the card?", a: "Yes, we offer both single-sided and double-sided business card designs." },
+      { q: "What information should I include on my business card?", a: "Typically your name, title, company name, phone, email, website, and social media. We help you decide the best layout." },
+      { q: "Do you offer matching stationery design?", a: "Yes, we can design matching letterheads, envelopes, and compliment slips for a complete brand identity package." },
     ],
+    extraSections: [
+      {
+        title: "Why Business Card Design Matters in Sri Lanka",
+        paragraphs: [
+          "Despite the digital age, business cards remain essential in Sri Lanka's business culture. They are exchanged at meetings, networking events, exhibitions, and client visits — making them a critical touchpoint for your brand.",
+          "A professionally designed business card builds trust instantly and ensures your contact information is kept and remembered.",
+        ],
+      },
+      {
+        title: "Our Business Card Design Services in Sri Lanka",
+        paragraphs: ["We provide complete business card design solutions for every industry."],
+        subsections: [
+          { title: "Corporate Business Cards", bullets: ["Executive and management cards", "Multi-employee batch designs", "Consistent brand identity", "Premium finishes and materials"] },
+          { title: "Creative & Modern Cards", bullets: ["Minimalist designs", "Unique shapes and die-cuts", "Foil stamping and embossing", "Transparent and metal card designs"] },
+          { title: "Industry-Specific Cards", bullets: ["Real estate agent cards", "Restaurant and hospitality", "Healthcare professional cards", "Legal and finance"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Business Card Design in Sri Lanka",
+        paragraphs: ["We don't just design cards — we create networking tools that work."],
+        bullets: [
+          "Modern, professional design approach",
+          "CMYK print-ready with bleed marks",
+          "Multiple concept options",
+          "Fast turnaround and delivery",
+          "Affordable packages for all business sizes",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "animated-video-creation-sri-lanka",
