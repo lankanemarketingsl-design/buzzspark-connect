@@ -58,7 +58,7 @@ const SmsHeroContent = () => {
           ))}
         </ul>
         <p className="text-muted-foreground leading-relaxed">
-          With high open rates and immediate delivery, SMS remains one of the strongest marketing channels available in Sri Lanka.
+          With high open rates and immediate delivery, <Link to="/" className="text-muted-foreground underline hover:text-primary transition-colors">SMS marketing Sri Lanka</Link> remains one of the strongest marketing channels available. Combine it with other channels for maximum impact.
         </p>
       </motion.div>
 
