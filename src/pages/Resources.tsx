@@ -42,6 +42,7 @@ import articleRecruitmentEmail from "@/assets/blog/article-recruitment-email-hir
 import articleHealthcareEmail from "@/assets/blog/article-healthcare-email-engagement.jpg";
 import articleAutomotiveEmail from "@/assets/blog/article-automotive-email-sales.jpg";
 import articleEventEmail from "@/assets/blog/article-event-email-attendance.jpg";
+import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
