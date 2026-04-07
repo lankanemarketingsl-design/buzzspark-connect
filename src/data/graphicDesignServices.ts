@@ -507,10 +507,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Invitation Design Sri Lanka",
     metaTitle: "Invitation Design Sri Lanka | Custom Invitation Card Design",
     metaDescription: "Professional invitation card design services in Sri Lanka for weddings, corporate events, birthdays & more. Beautiful, customized invitation designs at affordable rates.",
-    h1: "Invitation Design Sri Lanka – Custom Invitation Card Design Services",
+    h1: "Invitation Design Sri Lanka – Custom Invitations That Set the Tone",
     intro: [
-      "A beautifully designed invitation sets the tone for any event. Whether it's a wedding, corporate event, birthday celebration, or grand opening, the invitation is the first impression your guests receive.",
-      "Buzz Connect creates stunning, customized invitation designs that reflect the theme and elegance of your event, available in both digital and print-ready formats.",
+      "Looking for professional invitation design Sri Lanka services that make your event unforgettable from the first touchpoint?",
+      "At Buzz Connect, we create stunning, customized invitation designs that reflect the theme and elegance of your event — available in both digital and print-ready formats.",
+      "Whether it's a wedding, corporate event, birthday celebration, or grand opening, your invitation sets the tone and builds anticipation. Our designs ensure your event makes the right impression from the start.",
     ],
     benefits: [
       "Custom designs for any occasion",
@@ -521,16 +522,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable rates with premium quality",
     ],
     process: [
-      { step: "Brief", desc: "Share event details, theme, and preferences" },
-      { step: "Design", desc: "We create beautiful invitation concepts" },
-      { step: "Review", desc: "Refine colors, fonts, and layout" },
-      { step: "Deliver", desc: "Print-ready and digital versions delivered" },
+      { step: "Discovery & Brief", desc: "Share event details, theme, and preferences" },
+      { step: "Concept Development", desc: "We create beautiful invitation concepts" },
+      { step: "Design Refinement", desc: "Refine colors, fonts, and layout" },
+      { step: "Final Delivery", desc: "Print-ready and digital versions delivered" },
     ],
     faqs: [
       { q: "Can you design wedding invitations?", a: "Yes, we specialize in elegant wedding invitation designs in various styles and themes." },
       { q: "Do you provide digital invitations?", a: "Yes, we create digital invitations optimized for WhatsApp, email, and social media sharing." },
       { q: "How fast can you deliver?", a: "Standard delivery is 2-3 days. Rush delivery within 24 hours is available for urgent requests." },
+      { q: "How much does invitation design cost in Sri Lanka?", a: "Pricing varies based on design complexity and format. Contact us for a custom quotation." },
+      { q: "Can you design invitations in Sinhala or Tamil?", a: "Yes, we design bilingual and trilingual invitations in Sinhala, Tamil, and English." },
     ],
+    extraSections: [
+      {
+        title: "Why Professional Invitation Design Matters in Sri Lanka",
+        paragraphs: [
+          "In Sri Lankan culture, invitations carry significant importance — especially for weddings, religious events, and corporate functions. A professionally designed invitation reflects the prestige of your event and respect for your guests.",
+          "Our invitation designs ensure your event stands out and creates excitement among attendees before the event even begins.",
+        ],
+      },
+      {
+        title: "Our Invitation Design Services in Sri Lanka",
+        paragraphs: ["We design invitations for every occasion and celebration."],
+        subsections: [
+          { title: "Wedding Invitations", bullets: ["Traditional and modern styles", "Sinhala, Tamil, and English designs", "Save the date cards", "RSVP and map cards"] },
+          { title: "Corporate Event Invitations", bullets: ["Product launches and openings", "Annual dinners and galas", "Conferences and seminars", "Awards ceremonies"] },
+          { title: "Social Event Invitations", bullets: ["Birthday celebrations", "Anniversary parties", "Baby showers and christenings", "Farewell and retirement events"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Invitation Design in Sri Lanka",
+        paragraphs: ["We create invitations that excite and inspire your guests."],
+        bullets: [
+          "Custom designs tailored to your event theme",
+          "Digital and print-ready formats",
+          "Bilingual and trilingual options",
+          "Rush delivery for urgent events",
+          "Affordable packages for all budgets",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "brochure-design-sri-lanka",
