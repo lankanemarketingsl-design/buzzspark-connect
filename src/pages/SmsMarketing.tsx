@@ -156,16 +156,68 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
-      {/* 6. District Coverage */}
+      {/* 6. District Coverage - Sri Lanka Map Layout */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">District-wise Database</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-          {districts.map((d) => (
-            <div key={d.name} className="p-4 rounded-xl bg-card shadow-card border border-border text-center">
-              <div className="font-heading font-bold text-accent text-lg">{d.count}</div>
-              <div className="text-xs text-muted-foreground mt-1">{d.name}</div>
+        <div className="max-w-5xl mx-auto">
+          {/* Sri Lanka Map Shape Container */}
+          <div className="relative bg-primary/5 border border-primary/20 rounded-3xl p-6 sm:p-10">
+            {/* Northern Region */}
+            <div className="mb-4">
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Northern & Eastern</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {districts.filter(d => ["Jaffna", "Kilinochchi", "Mullaitivu", "Vavuniya", "Mannar", "Trincomalee", "Batticaloa", "Ampara"].includes(d.name)).map((d) => (
+                  <div key={d.name} className="px-3 py-2 rounded-lg bg-card shadow-card border border-border text-center min-w-[100px]">
+                    <div className="font-heading font-bold text-accent text-sm">{d.count}</div>
+                    <div className="text-[10px] text-muted-foreground mt-0.5">{d.name}</div>
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
+            {/* Central Region */}
+            <div className="mb-4">
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">North Central & Central</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {districts.filter(d => ["Anuradhapura", "Polonnaruwa", "Kurunegala", "Puttalam", "Matale", "Kandy", "Nuwara Eliya", "Badulla", "Monaragala", "Kegalle"].includes(d.name)).map((d) => (
+                  <div key={d.name} className="px-3 py-2 rounded-lg bg-card shadow-card border border-border text-center min-w-[100px]">
+                    <div className="font-heading font-bold text-accent text-sm">{d.count}</div>
+                    <div className="text-[10px] text-muted-foreground mt-0.5">{d.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Western & Southern Region */}
+            <div className="mb-4">
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Western & Sabaragamuwa</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {districts.filter(d => ["Colombo", "Gampaha", "Kalutara", "Wattala", "Ratnapura"].includes(d.name)).map((d) => (
+                  <div key={d.name} className="px-3 py-2 rounded-lg bg-card shadow-card border border-accent/30 text-center min-w-[100px]">
+                    <div className="font-heading font-bold text-accent text-base">{d.count}</div>
+                    <div className="text-[10px] text-muted-foreground mt-0.5">{d.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Southern Region */}
+            <div>
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Southern</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {districts.filter(d => ["Galle", "Matara", "Hambantota"].includes(d.name)).map((d) => (
+                  <div key={d.name} className="px-3 py-2 rounded-lg bg-card shadow-card border border-border text-center min-w-[100px]">
+                    <div className="font-heading font-bold text-accent text-sm">{d.count}</div>
+                    <div className="text-[10px] text-muted-foreground mt-0.5">{d.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Total */}
+            <div className="mt-6 text-center">
+              <div className="inline-block px-6 py-3 rounded-full bg-accent/10 border border-accent/30">
+                <span className="font-heading font-bold text-accent text-lg">2,000,000+</span>
+                <span className="text-muted-foreground text-sm ml-2">Total SMS Reach Across Sri Lanka</span>
+              </div>
+            </div>
+          </div>
         </div>
       </motion.div>
 
