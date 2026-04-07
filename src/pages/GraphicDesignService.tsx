@@ -3,7 +3,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
-import { CheckCircle, HelpCircle } from "lucide-react";
+import { CheckCircle, HelpCircle, MapPin } from "lucide-react";
 import { graphicDesignServices } from "@/data/graphicDesignServices";
 import { Link } from "react-router-dom";
 
@@ -91,6 +91,53 @@ const GraphicDesignService = () => {
           </div>
         </motion.div>
 
+        {/* Extra Sections */}
+        {service.extraSections?.map((section, idx) => (
+          <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{section.title}</h2>
+            {section.paragraphs?.map((p, i) => (
+              <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
+            ))}
+            {section.bullets && (
+              <ul className="space-y-2 mb-4">
+                {section.bullets.map((b) => (
+                  <li key={b} className="flex items-center gap-3 text-foreground">
+                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {b}
+                  </li>
+                ))}
+              </ul>
+            )}
+            {section.subsections?.map((sub) => (
+              <div key={sub.title} className="mb-6">
+                <h3 className="font-heading text-xl font-semibold text-foreground mb-3">{sub.title}</h3>
+                <ul className="space-y-2 ml-2">
+                  {sub.bullets.map((b) => (
+                    <li key={b} className="flex items-center gap-3 text-muted-foreground">
+                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </motion.div>
+        ))}
+
+        {/* Locations */}
+        {service.locations && service.locations.length > 0 && (
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
+              {service.title} Services Across Sri Lanka
+            </h2>
+            <div className="flex flex-wrap gap-3">
+              {service.locations.map((loc) => (
+                <span key={loc} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-medium text-sm">
+                  <MapPin className="w-4 h-4" /> {loc}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
         {/* FAQ */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <div className="flex items-center gap-3 mb-6">
@@ -124,9 +171,9 @@ const GraphicDesignService = () => {
           viewport={{ once: true }}
           className="text-center p-10 rounded-2xl gradient-hero"
         >
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Get a Quote for {service.title}</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Ready to Design Your Product Packaging?</h2>
           <p className="text-primary-foreground/80 mb-6">
-            Contact Buzz Connect for professional {service.title.toLowerCase()} services at competitive rates.
+            Your packaging can make or break your product success. Work with a professional {service.title.toLowerCase()} team that understands branding, design, and customer psychology.
           </p>
           <a
             href={`https://wa.me/94771437707?text=${encodeURIComponent(`Hi Buzz Connect, I'm interested in ${service.title} services.`)}`}
