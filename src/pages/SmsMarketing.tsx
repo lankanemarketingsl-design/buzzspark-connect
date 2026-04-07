@@ -52,21 +52,6 @@ const districts = [
 ];
 
 
-const processSteps = [
-  { icon: Target, title: "Select Database", desc: "Select your target database" },
-  { icon: Smartphone, title: "Create Message", desc: "Create your message content" },
-  { icon: Zap, title: "Launch Campaign", desc: "Launch your SMS campaign and reach thousands instantly" },
-  { icon: BarChart3, title: "Track Results", desc: "Track campaign performance" },
-];
-
-const useCases = [
-  { icon: Building2, label: "Hotels & Travel" },
-  { icon: GraduationCap, label: "Education Institutes" },
-  { icon: Home, label: "Real Estate Companies" },
-  { icon: Stethoscope, label: "Healthcare Providers" },
-  { icon: ShoppingCart, label: "Retail Businesses" },
-  { icon: Rocket, label: "SMEs and Corporate Businesses" },
-];
 
 const faqs = [
   { q: "What is SMS marketing in Sri Lanka?", a: "SMS marketing is a direct marketing method that allows businesses to send promotional or informational messages to customers via mobile phones. It's one of the most effective channels in Sri Lanka due to high open rates." },
