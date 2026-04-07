@@ -301,13 +301,7 @@ const MultiChannelCampaignLandingPage = () => {
           </div>
         </section>
 
-        <RelatedArticles
-          articles={[
-            { title: "Multi-Channel Marketing in Sri Lanka", path: "/multi-channel-marketing-in-sri-lanka" },
-            { title: "Multi-Channel vs Facebook Marketing", path: "/multi-channel-vs-facebook-sri-lanka" },
-            { title: "Findit.lk + Email Marketing Conversions", path: "/finditlk-email-marketing-conversions-sri-lanka" },
-          ]}
-        />
+        <RelatedArticles currentPath="/multi-channel-email-campaigns-sri-lanka" />
       </article>
     </ServicePageLayout>
   );
