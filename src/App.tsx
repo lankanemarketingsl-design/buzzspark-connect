@@ -74,6 +74,7 @@ import AdvertisingSriLanka from "./pages/AdvertisingSriLanka.tsx";
 import EventMarketing from "./pages/EventMarketing.tsx";
 import StaffRecruitment from "./pages/StaffRecruitment.tsx";
 import GraphicDesignService from "./pages/GraphicDesignService.tsx";
+import Careers from "./pages/Careers.tsx";
 
 const queryClient = new QueryClient();
 
