@@ -2,8 +2,9 @@ import SEOHead from "@/components/SEOHead";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
-import { ArrowRight, CheckCircle2, Briefcase, Mail, Zap, Target } from "lucide-react";
+import { ArrowRight, CheckCircle2, Briefcase, Mail, Zap, Target, Star, TrendingUp, Users, Rocket, Phone, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import articleImg from "@/assets/blog/article-recruitment-email-hiring.jpg";
 import RelatedArticles from "@/components/RelatedArticles";
 
@@ -13,6 +14,15 @@ const faqs = [
   { q: "What types of email campaigns work for recruitment?", a: "Job alerts, hiring campaigns, walk-in interview promotions, and employer branding newsletters are the most effective campaign types." },
   { q: "Is email marketing cost-effective for hiring?", a: "Yes. Email marketing significantly reduces cost per hire compared to traditional recruitment methods and paid job portals." },
 ];
+
+const packages = [
+  { name: "Starter Hiring Campaign", price: "LKR 12,000", best: "Best for quick hiring needs", features: ["Findit.lk job listing", "Facebook campaign (basic targeting)", "WhatsApp / simple apply method"] },
+  { name: "Growth Hiring Campaign", price: "LKR 25,000", best: "Ideal for consistent hiring", highlight: true, features: ["Featured placement on Findit.lk", "Facebook + Story promotions", "Lead form integration", "Increased campaign reach"] },
+  { name: "Pro Hiring Campaign", price: "LKR 45,000", best: "For high-demand roles", features: ["Premium category visibility on Findit.lk", "Advanced Facebook targeting", "Multi-placement promotion strategy", "Optimized application flow"] },
+  { name: "Mass Hiring Campaign", price: "Custom", best: "For bulk recruitment & scaling", features: ["Multi-platform promotion", "High-reach campaign setup", "Multiple ad creatives", "Dedicated campaign management"] },
+];
+
+const addOns = ["Priority campaign boosting", "Creative design for job ads", "Featured placement upgrades", "Application handling support"];
 
 const RecruitmentEmailHiring = () => {
   const jsonLd = useMemo(() => ({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }), []);
@@ -49,16 +59,84 @@ const RecruitmentEmailHiring = () => {
           <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits</h2>
           <ul className="space-y-2">{["Faster hiring", "Better candidate quality", "Reduced hiring costs", "Stronger employer brand"].map(item => (<li key={item} className="flex items-start gap-2 text-muted-foreground"><CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-1" />{item}</li>))}</ul>
         </section>
+
+        {/* RECRUITMENT CAMPAIGN PACKAGES */}
+        <section className="space-y-8">
+          <div className="text-center">
+            <div className="flex items-center justify-center gap-3 mb-3"><Rocket className="w-8 h-8 text-accent" /><h2 className="font-heading text-3xl font-bold text-foreground">Staff Recruitment Campaign Packages</h2></div>
+            <p className="text-accent font-semibold text-lg">🎯 Designed for Visibility, Reach & Faster Hiring</p>
+            <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Buzz Connect recruitment campaigns are built to give your job vacancies maximum exposure across multiple platforms, helping you attract more candidates and fill roles efficiently.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {packages.map((pkg) => (
+              <Card key={pkg.name} className={`relative overflow-hidden transition-all hover:shadow-lg ${pkg.highlight ? "border-accent border-2 shadow-md" : ""}`}>
+                {pkg.highlight && (
+                  <div className="absolute top-0 right-0 bg-accent text-primary text-xs font-bold px-3 py-1 rounded-bl-lg">Most Popular</div>
+                )}
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg font-bold text-foreground">{pkg.name}</CardTitle>
+                  <p className="text-sm text-muted-foreground">{pkg.best}</p>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <ul className="space-y-2">
+                    {pkg.features.map((f) => (
+                      <li key={f} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />{f}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="pt-2 border-t border-border">
+                    <span className="text-2xl font-bold text-accent">{pkg.price}</span>
+                  </div>
+                  <a href={`https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20${encodeURIComponent(pkg.name)}%20recruitment%20package.`} target="_blank" rel="noopener noreferrer">
+                    <Button variant="hero" size="lg" className="w-full text-sm mt-2">Get Started <ArrowRight className="ml-1" /></Button>
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* WHAT YOU GET */}
+        <section className="bg-muted/30 rounded-2xl p-8 border border-border">
+          <div className="flex items-center gap-3 mb-4"><TrendingUp className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">What You Get</h2></div>
+          <p className="text-muted-foreground mb-4">Each campaign is designed to deliver:</p>
+          <ul className="space-y-2">{["Strong visibility across platforms", "Reach to active job seekers", "Consistent promotion throughout the campaign", "Increased chances of receiving applications"].map(item => (<li key={item} className="flex items-start gap-2 text-muted-foreground"><CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-1" />{item}</li>))}</ul>
+        </section>
+
+        {/* WHY THIS WORKS */}
+        <section>
+          <div className="flex items-center gap-3 mb-4"><Users className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">Why This Works</h2></div>
+          <p className="text-muted-foreground">By combining <strong>Findit.lk</strong> exposure with targeted <Link to="/social-media-marketing-sri-lanka" className="text-muted-foreground underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> campaigns, your job vacancies are seen more often — helping you attract candidates faster and more effectively.</p>
+        </section>
+
+        {/* ADD-ONS */}
+        <section>
+          <div className="flex items-center gap-3 mb-4"><Plus className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">Optional Add-Ons</h2></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {addOns.map(item => (
+              <div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 border border-border">
+                <Star className="w-5 h-5 text-accent shrink-0" />
+                <span className="text-sm font-medium text-foreground">{item}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section>
           <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Frequently Asked Questions</h2>
           <div className="space-y-4">{faqs.map(faq => (<div key={faq.q} className="p-5 rounded-xl bg-muted/30 border border-border"><h3 className="font-semibold text-foreground mb-2">{faq.q}</h3><p className="text-sm text-muted-foreground">{faq.a}</p></div>))}</div>
         </section>
+
+        {/* FINAL CTA */}
         <section className="text-center bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-10">
-          <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-3">Looking for Recruitment Marketing Services in Sri Lanka?</h2>
-          <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">Speed up hiring with targeted <Link to="/email-marketing" className="text-accent hover:underline font-bold">email marketing</Link> and <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-bold">multi-channel campaigns</Link>.</p>
+          <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-3">Promote Your Job Vacancies Where Candidates Are Already Active</h2>
+          <p className="text-primary-foreground/80 mb-2 max-w-lg mx-auto">Start your recruitment campaign today — reach more candidates and fill your vacancies faster.</p>
+          <p className="text-primary-foreground/60 text-sm mb-6">Powered by <Link to="/email-marketing" className="text-accent hover:underline font-bold">email marketing</Link>, <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-bold">multi-channel campaigns</Link> & Findit.lk</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/email-marketing"><Button variant="hero-outline" size="lg" className="text-base">Email Marketing <ArrowRight className="ml-1" /></Button></Link>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20recruitment%20email%20marketing%20campaigns." target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg" className="text-base">Chat on WhatsApp <ArrowRight className="ml-1" /></Button></a>
+            <a href="tel:+94771437707"><Button variant="hero-outline" size="lg" className="text-base"><Phone className="mr-1" /> Call Now</Button></a>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20recruitment%20campaign%20packages." target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg" className="text-base">Start Your Campaign <ArrowRight className="ml-1" /></Button></a>
           </div>
         </section>
       </article>
