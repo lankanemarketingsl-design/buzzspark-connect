@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { CheckCircle, AlertTriangle, ArrowRight } from "lucide-react";
 
 const benefits = [
