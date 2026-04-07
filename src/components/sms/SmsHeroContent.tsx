@@ -58,7 +58,7 @@ const SmsHeroContent = () => {
           {[
             { value: "600K+", label: "Targeted Contacts" },
             { value: "26", label: "Districts Covered" },
-            { value: "95%+", label: "SMS Open Rate" },
+            { value: "Findit.lk", label: "Extended Reach" },
             { value: "2 LKR", label: "Per Message From" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
