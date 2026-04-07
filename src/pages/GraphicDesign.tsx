@@ -2,7 +2,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
-import { HelpCircle, CheckCircle } from "lucide-react";
+import { HelpCircle, CheckCircle, Zap, Award } from "lucide-react";
 import { graphicDesignServices } from "@/data/graphicDesignServices";
 import { Link } from "react-router-dom";
 
