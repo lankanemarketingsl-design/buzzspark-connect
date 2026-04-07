@@ -171,9 +171,9 @@ const GraphicDesignService = () => {
           viewport={{ once: true }}
           className="text-center p-10 rounded-2xl gradient-hero"
         >
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Get a Quote for {service.title}</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Ready to Design Your Product Packaging?</h2>
           <p className="text-primary-foreground/80 mb-6">
-            Contact Buzz Connect for professional {service.title.toLowerCase()} services at competitive rates.
+            Your packaging can make or break your product success. Work with a professional {service.title.toLowerCase()} team that understands branding, design, and customer psychology.
           </p>
           <a
             href={`https://wa.me/94771437707?text=${encodeURIComponent(`Hi Buzz Connect, I'm interested in ${service.title} services.`)}`}
