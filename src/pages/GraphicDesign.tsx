@@ -77,7 +77,7 @@ const GraphicDesign = () => {
     <ServicePageLayout
       badge="Graphic Design Sri Lanka"
       title="Graphic Designing in Sri Lanka – Professional Design Services"
-      subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand."
+      subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand. Starting from LKR 4,000."
     >
       <SEOHead
         title="Graphic Design Sri Lanka | Logo & Flyer Design from LKR 4K"
