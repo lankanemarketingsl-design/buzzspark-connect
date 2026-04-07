@@ -100,8 +100,8 @@ const SmsMarketing = () => {
   return (
     <ServicePageLayout
       badge="SMS Marketing Sri Lanka"
-      title="SMS Marketing Sri Lanka That Drives Real Business Results"
-      subtitle="We combine bulk SMS campaigns with multi-channel marketing strategies to increase conversions and ROI for businesses across Sri Lanka."
+      title="SMS Marketing That Reaches Instantly — and Converts"
+      subtitle="Targeted SMS + Multi-Channel Promotion to maximize visibility and engagement"
     >
       <SEOHead
         title="SMS Marketing Sri Lanka | Bulk SMS Campaigns with Multi-Channel Strategy"
