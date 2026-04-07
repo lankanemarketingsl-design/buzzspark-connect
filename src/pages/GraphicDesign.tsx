@@ -2,7 +2,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
-import { HelpCircle, CheckCircle } from "lucide-react";
+import { HelpCircle, CheckCircle, Zap, Award } from "lucide-react";
 import { graphicDesignServices } from "@/data/graphicDesignServices";
 import { Link } from "react-router-dom";
 
@@ -77,7 +77,7 @@ const GraphicDesign = () => {
     <ServicePageLayout
       badge="Graphic Design Sri Lanka"
       title="Graphic Designing in Sri Lanka – Professional Design Services"
-      subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand."
+      subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand. Starting from LKR 4,000."
     >
       <SEOHead
         title="Graphic Design Sri Lanka | Logo & Flyer Design from LKR 4K"
@@ -89,6 +89,22 @@ const GraphicDesign = () => {
         ]}
         jsonLd={jsonLd}
       />
+
+      {/* Trust Strip */}
+      <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+        <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
+          <Zap className="w-4 h-4 text-accent" />
+          <span className="text-accent font-bold text-sm">Designs from LKR 4,000</span>
+        </div>
+        <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
+          <CheckCircle className="w-4 h-4 text-secondary-foreground" />
+          <span className="text-secondary-foreground font-bold text-sm">Fast Delivery</span>
+        </div>
+        <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
+          <Award className="w-4 h-4 text-secondary-foreground" />
+          <span className="text-secondary-foreground font-bold text-sm">10+ Years Experience</span>
+        </div>
+      </div>
 
       {/* Intro */}
       <div className="mb-12 max-w-4xl">
