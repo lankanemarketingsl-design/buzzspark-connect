@@ -11,6 +11,7 @@ import { toast } from "sonner";
 import SEOHead from "@/components/SEOHead";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import LogoCarousel from "@/components/home/LogoCarousel";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const ContactUs = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", message: "" });
