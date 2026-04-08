@@ -586,6 +586,7 @@ const FashionMarketing = () => {
       </motion.div>
 
       <RelatedArticles currentPath="/fashion-marketing-sri-lanka" />
+      <DigitalMarketingCTA />
     </ServicePageLayout>
   );
 };

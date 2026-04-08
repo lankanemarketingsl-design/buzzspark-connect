@@ -470,6 +470,7 @@ const LeadGeneration = () => {
       </motion.div>
 
       <RelatedArticles currentPath="/lead-generation-sri-lanka" />
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

@@ -582,6 +582,7 @@ const SocialMediaMarketing = () => {
       </motion.div>
 
       <RelatedArticles currentPath="/social-media-marketing-sri-lanka" />
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

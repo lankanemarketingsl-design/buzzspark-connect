@@ -389,6 +389,7 @@ const Resources = () => {
           </motion.div>
         ))}
       </div>
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

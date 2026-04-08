@@ -569,6 +569,7 @@ const FinanceMarketing = () => {
       </motion.div>
 
       <RelatedArticles currentPath="/finance-marketing-sri-lanka" />
+      <DigitalMarketingCTA />
     </ServicePageLayout>
   );
 };

@@ -244,6 +244,9 @@ const ContactUs = () => {
         </div>
       </section>
 
+      <section className="container mx-auto px-4 pb-8">
+        <DigitalMarketingCTA variant="alt" />
+      </section>
       <LogoCarousel />
     </div>
   );

@@ -413,6 +413,7 @@ const WebBannerAdvertising = () => {
       </motion.div>
 
       <RelatedArticles currentPath="/web-banner-advertising-sri-lanka" />
+      <DigitalMarketingCTA />
     </ServicePageLayout>
   );
 };
