@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const packages = [
   {
