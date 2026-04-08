@@ -12,15 +12,15 @@ const DigitalMarketingCTA = ({ variant = "default" }: DigitalMarketingCTAProps) 
       </h2>
       <p className="text-muted-foreground leading-relaxed mb-3">
         Buzz Connect is a leading provider of{" "}
-        <Link to="/" className="text-muted-foreground underline hover:text-foreground transition-colors">
+        <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
           email marketing Sri Lanka
         </Link>
         ,{" "}
-        <Link to="/" className="text-muted-foreground underline hover:text-foreground transition-colors">
+        <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
           SMS marketing Sri Lanka
         </Link>
         , and{" "}
-        <Link to="/" className="text-muted-foreground underline hover:text-foreground transition-colors">
+        <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
           WhatsApp marketing Sri Lanka
         </Link>{" "}
         solutions for businesses looking to grow fast.
@@ -29,15 +29,15 @@ const DigitalMarketingCTA = ({ variant = "default" }: DigitalMarketingCTAProps) 
         Our integrated approach combines{" "}
         {variant === "alt" ? (
           <>
-            <Link to="/" className="text-muted-foreground underline hover:text-foreground transition-colors">
+            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
               email marketing services Sri Lanka
             </Link>
             ,{" "}
-            <Link to="/" className="text-muted-foreground underline hover:text-foreground transition-colors">
+            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
               bulk SMS marketing Sri Lanka
             </Link>
             , and{" "}
-            <Link to="/" className="text-muted-foreground underline hover:text-foreground transition-colors">
+            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
               WhatsApp campaign marketing Sri Lanka
             </Link>
           </>
