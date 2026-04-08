@@ -48,7 +48,7 @@ const moreCategories = [
 
 const faqs = [
   { q: "What graphic design services does Buzz Connect offer in Sri Lanka?", a: "Buzz Connect offers logo design, e-flyer design, business cards, brochures, animated videos, social media posts, company profiles, menu cards, signage, and more." },
-  { q: "How much does graphic design cost in Sri Lanka?", a: "E-flyer designing starts from LKR 4,000. Contact us for custom pricing based on your specific design needs." },
+  { q: "How much does graphic design cost in Sri Lanka?", a: "E-flyer designing starts from LKR 2,500. Contact us for custom pricing based on your specific design needs." },
   { q: "Can you create animated videos for my business?", a: "Yes, we create short animated explainer videos to help tell your business story and explain products or services." },
   { q: "Do you design logos for startups in Sri Lanka?", a: "Yes, we create eye-catching, minimalist logo designs for startups and established businesses at competitive rates." },
 ];
@@ -78,11 +78,11 @@ const GraphicDesign = () => {
     <ServicePageLayout
       badge="Graphic Design Sri Lanka"
       title="Graphic Designing in Sri Lanka – Professional Design Services"
-      subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand. Starting from LKR 4,000."
+      subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand. Starting from LKR 2,500."
     >
       <SEOHead
-        title="Graphic Design Sri Lanka | Logo & Flyer Design from LKR 4K"
-        description="Professional graphic design services in Sri Lanka. Logo design, e-flyers, brochures, animated videos, social media posts & business cards. From LKR 4,000. Fast delivery."
+        title="Graphic Design Sri Lanka | Logo & Flyer Design from LKR 2.5K"
+        description="Professional graphic design services in Sri Lanka. Logo design, e-flyers, brochures, animated videos, social media posts & business cards. From LKR 2,500. Fast delivery."
         canonical="/graphic-designing-in-sri-lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -95,7 +95,7 @@ const GraphicDesign = () => {
       <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
           <Zap className="w-4 h-4 text-accent" />
-          <span className="text-accent font-bold text-sm">Designs from LKR 4,000</span>
+          <span className="text-accent font-bold text-sm"><span className="text-accent font-bold text-sm">Designs from LKR 2,500</span></span>
         </div>
         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
           <CheckCircle className="w-4 h-4 text-secondary-foreground" />
