@@ -35,7 +35,7 @@ const SmsHeroContent = () => {
           Most businesses send bulk SMS and hope for results. At <strong>Buzz Connect</strong>, we combine <strong>targeted SMS campaigns</strong> with multi-channel promotion to maximize visibility and engagement for businesses across <Link to="/" className="text-muted-foreground">SMS marketing Sri Lanka</Link>.
         </p>
         <p className="text-foreground font-medium mb-6">
-          👉 From LKR 25,000 — reach thousands instantly and expand visibility across multiple platforms.
+          👉 From LKR 30,000 — reach thousands instantly and expand visibility across multiple platforms. and expand visibility across multiple platforms.
         </p>
         <div className="flex flex-wrap gap-4">
           <Link to="/contact-us" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base shadow-lg">
