@@ -95,7 +95,7 @@ const GraphicDesign = () => {
       <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
           <Zap className="w-4 h-4 text-accent" />
-          <span className="text-accent font-bold text-sm">Designs from LKR 4,000</span>
+          <span className="text-accent font-bold text-sm"><span className="text-accent font-bold text-sm">Designs from LKR 2,500</span></span>
         </div>
         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
           <CheckCircle className="w-4 h-4 text-secondary-foreground" />

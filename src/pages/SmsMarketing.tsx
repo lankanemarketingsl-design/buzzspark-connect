@@ -417,7 +417,7 @@ const SmsMarketing = () => {
             Reach Customers Instantly. Get Real Results.
           </p>
           <p className="text-primary-foreground/60 mb-8 max-w-xl mx-auto text-sm">
-            From LKR 25,000 — reach thousands instantly and expand visibility across multiple platforms
+            From LKR 30,000 — reach thousands instantly and expand visibility across multiple platforms and expand visibility across multiple platforms
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact-us" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base shadow-lg">
