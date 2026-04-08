@@ -29,15 +29,15 @@ const DigitalMarketingCTA = ({ variant = "default" }: DigitalMarketingCTAProps) 
         Our integrated approach combines{" "}
         {variant === "alt" ? (
           <>
-            <Link to="/" className="text-muted-foreground underline hover:text-foreground transition-colors">
+            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
               email marketing services Sri Lanka
             </Link>
             ,{" "}
-            <Link to="/" className="text-muted-foreground underline hover:text-foreground transition-colors">
+            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
               bulk SMS marketing Sri Lanka
             </Link>
             , and{" "}
-            <Link to="/" className="text-muted-foreground underline hover:text-foreground transition-colors">
+            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
               WhatsApp campaign marketing Sri Lanka
             </Link>
           </>
