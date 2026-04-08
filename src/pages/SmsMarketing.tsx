@@ -430,6 +430,7 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
       <RelatedArticles currentPath="/sms-marketing" />
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

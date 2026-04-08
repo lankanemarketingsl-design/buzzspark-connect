@@ -475,6 +475,7 @@ const OnlineAdvertising = () => {
           Get a Free Quote Today
         </a>
       </motion.div>
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

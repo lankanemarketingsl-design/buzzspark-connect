@@ -286,6 +286,7 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
       <RelatedArticles currentPath="/email-marketing" />
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

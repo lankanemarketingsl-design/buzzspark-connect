@@ -322,6 +322,7 @@ const GraphicDesign = () => {
           Contact Buzz Connect
         </a>
       </motion.div>
+      <DigitalMarketingCTA />
     </ServicePageLayout>
   );
 };
