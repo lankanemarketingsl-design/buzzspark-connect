@@ -48,7 +48,7 @@ const moreCategories = [
 
 const faqs = [
   { q: "What graphic design services does Buzz Connect offer in Sri Lanka?", a: "Buzz Connect offers logo design, e-flyer design, business cards, brochures, animated videos, social media posts, company profiles, menu cards, signage, and more." },
-  { q: "How much does graphic design cost in Sri Lanka?", a: "E-flyer designing starts from LKR 2,500. Contact us for custom pricing based on your specific design needs." }, "How much does graphic design cost in Sri Lanka?", a: "E-flyer designing starts from LKR 2,500. Contact us for custom pricing based on your specific design needs." },. Contact us for custom pricing based on your specific design needs." },
+  { q: "How much does graphic design cost in Sri Lanka?", a: "E-flyer designing starts from LKR 2,500. Contact us for custom pricing based on your specific design needs." }, does graphic design cost in Sri Lanka?", a: "E-flyer designing starts from LKR 2,500. Contact us for custom pricing based on your specific design needs." },. Contact us for custom pricing based on your specific design needs." },
   { q: "Can you create animated videos for my business?", a: "Yes, we create short animated explainer videos to help tell your business story and explain products or services." },
   { q: "Do you design logos for startups in Sri Lanka?", a: "Yes, we create eye-catching, minimalist logo designs for startups and established businesses at competitive rates." },
 ];
