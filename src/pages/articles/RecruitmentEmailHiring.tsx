@@ -63,7 +63,7 @@ const RecruitmentEmailHiring = () => {
         {/* RECRUITMENT CAMPAIGN PACKAGES */}
         <section className="space-y-8">
           <div className="text-center">
-            <div className="flex items-center justify-center gap-3 mb-3"><Rocket className="w-8 h-8 text-accent" /><h2 className="font-heading text-3xl font-bold text-foreground">Staff Recruitment Campaign Packages</h2></div>
+            <div className="flex items-center justify-center gap-3 mb-3"><Rocket className="w-8 h-8 text-accent" /><h2 className="font-heading text-3xl font-bold text-foreground">Email-Based Recruitment Campaign Packages</h2></div>
             <p className="text-accent font-semibold text-lg">🎯 Designed for Visibility, Reach & Faster Hiring</p>
             <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Buzz Connect recruitment campaigns are built to give your job vacancies maximum exposure across multiple platforms, helping you attract more candidates and fill roles efficiently.</p>
           </div>
@@ -113,7 +113,7 @@ const RecruitmentEmailHiring = () => {
 
         {/* ADD-ONS */}
         <section>
-          <div className="flex items-center gap-3 mb-4"><Plus className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">Optional Add-Ons</h2></div>
+          <div className="flex items-center gap-3 mb-4"><Plus className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">Optional Recruitment Add-Ons</h2></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {addOns.map(item => (
               <div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 border border-border">
