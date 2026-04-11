@@ -177,7 +177,7 @@ const EmailVsSocialMedia = () => {
 
           {/* Verdict */}
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
-            <h2 className="font-heading text-xl font-bold text-foreground mb-4">The Verdict</h2>
+            <h2 className="font-heading text-xl font-bold text-foreground mb-4">The Verdict: Email vs Social Media</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
               If you had to choose one channel, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing in Sri Lanka</Link> wins on every metric that matters: ROI, conversion rates, cost-effectiveness, and audience ownership.
             </p>
@@ -188,7 +188,7 @@ const EmailVsSocialMedia = () => {
 
           {/* CTA */}
           <div className="p-6 rounded-2xl gradient-hero text-center">
-            <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Looking for Email Marketing Services in Sri Lanka?</h3>
+            <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Choose the Right Marketing Channel in Sri Lanka</h3>
             <p className="text-primary-foreground/80 mb-2">Outperform social media with targeted email campaigns that convert.</p>
             <p className="text-primary-foreground/80 mb-4">350,000+ contacts • 4,200% ROI • Professional campaigns</p>
             <Link to="/email-marketing" className="inline-block px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">

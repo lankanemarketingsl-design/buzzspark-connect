@@ -42,11 +42,11 @@ const AutomotiveEmailSales = () => {
           <p className="text-muted-foreground">Using <strong>Findit.lk</strong> helps reach users actively searching for vehicles and automotive services.</p>
         </section>
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Campaign Ideas</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Automotive Email Campaign Ideas</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">{["Vehicle promotions", "Service reminders", "Leasing offers", "New model announcements"].map(item => (<div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 border border-border"><Car className="w-5 h-5 text-accent shrink-0" /><span className="text-sm font-medium text-foreground">{item}</span></div>))}</div>
         </section>
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits of Automotive Email Marketing</h2>
           <ul className="space-y-2">{["Higher lead quality", "Increased conversions", "Better customer retention", "Lower advertising costs"].map(item => (<li key={item} className="flex items-start gap-2 text-muted-foreground"><CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-1" />{item}</li>))}</ul>
         </section>
         <section>

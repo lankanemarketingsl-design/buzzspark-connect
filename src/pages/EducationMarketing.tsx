@@ -301,7 +301,7 @@ const EducationMarketing = () => {
         </div>
 
         <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🎯 What You Can Achieve with Multi-Channel Campaigns</h3>
+          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🎯 What You Can Achieve with Multi-Channel Education Campaigns</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {[
               "Brand awareness campaigns across Sri Lanka",
@@ -342,7 +342,7 @@ const EducationMarketing = () => {
         </div>
 
         <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8 overflow-x-auto">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-5">🆚 Standard vs Multi-Channel Campaigns</h3>
+          <h3 className="font-heading text-lg font-bold text-foreground mb-5">🆚 Standard vs Multi-Channel Education Campaigns</h3>
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-border">

@@ -99,7 +99,7 @@ const FinditlkEmailConversions = () => {
         <section>
           <div className="flex items-center gap-3 mb-4">
             <Mail className="w-7 h-7 text-accent" />
-            <h2 className="font-heading text-2xl font-bold text-foreground">What is Email Marketing?</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground">What is Email Marketing for Findit.lk Conversions?</h2>
           </div>
           <p className="text-muted-foreground mb-4">
             <Link to="/email-marketing" className="text-accent hover:underline font-semibold">Email marketing</Link> is a direct communication channel that allows businesses to send targeted messages to a selected audience.

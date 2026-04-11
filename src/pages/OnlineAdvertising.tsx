@@ -245,7 +245,7 @@ const OnlineAdvertising = () => {
         viewport={{ once: true }}
         className="mb-16 p-8 rounded-2xl bg-primary/5 border border-primary/20 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose BuzzConnect for Advertising in Sri Lanka</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose BuzzConnect for Online Advertising</h2>
         <ul className="space-y-3">
           <li className="flex items-center gap-3 text-foreground">
             <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> #1 direct marketing & <strong>advertising company in Sri Lanka</strong>

@@ -55,7 +55,7 @@ const OnlineVsTraditionalAdvertising = () => {
               <li>❌ No real-time performance tracking</li>
             </ul>
 
-            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Online Advertising in Sri Lanka</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Understanding Online Advertising in Sri Lanka</h2>
             <p>Online advertising offers significant advantages for businesses of all sizes:</p>
             <ul className="space-y-2 my-4">
               <li>✅ <li>✅ Affordable — start from LKR 5,000</li></li>
@@ -65,7 +65,7 @@ const OnlineVsTraditionalAdvertising = () => {
               <li>✅ Higher engagement and conversion rates</li>
             </ul>
 
-            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">The Verdict</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">The Verdict: Online vs Traditional Advertising</h2>
             <p>
               For most businesses in Sri Lanka, online advertising delivers better ROI, more precise targeting, and measurable results. The best strategy combines digital channels for maximum impact.
             </p>

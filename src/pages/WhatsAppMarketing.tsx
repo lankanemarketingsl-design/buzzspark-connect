@@ -288,7 +288,7 @@ const WhatsAppMarketing = () => {
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-2">Perfect For</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-2">Perfect For WhatsApp Marketing</h2>
         <p className="text-muted-foreground text-sm mb-6">Businesses across every industry use our WhatsApp campaigns</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {[
@@ -394,7 +394,7 @@ const WhatsAppMarketing = () => {
 
       {/* Gender-wise Database */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">Gender-wise Database</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">WhatsApp Gender-wise Database</h2>
         <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
           <div className="text-center p-6 rounded-xl bg-secondary/10 border border-secondary/20 min-w-[160px]">
             <div className="text-3xl font-heading font-bold text-secondary">350,000+</div>
@@ -411,7 +411,7 @@ const WhatsAppMarketing = () => {
 
       {/* District Coverage - Map Layout */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">District-wise Database</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">WhatsApp District-wise Database</h2>
         <div className="max-w-5xl mx-auto">
           <div className="relative bg-primary/5 border border-primary/20 rounded-3xl p-6 sm:p-10">
             <div className="mb-4">
@@ -477,7 +477,7 @@ const WhatsAppMarketing = () => {
       >
         <div className="flex items-center gap-3 mb-4">
           <Globe className="w-7 h-7 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Extended Reach with Integrated Advertising</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Extended Reach with WhatsApp Integrated Advertising</h2>
         </div>
         <p className="text-muted-foreground leading-relaxed mb-4">
           Buzz Connect enhances WhatsApp campaigns with additional exposure through <strong>Findit.lk</strong>, one of Sri Lanka's leading online promotion platforms. This ensures:

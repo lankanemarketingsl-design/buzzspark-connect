@@ -112,7 +112,7 @@ const HotelEmailBookings = () => {
         </section>
 
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Campaign Ideas</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Hotel Email Campaign Ideas</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {["Holiday promotions", "Weekend getaway offers", "Last-minute deals", "Loyalty programs"].map(item => (
               <div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 border border-border">
@@ -124,7 +124,7 @@ const HotelEmailBookings = () => {
         </section>
 
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits of Hotel Email Marketing</h2>
           <ul className="space-y-2">
             {["Increased bookings", "Higher ROI", "Better guest retention", "Reduced dependency on third-party platforms"].map(item => (
               <li key={item} className="flex items-start gap-2 text-muted-foreground">

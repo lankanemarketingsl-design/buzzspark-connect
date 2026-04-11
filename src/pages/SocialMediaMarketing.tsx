@@ -404,7 +404,7 @@ const SocialMediaMarketing = () => {
       >
         <div className="flex items-center gap-3 mb-4">
           <Award className="w-8 h-8 text-accent" />
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">Powered by Findit.lk</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">Social Media Marketing Powered by Findit.lk</h2>
         </div>
         <p className="text-muted-foreground leading-relaxed mb-4">
           Buzz Connect campaigns are amplified through Findit.lk, giving your business access to a high-intent audience actively searching for services.
