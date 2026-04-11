@@ -150,7 +150,7 @@ const EmailMarketingPricing = () => {
 
           {/* CTA */}
           <div className="p-6 rounded-2xl gradient-hero text-center">
-            <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Looking for Email Marketing Services in Sri Lanka?</h3>
+            <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Get Affordable Email Marketing in Sri Lanka</h3>
             <p className="text-primary-foreground/80 mb-2">Get affordable email marketing packages with proven ROI.</p>
             <p className="text-primary-foreground/80 mb-4">350,000+ targeted contacts • Professional design • Measurable results</p>
             <Link to="/email-marketing" className="inline-block px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">

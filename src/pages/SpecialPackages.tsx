@@ -389,7 +389,7 @@ const SpecialPackages = () => {
       >
         <div className="flex items-center gap-3 mb-4">
           <Award className="w-8 h-8 text-accent" />
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">Powered by Findit.lk</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">Special Packages Powered by Findit.lk</h2>
         </div>
         <p className="text-muted-foreground leading-relaxed mb-6">
           Most agencies only <em>send</em> messages. We place your brand on a <strong className="text-foreground">high-traffic platform</strong> where users are actively searching for products and services like yours.
@@ -529,7 +529,7 @@ const SpecialPackages = () => {
         viewport={{ once: true }}
         className="mb-16"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-2">How It Works</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-2">How Our Special Packages Work</h2>
         <p className="text-center text-muted-foreground mb-8">Simple. Fast. Effective.</p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
           {[

@@ -232,7 +232,7 @@ const MultiChannelMarketingSriLanka = () => {
 
         {/* Results You Can Expect */}
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Results You Can Expect</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Results You Can Expect from Multi-Channel Marketing</h2>
           <p className="text-muted-foreground mb-4">By using Buzz Connect's integrated marketing solution, businesses can:</p>
           <ul className="space-y-2">
             {[

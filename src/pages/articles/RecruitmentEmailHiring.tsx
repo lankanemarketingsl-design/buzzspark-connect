@@ -52,11 +52,11 @@ const RecruitmentEmailHiring = () => {
           <p className="text-muted-foreground">Using <strong>Findit.lk</strong>, companies can reach active job seekers who are already looking for opportunities.</p>
         </section>
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Campaign Ideas</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Recruitment Email Campaign Ideas</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">{["Job alerts", "Hiring campaigns", "Walk-in interview promotions", "Employer branding newsletters"].map(item => (<div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 border border-border"><Briefcase className="w-5 h-5 text-accent shrink-0" /><span className="text-sm font-medium text-foreground">{item}</span></div>))}</div>
         </section>
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits of Recruitment Email Marketing</h2>
           <ul className="space-y-2">{["Faster hiring", "Better candidate quality", "Reduced hiring costs", "Stronger employer brand"].map(item => (<li key={item} className="flex items-start gap-2 text-muted-foreground"><CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-1" />{item}</li>))}</ul>
         </section>
 
@@ -131,7 +131,7 @@ const RecruitmentEmailHiring = () => {
 
         {/* FINAL CTA */}
         <section className="text-center bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-10">
-          <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-3">Promote Your Job Vacancies Where Candidates Are Already Active</h2>
+          <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-3">Use Email to Promote Job Vacancies Where Candidates Are Active</h2>
           <p className="text-primary-foreground/80 mb-2 max-w-lg mx-auto">Start your recruitment campaign today — reach more candidates and fill your vacancies faster.</p>
           <p className="text-primary-foreground/60 text-sm mb-6">Powered by <Link to="/email-marketing" className="text-accent hover:underline font-bold">email marketing</Link>, <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-bold">multi-channel campaigns</Link> & Findit.lk</p>
           <div className="flex flex-wrap justify-center gap-4">

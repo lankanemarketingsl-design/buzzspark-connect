@@ -62,7 +62,7 @@ const WhyYouNeedEmailMarketing = () => {
           </div>
 
           <div className="p-6 rounded-2xl gradient-hero text-center">
-            <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Start Your Email Marketing Campaign Today</h3>
+            <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Start Your First Email Marketing Campaign Today</h3>
             <p className="text-primary-foreground/80 mb-4">Reach 350,000+ targeted customers with Buzz Connect.</p>
             <Link to="/email-marketing" className="inline-block px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
               View Email Marketing Packages

@@ -182,7 +182,7 @@ const MultiChannelCampaignLandingPage = () => {
 
         {/* 4. HOW IT WORKS — SIMPLIFIED 3 STEPS */}
         <section className="space-y-8">
-          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground">How It Works</h2>
+          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground">How Multi-Channel Campaigns Work</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { step: "01", icon: Mail, title: "We Send Your Campaign", desc: "Targeted email to 350,000+ subscribers across Sri Lanka." },
@@ -234,7 +234,7 @@ const MultiChannelCampaignLandingPage = () => {
 
         {/* 6. WHO IS THIS FOR */}
         <section className="space-y-6">
-          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground">Perfect For</h2>
+          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground">Perfect For Multi-Channel Campaigns</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {whoIsThisFor.map((item) => (
               <div key={item.label} className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border/50">

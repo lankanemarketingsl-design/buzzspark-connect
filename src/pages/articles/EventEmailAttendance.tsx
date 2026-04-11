@@ -42,11 +42,11 @@ const EventEmailAttendance = () => {
           <p className="text-muted-foreground">Platforms like <strong>Findit.lk</strong> help attract users looking for events and training programs in Sri Lanka. 👉 Explore our <Link to="/event-marketing-sri-lanka" className="text-accent hover:underline font-semibold">event marketing Sri Lanka</Link> packages.</p>
         </section>
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Campaign Ideas</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Event Email Campaign Ideas</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">{["Event launches", "Early bird offers", "Reminder campaigns", "Post-event follow-ups"].map(item => (<div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 border border-border"><PartyPopper className="w-5 h-5 text-accent shrink-0" /><span className="text-sm font-medium text-foreground">{item}</span></div>))}</div>
         </section>
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits of Event Email Marketing</h2>
           <ul className="space-y-2">{["Higher attendance", "Better engagement", "Increased ROI", "Stronger event brand"].map(item => (<li key={item} className="flex items-start gap-2 text-muted-foreground"><CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-1" />{item}</li>))}</ul>
         </section>
         <section>

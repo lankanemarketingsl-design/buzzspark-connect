@@ -151,7 +151,7 @@ const SmsMarketing = () => {
 
       {/* 5. Gender-wise Database */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">Gender-wise Database</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">SMS Gender-wise Database</h2>
         <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
           <div className="text-center p-6 rounded-xl bg-secondary/10 border border-secondary/20 min-w-[160px]">
             <div className="text-3xl font-heading font-bold text-secondary">350,000+</div>
@@ -168,7 +168,7 @@ const SmsMarketing = () => {
 
       {/* 6. District Coverage - Sri Lanka Map Layout */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">District-wise Database</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">SMS District-wise Database</h2>
         <div className="max-w-5xl mx-auto">
           {/* Sri Lanka Map Shape Container */}
           <div className="relative bg-primary/5 border border-primary/20 rounded-3xl p-6 sm:p-10">
@@ -240,7 +240,7 @@ const SmsMarketing = () => {
       >
         <div className="flex items-center gap-3 mb-4">
           <Globe className="w-7 h-7 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Extended Reach with Integrated Advertising</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Extended Reach with SMS Integrated Advertising</h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
           Buzz Connect enhances SMS campaigns with additional exposure through <strong>Findit.lk</strong>, one of Sri Lanka's leading promotion platforms. Combined with other <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">advertising in Sri Lanka</Link> channels, this ensures your campaign reaches both direct mobile users and a wider online audience, increasing visibility and engagement.
@@ -299,7 +299,7 @@ const SmsMarketing = () => {
         </div>
 
         <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🎯 What You Can Achieve with Multi-Channel Campaigns</h3>
+          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🎯 What You Can Achieve with Multi-Channel SMS Campaigns</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {[
               "Brand awareness campaigns across Sri Lanka",

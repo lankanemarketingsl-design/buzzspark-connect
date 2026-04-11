@@ -296,7 +296,7 @@ const LeadGeneration = () => {
       >
         <div className="flex items-center gap-3 mb-4">
           <Award className="w-8 h-8 text-accent" />
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">Powered by Findit.lk</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">Lead Generation Powered by Findit.lk</h2>
         </div>
         <p className="text-muted-foreground leading-relaxed mb-6">
           Buzz Connect campaigns are powered by <strong className="text-foreground">Findit.lk</strong>, giving your business a competitive advantage no other agency offers.

@@ -91,7 +91,7 @@ const RealEstateEmailLeads = () => {
         <section className="bg-muted/30 rounded-2xl p-8 border border-border">
           <div className="flex items-center gap-3 mb-4">
             <Zap className="w-7 h-7 text-accent" />
-            <h2 className="font-heading text-2xl font-bold text-foreground">Multi-Channel Marketing Advantage</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground">Real Estate Multi-Channel Marketing Advantage</h2>
           </div>
           <p className="text-muted-foreground mb-4">
             Combining email with <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp</Link>, and listing platforms increases visibility and trust.
@@ -112,7 +112,7 @@ const RealEstateEmailLeads = () => {
         </section>
 
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Campaign Ideas</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Real Estate Email Campaign Ideas</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {["Property launches", "Price drop alerts", "Investment campaigns", "Site visit invitations"].map(item => (
               <div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 border border-border">
@@ -124,7 +124,7 @@ const RealEstateEmailLeads = () => {
         </section>
 
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Benefits of Real Estate Email Marketing</h2>
           <ul className="space-y-2">
             {["Higher quality inquiries", "Better conversion rates", "Lower cost per lead", "Long-term customer relationships"].map(item => (
               <li key={item} className="flex items-start gap-2 text-muted-foreground">

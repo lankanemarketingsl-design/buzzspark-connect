@@ -71,7 +71,7 @@ const MultiChannelVsFacebook = () => {
 
         {/* What is Multi-Channel Marketing */}
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">What is Multi-Channel Marketing?</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-4">What is Multi-Channel Marketing vs Facebook Ads?</h2>
           <p className="text-muted-foreground mb-6">
             Multi-channel marketing is the practice of reaching your audience through multiple platforms such as:
           </p>

@@ -193,7 +193,7 @@ const HotelMarketing = () => {
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-8">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Who This Is For</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">This Service Is Designed For</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Who Hotel Marketing Is Designed For</h2>
           <p className="text-muted-foreground mt-2">Used by hotels, villas, and travel businesses across Sri Lanka</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
@@ -362,7 +362,7 @@ const HotelMarketing = () => {
 
         {/* What You Can Achieve */}
         <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🎯 What You Can Achieve with Multi-Channel Campaigns</h3>
+          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🎯 What You Can Achieve with Multi-Channel Hotel Campaigns</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {[
               "Brand awareness campaigns across Sri Lanka",
@@ -405,7 +405,7 @@ const HotelMarketing = () => {
 
         {/* Comparison Table */}
         <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8 overflow-x-auto">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-5">🆚 Standard vs Multi-Channel Campaigns</h3>
+          <h3 className="font-heading text-lg font-bold text-foreground mb-5">🆚 Standard vs Multi-Channel Hotel Campaigns</h3>
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-border">
@@ -467,7 +467,7 @@ const HotelMarketing = () => {
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-8">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Process</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">How It Works</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">How Hotel Marketing Works</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {howItWorks.map((step, i) => (
@@ -583,7 +583,7 @@ const HotelMarketing = () => {
           <div className="w-14 h-14 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-4">
             <Clock className="w-7 h-7 text-destructive" />
           </div>
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-3">Limited Campaign Slots Available</h2>
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-3">Limited Hotel Campaign Slots Available</h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-2">Limited campaign slots available for hotels each month.</p>
           <p className="text-foreground font-semibold">Book your campaign now and secure your next wave of guests.</p>
         </div>

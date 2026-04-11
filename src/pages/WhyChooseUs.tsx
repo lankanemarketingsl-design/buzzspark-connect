@@ -336,7 +336,7 @@ const WhyChooseUs = () => {
             <div className="p-2 rounded-lg bg-accent/10">
               <TrendingUp className="w-6 h-6 text-accent" />
             </div>
-            <h2 className="font-heading text-2xl font-bold text-foreground">Results You Can Expect</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground">Results You Can Expect with BuzzConnect</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {results.map((item) => (
