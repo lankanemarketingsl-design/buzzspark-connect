@@ -68,6 +68,7 @@ import HowSeoWorksSriLanka from "./pages/articles/HowSeoWorksSriLanka.tsx";
 import BestSocialMediaMarketingCompanySriLanka from "./pages/articles/BestSocialMediaMarketingCompanySriLanka.tsx";
 import SocialMediaMarketingCostSriLanka from "./pages/articles/SocialMediaMarketingCostSriLanka.tsx";
 import HowSocialMediaMarketingWorksSriLanka from "./pages/articles/HowSocialMediaMarketingWorksSriLanka.tsx";
+import HowGraphicDesignHelpsBusinessSriLanka from "./pages/articles/HowGraphicDesignHelpsBusinessSriLanka.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -193,6 +194,7 @@ const App = () => (
               <Route path="/best-social-media-marketing-company-sri-lanka" element={<BestSocialMediaMarketingCompanySriLanka />} />
               <Route path="/social-media-marketing-cost-sri-lanka" element={<SocialMediaMarketingCostSriLanka />} />
               <Route path="/how-social-media-marketing-works-sri-lanka" element={<HowSocialMediaMarketingWorksSriLanka />} />
+              <Route path="/how-graphic-design-helps-business-sri-lanka" element={<HowGraphicDesignHelpsBusinessSriLanka />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
