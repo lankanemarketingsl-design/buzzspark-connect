@@ -8,29 +8,30 @@ import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const BestSocialMediaMarketingCompanySriLanka = () => {
   return (
-    <ServicePageLayout>
+    <ServicePageLayout badge="Resources" title="Best Social Media Marketing Company in Sri Lanka (2026 Guide)" subtitle="">
       <SEOHead
-        title="Best Social Media Marketing Company in Sri Lanka (2026 Guide)"
+        title="Best Social Media Marketing Company in Sri Lanka (2026 Guide) | Buzz Connect"
         description="Find the best social media marketing company in Sri Lanka. Expert Facebook, Instagram & TikTok marketing to grow your brand and generate leads."
-        keywords="best social media marketing company sri lanka, social media agency sri lanka, facebook marketing sri lanka, instagram marketing sri lanka"
-        canonical="https://buzzconnect.lk/best-social-media-marketing-company-sri-lanka"
-        jsonLd={{
+        canonical="/best-social-media-marketing-company-sri-lanka"
+        ogType="article"
+        keywords="best social media marketing company sri lanka, social media agency sri lanka, facebook marketing sri lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+          { name: "Best Social Media Marketing Company Sri Lanka", url: "/best-social-media-marketing-company-sri-lanka" },
+        ]}
+        jsonLd={[{
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "Best Social Media Marketing Company in Sri Lanka (2026 Guide)",
-          "description": "Find the best social media marketing company in Sri Lanka for Facebook, Instagram & TikTok marketing.",
-          "author": { "@type": "Organization", "name": "Buzz Connect" },
-          "publisher": { "@type": "Organization", "name": "Buzz Connect" },
-          "datePublished": "2026-04-12",
-          "dateModified": "2026-04-12"
-        }}
+          headline: "Best Social Media Marketing Company in Sri Lanka (2026 Guide)",
+          datePublished: "2026-04-12",
+          author: { "@type": "Organization", name: "Buzz Connect" },
+          publisher: { "@type": "Organization", name: "Buzz Connect" },
+        }]}
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Best Social Media Marketing Company in Sri Lanka (2026 Guide)
-          </h1>
 
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-foreground mb-4">Looking for the Best Social Media Marketing Company in Sri Lanka?</h2>
@@ -116,22 +117,12 @@ const BestSocialMediaMarketingCompanySriLanka = () => {
             <p className="text-muted-foreground leading-relaxed mb-4">
               Contact us today for a <strong>free social media marketing consultation</strong> and start reaching your customers where they spend their time.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Link to="/contact-us" className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground rounded-xl font-semibold hover:opacity-90 transition-opacity">
-                Get Free Consultation <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+            <Link to="/contact-us" className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground rounded-xl font-semibold hover:opacity-90 transition-opacity">
+              Get Free Consultation <ArrowRight className="w-4 h-4" />
+            </Link>
           </section>
 
-          <RelatedArticles
-            articles={[
-              { title: "Social Media Marketing Cost in Sri Lanka (2026)", path: "/social-media-marketing-cost-sri-lanka" },
-              { title: "How Social Media Marketing Works in Sri Lanka", path: "/how-social-media-marketing-works-sri-lanka" },
-              { title: "Social Media Marketing – Why Your Business Needs It", path: "/social-media-marketing-why-your-business-needs-it-sri-lanka" },
-              { title: "Multi-Channel Marketing for Maximum Reach", path: "/multi-channel-marketing-maximum-reach-sri-lanka" },
-            ]}
-          />
-
+          <RelatedArticles />
           <DigitalMarketingCTA />
         </motion.div>
       </article>

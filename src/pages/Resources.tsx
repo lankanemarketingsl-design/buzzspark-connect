@@ -47,6 +47,27 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Best Social Media Marketing Company in Sri Lanka (2026 Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "Find the best social media marketing company in Sri Lanka. Expert Facebook, Instagram & TikTok marketing to grow your brand and generate leads.",
+    path: "/best-social-media-marketing-company-sri-lanka",
+    image: articleSocialMedia,
+  },
+  {
+    title: "Social Media Marketing Cost in Sri Lanka (2026 Pricing Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "How much does social media marketing cost in Sri Lanka? Learn about pricing models, factors that affect cost, and how to get the best ROI.",
+    path: "/social-media-marketing-cost-sri-lanka",
+    image: articleSocialMedia,
+  },
+  {
+    title: "How Social Media Marketing Works in Sri Lanka (Complete Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "Learn how social media marketing works — audience targeting, content creation, paid advertising, and optimization for businesses in Sri Lanka.",
+    path: "/how-social-media-marketing-works-sri-lanka",
+    image: articleSocialMedia,
+  },
+  {
     title: "Google Ads Services in Sri Lanka (2026 Guide + Pricing)",
     date: "Apr 12, 2026",
     excerpt: "Run high-converting Google Ads campaigns in Sri Lanka. Learn about search, display, YouTube & shopping ads with expert PPC management.",

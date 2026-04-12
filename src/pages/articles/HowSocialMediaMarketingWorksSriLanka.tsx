@@ -1,36 +1,37 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { CheckCircle, Target, Users, BarChart3, ArrowRight, Smartphone, Globe, TrendingUp, Zap, Mail, MessageSquare } from "lucide-react";
+import { CheckCircle, Target, BarChart3, ArrowRight, Globe, TrendingUp, Zap, Mail, MessageSquare } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const HowSocialMediaMarketingWorksSriLanka = () => {
   return (
-    <ServicePageLayout>
+    <ServicePageLayout badge="Resources" title="How Social Media Marketing Works in Sri Lanka (Complete Guide)" subtitle="">
       <SEOHead
-        title="How Social Media Marketing Works in Sri Lanka (Complete Guide)"
+        title="How Social Media Marketing Works in Sri Lanka (Complete Guide) | Buzz Connect"
         description="Learn how social media marketing works in Sri Lanka — audience targeting, content creation, paid advertising, and optimization for Facebook, Instagram & TikTok."
-        keywords="how social media marketing works sri lanka, social media strategy sri lanka, facebook marketing guide, instagram marketing guide sri lanka"
-        canonical="https://buzzconnect.lk/how-social-media-marketing-works-sri-lanka"
-        jsonLd={{
+        canonical="/how-social-media-marketing-works-sri-lanka"
+        ogType="article"
+        keywords="how social media marketing works sri lanka, social media strategy sri lanka, facebook marketing guide sri lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+          { name: "How Social Media Marketing Works", url: "/how-social-media-marketing-works-sri-lanka" },
+        ]}
+        jsonLd={[{
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "How Social Media Marketing Works in Sri Lanka (Complete Guide)",
-          "description": "A complete guide to understanding how social media marketing works for businesses in Sri Lanka.",
-          "author": { "@type": "Organization", "name": "Buzz Connect" },
-          "publisher": { "@type": "Organization", "name": "Buzz Connect" },
-          "datePublished": "2026-04-12",
-          "dateModified": "2026-04-12"
-        }}
+          headline: "How Social Media Marketing Works in Sri Lanka (Complete Guide)",
+          datePublished: "2026-04-12",
+          author: { "@type": "Organization", name: "Buzz Connect" },
+          publisher: { "@type": "Organization", name: "Buzz Connect" },
+        }]}
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            How Social Media Marketing Works in Sri Lanka (Complete Guide)
-          </h1>
 
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-foreground mb-4">What is Social Media Marketing?</h2>
@@ -137,14 +138,7 @@ const HowSocialMediaMarketingWorksSriLanka = () => {
             </Link>
           </section>
 
-          <RelatedArticles
-            articles={[
-              { title: "Best Social Media Marketing Company in Sri Lanka", path: "/best-social-media-marketing-company-sri-lanka" },
-              { title: "Social Media Marketing Cost in Sri Lanka", path: "/social-media-marketing-cost-sri-lanka" },
-              { title: "Lead Generation – Get More Customers", path: "/lead-generation-get-more-customers-sri-lanka" },
-            ]}
-          />
-
+          <RelatedArticles />
           <DigitalMarketingCTA />
         </motion.div>
       </article>

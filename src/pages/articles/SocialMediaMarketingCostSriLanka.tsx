@@ -8,29 +8,30 @@ import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const SocialMediaMarketingCostSriLanka = () => {
   return (
-    <ServicePageLayout>
+    <ServicePageLayout badge="Resources" title="Social Media Marketing Cost in Sri Lanka (2026 Pricing Guide)" subtitle="">
       <SEOHead
-        title="Social Media Marketing Cost in Sri Lanka (2026 Pricing Guide)"
+        title="Social Media Marketing Cost in Sri Lanka (2026 Pricing Guide) | Buzz Connect"
         description="How much does social media marketing cost in Sri Lanka? Learn about pricing models, factors that affect cost, and how to get the best ROI."
-        keywords="social media marketing cost sri lanka, social media pricing sri lanka, facebook ads cost sri lanka, instagram marketing cost"
-        canonical="https://buzzconnect.lk/social-media-marketing-cost-sri-lanka"
-        jsonLd={{
+        canonical="/social-media-marketing-cost-sri-lanka"
+        ogType="article"
+        keywords="social media marketing cost sri lanka, social media pricing sri lanka, facebook ads cost sri lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+          { name: "Social Media Marketing Cost Sri Lanka", url: "/social-media-marketing-cost-sri-lanka" },
+        ]}
+        jsonLd={[{
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "Social Media Marketing Cost in Sri Lanka (2026 Pricing Guide)",
-          "description": "Complete pricing guide for social media marketing services in Sri Lanka.",
-          "author": { "@type": "Organization", "name": "Buzz Connect" },
-          "publisher": { "@type": "Organization", "name": "Buzz Connect" },
-          "datePublished": "2026-04-12",
-          "dateModified": "2026-04-12"
-        }}
+          headline: "Social Media Marketing Cost in Sri Lanka (2026 Pricing Guide)",
+          datePublished: "2026-04-12",
+          author: { "@type": "Organization", name: "Buzz Connect" },
+          publisher: { "@type": "Organization", name: "Buzz Connect" },
+        }]}
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Social Media Marketing Cost in Sri Lanka (2026 Pricing Guide)
-          </h1>
 
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-foreground mb-4">How Much Does Social Media Marketing Cost in Sri Lanka?</h2>
@@ -112,14 +113,7 @@ const SocialMediaMarketingCostSriLanka = () => {
             </Link>
           </section>
 
-          <RelatedArticles
-            articles={[
-              { title: "Best Social Media Marketing Company in Sri Lanka", path: "/best-social-media-marketing-company-sri-lanka" },
-              { title: "How Social Media Marketing Works in Sri Lanka", path: "/how-social-media-marketing-works-sri-lanka" },
-              { title: "Social Media Marketing – Why Your Business Needs It", path: "/social-media-marketing-why-your-business-needs-it-sri-lanka" },
-            ]}
-          />
-
+          <RelatedArticles />
           <DigitalMarketingCTA />
         </motion.div>
       </article>

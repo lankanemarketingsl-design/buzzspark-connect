@@ -190,6 +190,9 @@ const App = () => (
               <Route path="/best-seo-company-sri-lanka" element={<BestSeoCompanySriLanka />} />
               <Route path="/seo-cost-sri-lanka" element={<SeoCostSriLanka />} />
               <Route path="/how-seo-works-sri-lanka" element={<HowSeoWorksSriLanka />} />
+              <Route path="/best-social-media-marketing-company-sri-lanka" element={<BestSocialMediaMarketingCompanySriLanka />} />
+              <Route path="/social-media-marketing-cost-sri-lanka" element={<SocialMediaMarketingCostSriLanka />} />
+              <Route path="/how-social-media-marketing-works-sri-lanka" element={<HowSocialMediaMarketingWorksSriLanka />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
