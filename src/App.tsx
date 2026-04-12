@@ -71,6 +71,7 @@ import HowSocialMediaMarketingWorksSriLanka from "./pages/articles/HowSocialMedi
 import HowGraphicDesignHelpsBusinessSriLanka from "./pages/articles/HowGraphicDesignHelpsBusinessSriLanka.tsx";
 import HowLeadGenerationWorksSriLanka from "./pages/articles/HowLeadGenerationWorksSriLanka.tsx";
 import EmailSubjectLinesGuide from "./pages/articles/EmailSubjectLinesGuide.tsx";
+import HowEmailMarketingWorks from "./pages/articles/HowEmailMarketingWorks.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
