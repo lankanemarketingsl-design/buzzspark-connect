@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "How Lead Generation Works in Sri Lanka (Complete 2026 Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "Learn how lead generation works step-by-step — from attracting audiences to converting them into paying customers in Sri Lanka.",
+    path: "/how-lead-generation-works-sri-lanka",
+    image: articleLeadGen,
+  },
+  {
     title: "How Graphic Design Helps Businesses Grow in Sri Lanka (2026 Guide)",
     date: "Apr 12, 2026",
     excerpt: "Discover how professional graphic design helps businesses in Sri Lanka build brand identity, increase sales, and improve marketing performance.",
