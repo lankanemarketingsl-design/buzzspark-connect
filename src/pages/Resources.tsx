@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "How Email Marketing Works in Sri Lanka (Complete Guide 2026)",
+    date: "Apr 12, 2026",
+    excerpt: "Learn how email marketing works step-by-step — from building lists to tracking results. A complete guide for businesses in Sri Lanka.",
+    path: "/how-email-marketing-works-sri-lanka",
+    image: articleEmailGuide,
+  },
+  {
     title: "Email Subject Lines That Increase Open Rates (Sri Lanka Guide 2026)",
     date: "Apr 12, 2026",
     excerpt: "Learn the best email subject line strategies to boost open rates, improve engagement, and drive conversions for your business in Sri Lanka.",
