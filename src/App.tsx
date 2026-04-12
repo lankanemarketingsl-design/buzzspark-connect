@@ -61,6 +61,7 @@ import AutomotiveEmailSales from "./pages/articles/AutomotiveEmailSales.tsx";
 import EventEmailAttendance from "./pages/articles/EventEmailAttendance.tsx";
 import LeadGenAgency from "./pages/articles/LeadGenAgency.tsx";
 import MultiChannelCampaignLandingPage from "./pages/articles/MultiChannelCampaignLandingPage.tsx";
+import BestSmsMarketingCompanySriLanka from "./pages/articles/BestSmsMarketingCompanySriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
