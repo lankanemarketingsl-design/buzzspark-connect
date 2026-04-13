@@ -222,6 +222,13 @@ const articles = [
     image: articleSeoMatters,
   },
   {
+    title: "Why SEO is the Smartest Long-Term Strategy for Businesses in Sri Lanka",
+    date: "Apr 13, 2026",
+    excerpt: "Discover why investing in SEO delivers sustainable growth, higher ROI, and long-term visibility for Sri Lankan businesses.",
+    path: "/seo-investment-long-term-strategy-sri-lanka",
+    image: articleSeoMatters,
+  },
+  {
     title: "Multi-Channel Email Campaigns That Deliver Real Visibility",
     date: "Apr 7, 2026",
     excerpt: "Go beyond email with Buzz Connect's multi-channel campaigns combining Email, Findit.lk & Facebook Story promotion for maximum visibility and lead generation.",
