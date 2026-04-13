@@ -147,7 +147,7 @@ const SmsHeroContent = () => {
         className="mb-16 max-w-4xl mx-auto text-center py-8 px-6 rounded-2xl bg-accent/5 border border-accent/20"
       >
         <p className="text-foreground font-bold text-lg mb-2">Ready to reach thousands of customers instantly?</p>
-        <p className="text-muted-foreground text-sm mb-5"><p className="text-muted-foreground text-sm mb-5">SMS campaigns starting from just LKR 30,000</p></p>
+        <p className="text-muted-foreground text-sm mb-5">SMS campaigns starting from just LKR 30,000</p>
         <Link to="/contact-us" className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity shadow-lg">
           Get a Free Quote <ArrowRight className="w-4 h-4" />
         </Link>
