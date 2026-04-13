@@ -90,8 +90,8 @@ const SmsMarketing = () => {
       subtitle="Targeted SMS + Multi-Channel Promotion to maximize visibility and engagement"
     >
       <SEOHead
-        title="SMS Marketing Sri Lanka | Bulk SMS Campaigns with Multi-Channel Strategy"
-        description="Boost your business with SMS marketing in Sri Lanka. We combine bulk SMS campaigns with multi-channel marketing strategies to increase conversions and ROI. Start today."
+        title="SMS Marketing Sri Lanka | Bulk SMS Sri Lanka & Bulk SMS Messaging"
+        description="SMS marketing Sri Lanka with bulk SMS messaging and bulk SMS Sri Lanka campaigns. Reach customers instantly with fast, targeted SMS marketing."
         canonical="/sms-marketing"
         keywords="sms marketing sri lanka, bulk sms sri lanka, sms advertising colombo, sms campaign sri lanka, targeted sms marketing, bulk sms service sri lanka, multi-channel sms marketing, sms marketing services sri lanka"
         breadcrumbs={[
