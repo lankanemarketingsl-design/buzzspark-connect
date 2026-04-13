@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { CheckCircle, Eye, TrendingUp, DollarSign, Search, Settings, FileText, MapPin, Target, Zap, BarChart3, Rocket, GraduationCap, ShoppingCart, Building2, Home, Briefcase, Globe, HelpCircle, Award, Star, Users, ArrowUpRight, Shield } from "lucide-react";
+import { CheckCircle, TrendingUp, DollarSign, Search, Settings, FileText, Target, Zap, BarChart3, Rocket, GraduationCap, Building2, Home, HelpCircle, Award, Star, Users, ArrowUpRight, Shield, Clock, Link2 } from "lucide-react";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
@@ -26,96 +26,17 @@ const packages = [
     price: "LKR 100,000/-",
     period: "monthly",
     features: ["Keyword Research", "Website audit", "5 Keywords", "3 URL Optimizations", "Title & Meta Information optimization", "CTA based Development", "Monthly Monitoring", "Reputed & Relevant Backlinks", "Recommendations", "Priority Support"],
+    popular: true,
   },
-];
-
-const coreBenefits = [
-  { icon: Eye, title: "Increase Online Visibility", desc: "Dominate search results and drive potential customers to your website. Our proven SEO strategies help Sri Lankan businesses outrank competitors on Google." },
-  { icon: TrendingUp, title: "Drive More Customers", desc: "Our unique Search Engine Optimisation strategy increases organic visitors and drives high-intent customers who are ready to buy." },
-  { icon: DollarSign, title: "Increase Business Revenue", desc: "More visibility + more visitors = more revenue. Our clients see measurable ROI from SEO within 3–6 months." },
-];
-
-const services = [
-  "Keyword research and competitor analysis",
-  "On-page SEO optimization",
-  "Technical SEO improvements (speed, mobile, crawlability)",
-  "Content creation and optimization",
-  "Link building and authority growth",
-  "Local SEO for Sri Lankan businesses",
-  "Google Business Profile optimization",
-  "Performance tracking and monthly reporting",
-];
-
-const seoTypes = [
-  { icon: Search, title: "On-Page SEO", desc: "We optimize your website content, meta tags, headings, and internal links to rank for high-intent keywords like \"SEO Sri Lanka\", \"best SEO company Sri Lanka\", and \"affordable SEO Sri Lanka\"." },
-  { icon: Settings, title: "Technical SEO", desc: "Our technical SEO ensures your website is fast, mobile-friendly, secure (HTTPS), and easy for Google to crawl and index — critical ranking factors in 2026." },
-  { icon: FileText, title: "Content-Driven SEO", desc: "We create optimized, in-depth content that answers real user questions, builds topical authority, and targets long-tail keywords for higher conversion rates." },
-  { icon: MapPin, title: "Local SEO Sri Lanka", desc: "We help businesses rank for location-based searches such as \"SEO company in Colombo\", \"SEO services near me\", and \"best SEO agency Sri Lanka\"." },
-];
-
-const caseStudies = [
-  {
-    industry: "Hotel & Tourism",
-    result: "Page 5 → Page 1 in 60 days",
-    detail: "Ranked a Colombo hotel website from page 5 to Google page 1 for 'hotel booking Sri Lanka' within 60 days using on-page + local SEO.",
-    metric: "350% traffic increase",
-  },
-  {
-    industry: "Education Institute",
-    result: "300+ leads per month",
-    detail: "Generated over 300 qualified student leads monthly for a leading education institute through SEO and content marketing.",
-    metric: "300+ monthly leads",
-  },
-  {
-    industry: "Real Estate",
-    result: "#1 ranking for key terms",
-    detail: "Achieved #1 Google ranking for 'real estate Sri Lanka' and related property keywords, driving consistent organic leads.",
-    metric: "5x ROI in 6 months",
-  },
-];
-
-const results = [
-  "Rank higher on Google for competitive keywords",
-  "Increase organic traffic by 200–500%",
-  "Generate more leads and sales",
-  "Improve brand visibility and credibility",
-  "Achieve long-term, sustainable growth",
-];
-
-const whyUs = [
-  { icon: Award, text: "10+ years of proven SEO experience in Sri Lanka" },
-  { icon: BarChart3, text: "Data-driven strategies with measurable results" },
-  { icon: Shield, text: "White-hat SEO — no shortcuts, no penalties" },
-  { icon: Users, text: "Dedicated SEO specialists for your account" },
-  { icon: DollarSign, text: "Cost-effective packages from LKR 30,000" },
-  { icon: Star, text: "Transparent reporting — you see everything" },
-];
-
-const processSteps = [
-  { icon: Search, title: "Website Audit", desc: "Comprehensive website audit and competitor analysis" },
-  { icon: Target, title: "Keyword Research", desc: "In-depth keyword research for your industry" },
-  { icon: Settings, title: "On-Page Optimization", desc: "Optimize content, meta tags, and site structure" },
-  { icon: FileText, title: "Content Creation", desc: "SEO-optimized content that ranks and converts" },
-  { icon: Globe, title: "Link Building", desc: "Build high-quality backlinks for authority" },
-  { icon: BarChart3, title: "Track & Improve", desc: "Monthly performance tracking and optimization" },
-];
-
-const industries = [
-  { icon: Building2, label: "Hotels & travel companies" },
-  { icon: GraduationCap, label: "Education institutes" },
-  { icon: Home, label: "Real estate companies" },
-  { icon: ShoppingCart, label: "E-commerce businesses" },
-  { icon: Rocket, label: "SMEs & startups" },
-  { icon: Briefcase, label: "Corporate organizations" },
 ];
 
 const faqs = [
-  { q: "What is SEO in Sri Lanka?", a: "SEO (Search Engine Optimization) is the process of optimizing a website to rank higher on Google and other search engines. In Sri Lanka, SEO helps businesses increase online visibility, attract more customers, and grow revenue through organic search traffic." },
-  { q: "How much does SEO cost in Sri Lanka?", a: "SEO services in Sri Lanka typically range from LKR 30,000 to LKR 100,000+ per month depending on the scope and competitiveness of your industry. BuzzConnect offers affordable SEO packages starting from LKR 30,000 with proven results." },
-  { q: "How long does SEO take to show results?", a: "SEO typically takes 3 to 6 months to show significant results. However, some improvements like better indexing and local rankings can happen within the first 4–8 weeks. Long-term SEO delivers compounding returns over time." },
-  { q: "Why is SEO important for Sri Lankan businesses?", a: "With growing digital competition in Sri Lanka, SEO is essential for businesses to be found online. Over 80% of consumers search Google before making a purchase. Without SEO, your competitors will capture those customers instead." },
+  { q: "What is the best SEO company in Sri Lanka?", a: "The best SEO company is one that delivers real results — rankings, traffic, and customer inquiries. Buzz Connect focuses on all three with data-driven strategies and a proven track record of 1,500+ businesses served." },
+  { q: "How long does SEO take?", a: "SEO typically shows results within 2–4 months, depending on competition and strategy. Month 1 focuses on optimization and foundation, months 2–3 show ranking improvements, and months 3–6 deliver strong traffic and lead growth." },
+  { q: "How much does SEO cost in Sri Lanka?", a: "SEO packages in Sri Lanka vary, but our pricing starts from LKR 30,000. We offer Starter, Growth (LKR 60,000/month), and Premium (LKR 100,000/month) packages to suit different business needs." },
+  { q: "Why is SEO important?", a: "SEO helps your business appear on Google when customers search, bringing high-quality traffic and long-term growth. Over 80% of consumers search Google before making a purchase — without SEO, your competitors capture those customers." },
   { q: "What is the difference between SEO and Google Ads?", a: "SEO provides organic (free) traffic through ranking improvements, while Google Ads provides paid traffic. SEO is more cost-effective long-term and builds lasting authority, while Google Ads delivers instant but temporary visibility." },
-  { q: "Why choose BuzzConnect for SEO in Sri Lanka?", a: "BuzzConnect is a leading SEO company in Sri Lanka with 10+ years of experience, proven results across multiple industries, and affordable packages. We use white-hat strategies that deliver sustainable rankings and real business growth." },
+  { q: "Why choose Buzz Connect for SEO in Sri Lanka?", a: "Buzz Connect is a leading SEO company in Sri Lanka with proven results across multiple industries. We use white-hat strategies that deliver sustainable rankings and real business growth, with transparent reporting and dedicated SEO specialists." },
 ];
 
 const SeoServices = () => {
@@ -135,21 +56,21 @@ const SeoServices = () => {
       name: "SEO Services Sri Lanka",
       provider: { "@type": "Organization", name: "Buzz Connect" },
       areaServed: { "@type": "Country", name: "Sri Lanka" },
-      description: "Professional SEO services in Sri Lanka. #1 SEO company for fast Google rankings, real leads, and proven results.",
+      description: "Best SEO company in Sri Lanka for real business growth. Rank higher on Google and turn search traffic into real customer inquiries.",
     },
   ], []);
 
   return (
     <ServicePageLayout
-      badge="#1 SEO Company Sri Lanka"
-      title="SEO Services in Sri Lanka – #1 SEO Company for Fast Google Rankings"
-      subtitle="BuzzConnect delivers results-driven SEO services in Sri Lanka — helping businesses rank on Google page 1, increase organic traffic by 200–500%, and generate high-quality leads. 10+ years of proven results."
+      badge="Best SEO Company Sri Lanka"
+      title="Best SEO Company in Sri Lanka for Real Business Growth"
+      subtitle="Rank higher on Google and turn search traffic into real customer inquiries with a proven, data-driven SEO strategy."
     >
       <SEOHead
-        title="SEO Sri Lanka | SEO Packages Sri Lanka | SEO Services in Sri Lanka | #1 SEO Company"
-        description="Looking for the best SEO Services in Sri Lanka? BuzzConnect delivers fast rankings, real leads, and proven results. Affordable SEO packages from LKR 30,000. Contact us today."
+        title="Best SEO Company Sri Lanka | SEO Services & SEO Consultant | Buzz Connect"
+        description="Best SEO company in Sri Lanka. Rank higher on Google with proven SEO strategies. 1,500+ businesses served, 100,000+ inquiries generated. SEO packages from LKR 30,000."
         canonical="/seo-sri-lanka"
-        keywords="seo sri lanka, seo packages sri lanka, seo services in sri lanka, best seo company sri lanka, seo services sri lanka, seo services colombo, affordable seo sri lanka, seo agency sri lanka, google ranking sri lanka, local seo sri lanka, seo for hotels sri lanka, search engine optimization sri lanka"
+        keywords="best seo company sri lanka, seo company sri lanka, seo consultant sri lanka, seo specialist sri lanka, seo sri lanka, seo services sri lanka, seo packages sri lanka, search engine optimization sri lanka, google ranking sri lanka, local seo sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "SEO Services", url: "/seo-sri-lanka" },
@@ -167,155 +88,85 @@ const SeoServices = () => {
         <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
             <Zap className="w-4 h-4 text-accent" />
-            <span className="text-accent font-bold text-sm">SEO Packages from LKR 30,000/-</span>
+            <span className="text-accent font-bold text-sm">1,500+ Businesses Served</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
-            <Star className="w-4 h-4 text-secondary-foreground" />
-            <span className="text-secondary-foreground font-bold text-sm">10+ Years Experience</span>
+            <Target className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">100,000+ Inquiries Generated</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
-            <Users className="w-4 h-4 text-secondary-foreground" />
-            <span className="text-secondary-foreground font-bold text-sm">200+ Clients Served</span>
+            <BarChart3 className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">20,000+ Campaigns Executed</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-muted/60 border border-border">
+            <Rocket className="w-4 h-4 text-muted-foreground" />
+            <span className="text-muted-foreground font-bold text-sm">Strategy & Optimization from Day One</span>
           </div>
         </div>
       </motion.div>
 
-      {/* Power Intro with USP */}
+      {/* SEO Services Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto"
       >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Looking for a Trusted SEO Company in Sri Lanka?</h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          As the <strong className="text-foreground">#1 SEO company in Sri Lanka</strong>, BuzzConnect offers the best <strong className="text-foreground">SEO services in Sri Lanka</strong> — specializing in getting your website to Google page 1, fast. Our proven SEO strategies have helped hotels, education institutes, real estate companies, and SMEs across Sri Lanka achieve top rankings and generate real business leads.
+          At Buzz Connect, we go beyond rankings. Our focus is simple: <strong className="text-foreground">get your business found by the right people at the right time</strong>.
         </p>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Whether you need <strong className="text-foreground">affordable SEO in Sri Lanka</strong>, <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation</Link>, or a complete digital marketing strategy — we deliver measurable results that grow your revenue.
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          We help businesses across Sri Lanka:
         </p>
-        <div className="flex flex-wrap gap-3 mt-6">
-          <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">10+ Years Experience</span>
-          <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">500+ Keywords Ranked</span>
-          <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">200+ Clients Served</span>
-          <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">Proven Results</span>
-        </div>
-      </motion.div>
-
-      {/* Why Choose BuzzConnect */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Why Choose BuzzConnect for SEO in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-6 leading-relaxed">
-          Choosing the right <strong className="text-foreground">SEO company in Sri Lanka</strong> can make or break your online success. Here's why 200+ businesses trust BuzzConnect:
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {whyUs.map((item) => (
-            <div key={item.text} className="flex items-center gap-3 p-4 rounded-xl bg-card shadow-card border border-border">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <item.icon className="w-5 h-5 text-primary" />
-              </div>
-              <span className="text-foreground text-sm font-medium">{item.text}</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Core Benefits */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-        {coreBenefits.map((b, i) => (
-          <motion.div
-            key={b.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
-            className="text-center p-8 rounded-2xl bg-card shadow-card border border-border"
-          >
-            <div className="w-14 h-14 rounded-full gradient-accent flex items-center justify-center mx-auto mb-4">
-              <b.icon className="w-7 h-7 text-primary" />
-            </div>
-            <h3 className="font-heading font-semibold text-foreground mb-2">{b.title}</h3>
-            <p className="text-sm text-muted-foreground">{b.desc}</p>
-          </motion.div>
-        ))}
-      </div>
-
-      {/* SEO Services We Offer */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-2">SEO Services We Offer in Sri Lanka</h2>
-        <p className="text-muted-foreground mb-6">Comprehensive <strong className="text-foreground">SEO services in Sri Lanka</strong> tailored to your business goals:</p>
-        <ul className="space-y-3">
-          {services.map((s) => (
-            <li key={s} className="flex items-center gap-3 text-foreground">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {s}
+        <ul className="space-y-3 mb-6">
+          {[
+            "Rank for high-intent keywords",
+            "Increase organic traffic",
+            "Generate consistent leads",
+            "Build long-term online visibility",
+          ].map((item) => (
+            <li key={item} className="flex items-center gap-3 text-foreground">
+              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {item}
             </li>
           ))}
         </ul>
+        <p className="text-muted-foreground leading-relaxed">
+          Whether you need an <strong className="text-accent font-bold">SEO consultant in Sri Lanka</strong> or a full-service solution, we deliver measurable results. Combine SEO with our <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation</Link> and <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link> services for maximum impact.
+        </p>
       </motion.div>
 
-      {/* SEO Types */}
+      {/* Why We Are the Best */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16"
+        className="mb-16 max-w-4xl mx-auto"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {seoTypes.map((t) => (
-            <div key={t.title} className="p-6 rounded-2xl bg-card shadow-card border border-border">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <t.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-heading font-bold text-foreground">{t.title}</h3>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-3">Why We Are the Best SEO Company in Sri Lanka</h2>
+        <p className="text-muted-foreground mb-8 leading-relaxed">Most agencies focus only on rankings. <strong className="text-foreground">We focus on business results.</strong></p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {[
+            { icon: BarChart3, title: "Data-Driven SEO Strategies", desc: "Every decision is based on real data, not guesswork" },
+            { icon: Target, title: "Conversion-Focused Approach", desc: "We optimize not just for traffic — but for inquiries and sales" },
+            { icon: Building2, title: "Local Market Expertise", desc: "Deep understanding of Sri Lankan search behavior" },
+            { icon: Award, title: "Proven Track Record", desc: "1,500+ clients and thousands of successful campaigns" },
+          ].map((item) => (
+            <div key={item.title} className="flex items-start gap-4 p-5 rounded-xl bg-card shadow-card border border-border">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <item.icon className="w-5 h-5 text-primary" />
               </div>
-              <p className="text-sm text-muted-foreground">{t.desc}</p>
+              <div>
+                <h3 className="font-heading font-bold text-foreground mb-1">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>
+        <p className="text-center text-accent font-semibold mt-6">We don't just improve rankings — we grow your business</p>
       </motion.div>
 
-      {/* Case Studies — GAME CHANGER */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">Proven SEO Results in Sri Lanka</h2>
-        <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">Real results from real Sri Lankan businesses. Here's what our SEO strategies have achieved:</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {caseStudies.map((cs, i) => (
-            <motion.div
-              key={cs.industry}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="p-6 rounded-2xl bg-card shadow-card border-2 border-accent/20 relative overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 w-20 h-20 bg-accent/5 rounded-bl-full" />
-              <span className="text-xs font-bold text-accent uppercase tracking-wider">{cs.industry}</span>
-              <div className="font-heading text-xl font-bold text-foreground mt-2 mb-1">{cs.result}</div>
-              <p className="text-sm text-muted-foreground mb-4">{cs.detail}</p>
-              <div className="flex items-center gap-2 text-accent font-semibold text-sm">
-                <ArrowUpRight className="w-4 h-4" /> {cs.metric}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* SEO Process */}
+      {/* Our SEO Process */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -324,17 +175,50 @@ const SeoServices = () => {
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Our SEO Process — Step by Step</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {processSteps.map((step, i) => (
+          {[
+            { icon: Search, step: 1, title: "Keyword Research", desc: "We identify high-value keywords like 'best seo company sri lanka', 'seo services sri lanka', 'seo specialist sri lanka' — focused on buyer intent and conversions." },
+            { icon: Settings, step: 2, title: "Website Audit", desc: "We analyze technical SEO issues, page speed, structure & usability to identify quick wins and long-term improvements." },
+            { icon: FileText, step: 3, title: "On-Page Optimization", desc: "We optimize titles & meta descriptions, content structure, URLs and internal linking for maximum search visibility." },
+            { icon: TrendingUp, step: 4, title: "Strategy & Growth Planning", desc: "We create a roadmap to improve rankings, increase traffic, and maximize conversions over time." },
+            { icon: Link2, step: 5, title: "Backlink Development", desc: "We build reputed and relevant backlinks to increase your domain authority and search rankings." },
+            { icon: BarChart3, step: 6, title: "Monthly Monitoring & Optimization", desc: "We track keyword rankings, traffic growth, and performance improvements. Continuous improvement = better results." },
+          ].map((step) => (
             <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <step.icon className="w-7 h-7 text-primary" />
               </div>
-              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
+              <span className="text-xs font-bold text-accent mb-1 block">Step {step.step}</span>
               <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
               <p className="text-sm text-muted-foreground">{step.desc}</p>
             </div>
           ))}
         </div>
+      </motion.div>
+
+      {/* What Results Can You Expect */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">What Results Can You Expect?</h2>
+        <p className="text-muted-foreground leading-relaxed mb-6">SEO is a long-term growth strategy. Here's the typical timeline:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          {[
+            { period: "Month 1", label: "Optimization & Foundation", color: "bg-primary/10 border-primary/30" },
+            { period: "Month 2–3", label: "Ranking Improvements", color: "bg-accent/10 border-accent/30" },
+            { period: "Month 3–6", label: "Strong Traffic & Lead Growth", color: "bg-accent/20 border-accent/40" },
+          ].map((t) => (
+            <div key={t.period} className={`p-5 rounded-xl border ${t.color} text-center`}>
+              <div className="font-heading font-bold text-foreground mb-1">{t.period}</div>
+              <p className="text-sm text-muted-foreground">{t.label}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-accent font-semibold flex items-center gap-2">
+          <Clock className="w-5 h-5" /> We start improving your website from day one
+        </p>
       </motion.div>
 
       {/* Packages */}
@@ -344,7 +228,7 @@ const SeoServices = () => {
         viewport={{ once: true }}
         className="mb-16"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">SEO Pricing in Sri Lanka</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">SEO Packages in Sri Lanka</h2>
         <p className="text-muted-foreground mb-8 text-center">Affordable <strong className="text-foreground">SEO packages</strong> designed for Sri Lankan businesses of all sizes</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {packages.map((pkg, i) => (
@@ -354,11 +238,11 @@ const SeoServices = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`p-8 rounded-2xl bg-card shadow-card border-2 ${i === 2 ? 'border-accent' : 'border-border'} relative`}
+              className={`p-8 rounded-2xl bg-card shadow-card border-2 ${pkg.popular ? 'border-accent' : 'border-border'} relative`}
             >
-              {i === 2 && (
+              {pkg.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full gradient-accent text-xs font-bold text-primary">
-                  MOST POPULAR
+                  🔥 MOST POPULAR
                 </div>
               )}
               <div className="text-sm font-semibold text-accent uppercase">{pkg.name}</div>
@@ -377,34 +261,22 @@ const SeoServices = () => {
         </div>
       </motion.div>
 
-      {/* Benefits of SEO */}
+      {/* Who Needs SEO */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Benefits of SEO for Sri Lankan Businesses</h2>
-        <ul className="space-y-3">
-          {results.map((r) => (
-            <li key={r} className="flex items-center gap-3 text-foreground">
-              <TrendingUp className="w-5 h-5 text-accent flex-shrink-0" /> {r}
-            </li>
-          ))}
-        </ul>
-      </motion.div>
-
-      {/* Industries */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Industries We Serve with SEO in Sri Lanka</h2>
-        <p className="text-muted-foreground mb-6">Our <strong className="text-foreground">SEO services</strong> are ideal for businesses across Sri Lanka:</p>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Needs SEO Services?</h2>
+        <p className="text-muted-foreground mb-6">Our <strong className="text-foreground">SEO services in Sri Lanka</strong> are ideal for:</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {industries.map((ind) => (
+          {[
+            { icon: Building2, label: "Hotels looking for direct bookings" },
+            { icon: GraduationCap, label: "Educational institutes generating student leads" },
+            { icon: Home, label: "Local businesses targeting Sri Lankan customers" },
+            { icon: Rocket, label: "Companies aiming to dominate Google search results" },
+          ].map((ind) => (
             <div key={ind.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
               <ind.icon className="w-5 h-5 text-primary flex-shrink-0" />
               <span className="text-foreground text-sm font-medium">{ind.label}</span>
@@ -413,7 +285,52 @@ const SeoServices = () => {
         </div>
       </motion.div>
 
-      {/* Internal Linking Section */}
+      {/* Unique Advantage */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Our Unique Advantage</h2>
+        <p className="text-muted-foreground mb-6 leading-relaxed">Unlike other <strong className="text-foreground">SEO companies in Sri Lanka</strong>, we combine:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="p-6 rounded-2xl bg-accent/5 border border-accent/20">
+            <div className="flex items-center gap-2 mb-3">
+              <Zap className="w-5 h-5 text-accent" />
+              <h3 className="font-heading font-bold text-foreground">Immediate Impact</h3>
+            </div>
+            <ul className="space-y-2">
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" /> Direct marketing campaigns
+              </li>
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" /> High-intent traffic sources
+              </li>
+            </ul>
+          </div>
+          <div className="p-6 rounded-2xl bg-primary/5 border border-primary/20">
+            <div className="flex items-center gap-2 mb-3">
+              <TrendingUp className="w-5 h-5 text-primary" />
+              <h3 className="font-heading font-bold text-foreground">Long-Term Growth</h3>
+            </div>
+            <ul className="space-y-2">
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /> SEO rankings
+              </li>
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /> Organic traffic
+              </li>
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /> Sustainable lead generation
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p className="text-center text-accent font-semibold mt-6">You get results now AND growth for the future</p>
+      </motion.div>
+
+      {/* Multi-Channel Links */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -422,7 +339,7 @@ const SeoServices = () => {
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Multi-Channel Marketing with SEO</h2>
         <p className="text-muted-foreground mb-6 leading-relaxed">
-          SEO works best when combined with other digital marketing channels. BuzzConnect offers a complete suite of marketing services to maximize your online presence in Sri Lanka:
+          SEO works best when combined with other digital marketing channels. Buzz Connect offers a complete suite of marketing services:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {[
@@ -471,7 +388,7 @@ const SeoServices = () => {
       >
         <div className="flex items-center gap-3 mb-8">
           <HelpCircle className="w-7 h-7 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">FAQs About SEO in Sri Lanka</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions — SEO Sri Lanka</h2>
         </div>
         <div className="space-y-4">
           {faqs.map((faq) => (
@@ -493,12 +410,17 @@ const SeoServices = () => {
         viewport={{ once: true }}
         className="text-center p-10 rounded-2xl gradient-hero"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your SEO Campaign in Sri Lanka Today</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Ready to Grow with the Best SEO Company in Sri Lanka?</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Ready to rank #1 on Google? Contact BuzzConnect today and discover how our proven SEO strategies can grow your business.
+          Work with a trusted <strong>SEO specialist in Sri Lanka</strong> and start building long-term visibility and consistent customer inquiries.
         </p>
-        <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-          Contact Buzz Connect
+        <a
+          href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20SEO%20services.%20Can%20you%20share%20more%20details%3F"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity"
+        >
+          Get Started Today
         </a>
       </motion.div>
       <RelatedArticles currentPath="/seo-sri-lanka" />
