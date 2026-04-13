@@ -154,7 +154,9 @@ const applyRouteSeo = (templateHtml: string, entry: RouteSeoEntry) => {
     `<meta name="twitter:description" content="${escapeHtml(entry.description)}" />`,
   );
 
-  // Hidden H1 removed — React components render the actual H1 to avoid duplicate H1 tags
+  // Inject H1 inside #root so non-JS crawlers see it, but React replaces it on mount
+  const h1Tag = `<h1 style="position:absolute;left:-9999px">${escapeHtml(entry.h1)}</h1>`;
+  html = html.replace('<div id="root"></div>', `<div id="root">${h1Tag}</div>`);
 
   return html;
 };
