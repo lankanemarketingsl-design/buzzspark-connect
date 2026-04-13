@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, Globe, Mail, GraduationCap, Building2, Hotel, ShoppingCart, Car, Briefcase, HeartPulse, HardHat, PartyPopper } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-finditlk-email-conversions.jpg";
+import articleImg from "@/assets/blog/article-finditlk-email-conversions.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [

@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle2, Mail, Globe, Smartphone, Target, BarChart3, S
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import articleImg from "@/assets/blog/article-multichannel-campaigns.jpg";
+import articleImg from "@/assets/blog/article-multichannel-campaigns.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const WHATSAPP_LAUNCH = "https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20multi-channel%20campaign.";

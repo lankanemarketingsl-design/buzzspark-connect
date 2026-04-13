@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, Building2, Mail, Target, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-realestate-email-leads.jpg";
+import articleImg from "@/assets/blog/article-realestate-email-leads.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [

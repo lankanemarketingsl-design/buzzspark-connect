@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
-import footerLogo from "@/assets/buzz-footer-logo.png";
+import footerLogo from "@/assets/buzz-footer-logo.webp";
 
 const Footer = () => {
   return (

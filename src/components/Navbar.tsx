@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logo from "@/assets/buzz-logo.png";
+import logo from "@/assets/buzz-logo.webp";
 
 const navItems = [
   { label: "Home", path: "/" },

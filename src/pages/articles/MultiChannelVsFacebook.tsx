@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, AlertTriangle, TrendingUp, Globe, Target, BarChart3, Users, Zap, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-multichannel-vs-facebook.jpg";
+import articleImg from "@/assets/blog/article-multichannel-vs-facebook.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [

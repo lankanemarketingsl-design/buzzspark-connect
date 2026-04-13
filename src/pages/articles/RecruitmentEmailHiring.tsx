@@ -5,7 +5,7 @@ import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, Briefcase, Mail, Zap, Target, Star, TrendingUp, Users, Rocket, Phone, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import articleImg from "@/assets/blog/article-recruitment-email-hiring.jpg";
+import articleImg from "@/assets/blog/article-recruitment-email-hiring.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
