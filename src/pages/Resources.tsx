@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Hotel Digital Marketing Case Studies – Sri Lanka (2026)",
+    date: "Apr 13, 2026",
+    excerpt: "Real hotel marketing case studies from Sri Lanka. See how hotels increased bookings and achieved 90%+ occupancy using email, Findit.lk, and remarketing.",
+    path: "/hotel-digital-marketing-case-studies-sri-lanka",
+    image: articleHotelMarketing,
+  },
+  {
     title: "Why Direct Marketing is the Fastest Way to Reach 500,000+ People (2026)",
     date: "Apr 12, 2026",
     excerpt: "Direct marketing is the fastest way to reach 500,000+ people in Sri Lanka. Launch campaigns in 3-5 hours via email, SMS & WhatsApp for instant results.",
