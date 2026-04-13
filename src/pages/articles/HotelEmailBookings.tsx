@@ -55,7 +55,7 @@ const HotelEmailBookings = () => {
 
       <article className="max-w-4xl mx-auto space-y-12">
         <div className="rounded-2xl overflow-hidden shadow-card">
-          <img src={articleImg} alt="Hotel email marketing to increase bookings in Sri Lanka" className="w-full h-auto" />
+          <img src={articleImg} alt="Hotel email marketing to increase bookings in Sri Lanka" className="w-full h-auto" loading="lazy" width={800} height={500} />
         </div>
 
         <section className="prose prose-lg max-w-none">

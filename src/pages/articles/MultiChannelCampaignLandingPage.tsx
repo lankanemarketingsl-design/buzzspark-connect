@@ -87,7 +87,7 @@ const MultiChannelCampaignLandingPage = () => {
       <article className="max-w-4xl mx-auto space-y-16">
         {/* HERO IMAGE */}
         <div className="rounded-2xl overflow-hidden shadow-card">
-          <img src={articleImg} alt="Multi-channel email campaigns that deliver real visibility - Buzz Connect Sri Lanka" className="w-full h-auto" width={1200} height={675} />
+          <img src={articleImg} alt="Multi-channel email campaigns that deliver real visibility - Buzz Connect Sri Lanka" className="w-full h-auto" width={1200} height={675} loading="lazy" />
         </div>
 
         {/* 1. HERO HOOK */}

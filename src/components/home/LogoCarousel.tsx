@@ -66,7 +66,7 @@ const LogoCarousel = () => {
             key={`${logo.name}-${i}`}
             className="flex-shrink-0 mx-2 sm:mx-4 flex items-center justify-center h-14 w-28 sm:h-16 sm:w-36 rounded-lg bg-card p-2.5 sm:p-3 shadow-sm border border-border hover:border-accent/15 transition-all duration-300"
           >
-            <img src={logo.src} alt={logo.name} className="h-full w-full object-contain" loading="lazy" />
+            <img src={logo.src} alt={logo.name} className="h-full w-full object-contain" loading="lazy" width={144} height={64} />
           </div>
         ))}
       </div>
