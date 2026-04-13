@@ -70,7 +70,7 @@ const RealEstateMarketingCaseStudies = () => {
                 Many developers and agents struggle because their listings lack visibility among serious buyers and investors.
               </p>
               <p className="text-muted-foreground mb-4">
-                This is where <a href="/real-estate-marketing-sri-lanka" className="text-muted-foreground">real estate marketing Sri Lanka</a> strategies come in — combining targeted email campaigns, Findit.lk exposure, and remarketing to generate real demand.
+                This is where <a href="/real-estate-marketing-sri-lanka" className="text-muted-foreground">real estate marketing Sri Lanka</a> strategies come in — combining targeted email campaigns, Findit.lk exposure, and remarketing to generate real demand. As the <a href="/real-estate-marketing-sri-lanka" className="text-muted-foreground">best real estate marketing agency Sri Lanka</a>, we've helped developers and agents sell properties faster across the island.
               </p>
               <p className="text-muted-foreground">
                 These campaigns are powered by{" "}
