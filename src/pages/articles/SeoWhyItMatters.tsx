@@ -59,7 +59,7 @@ const SeoWhyItMatters = () => {
               <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">✓</span> Builds long-term brand visibility and authority</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Businesses that invest in SEO can consistently generate leads without relying only on paid ads.
+              Businesses that invest in SEO can consistently generate leads without relying only on paid ads. Learn more about <Link to="/seo-investment-long-term-strategy-sri-lanka" className="text-accent hover:underline font-semibold">why SEO is the smartest long-term strategy</Link> for growth.
             </p>
           </div>
 

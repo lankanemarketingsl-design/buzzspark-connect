@@ -96,7 +96,7 @@ const SeoCostSriLanka = () => {
           <div className="p-6 rounded-2xl bg-primary/5 border border-primary/20">
             <h2 className="font-heading text-xl font-bold text-foreground mb-3">Is SEO Worth the Investment?</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              Absolutely — SEO delivers long-term ROI that compounds over time. Unlike paid ads, organic traffic continues generating results even after you stop investing.
+              Absolutely — SEO delivers long-term ROI that compounds over time. Unlike paid ads, organic traffic continues generating results even after you stop investing. Read our guide on <Link to="/seo-investment-long-term-strategy-sri-lanka" className="text-accent hover:underline font-semibold">why SEO is the smartest long-term investment</Link>.
             </p>
             <ul className="space-y-2">
               {[
