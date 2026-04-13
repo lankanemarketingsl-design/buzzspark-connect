@@ -478,6 +478,7 @@ const SeoServices = () => {
             { label: "SEO vs Paid Ads", href: "/seo-vs-paid-ads-sri-lanka" },
             { label: "Why SEO is the Best Investment", href: "/seo-investment-long-term-strategy-sri-lanka" },
             { label: "SEO Cost in Sri Lanka", href: "/seo-cost-sri-lanka" },
+            { label: "Rank #1 in Google Sri Lanka", href: "/rank-number-one-google-sri-lanka" },
             { label: "Why SEO Matters", href: "/seo-why-it-matters-sri-lanka" },
           ].map((link) => (
             <Link
