@@ -134,7 +134,7 @@ const HowSeoWorksSriLanka = () => {
           {/* SEO + Digital Marketing */}
           <div className="p-6 rounded-2xl bg-primary/5 border border-primary/20">
             <h2 className="font-heading text-xl font-bold text-foreground mb-3">SEO + Digital Marketing Strategy</h2>
-            <p className="text-muted-foreground leading-relaxed mb-3">SEO works best when combined with other digital marketing channels:</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">SEO works best when combined with other digital marketing channels. Discover <Link to="/seo-investment-long-term-strategy-sri-lanka" className="text-accent hover:underline font-semibold">why SEO is the best long-term investment</Link> for your business.</p>
             <ul className="space-y-2">
               {[
                 { text: "Content marketing", link: null },
