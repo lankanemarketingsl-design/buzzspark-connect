@@ -83,6 +83,7 @@ import RealEstateMarketingCaseStudies from "./pages/articles/RealEstateMarketing
 import FinanceMarketingCaseStudies from "./pages/articles/FinanceMarketingCaseStudies.tsx";
 import FashionMarketingCaseStudies from "./pages/articles/FashionMarketingCaseStudies.tsx";
 import EventMarketingCaseStudies from "./pages/articles/EventMarketingCaseStudies.tsx";
+import StaffRecruitmentCaseStudies from "./pages/articles/StaffRecruitmentCaseStudies.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -223,6 +224,7 @@ const App = () => (
               <Route path="/finance-marketing-case-studies-sri-lanka" element={<FinanceMarketingCaseStudies />} />
               <Route path="/fashion-marketing-case-studies-sri-lanka" element={<FashionMarketingCaseStudies />} />
               <Route path="/event-marketing-case-studies-sri-lanka" element={<EventMarketingCaseStudies />} />
+              <Route path="/staff-recruitment-case-studies-sri-lanka" element={<StaffRecruitmentCaseStudies />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
