@@ -87,8 +87,8 @@ const WhatsAppMarketing = () => {
       subtitle="Targeted WhatsApp campaigns + Multi-Channel Promotion to maximize visibility and customer engagement"
     >
       <SEOHead
-        title="WhatsApp Marketing Sri Lanka | Bulk Campaigns from LKR 1"
-        description="No.1 WhatsApp marketing company in Sri Lanka. Bulk WhatsApp campaigns with text, image & video. Reach 600,000+ users from LKR 1/msg. Corporate & VIP databases. Fast results."
+        title="WhatsApp Marketing Sri Lanka | Bulk Campaigns & Targeted Reach"
+        description="No.1 WhatsApp marketing Sri Lanka provider for bulk WhatsApp campaigns with text, image and video. Reach targeted users with fast results."
         canonical="/whatsapp-marketing"
         keywords="whatsapp marketing sri lanka, bulk whatsapp sri lanka, whatsapp advertising colombo, whatsapp campaign sri lanka, whatsapp bulk messaging service, whatsapp business marketing sri lanka"
         breadcrumbs={[
