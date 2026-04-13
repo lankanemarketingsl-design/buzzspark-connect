@@ -577,6 +577,24 @@ const HotelMarketing = () => {
         </div>
       </motion.div>
 
+      {/* 📊 Real Campaign Results */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <div className="text-center mb-6">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Proven Results</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Real Campaign Results</h2>
+        </div>
+        <p className="text-muted-foreground text-center mb-6">
+          See how hotels in Sri Lanka increased bookings and achieved 90%+ occupancy using our marketing packages.
+        </p>
+        <div className="text-center">
+          <Link to="/hotel-digital-marketing-case-studies-sri-lanka">
+            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-8 py-3 rounded-full text-base">
+              <BarChart3 className="w-5 h-5 mr-2" /> View Hotel Marketing Case Studies
+            </Button>
+          </Link>
+        </div>
+      </motion.div>
+
       {/* 🔥 Urgency Section */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <div className="p-8 rounded-2xl bg-destructive/5 border border-destructive/20 text-center">
