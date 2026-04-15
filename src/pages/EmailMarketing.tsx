@@ -25,6 +25,9 @@ const faqs = [
   { q: "Why choose Buzz Connect for email marketing?", a: "Buzz Connect is the only email marketing company in Sri Lanka that combines bulk email campaigns with Findit.lk multi-channel advertising, offering the largest databases, cost-effective packages, and proven campaign success." },
   { q: "What is multi-channel email marketing?", a: "Multi-channel email marketing uses multiple platforms together — email, web ads, app ads, and social media — to reinforce your message and improve engagement and conversion rates." },
   { q: "How much does email marketing cost in Sri Lanka?", a: "Email marketing packages at Buzz Connect start from LKR 6,000 for the corporate database and LKR 8,000 for the full 500,000 database. All packages include Findit.lk advertising at no extra cost." },
+  { q: "Which industries benefit most from email marketing in Sri Lanka?", a: "Email marketing in Sri Lanka works across all major industries including hotels, education, real estate, e-commerce, restaurants, healthcare, automotive, finance, fashion, events, and recruitment. Each industry can leverage targeted campaigns for lead generation, bookings, and sales." },
+  { q: "How fast can I launch an email marketing campaign?", a: "With Buzz Connect, your email marketing campaign in Sri Lanka can be launched within hours. Our team handles design, database targeting, and delivery — so you can start reaching customers the same day." },
+  { q: "Can I combine email marketing with SMS and WhatsApp campaigns?", a: "Yes! Buzz Connect offers integrated multi-channel campaigns combining email marketing with SMS marketing, WhatsApp marketing, and Findit.lk web advertising for maximum reach and ROI across Sri Lanka." },
 ];
 
 const EmailMarketing = () => {
