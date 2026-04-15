@@ -127,7 +127,7 @@ const App = () => (
               <Route path="/sms-marketing" element={<SmsMarketing />} />
               <Route path="/whatsapp-marketing" element={<WhatsAppMarketing />} />
               <Route path="/multi-channel-marketing-sri-lanka" element={<SpecialPackages />} />
-              <Route path="/special-advertising-packages" element={<SpecialPackages />} />
+              <Route path="/special-advertising-packages" element={<Navigate to="/multi-channel-marketing-sri-lanka" replace />} />
               <Route path="/online-advertising-sri-lanka" element={<OnlineAdvertising />} />
               <Route path="/graphic-designing-in-sri-lanka" element={<GraphicDesign />} />
               <Route path="/e-flyer-design-sri-lanka" element={<GraphicDesignService />} />
