@@ -1,4 +1,5 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
+import { motion } from "framer-motion";
 import { Users, Crown, CheckCircle, Mail, HelpCircle, Smartphone, MessageSquare, Globe, Rocket, ArrowRight } from "lucide-react";
 import IndustryMarketingSection from "@/components/IndustryMarketingSection";
 import { useMemo } from "react";
