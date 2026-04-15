@@ -471,6 +471,36 @@ const SpecialPackages = () => {
         </p>
       </motion.div>
 
+      {/* Industry Campaign Examples */}
+      <IndustryMarketingSection
+        sectionEmoji="📱"
+        sectionTitle="Multi Channel Marketing Sri Lanka – Real Campaign Examples by Industry"
+        intro="See how multi-channel marketing campaigns work for different industries in Sri Lanka. Each campaign flow combines multiple channels for maximum impact."
+        subtitle="👇 Explore campaign flows for your industry"
+        industries={multiChannelIndustries}
+        whyTitle="🔥 Why Multi Channel Campaigns Deliver Better Results"
+        whyPoints={[
+          "Customers interact with your brand across multiple platforms",
+          "Each channel supports the next (awareness → trust → action)",
+          "Reach → Ads + Banner Advertising (Findit)",
+          "Engagement → Email + WhatsApp",
+          "Urgency → SMS reminders",
+          "Higher conversions, stronger brand recall, and better ROI",
+        ]}
+        whyFooter="👉 Result: Higher conversions, stronger brand recall, and better ROI with multi-channel marketing in Sri Lanka."
+        crossLinks={[
+          { to: "/email-marketing", label: "Email Marketing" },
+          { to: "/sms-marketing", label: "SMS Marketing" },
+          { to: "/whatsapp-marketing", label: "WhatsApp Marketing" },
+          { to: "/lead-generation-sri-lanka", label: "Lead Generation" },
+          { to: "/google-ads-sri-lanka", label: "Google Ads" },
+        ]}
+        ctaTitle="🚀 Start Your Multi Channel Campaign Today"
+        ctaSubtitle="Ready to scale your business with a powerful multi-channel strategy? Get a free campaign plan and consultation."
+        ctaWhatsAppMessage="Hi Buzz Connect, I'm interested in multi-channel marketing campaigns for my business in Sri Lanka. Can I get a free campaign plan?"
+        ctaButtonText="Get Free Campaign Plan"
+      />
+
       {/* Speed + Scale */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
