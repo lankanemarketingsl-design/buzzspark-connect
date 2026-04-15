@@ -247,22 +247,107 @@ const EmailMarketing = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { emoji: "🏨", title: "Hotel Industry", desc: "Increase direct bookings & revenue with weekend getaway promotions, seasonal offers, and luxury packages targeting high-income travelers.", link: "/hotel-marketing-sri-lanka", linkText: "hotel marketing" },
-            { emoji: "🎓", title: "Education Industry", desc: "Generate high-quality student leads with course intake promotions, scholarship announcements, and deadline-driven enrollment campaigns.", link: "/education-marketing", linkText: "education marketing" },
-            { emoji: "🏠", title: "Real Estate", desc: "Reach serious property buyers with apartment launches, investment opportunities, and location-targeted property promotions.", link: "/real-estate-marketing", linkText: "real estate marketing" },
-            { emoji: "🛍️", title: "E-commerce / Retail", desc: "Drive instant sales with flash sales, product launches, exclusive offers, and seasonal campaigns for maximum online revenue.", link: null, linkText: "" },
-            { emoji: "🍽️", title: "Restaurant Industry", desc: "Increase daily customers with lunch & dinner deals, event promotions, discount coupons, and loyalty campaigns for stronger brand recall.", link: null, linkText: "" },
-            { emoji: "💼", title: "Recruitment & Hiring", desc: "Find the right talent faster with job vacancy promotions, industry-specific hiring campaigns, and bulk recruitment drives.", link: null, linkText: "" },
-            { emoji: "🏥", title: "Healthcare & Clinics", desc: "Boost patient engagement with health checkup promotions, clinic awareness campaigns, and appointment reminders.", link: null, linkText: "" },
-            { emoji: "🚗", title: "Automotive Industry", desc: "Increase inquiries & sales with vehicle promotions, service reminders, and new model launch campaigns.", link: null, linkText: "" },
-            { emoji: "🏦", title: "Finance & Insurance", desc: "Generate high-value leads with loan, leasing & credit card offers, investment promotions, and financial awareness campaigns.", link: null, linkText: "" },
-            { emoji: "👗", title: "Fashion & Clothing", desc: "Grow your brand & sales with new collection launches, seasonal fashion campaigns, and exclusive offers.", link: null, linkText: "" },
-            { emoji: "🎉", title: "Event Promotions", desc: "Maximize attendance & ticket sales with early-bird promotions, reminder campaigns, and urgency-driven email marketing.", link: null, linkText: "" },
-            { emoji: "🧳", title: "Travel & Tourism", desc: "Promote packages & experiences with local & international tour packages, holiday deals, and group travel promotions.", link: null, linkText: "" },
+            {
+              emoji: "🏨", title: "Hotel Industry – Increase Direct Bookings & Revenue",
+              campaigns: ["Weekend getaway & staycation promotions", "Seasonal offers (Avurudu, December, long weekends)", "Luxury packages targeting high-income travelers"],
+              results: ["More direct bookings (reduce OTA commissions)", "Higher room occupancy rates", "Increased revenue per campaign"],
+              link: "/hotel-marketing-sri-lanka", linkText: "hotel marketing"
+            },
+            {
+              emoji: "🎓", title: "Education Industry – Generate High-Quality Student Leads",
+              campaigns: ["Course intake promotions (degree, diploma, short courses)", "Scholarship & limited-seat announcements", "Deadline-driven enrollment campaigns"],
+              results: ["Consistent student inquiries", "Faster intake filling", "Lower cost per lead"],
+              link: "/education-marketing", linkText: "education marketing"
+            },
+            {
+              emoji: "🏠", title: "Real Estate – Reach Serious Property Buyers",
+              campaigns: ["Apartment launches & land sales", "Investment opportunities for high-income audiences", "Location-targeted property promotions"],
+              results: ["Direct buyer inquiries", "Faster sales cycles", "High-value, serious leads"],
+              link: "/real-estate-marketing", linkText: "real estate marketing"
+            },
+            {
+              emoji: "🛍️", title: "E-commerce / Retail – Drive Instant Sales",
+              campaigns: ["Flash sales & limited-time discounts", "Product launches & exclusive offers", "Seasonal campaigns (New Year, festive promotions)"],
+              results: ["Immediate website traffic", "Increased online sales", "Higher customer retention"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🍽️", title: "Restaurant Industry – Increase Daily Customers",
+              campaigns: ["Lunch & dinner deals", "Event promotions (live music, special nights)", "Discount coupons & loyalty campaigns"],
+              results: ["Increased foot traffic", "More repeat customers", "Stronger brand recall"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "💼", title: "Recruitment & Hiring – Find the Right Talent Faster",
+              campaigns: ["Job vacancy promotions", "Industry-specific hiring campaigns", "Bulk recruitment drives"],
+              results: ["Faster hiring cycles", "More qualified applicants", "Reduced recruitment costs"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🏥", title: "Healthcare & Clinics – Boost Patient Engagement",
+              campaigns: ["Health checkup promotions", "Clinic awareness campaigns", "Appointment reminders & follow-ups"],
+              results: ["Increased patient bookings", "Better engagement & trust", "Improved retention rates"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🚗", title: "Automotive Industry – Increase Inquiries & Sales",
+              campaigns: ["Vehicle promotions & limited-time offers", "Service reminders & maintenance campaigns", "New model launches"],
+              results: ["More showroom visits", "Increased inquiries", "Higher conversion rates"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🏦", title: "Finance & Insurance – Generate High-Value Leads",
+              campaigns: ["Loan, leasing & credit card offers", "Investment & savings promotions", "Financial awareness campaigns"],
+              results: ["Qualified financial leads", "Higher approval conversions", "Strong ROI campaigns"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "👗", title: "Fashion & Clothing – Grow Your Brand & Sales",
+              campaigns: ["New collection launches", "Seasonal fashion campaigns", "Exclusive offers & influencer collaborations"],
+              results: ["Increased brand awareness", "Higher sales (online & in-store)", "Repeat customers"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🎉", title: "Event Promotions – Maximize Attendance & Ticket Sales",
+              campaigns: ["Concerts, exhibitions & corporate events", "Early-bird ticket promotions", "Reminder & urgency campaigns"],
+              results: ["Higher event turnout", "Faster ticket sales", "Strong audience engagement"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🏢", title: "Corporate & B2B – Reach Decision Makers Directly",
+              campaigns: ["Service promotions targeting businesses", "Partnership & collaboration offers", "Corporate announcements"],
+              results: ["Direct access to decision-makers", "High-quality B2B leads", "Increased conversions"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🧳", title: "Travel & Tourism – Promote Packages & Experiences",
+              campaigns: ["Local & international tour packages", "Holiday & seasonal travel deals", "Group & corporate travel promotions"],
+              results: ["Increased bookings", "More inquiries", "Higher campaign ROI"],
+              link: null, linkText: ""
+            },
           ].map((ind) => (
             <div key={ind.title} className="p-5 rounded-xl bg-card shadow-card border border-border">
-              <h3 className="font-heading text-lg font-bold text-foreground mb-2">{ind.emoji} {ind.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">{ind.desc}</p>
+              <h3 className="font-heading text-lg font-bold text-foreground mb-3">{ind.emoji} {ind.title}</h3>
+              <div className="mb-3">
+                <p className="text-foreground font-semibold text-sm mb-1.5">Campaign Ideas:</p>
+                <ul className="space-y-1">
+                  {ind.campaigns.map((c) => (
+                    <li key={c} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <CheckCircle className="w-3.5 h-3.5 text-accent flex-shrink-0" /> {c}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mb-3">
+                <p className="text-foreground font-semibold text-sm mb-1.5">Results You Can Expect:</p>
+                <ul className="space-y-1">
+                  {ind.results.map((r) => (
+                    <li key={r} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Rocket className="w-3.5 h-3.5 text-secondary-foreground flex-shrink-0" /> {r}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               {ind.link && (
                 <Link to={ind.link} className="text-accent hover:underline text-sm font-semibold">
                   Learn about {ind.linkText} →
