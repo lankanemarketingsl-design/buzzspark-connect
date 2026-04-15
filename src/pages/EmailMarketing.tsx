@@ -25,6 +25,9 @@ const faqs = [
   { q: "Why choose Buzz Connect for email marketing?", a: "Buzz Connect is the only email marketing company in Sri Lanka that combines bulk email campaigns with Findit.lk multi-channel advertising, offering the largest databases, cost-effective packages, and proven campaign success." },
   { q: "What is multi-channel email marketing?", a: "Multi-channel email marketing uses multiple platforms together — email, web ads, app ads, and social media — to reinforce your message and improve engagement and conversion rates." },
   { q: "How much does email marketing cost in Sri Lanka?", a: "Email marketing packages at Buzz Connect start from LKR 6,000 for the corporate database and LKR 8,000 for the full 500,000 database. All packages include Findit.lk advertising at no extra cost." },
+  { q: "Which industries benefit most from email marketing in Sri Lanka?", a: "Email marketing in Sri Lanka works across all major industries including hotels, education, real estate, e-commerce, restaurants, healthcare, automotive, finance, fashion, events, and recruitment. Each industry can leverage targeted campaigns for lead generation, bookings, and sales." },
+  { q: "How fast can I launch an email marketing campaign?", a: "With Buzz Connect, your email marketing campaign in Sri Lanka can be launched within hours. Our team handles design, database targeting, and delivery — so you can start reaching customers the same day." },
+  { q: "Can I combine email marketing with SMS and WhatsApp campaigns?", a: "Yes! Buzz Connect offers integrated multi-channel campaigns combining email marketing with SMS marketing, WhatsApp marketing, and Findit.lk web advertising for maximum reach and ROI across Sri Lanka." },
 ];
 
 const EmailMarketing = () => {
@@ -231,6 +234,68 @@ const EmailMarketing = () => {
               <Rocket className="w-5 h-5 mr-2" /> View Multi-Channel Campaigns
             </Button>
           </Link>
+        </div>
+      </motion.div>
+
+      {/* Industry Section */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">✉️ Email Marketing Services for Every Industry in Sri Lanka</h2>
+          <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">Looking for email marketing in Sri Lanka that actually delivers results? Our data-driven campaigns help businesses reach the right audience, generate qualified leads, and drive real revenue — across every major industry in Sri Lanka.</p>
+          <p className="text-foreground font-semibold mt-3">Whether you want instant inquiries, more sales, or brand awareness, our email marketing campaigns are built to perform.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { emoji: "🏨", title: "Hotel Industry", desc: "Increase direct bookings & revenue with weekend getaway promotions, seasonal offers, and luxury packages targeting high-income travelers.", link: "/hotel-marketing-sri-lanka", linkText: "hotel marketing" },
+            { emoji: "🎓", title: "Education Industry", desc: "Generate high-quality student leads with course intake promotions, scholarship announcements, and deadline-driven enrollment campaigns.", link: "/education-marketing", linkText: "education marketing" },
+            { emoji: "🏠", title: "Real Estate", desc: "Reach serious property buyers with apartment launches, investment opportunities, and location-targeted property promotions.", link: "/real-estate-marketing", linkText: "real estate marketing" },
+            { emoji: "🛍️", title: "E-commerce / Retail", desc: "Drive instant sales with flash sales, product launches, exclusive offers, and seasonal campaigns for maximum online revenue.", link: null, linkText: "" },
+            { emoji: "🍽️", title: "Restaurant Industry", desc: "Increase daily customers with lunch & dinner deals, event promotions, discount coupons, and loyalty campaigns for stronger brand recall.", link: null, linkText: "" },
+            { emoji: "💼", title: "Recruitment & Hiring", desc: "Find the right talent faster with job vacancy promotions, industry-specific hiring campaigns, and bulk recruitment drives.", link: null, linkText: "" },
+            { emoji: "🏥", title: "Healthcare & Clinics", desc: "Boost patient engagement with health checkup promotions, clinic awareness campaigns, and appointment reminders.", link: null, linkText: "" },
+            { emoji: "🚗", title: "Automotive Industry", desc: "Increase inquiries & sales with vehicle promotions, service reminders, and new model launch campaigns.", link: null, linkText: "" },
+            { emoji: "🏦", title: "Finance & Insurance", desc: "Generate high-value leads with loan, leasing & credit card offers, investment promotions, and financial awareness campaigns.", link: null, linkText: "" },
+            { emoji: "👗", title: "Fashion & Clothing", desc: "Grow your brand & sales with new collection launches, seasonal fashion campaigns, and exclusive offers.", link: null, linkText: "" },
+            { emoji: "🎉", title: "Event Promotions", desc: "Maximize attendance & ticket sales with early-bird promotions, reminder campaigns, and urgency-driven email marketing.", link: null, linkText: "" },
+            { emoji: "🧳", title: "Travel & Tourism", desc: "Promote packages & experiences with local & international tour packages, holiday deals, and group travel promotions.", link: null, linkText: "" },
+          ].map((ind) => (
+            <div key={ind.title} className="p-5 rounded-xl bg-card shadow-card border border-border">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-2">{ind.emoji} {ind.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-3">{ind.desc}</p>
+              {ind.link && (
+                <Link to={ind.link} className="text-accent hover:underline text-sm font-semibold">
+                  Learn about {ind.linkText} →
+                </Link>
+              )}
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 p-6 rounded-2xl bg-card shadow-card border border-border">
+          <h3 className="font-heading text-xl font-bold text-foreground mb-4">🔥 Why Our Email Marketing Works in Sri Lanka</h3>
+          <ul className="space-y-2">
+            {[
+              "Access to 350,000+ targeted email users",
+              "Reach corporate professionals & high-income audiences",
+              "Fast campaign launch (within hours)",
+              "Proven performance across multiple industries",
+              "Integrated campaigns (Email + SMS + Web Advertising)",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-2 text-sm text-foreground">
+                <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-foreground font-semibold mt-4 text-sm">👉 Compared to other channels, email marketing in Sri Lanka delivers faster reach, better targeting, and higher ROI</p>
+        </div>
+
+        <div className="mt-8 p-6 rounded-2xl gradient-hero text-center">
+          <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">🚀 Start Your Email Marketing Campaign in Sri Lanka Today</h3>
+          <p className="text-primary-foreground/80 mb-4">Ready to reach thousands of potential customers and generate real results?</p>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20start%20an%20email%20marketing%20campaign%20for%20my%20industry." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
+            <MessageSquare className="w-4 h-4" /> Get a Free Consultation & Campaign Strategy
+          </a>
         </div>
       </motion.div>
 
