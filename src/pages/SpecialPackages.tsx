@@ -461,14 +461,22 @@ const SpecialPackages = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
+        className="mb-16 max-w-4xl mx-auto text-center"
       >
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Unlike traditional marketing that takes months, our <strong className="text-foreground">multi-channel campaigns</strong> deliver results within days. Your message reaches customers across <strong className="text-foreground">Email, SMS, WhatsApp & Findit.lk simultaneously</strong>.
+        <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-4">
+          Stop wasting money on single-channel campaigns. Our <strong className="text-foreground">integrated multi-channel system</strong> puts your brand in front of customers across <strong className="text-foreground">Email, SMS, WhatsApp & Findit.lk — all at once</strong>. Results start within days, not months.
         </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Combine with our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation</Link> services for maximum impact.
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          Powered by <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp</Link> & <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation</Link> expertise.
         </p>
+        <a
+          href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20a%20free%20multi-channel%20campaign%20plan."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity"
+        >
+          Get Your Free Campaign Plan <ArrowRight className="w-4 h-4" />
+        </a>
       </motion.div>
 
       {/* Channels Overview */}
