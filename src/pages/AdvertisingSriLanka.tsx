@@ -178,7 +178,7 @@ const whyUs = [
   { text: "50M+ impressions delivered across Sri Lanka", icon: TrendingUp },
   { text: "500+ successful campaigns executed", icon: BarChart3 },
   { text: "Fast campaign launch within 48–72 hours", icon: Clock },
-  { text: "Affordable packages starting from LKR 5,000", icon: Star },
+  { text: "Affordable and scalable advertising solutions", icon: Star },
   { text: "Results-driven approach with real-time tracking", icon: Target },
   { text: "Dedicated account managers for every client", icon: Users },
   { text: "10+ years of advertising experience in Sri Lanka", icon: Shield },
