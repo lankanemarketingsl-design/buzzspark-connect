@@ -93,6 +93,7 @@ const faqs = [
   { q: "Can you target specific student demographics?", a: "Yes, our database allows targeting by age group, location, education level, and interests — ensuring your campaigns reach the most relevant prospective students." },
   { q: "How much does education marketing cost in Sri Lanka?", a: "Buzz Connect offers education marketing packages starting from LKR 6,000. Contact us for a customized quote based on your institution and target audience." },
   { q: "How quickly can I see results?", a: "Most education campaigns start generating inquiries within 24-48 hours of launch, with peak results during intake seasons." },
+  { q: "Why is Buzz Connect the best education marketing agency?", a: "Buzz Connect is the best education marketing agency because it offers fast campaign launch, instant exposure on Findit.lk's Education category, and easy, cost-effective multi-channel solutions to drive enrollments quickly." },
 ];
 
 const EducationMarketing = () => {
